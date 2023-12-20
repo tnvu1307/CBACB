@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="frmClearingSchedule">
+		<value>Lịch thanh toán bù trừ</value>
+	</data>
+	<data name="frmClearingSchedule.btnCANCEL">
+		<value>&amp;Đóng</value>
+	</data>
+	<data name="frmClearingSchedule.btnSETTLE">
+		<value>&amp;Tất toán</value>
+	</data>
+	<data name="frmClearingSchedule.DUETYPE">
+		<value>Loại</value>
+	</data>
+	<data name="frmClearingSchedule.MODCODE">
+		<value>Mã phân hệ</value>
+	</data>
+	<data name="frmClearingSchedule.AFACCTNO">
+		<value>Tiểu khoản</value>
+	</data>
+	<data name="frmClearingSchedule.ACCTNO">
+		<value>Số tài khoản</value>
+	</data>
+	<data name="frmClearingSchedule.TXDATE">
+		<value>Ngày</value>
+	</data>
+	<data name="frmClearingSchedule.CLEARDAY">
+		<value>Chu kỳ thanh toán</value>
+	</data>
+	<data name="frmClearingSchedule.CLEARCD">
+		<value>Loại lịch toán</value>
+	</data>
+	<data name="frmClearingSchedule.AMT">
+		<value>Số lượng</value>
+	</data>
+	<data name="frmClearingSchedule.AAMT">
+		<value>Số tiền ứng trước</value>
+	</data>
+	<data name="frmClearingSchedule.FAMT">
+		<value>Tiền phí</value>
+	</data>
+	<data name="frmClearingSchedule.QTTY">
+		<value>Khối lượng</value>
+	</data>
+	<data name="frmClearingSchedule.AQTTY">
+		<value>Khối lượng ứng trước</value>
+	</data>
+	<data name="frmClearingSchedule.ORDERID">
+		<value>Mã</value>
+	</data>
+	<data name="frmClearingSchedule.AVLSECUREDAMT">
+		<value>Số lượng đảm bảo</value>
+	</data>
+	<data name="frmClearingSchedule.AVLFEEAMT">
+		<value>Tiền phí</value>
+	</data>
+	<data name="frmClearingSchedule.STATUS">
+		<value>Trạng thái</value>
+	</data>
+</root>

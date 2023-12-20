@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="frmPostmap">
+		<value>Hạch toán</value>
+	</data>
+	<data name="frmPostmap.lblACCTNO">
+		<value>Tài khoản</value>
+	</data>
+	<data name="frmPostmap.lblAMOUNT">
+		<value>Lượng tiền</value>
+	</data>
+	<data name="frmPostmap.rbDebit">
+		<value>Nợ</value>
+	</data>
+	<data name="frmPostmap.rbCredit">
+		<value>Có</value>
+	</data>
+	<data name="frmPostmap.btnAdd">
+		<value>&amp;Thêm</value>
+	</data>
+	<data name="frmPostmap.btnEdit">
+		<value>&amp;Sửa</value>
+	</data>
+	<data name="frmPostmap.btnDelete">
+		<value>&amp;Xoá</value>
+	</data>
+	<data name="frmPostmap.btnOK">
+		<value>&amp;Chấp nhận</value>
+	</data>
+	<data name="frmPostmap.btnCANCEL">
+		<value>&amp;Đóng</value>
+	</data>
+	<data name="frmPostmap.lblACCTNAME">
+		<value>Tên tài khoản</value>
+	</data>
+	<data name="frmPostmap.lblSUBTXNO">
+		<value>Bút toán</value>
+	</data>
+	<data name="frmPostmap.SUBTXNO">
+		<value>Bút toán</value>
+	</data>
+	<data name="frmPostmap.DORC">
+		<value>Nợ/Có</value>
+	</data>
+	<data name="frmPostmap.ACCTNO">
+		<value>Tài khoản</value>
+	</data>
+	<data name="frmPostmap.ACCTNAME">
+		<value>Tên tài khoản</value>
+	</data>
+	<data name="frmPostmap.DAMOUNT">
+		<value>Lượng ghi nợ</value>
+	</data>
+	<data name="frmPostmap.CCYCD">
+		<value>Mã tiền</value>
+	</data>
+	<data name="frmPostmap.tpgAccountEntries">
+		<value>Hạch toán</value>
+	</data>
+	<data name="frmPostmap.tpgFixedAssest">
+		<value>Tài sản cố định</value>
+	</data>
+	<data name="frmPostmap.tpgVATVoucher">
+		<value>Chứng từ VAT</value>
+	</data>
+	<data name="frmPostmap.lblFunction">
+		<value>Nhấn nút Delete để xoá dòng hiện tại</value>
+	</data>
+	<data name="frmPostmap.CAMOUNT">
+		<value>Lượng ghi có</value>
+	</data>
+	<data name="frmPostmap.CUSTID">
+		<value>Mã khách hàng</value>
+	</data>
+	<data name="frmPostmap.CUSTNAME">
+		<value>Tên khách hàng</value>
+	</data>
+	<data name="frmPostmap.FEEID">
+		<value>Thu nhập/Chi phí</value>
+	</data>
+	<data name="frmPostmap.TASK">
+		<value>Vụ việc</value>
+	</data>
+	<data name="frmPostmap.DEPARTMENT">
+		<value>Phòng ban</value>
+	</data>
+	<data name="frmPostmap.DESC">
+		<value>Diễn giải</value>
+	</data>
+	<data name="frmPostmap.VOUCHERNO">
+		<value>Số chứng từ</value>
+	</data>
+	<data name="frmPostmap.VOUCHERTYPE">
+		<value>Loại chứng từ</value>
+	</data>
+	<data name="frmPostmap.SERIENO">
+		<value>Mã số</value>
+	</data>
+	<data name="frmPostmap.VOUCHERDATE">
+		<value>Ngày</value>
+	</data>
+	<data name="frmPostmap.CUSTID">
+		<value>Mã khách hàng</value>
+	</data>
+	<data name="frmPostmap.TAXCODE">
+		<value>Mã số thuế</value>
+	</data>
+	<data name="frmPostmap.CUSTNAME">
+		<value>Tên khách hàng</value>
+	</data>
+	<data name="frmPostmap.ADDRESS">
+		<value>Địa chỉ</value>
+	</data>
+	<data name="frmPostmap.CONTENTS">
+		<value>Nội dung</value>
+	</data>
+	<data name="frmPostmap.QTTY">
+		<value>Số lượng</value>
+	</data>
+	<data name="frmPostmap.PRICE">
+		<value>Giá</value>
+	</data>
+	<data name="frmPostmap.VATRATE">
+		<value>Tỷ lệ VAT</value>
+	</data>
+	<data name="frmPostmap.DESCRIPTION">
+		<value>Description</value>
+	</data>
+	<data name="frmPostmap.lblCaption">
+		<value>Nhập các bút toán cho giao dịch kế toán!</value>
+	</data>
+	<data name="CUSTID_INVALID">
+		<value>Mã khách hàng không hợp lệ. Bấm phím F5 và chọn từ danh sách tìm kiếm!</value>
+	</data>
+	<data name="INIT_VAT_POSTMAP_FAILED">
+		<value>Không thể khởi tạo VAT!</value>
+	</data>
+	<data name="frmPostmap.AMT">
+		<value>Thành tiền</value>
+	</data>
+	<data name="frmPostmap.VATAMT">
+		<value>Giá trị VAT</value>
+	</data>
+	<data name="VOUCHERTYPE_INVALID">
+		<value>Loại chứng từ không hợp lệ. Nhấn F5 để tìm kiếm!</value>
+	</data>
+	<data name="VOUCHERDATE_INVALID">
+		<value>Ngày chứng từ không hợp lệ!</value>
+	</data>
+	<data name="QTTY_INVALID">
+		<value>Số lượng nhập không hợp lệ!</value>
+	</data>
+	<data name="PRICE_INVALID">
+		<value>Giá nhập không hợp lệ!</value>
+	</data>
+	<data name="VATRATE_INVALID">
+		<value>Tỷ lệ VAT không hợp lệ!</value>
+	</data>
+</root>

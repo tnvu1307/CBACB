@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="frmPostmap">
+		<value>Make account entry</value>
+	</data>
+	<data name="frmPostmap.lblACCTNO">
+		<value>Account number</value>
+	</data>
+	<data name="frmPostmap.lblAMOUNT">
+		<value>Amount</value>
+	</data>
+	<data name="frmPostmap.rbDebit">
+		<value>Debit</value>
+	</data>
+	<data name="frmPostmap.rbCredit">
+		<value>Credit</value>
+	</data>
+	<data name="frmPostmap.btnAdd">
+		<value>&amp;Add entry</value>
+	</data>
+	<data name="frmPostmap.btnEdit">
+		<value>&amp;Edit entry</value>
+	</data>
+	<data name="frmPostmap.btnDelete">
+		<value>&amp;Delete entry</value>
+	</data>
+	<data name="frmPostmap.btnOK">
+		<value>&amp;Ok</value>
+	</data>
+	<data name="frmPostmap.btnCANCEL">
+		<value>&amp;Cancel</value>
+	</data>
+	<data name="frmPostmap.lblACCTNAME">
+		<value>Account name</value>
+	</data>
+	<data name="frmPostmap.lblSUBTXNO">
+		<value>No</value>
+	</data>
+	<data name="frmPostmap.SUBTXNO">
+		<value>No</value>
+	</data>
+	<data name="frmPostmap.DORC">
+		<value>Debit/Credit</value>
+	</data>
+	<data name="frmPostmap.ACCTNO">
+		<value>Account No</value>
+	</data>
+	<data name="frmPostmap.ACCTNAME">
+		<value>Account Name</value>
+	</data>
+	<data name="frmPostmap.DAMOUNT">
+		<value>Debit amount</value>
+	</data>
+	<data name="frmPostmap.CCYCD">
+		<value>Currency</value>
+	</data>
+	<data name="frmPostmap.tpgAccountEntries">
+		<value>Account entries</value>
+	</data>
+	<data name="frmPostmap.tpgFixedAssest">
+		<value>Fixed assest</value>
+	</data>
+	<data name="frmPostmap.tpgVATVoucher">
+		<value>VAT voucher</value>
+	</data>
+	<data name="frmPostmap.lblFunction">
+		<value>Press Delete key for delete current row!</value>
+	</data>
+	<data name="frmPostmap.CAMOUNT">
+		<value>Credit amount</value>
+	</data>
+	<data name="frmPostmap.CUSTID">
+		<value>Customer id</value>
+	</data>
+	<data name="frmPostmap.CUSTNAME">
+		<value>Customer name</value>
+	</data>
+	<data name="frmPostmap.FEEID">
+		<value>Income/Expense</value>
+	</data>
+	<data name="frmPostmap.TASK">
+		<value>Task</value>
+	</data>
+	<data name="frmPostmap.DEPARTMENT">
+		<value>Department</value>
+	</data>
+	<data name="frmPostmap.DESC">
+		<value>Description</value>
+	</data>
+	<data name="frmPostmap.VOUCHERNO">
+		<value>No.</value>
+	</data>
+	<data name="frmPostmap.VOUCHERTYPE">
+		<value>Type</value>
+	</data>
+	<data name="frmPostmap.SERIENO">
+		<value>Serie</value>
+	</data>
+	<data name="frmPostmap.VOUCHERDATE">
+		<value>Date</value>
+	</data>
+	<data name="frmPostmap.CUSTID">
+		<value>Customer id</value>
+	</data>
+	<data name="frmPostmap.TAXCODE">
+		<value>Tax code</value>
+	</data>
+	<data name="frmPostmap.CUSTNAME">
+		<value>Customer name</value>
+	</data>
+	<data name="frmPostmap.ADDRESS">
+		<value>Address</value>
+	</data>
+	<data name="frmPostmap.CONTENTS">
+		<value>Contents</value>
+	</data>
+	<data name="frmPostmap.QTTY">
+		<value>Quantity</value>
+	</data>
+	<data name="frmPostmap.PRICE">
+		<value>Price</value>
+	</data>
+	<data name="frmPostmap.VATRATE">
+		<value>VAT rate</value>
+	</data>
+	<data name="frmPostmap.DESCRIPTION">
+		<value>Description</value>
+	</data>
+	<data name="frmPostmap.lblCaption">
+		<value>Input postmap for GL transaction.</value>
+	</data>
+	<data name="CUSTID_INVALID">
+		<value>Customer's id is invalid. Press F5 and correct data!</value>
+	</data>
+	<data name="INIT_VAT_POSTMAP_FAILED">
+		<value>Cannot init VAT voucher grid!</value>
+	</data>
+	<data name="frmPostmap.AMT">
+		<value>Amount</value>
+	</data>
+	<data name="frmPostmap.VATAMT">
+		<value>VAT amount</value>
+	</data>
+	<data name="VOUCHERTYPE_INVALID">
+		<value>Voucher type is invalid. Press F5 and correct data!</value>
+	</data>
+	<data name="VOUCHERDATE_INVALID">
+		<value>Voucher date is invalid. Please re-type it!</value>
+	</data>
+	<data name="QTTY_INVALID">
+		<value>Quantity data is invalid!</value>
+	</data>
+	<data name="PRICE_INVALID">
+		<value>Price data is invalid!</value>
+	</data>
+	<data name="VATRATE_INVALID">
+		<value>VAT rate is invalid!</value>
+	</data>
+</root>

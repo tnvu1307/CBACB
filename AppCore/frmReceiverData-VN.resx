@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="ResMimeType">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="Version">
+        <value>1.0.0.0</value>
+    </resheader>
+    <resheader name="Reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="Writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="GridEx.GroupByRow">
+        <value>Hãy kéo cột cần nhóm vào đây!</value>
+    </data>
+    <data name="GridEx.FooterRow">
+        <value>Tổng số bản ghi:</value>
+    </data>
+    <data name="btnOpenFile">
+        <value>...</value>
+    </data>
+    <data name="lblFromFile">
+        <value>Tên file:</value>
+    </data>
+    <data name="lblTradingCenter">
+        <value>Sàn giao dịch:</value>
+    </data>
+    <data name="btnLoadData">
+        <value>&amp;Tải dữ liệu</value>
+    </data>
+    <data name="btnSave">
+        <value>&amp;Ghi</value>
+    </data>
+    <data name="btnCancel">
+        <value>&amp;Thoát</value>
+    </data>
+    <data name="lblFileType">
+        <value>Loại file:</value>
+    </data>
+    <data name="frmReceiverData.CannotOpenFile">
+        <value>Không mở được file dữ liệu !</value>
+    </data>
+    <data name="frmReceiverData.FilePathEmpty">
+        <value>Bạn phải chọn file trước khi muốn nạp dữ liệu !</value>
+    </data>
+    <data name="frmReceiverData.CannotImportToDB">
+        <value>Đã có lỗi xảy ra khi chuyển dữ liệu !</value>
+    </data>
+    <data name="frmReceiverData.ImportToDBSuccess">
+        <value>Tải dữ liệu vào cơ sở dữ liệu thành công!</value>
+    </data>
+    <data name="grbFromFile">
+        <value>Tới file:</value>
+    </data>
+    <data name="grbQuoteSvr">
+        <value>Máy chủ giá:</value>
+    </data>
+    <data name="radioQuoteSvr">
+        <value>Từ máy chủ về giá</value>
+    </data>
+    <data name="radioFiles">
+        <value>Từ file</value>
+    </data>
+    <data name="lblSrcFileName">
+        <value>Tên file:</value>
+    </data>
+    <data name="btnBrowser">
+        <value>...</value>
+    </data>
+    <data name="frmReceiverData">
+        <value>Tải kết quả giao dịch</value>
+    </data>
+    <data name="SAVING_STATUS">
+        <value>Lưu tới dòng @... Xin vui lòng đợi!</value>
+    </data>
+    <data name="grbSources">
+        <value>Nguồn:</value>
+    </data>
+    <data name="grbSearchResult">
+        <value>Kết quả tìm kiếm:</value>
+    </data>
+    <data name="grbButton">
+        <value>Nút chọn:</value>
+    </data>
+    <data name="SAVE_CONFIRMATION">
+        <value>Bạn có muốn lưu kết quả giao dịch?</value>
+    </data>
+    <data name="FILENAME_MUST_VALID">
+        <value>Tên tệp tin không hợp lệ, hãy Browse đến t tin hợp lệ!</value>
+    </data>
+    <data name="READ_CONFIRMATION">
+        <value>Bạn có chắc muốn nhận kết quả giao dịch từ file @?</value>
+    </data>
+    <data name="READ_FILE_SUCCESSFULLY">
+        <value>Nhận dữ liệu từ file @ thành công!</value>
+    </data>
+    <data name="SAVING_STATUS">
+        <value>Lưu tới dòng @... Xin vui lòng đợi!</value>
+    </data>
+    <data name="SAVED_STATUS">
+        <value>Lưu thông tin thành công!</value>
+    </data>
+    <data name="grbQuoteSrv">
+        <value>Máy chủ giá:</value>
+    </data>
+    <data name="grbFiles">
+        <value>Từ file:</value>
+    </data>
+    <data name="lblCaption">
+        <value>Nhận kết quả giao dịch từ máy chủ giá hoặc từ file.</value>
+    </data>
+    <data name="lblServerAddress">
+        <value>Địa chỉ máy chủ:</value>
+    </data>
+    <data name="grbQuoteSvr">
+        <value>Máy chủ giá:</value>
+    </data>
+    <data name="txtServerAddress">
+        <value>\\192.168.100.203</value>
+    </data>
+    <data name="READ_DATA_SUCCESSFULLY">
+        <value>Nhận dữ liệu thành công.</value>
+    </data>
+    <data name="NO_DATA_FOUND">
+        <value>Không tìm thấy dữ liệu từ máy chủ giá</value>
+    </data>
+</root>
