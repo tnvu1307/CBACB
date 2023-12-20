@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="ResMimeType">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="Version">
+        <value>1.0.0.0</value>
+    </resheader>
+    <resheader name="Reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="Writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="frmDefineRisk">
+        <value>Risk paramater</value>
+    </data>
+    <data name="InitDialogFailed">
+        <value>Dialog initiation is failed!</value>
+    </data>
+    <data name="btnOK">
+        <value>&amp;OK</value>
+    </data>
+    <data name="btnCancel">
+        <value>&amp;Cancel</value>
+    </data>
+    <data name="lblCaption0">
+        <value>Risk ICCF information.</value>
+    </data>
+    <data name="lblCaption1">
+        <value>Add new securities ticksize.</value>
+    </data>
+    <data name="lblCaption2">
+        <value>Edit securities ticksize information.</value>
+    </data>
+    <data name="SavingFailed">
+        <value>Saving failed!</value>
+    </data>
+    <data name="AddnewSuccessful">
+        <value>Add new securities ticksize successfully!</value>
+    </data>
+    <data name="EditSuccessful">
+        <value>Edit securities ticksize information successfully!</value>
+    </data>
+    <data name="TRADEUNIT">
+        <value>Trade unit:</value>
+    </data>
+    <data name="grbTicksizeInfo">
+        <value>Ticksize information:</value>
+    </data>
+    <data name="Mandatory">
+        <value>The field [@] should not be empty!</value>
+    </data>
+    <data name="NumericDataType">
+        <value>The field [@] data type should be numeric!</value>
+    </data>
+    <data name="DelConfirm" type="" mimetype="">
+        <value>Are you sure to delete this data row?</value>
+        <comment>
+        </comment>
+    </data>
+    <data name="btnApply">
+        <value>&amp;Apply</value>
+    </data>
+    <data name="btnADD">
+        <value>&amp;Add new</value>
+    </data>
+    <data name="btnVIEW">
+        <value>&amp;View</value>
+    </data>
+    <data name="btnEDIT">
+        <value>&amp;Edit</value>
+    </data>
+    <data name="btnDELETE">
+        <value>&amp;Delete</value>
+    </data>
+    <data name="TabSERISK">
+        <value>System Securities Risk</value>
+    </data>
+    <data name="tablOD">
+        <value>Order</value>
+    </data>
+    <data name="TabSYSVAR">
+        <value>System Common</value>
+    </data>
+    <data name="TabIRRATE">
+        <value>Floating rate</value>
+    </data>
+    <data name="tablCI">
+        <value>cash investment</value>
+    </data>
+    <data name="SYMBOL">
+        <value>Symbol</value>
+    </data>
+    <data name="TOTALTRADE">
+        <value>Total trade</value>
+    </data>
+    <data name="BIDPRICE">
+        <value>Bid price</value>
+    </data>
+    <data name="ASKPRICE">
+        <value>Ask price</value>
+    </data>
+    <data name="TELELIMITMIN">
+        <value>Tele limit min</value>
+    </data>
+    <data name="TELELIMITMAX">
+        <value>Tele limit max</value>
+    </data>
+    <data name="ONLINELIMITMIN">
+        <value>Online min</value>
+    </data>
+    <data name="ONLINELIMITMAX">
+        <value>Online max</value>
+    </data>
+    <data name="REPOLIMITMIN">
+        <value>Repo min</value>
+    </data>
+    <data name="REPOLIMITMAX">
+        <value>Repo max</value>
+    </data>
+    <data name="ADVANCEDLIMITMIN">
+        <value>Advance min</value>
+    </data>
+    <data name="ADVANCEDLIMITMAX">
+        <value>Advance max</value>
+    </data>
+    <data name="MARGINLIMITMIN">
+        <value>Margin min</value>
+    </data>
+    <data name="MARGINLIMITMAX">
+        <value>Margin max</value>
+    </data>
+    <data name="SECUREDRATIOMIN">
+        <value>Secured min</value>
+    </data>
+    <data name="SECUREDRATIOMAX">
+        <value>Secured max</value>
+    </data>
+    <data name="MORTAGERATIOMIN">
+        <value>Mortage min</value>
+    </data>
+    <data name="MORTAGERATIOMAX">
+        <value>Mortage max</value>
+    </data>
+    <data name="ACTYPE">
+        <value>Product type</value>
+    </data>
+    <data name="ACNAME">
+        <value>Type name</value>
+    </data>
+    <data name="TYPENAME">
+        <value>Type name</value>
+    </data>
+    <data name="FLOORLIMIT">
+        <value>Floor limit</value>
+    </data>
+    <data name="TELELIMIT">
+        <value>TeleLimit</value>
+    </data>
+    <data name="ONLINELIMIT">
+        <value>OnlineLimit</value>
+    </data>
+    <data name="MARGINLINE">
+        <value>MarginLimit</value>
+    </data>
+    <data name="REPOLINE">
+        <value>RepoLimit</value>
+    </data>
+    <data name="ADVANCELINE">
+        <value>AdvancedLimit</value>
+    </data>
+    <data name="BRATIO">
+        <value>Secured Ratio</value>
+    </data>
+    <data name="TRADERATE">
+        <value>Trading Fee</value>
+    </data>
+    <data name="DEPORATE">
+        <value>Depository Fee</value>
+    </data>
+    <data name="MISCRATE">
+        <value>Misc Fee</value>
+    </data>
+    <data name="TRADELIMIT">
+        <value>Trade limit</value>
+    </data>
+    <data name="FEERATE">
+        <value>Free rate</value>
+    </data>
+    <data name="VATRATE">
+        <value>VatRate</value>
+    </data>
+    <data name="CRINTRATE">
+        <value>IntRate</value>
+    </data>
+    <data name="ODRATE">
+        <value>Order Rate</value>
+    </data>
+    <data name="btnIMPORT">
+        <value>&amp;Import</value>
+    </data>
+    <data name="btnCLOSE">
+        <value>&amp;Close</value>
+    </data>
+    <data name="frmRISK">
+        <value>Risk managerment</value>
+    </data>
+    <data name="frmIRRATE">
+        <value>Rate managerment</value>
+    </data>
+    <data name="frmSYSVAR">
+        <value>System management</value>
+    </data>
+    <data name="lblCaption">
+        <value>System management.</value>
+    </data>
+    <data name="btnExport">
+        <value>&amp;Export</value>
+    </data>
+    <data name="tabPRODUCT">
+        <value>Product parameters</value>
+    </data>
+    <data name="lblModule">
+        <value>Business module</value>
+    </data>
+    <data name="TabICCF">
+        <value>ICCF Information</value>
+    </data>
+    <data name="TabMarginSec">
+        <value>Securities margin</value>
+    </data>
+</root>

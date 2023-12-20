@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="lblAFACCTNO">
+		<value>Số HĐ:</value>
+	</data>
+	<data name="btnOK">
+		<value>&amp;Chấp thuận</value>
+	</data>
+	<data name="btnCANCEL">
+		<value>&amp;Thoát</value>
+	</data>
+	<data name="lblOrderType">
+		<value>Loại lệnh:</value>
+	</data>
+	<data name="lblExecType">
+		<value>Loại khớp:</value>
+	</data>
+	<data name="lblQuantity">
+		<value>Số lượng:</value>
+	</data>
+	<data name="lblSymbol">
+		<value>Mã CK:</value>
+	</data>
+	<data name="chkAllorNone">
+		<value>Tất cả ?</value>
+	</data>
+	<data name="lblPriceType">
+		<value>Loại giá đặt:</value>
+	</data>
+	<data name="lblLimitPrice">
+		<value>Giá giới hạn:</value>
+	</data>
+	<data name="lblStopPrice">
+		<value>Giá dừng:</value>
+	</data>
+	<data name="lblTerm">
+		<value>Kỳ hạn:</value>
+	</data>
+	<data name="lblExpiredDate">
+		<value>Ngày hết hạn:</value>
+	</data>
+	<data name="lblClearingDay">
+		<value>Chu kỳ TTBT:</value>
+	</data>
+	<data name="lblLicense">
+		<value>Số chứng nhận:</value>
+	</data>
+	<data name="lblFullName">
+		<value>Khách hàng:</value>
+	</data>
+	<data name="lblCIBalance">
+		<value>Số dư tiền:</value>
+	</data>
+	<data name="lblSEBalance">
+		<value>Sô dư CK:</value>
+	</data>
+	<data name="MEMBER_TYP">
+		<value>Loại Thành viên</value>
+	</data>
+	<data name="MEMBER_CUSTID">
+		<value>Mã khách hàng</value>
+	</data>
+	<data name="MEMBER_IDCODE">
+		<value>Số chứng nhận</value>
+	</data>
+	<data name="MEMBER_FULLNAME">
+		<value>Tên đầy đủ</value>
+	</data>
+	<data name="MEMBER_REF">
+		<value>Tham khảo</value>
+	</data>
+	<data name="frm_CFMAST">
+		<value>Quản lý thông tin KH</value>
+	</data>
+	<data name="frm_CFAUTH">
+		<value>Thông tin người được ủy quyền</value>
+	</data>
+	<data name="lblMatchType" xml:space="preserve">
+		<value>Loại hình lệnh</value>
+	</data>
+	<data name="lblTimeType" xml:space="preserve">
+		<value>Thời gian:</value>
+	</data>
+	<data name="lblReference" xml:space="preserve">
+		<value>Tham khảo:</value>
+	</data>
+	<data name="FLOORPRICE" xml:space="preserve">
+		<value>Giá sàn:</value>
+	</data>
+	<data name="CEILINGPRICE" xml:space="preserve">
+		<value>Giá trần</value>
+	</data>
+	<data name="TRADELOT" xml:space="preserve">
+		<value>Lô:</value>
+	</data>
+	<data name="btnPrev" xml:space="preserve">
+		<value>&lt;</value>
+	</data>
+	<data name="btnNext" xml:space="preserve">
+		<value>&gt;</value>
+	</data>
+	<data name="CONTRACTINVALID" xml:space="preserve">
+		<value>Tài khoản không hợp lệ</value>
+	</data>
+	<data name="FULLNAME" xml:space="preserve">
+		<value>Họ tên:</value>
+	</data>
+	<data name="CUSTODYCD" xml:space="preserve">
+		<value>Số LK:</value>
+	</data>
+	<data name="TRADELOTINVALID" xml:space="preserve">
+		<value>Lô không hợp lệ</value>
+	</data>
+	<data name="FLOORINVALID" xml:space="preserve">
+		<value>Sai giá sàn</value>
+	</data>
+	<data name="CEILINGINVALID" xml:space="preserve">
+		<value>Sai giá trần</value>
+	</data>
+	<data name="QTTYISNOTNUMBER" xml:space="preserve">
+		<value>Khối lượng phải là số</value>
+	</data>
+	<data name="PRICEISNOTNUMBER" xml:space="preserve">
+		<value>Giá phải là số</value>
+	</data>
+	<data name="CLEARINGDAYINVALID" xml:space="preserve">
+		<value>Chu kỳ thanh toán là không hợp lệ</value>
+	</data>
+	<data name="IDCODE" xml:space="preserve">
+		<value>Số CMND</value>
+	</data>
+	<data name="lblConsultant" xml:space="preserve">
+		<value>Tư vấn</value>
+	</data>
+	<data name="lblVoucher" xml:space="preserve">
+		<value>Giấy chứng từ</value>
+	</data>
+	<data name="lblCalendar" xml:space="preserve">
+		<value>Lịch:</value>
+	</data>
+	<data name="TRADEUNIT" xml:space="preserve">
+		<value>Đơn vị:</value>
+	</data>
+	<data name="ERR_FIELD_NULL" xml:space="preserve">
+		<value>Trường không thể để trống</value>
+	</data>
+	<data name="lblDescription" xml:space="preserve">
+		<value>Diễn giải</value>
+	</data>
+	<data name="ERR_PRODUCTTYPE_NOTFOUND" xml:space="preserve">
+		<value>Không tìm thấy loại hình sản phầm</value>
+	</data>
+	<data name="ERR_EXPIREDDATE_INVALID" xml:space="preserve">
+		<value>Ngày hết hạn không hợp lệ</value>
+	</data>
+	<data name="ERR_SEC_INFO" xml:space="preserve">
+		<value>Thông tin chứng khoán không hợp lệ</value>
+	</data>
+</root>

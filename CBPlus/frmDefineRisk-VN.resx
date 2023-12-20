@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="ResMimeType">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="Version">
+        <value>1.0.0.0</value>
+    </resheader>
+    <resheader name="Reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="Writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="frmDefineRisk">
+        <value>Quản lý rủi ro</value>
+    </data>
+    <data name="InitDialogFailed">
+        <value>Không khởi tạo được cửa sổ!</value>
+    </data>
+    <data name="btnOK">
+        <value>&amp;Chấp nhận</value>
+    </data>
+    <data name="btnCancel">
+        <value>&amp;Thoát</value>
+    </data>
+    <data name="lblCaption0">
+        <value>Thông tin rủi ro.</value>
+    </data>
+    <data name="lblCaption1">
+        <value>Thêm mới thông tin rủi ro.</value>
+    </data>
+    <data name="lblCaption2">
+        <value>Sửa thông tin rủi ro</value>
+    </data>
+    <data name="SavingFailed">
+        <value>Không thể thêm mới hoặc sửa thông tin!</value>
+    </data>
+    <data name="AddnewSuccessful">
+        <value>Thêm mới thành công!</value>
+    </data>
+    <data name="EditSuccessful">
+        <value>Sửa thành công!</value>
+    </data>
+    <data name="TRADEUNIT">
+        <value>Đơn vị giao dịch:</value>
+    </data>
+    <data name="grbTicksizeInfo">
+        <value>Thông tin bước giá:</value>
+    </data>
+    <data name="Mandatory">
+        <value>Trường [@] không được để trống!</value>
+    </data>
+    <data name="NumericDataType">
+        <value>Trường [@] phải là số!</value>
+    </data>
+    <data name="DelConfirm" type="" mimetype="">
+        <value>Chắc chắn xoá dữ liệu?</value>
+        <comment>
+        </comment>
+    </data>
+    <data name="btnApply">
+        <value>&amp;Ghi</value>
+    </data>
+    <data name="btnADD">
+        <value>&amp;Thêm mới</value>
+    </data>
+    <data name="btnVIEW">
+        <value>&amp;Xem</value>
+    </data>
+    <data name="btnEDIT">
+        <value>&amp;Sửa</value>
+    </data>
+    <data name="btnDELETE">
+        <value>X&amp;oá</value>
+    </data>
+    <data name="TabSERISK">
+        <value>Rủi ro chứng khoán</value>
+    </data>
+    <data name="tablOD">
+        <value>Order</value>
+    </data>
+    <data name="TabSYSVAR">
+        <value>Tham số hệ thống</value>
+    </data>
+    <data name="TabIRRATE">
+        <value>Tỷ lệ</value>
+    </data>
+    <data name="tablCI">
+        <value>CI</value>
+    </data>
+    <data name="SYMBOL">
+        <value>Chứng khoán</value>
+    </data>
+    <data name="TOTALTRADE">
+        <value>Tổng giao dịch</value>
+    </data>
+    <data name="BIDPRICE">
+        <value>Bid price</value>
+    </data>
+    <data name="ASKPRICE">
+        <value>Giá yêu cầu</value>
+    </data>
+    <data name="TELELIMITMIN">
+        <value>Tối thiểu trên điện thoại</value>
+    </data>
+    <data name="TELELIMITMAX">
+        <value>Tối đa trên điện thoại</value>
+    </data>
+    <data name="ONLINELIMITMIN">
+        <value>Hạn mức Online tối thiểu</value>
+    </data>
+    <data name="ONLINELIMITMAX">
+        <value>Hạn mức Online tối đa</value>
+    </data>
+    <data name="REPOLIMITMIN">
+        <value>Hạn mức Repo tối thiểu</value>
+    </data>
+    <data name="REPOLIMITMAX">
+        <value>Hạn mức Repo tối đa</value>
+    </data>
+    <data name="ADVANCEDLIMITMIN">
+        <value>Số ứng trước tối thiểu</value>
+    </data>
+    <data name="ADVANCEDLIMITMAX">
+        <value>Số ứng trước tối đa</value>
+    </data>
+    <data name="MARGINLIMITMIN">
+        <value>Hạn mức Margin tối thiểu</value>
+    </data>
+    <data name="MARGINLIMITMAX">
+        <value>Hạn mức Margin tối đa</value>
+    </data>
+    <data name="SECUREDRATIOMIN">
+        <value>T/L kỹ quỹ tối thiểu</value>
+    </data>
+    <data name="SECUREDRATIOMAX">
+        <value>T/L ký quỹ tối đa</value>
+    </data>
+    <data name="MORTAGERATIOMIN">
+        <value>Hạn mức cầm cố tối thiểu</value>
+    </data>
+    <data name="MORTAGERATIOMAX">
+        <value>Hạn mức cầm cố tối đa</value>
+    </data>
+    <data name="ACTYPE">
+        <value>Loại sản phẩm</value>
+    </data>
+    <data name="ACNAME">
+        <value>Tên loại</value>
+    </data>
+    <data name="TYPENAME">
+        <value>Tên loại</value>
+    </data>
+    <data name="FLOORLIMIT">
+        <value>Mức sàn</value>
+    </data>
+    <data name="TELELIMIT">
+        <value>Hạn mức trên điện thoại</value>
+    </data>
+    <data name="ONLINELIMIT">
+        <value>Hạn mức Online</value>
+    </data>
+    <data name="MARGINLINE">
+        <value>Hạn mức Margin</value>
+    </data>
+    <data name="REPOLINE">
+        <value>Hạn mức Repo</value>
+    </data>
+    <data name="ADVANCELINE">
+        <value>Mức ứng trước</value>
+    </data>
+    <data name="BRATIO">
+        <value>Tỷ lệ ký quỹ</value>
+    </data>
+    <data name="TRADERATE">
+        <value>Phí giao dịch</value>
+    </data>
+    <data name="DEPORATE">
+        <value>Phí lưu ký</value>
+    </data>
+    <data name="MISCRATE">
+        <value>Phí Misc</value>
+    </data>
+    <data name="TRADELIMIT">
+        <value>Hạn mức giao dịch</value>
+    </data>
+    <data name="FEERATE">
+        <value>Tỷ lệ tính phí</value>
+    </data>
+    <data name="VATRATE">
+        <value>Tỷ lệ VAT</value>
+    </data>
+    <data name="CRINTRATE">
+        <value>Tỷ lệ tính lãi</value>
+    </data>
+    <data name="ODRATE">
+        <value>Tỷ lệ Order</value>
+    </data>
+    <data name="btnIMPORT">
+        <value>&amp;Đưa vào</value>
+    </data>
+    <data name="btnCLOSE">
+        <value>Đ&amp;óng</value>
+    </data>
+    <data name="frmRISK">
+        <value>Quản lý rủi ro</value>
+    </data>
+    <data name="frmIRRATE">
+        <value>Quản lý tỷ lệ</value>
+    </data>
+    <data name="frmSYSVAR">
+        <value>Quản lý tham số</value>
+    </data>
+    <data name="lblCaption">
+        <value>Quản lý hệ thống.</value>
+    </data>
+    <data name="btnExport">
+        <value>&amp;Kiết suất</value>
+    </data>
+    <data name="tabPRODUCT">
+        <value>Tham số</value>
+    </data>
+    <data name="lblModule">
+        <value>Phân hệ nghiệp vụ</value>
+    </data>
+    <data name="TabICCF">
+        <value>Thông tin tính lãi</value>
+    </data>
+    <data name="TabMarginSec">
+        <value>Securities margin</value>
+    </data>
+</root>

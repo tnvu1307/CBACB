@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACCTNO" xml:space="preserve">
+    <value>Sub-Account:</value>
+  </data>
+  <data name="ACTYPE" xml:space="preserve">
+    <value>Sub-Account type:</value>
+  </data>
+  <data name="ADVANCELINE" xml:space="preserve">
+    <value>T0 limit:</value>
+  </data>
+  <data name="AUTOADV" xml:space="preserve">
+    <value>Auto advance:</value>
+  </data>
+  <data name="BANKACCTNO" xml:space="preserve">
+    <value>Bank account number:</value>
+  </data>
+  <data name="BANKNAME" xml:space="preserve">
+    <value>Bank:</value>
+  </data>
+  <data name="btnAFSERULE_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnAFSERULE_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnAFSERULE_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnAFSERULE_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="btnAFTXMAP_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnAFTXMAP_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnAFTXMAP_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnAFTXMAP_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="btnGenCheckAFACCTNO" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="CAREBY" xml:space="preserve">
+    <value>Careby group:</value>
+  </data>
+  <data name="COREBANK" xml:space="preserve">
+    <value>Bank balance:</value>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="frmAFMAST" xml:space="preserve">
+    <value>Sub-Account information</value>
+  </data>
+  <data name="grbAFMAST" xml:space="preserve">
+    <value>Sub-Account info</value>
+  </data>
+  <data name="grbAFMASTISCOREBANK" xml:space="preserve">
+    <value>Bank information</value>
+  </data>
+  <data name="grbCommon" xml:space="preserve">
+    <value>General info</value>
+  </data>
+  <data name="MRCRLIMITMAX" xml:space="preserve">
+    <value>Max loan limit:</value>
+  </data>
+  <data name="MRIRATE" xml:space="preserve">
+    <value>Initial rate (MR):</value>
+  </data>
+  <data name="MRSRATE" xml:space="preserve">
+    <value>Safe rate (MR):</value>
+  </data>
+  <data name="MRLRATE" xml:space="preserve">
+    <value>Trigger rate (MR):</value>
+  </data>
+  <data name="MRMRATE" xml:space="preserve">
+    <value>Call rate (MR):</value>
+  </data>
+  <data name="BASECALLDAY" xml:space="preserve">
+    <value>Basic call day</value>
+  </data>
+  <data name="MRTYPE" xml:space="preserve">
+    <value>Margin type:</value>
+  </data>
+  <data name="OPNDATE" xml:space="preserve">
+    <value>Open date:</value>
+  </data>
+  <data name="STATUS" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="tpAFMAST" xml:space="preserve">
+    <value>Sub-Account info</value>
+  </data>
+  <data name="tpAFSERULE" xml:space="preserve">
+    <value>BUY/SELL policy</value>
+  </data>
+  <data name="tpAFTXMAP" xml:space="preserve">
+    <value>Trade limit</value>
+  </data>
+  <data name="tpSUBACCOUNT" xml:space="preserve">
+    <value>Sub-Account list</value>
+  </data>
+  <data name="AddnewSuccessful" xml:space="preserve">
+    <value>Add new successfully!</value>
+  </data>
+  <data name="BankAcctNoCannotNull" xml:space="preserve">
+    <value>Bank account should not be empty!</value>
+  </data>
+  <data name="EditSuccessful" xml:space="preserve">
+    <value>Edit successfully!</value>
+  </data>
+  <data name="ACCTNO_INVALID" xml:space="preserve">
+    <value>Sub-Account invalid!</value>
+  </data>
+  <data name="AFSERULEGrid.AUTOID" xml:space="preserve">
+    <value>Auto ID</value>
+  </data>
+  <data name="AFSERULEGrid.BORS" xml:space="preserve">
+    <value>Buy/Sell</value>
+  </data>
+  <data name="AFSERULEGrid.CODEID" xml:space="preserve">
+    <value>Symbol</value>
+  </data>
+  <data name="AFSERULEGrid.EFFDATE" xml:space="preserve">
+    <value>Effective date</value>
+  </data>
+  <data name="AFSERULEGrid.EXPDATE" xml:space="preserve">
+    <value>Expired date</value>
+  </data>
+  <data name="AFSERULEGrid.FOA" xml:space="preserve">
+    <value>Deny/Allow</value>
+  </data>
+  <data name="AFSERULEGrid.REFID" xml:space="preserve">
+    <value>Reference</value>
+  </data>
+  <data name="AFSERULEGrid.TYPORMST" xml:space="preserve">
+    <value>Effective type</value>
+  </data>
+  <data name="AFTXMAPGrid.ACTYPE" xml:space="preserve">
+    <value>Sub-Account type</value>
+  </data>
+  <data name="AFTXMAPGrid.AFACCTNO" xml:space="preserve">
+    <value>Sub-Account</value>
+  </data>
+  <data name="AFTXMAPGrid.AUTOID" xml:space="preserve">
+    <value>Auto ID</value>
+  </data>
+  <data name="AFTXMAPGrid.EFFDATE" xml:space="preserve">
+    <value>Effective date</value>
+  </data>
+  <data name="AFTXMAPGrid.EXPDATE" xml:space="preserve">
+    <value>Expired date</value>
+  </data>
+  <data name="AFTXMAPGrid.TLID" xml:space="preserve">
+    <value>User ID</value>
+  </data>
+  <data name="AFTXMAPGrid.TLTXCD" xml:space="preserve">
+    <value>Transaction ID</value>
+  </data>
+  <data name="AFTXMAPGrid.TXDESC" xml:space="preserve">
+    <value>Trans description</value>
+  </data>
+  <data name="AFTXMAPGrid.TYPENAME" xml:space="preserve">
+    <value>Type name</value>
+  </data>
+  <data name="ALTERNATEACCT" xml:space="preserve">
+    <value>Bank secondary account:</value>
+  </data>
+  <data name="AUTHNOTALLOW" xml:space="preserve">
+    <value>Cannot delete/edit block transaction type information!</value>
+  </data>
+  <data name="BRATIO" xml:space="preserve">
+    <value>Secured ratio:</value>
+  </data>
+  <data name="BRID" xml:space="preserve">
+    <value>Branch:</value>
+  </data>
+  <data name="BRKFEETYPE" xml:space="preserve">
+    <value>Fee type:</value>
+  </data>
+  <data name="btnApply" xml:space="preserve">
+    <value>&amp;Apply</value>
+  </data>
+  <data name="btnApprv" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>&amp;Approve</value>
+  </data>
+  <data name="CUSTID" xml:space="preserve">
+    <value>Customer ID:</value>
+  </data>
+  <data name="CUST_HAS_INDIVIDUAL_CONTRACT" xml:space="preserve">
+    <value>Customer ID invalid!</value>
+  </data>
+  <data name="IDEXPIREDLESSTHANBUSDATE" xml:space="preserve">
+    <value>ID code expired!</value>
+  </data>
+  <data name="ISOTC" xml:space="preserve">
+    <value>OTC allow:</value>
+  </data>
+  <data name="LASTDATE" xml:space="preserve">
+    <value>Lastest trade date:</value>
+  </data>
+  <data name="MRCRLIMIT" xml:space="preserve">
+    <value>Secured limit</value>
+  </data>
+  <data name="NotCareBy" xml:space="preserve">
+    <value>You're not careby this customer!</value>
+  </data>
+  <data name="NotCareByGroup" xml:space="preserve">
+    <value>You're not careby this customer group!</value>
+  </data>
+  <data name="SUBACCOUNTGrid.ACCTNO" xml:space="preserve">
+    <value>Sub-Account</value>
+  </data>
+  <data name="SUBACCOUNTGrid.AVLBAL" xml:space="preserve">
+    <value>Balance</value>
+  </data>
+  <data name="SUBACCOUNTGrid.MODCODE" xml:space="preserve">
+    <value>Module code</value>
+  </data>
+  <data name="SUBACCOUNTGrid.SYMBOL" xml:space="preserve">
+    <value>Symbol/Cash</value>
+  </data>
+  <data name="SWIFTCODE" xml:space="preserve">
+    <value>Bank swiftcode:</value>
+  </data>
+  <data name="TERMOFUSE" xml:space="preserve">
+    <value>Contract terms:</value>
+  </data>
+  <data name="TLID" xml:space="preserve">
+    <value>User:</value>
+  </data>
+  <data name="TYPORMSTCD_INVALID" xml:space="preserve">
+    <value>Effective type invalid!</value>
+  </data>
+  <data name="btnPRINT" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="OTRIGTGrid.SERIALTOKEN" xml:space="preserve">
+    <value>Serial token</value>
+  </data>
+  <data name="lblCaption0" xml:space="preserve">
+    <value>Subaccount infor</value>
+  </data>
+  <data name="lblCaption1" xml:space="preserve">
+    <value>Add new sub-account</value>
+  </data>
+  <data name="lblCaption2" xml:space="preserve">
+    <value>Edit sub-account info</value>
+  </data>
+  <data name="Anthorize" xml:space="preserve">
+    <value>Authorize</value>
+  </data>
+  <data name="ApproveSuccessful" xml:space="preserve">
+    <value>Approve successfully!</value>
+  </data>
+  <data name="CustodycdInvalid" xml:space="preserve">
+    <value>Custody code invalid, please try again.</value>
+  </data>
+  <data name="CustomerPinInvalid" xml:space="preserve">
+    <value>Customer PIN doesn't existed!</value>
+  </data>
+  <data name="CustomerStatusInvalid" xml:space="preserve">
+    <value>Customer status invalid!</value>
+  </data>
+  <data name="CustomerStatusIsClose" xml:space="preserve">
+    <value>Cannot add subaccount for customer's closed status!</value>
+  </data>
+  <data name="DelConfirm" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="DelSuccess" xml:space="preserve">
+    <value>Delete successfully!</value>
+  </data>
+  <data name="InitDialogFailed" xml:space="preserve">
+    <value>Cannot initalize window!</value>
+  </data>
+  <data name="Mandatory" xml:space="preserve">
+    <value>Field [@] should not be empty!</value>
+  </data>
+  <data name="NumericDataType" xml:space="preserve">
+    <value>Field [@] should be numeric!</value>
+  </data>
+  <data name="OnlineRegisterApplyInvalid" xml:space="preserve">
+    <value>Tiểu khoản mẫu chưa đăng ký thông tin dịch vụ trực tuyến.</value>
+  </data>
+  <data name="OnlineRegisterInvalid" xml:space="preserve">
+    <value>You're not registered Online Services.</value>
+  </data>
+  <data name="RefuseSuccessful" xml:space="preserve">
+    <value>Refuse successfully!</value>
+  </data>
+  <data name="RejectSuccessful" xml:space="preserve">
+    <value>Reject successfully!</value>
+  </data>
+  <data name="SavingFailed" xml:space="preserve">
+    <value>Saving Failed!</value>
+  </data>
+  <data name="AFTYPE" xml:space="preserve">
+    <value>Sub-Account type:</value>
+  </data>
+  <data name="BANKACCTNO_EXISTS" xml:space="preserve">
+    <value>Bank account has existed! Press OK to continue?</value>
+  </data>
+  <data name="BANKACCTNO_INVALID" xml:space="preserve">
+    <value>Bank account number should not be empty!</value>
+  </data>
+  <data name="ACTYPE_EXISTS" xml:space="preserve">
+    <value>Customer opened subaccount with the same type! Press OK to Customer opened subaccount with the same type! Press OK to continue!</value>
+  </data>
+  <data name="MRCRLIMITMAX_OVER_MRLOANLIMIT" xml:space="preserve">
+    <value>Exceed customer limit!</value>
+  </data>
+  <data name="INVALIDAFACCTNO" xml:space="preserve">
+    <value>Sub-Account invalid!</value>
+  </data>
+  <data name="frmAFMAST.FileNotExists" xml:space="preserve">
+    <value>Report file doesn't exist!</value>
+  </data>
+  <data name="frmAFMAST.Nodata" xml:space="preserve">
+    <value>No contract data!</value>
+  </data>
+  <data name="frmAFMAST.ReportCreateSucessfully" xml:space="preserve">
+    <value>Create contract report successfully!</value>
+  </data>
+  <data name="frmAFMAST.ReportNotCreated" xml:space="preserve">
+    <value>Report create unsuccessfully!</value>
+  </data>
+  <data name="IST3" xml:space="preserve">
+    <value>Tn used</value>
+  </data>
+  <data name="lblLIMITDAILY" xml:space="preserve">
+    <value>Daily limit</value>
+  </data>
+  <data name="MRCRLIMITMAX_LARGER_ZERO" xml:space="preserve">
+    <value>Max loan limit must be equal or greater than 0</value>
+  </data>
+  <data name="frmAFMAST.ADD_COREBANK_NOTALLOW" xml:space="preserve">
+    <value>Cannot open new purely @ bank account!</value>
+  </data>
+  <data name="frmAFMAST.BankAccount_Length_Invalid" xml:space="preserve">
+    <value>Bank account number length invalid!</value>
+  </data>
+  <data name="ACCEPTISTRFBUY" xml:space="preserve">
+    <value>Sub-Account is not margin allow with late payment?</value>
+  </data>
+  <data name="ODPROBRKMSTGrid.EXPDATE" xml:space="preserve">
+    <value>Expired date</value>
+  </data>
+  <data name="ODPROBRKMSTGrid.FEERATE" xml:space="preserve">
+    <value>Fee rate</value>
+  </data>
+  <data name="ODPROBRKMSTGrid.FEETYPE" xml:space="preserve">
+    <value>Preferential fee type</value>
+  </data>
+  <data name="ODPROBRKMSTGrid.FULLNAME" xml:space="preserve">
+    <value>Policy name</value>
+  </data>
+  <data name="ODPROBRKMSTGrid.MAXAMT" xml:space="preserve">
+    <value>Max fee</value>
+  </data>
+  <data name="ODPROBRKMSTGrid.MINAMT" xml:space="preserve">
+    <value>Min fee</value>
+  </data>
+  <data name="ODPROBRKMSTGrid.STATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ODPROBRKMSTGrid.VALDATE" xml:space="preserve">
+    <value>Effective date</value>
+  </data>
+  <data name="ODPROBRKMSTGrid.LOANTYPE" xml:space="preserve">
+    <value>Loan type</value>
+  </data>
+  <data name="ODPROBRKMSTGrid.PROBRKMSTTYPE" xml:space="preserve">
+    <value>Preferential fee type</value>
+  </data>
+  <data name="DPCRLIMITMAX" xml:space="preserve">
+    <value>Late payment limit:</value>
+  </data>
+  <data name="OVERAFLIMIT" xml:space="preserve">
+    <value>Exceed collateral limit</value>
+  </data>
+  <data name="OVER_USERAFLIMIT" xml:space="preserve">
+    <value>Exceed user max limit!</value>
+  </data>
+  <data name="OVER_USERLIMIT" xml:space="preserve">
+    <value>Exceed user remain limit!</value>
+  </data>
+  <data name="ISODDLOT" xml:space="preserve">
+    <value>Odd lot subaccount:</value>
+  </data>
+  <data name="ACCTNOERROR" xml:space="preserve">
+    <value>Sub-Account  is duplicated!</value>
+  </data>
+  <data name="btnODPROBRKMST_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="tpODPROBRKMST" xml:space="preserve">
+    <value>Preferential policies</value>
+  </data>
+  <data name="MCIRATE" xml:space="preserve">
+    <value>Initial rate (Tn):</value>
+  </data>
+  <data name="MCLRATE" xml:space="preserve">
+    <value>Trigger rate (Tn):</value>
+  </data>
+  <data name="MCMRATE" xml:space="preserve">
+    <value>Call rate (Tn):</value>
+  </data>
+  <data name="MCSRATE" xml:space="preserve">
+    <value>Safe rate (Tn):</value>
+  </data>
+  <data name="ISFIXACCOUNT" xml:space="preserve">
+    <value>Fix error account?</value>
+  </data>
+</root>

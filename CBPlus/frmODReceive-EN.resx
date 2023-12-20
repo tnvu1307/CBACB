@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ORGORDERID" xml:space="preserve">
+    <value>Order ID</value>
+  </data>
+  <data name="CODEID" xml:space="preserve">
+    <value>Code ID</value>
+  </data>
+  <data name="SYMBOL" xml:space="preserve">
+    <value>Symbol</value>
+  </data>
+  <data name="CUSTODYCD" xml:space="preserve">
+    <value>Trading account</value>
+  </data>
+  <data name="BORS" xml:space="preserve">
+    <value>Buy or sell</value>
+  </data>
+  <data name="NORP" xml:space="preserve">
+    <value>Norl or put</value>
+  </data>
+  <data name="AORN" xml:space="preserve">
+    <value>All or none</value>
+  </data>
+  <data name="PRICE" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="QTTY" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="CLEARDAY" xml:space="preserve">
+    <value>Clear day</value>
+  </data>
+  <data name="CLEARCD" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="SEACCTNO" xml:space="preserve">
+    <value>SE Account No</value>
+  </data>
+  <data name="CIACCTNO" xml:space="preserve">
+    <value>CI Account No</value>
+  </data>
+  <data name="AFACCTNO" xml:space="preserve">
+    <value>AF Account No</value>
+  </data>
+  <data name="lblMatchType" xml:space="preserve">
+    <value>Match type</value>
+  </data>
+  <data name="lblExecType" xml:space="preserve">
+    <value>Execute type</value>
+  </data>
+  <data name="lblSymbol" xml:space="preserve">
+    <value>Symbol</value>
+  </data>
+  <data name="lblClearCD" xml:space="preserve">
+    <value>Clear calendar</value>
+  </data>
+  <data name="lblRefOrderID" xml:space="preserve">
+    <value>Ref OrderID</value>
+  </data>
+  <data name="lblExQuantity" xml:space="preserve">
+    <value>Ex quantity</value>
+  </data>
+  <data name="lblQuantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="lblClearDay" xml:space="preserve">
+    <value>Clear day</value>
+  </data>
+  <data name="lblREFCUSTCD" xml:space="preserve">
+    <value>Ref CustCD</value>
+  </data>
+  <data name="lblExPrice" xml:space="preserve">
+    <value>Ex Price</value>
+  </data>
+  <data name="lblPrice" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="btnReceive" xml:space="preserve">
+    <value>&amp;Receive</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="btnCANCEL" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="chkAORN" xml:space="preserve">
+    <value>All?</value>
+  </data>
+  <data name="lblBORS" xml:space="preserve">
+    <value>Buy or sell</value>
+  </data>
+  <data name="lblNORP" xml:space="preserve">
+    <value>Norl or put</value>
+  </data>
+  <data name="PRICEISNOTNUMBER" xml:space="preserve">
+    <value>Price should be a number!</value>
+  </data>
+  <data name="PRICEISSHOULDBEGREATERTHANOREQUALZERO" xml:space="preserve">
+    <value>Price should be greater than zero!</value>
+  </data>
+  <data name="QTTYISNOTNUMBER" xml:space="preserve">
+    <value>Quantity should be a number!</value>
+  </data>
+  <data name="QTTYISSHOULDBEGREATERTHANOREQUALZERO" xml:space="preserve">
+    <value>Quantity should be greater than zero!</value>
+  </data>
+  <data name="lblREMAINQTTY" xml:space="preserve">
+    <value>Remain</value>
+  </data>
+  <data name="lblEXECQTTY" xml:space="preserve">
+    <value>Executed</value>
+  </data>
+  <data name="PRICESHOULDBEGREATEROREQUALTOEXPRICE" xml:space="preserve">
+    <value>Price should be greater than ExPrice</value>
+  </data>
+  <data name="PRICETYPE" xml:space="preserve">
+    <value>Price type</value>
+  </data>
+  <data name="REMAINQTTY" xml:space="preserve">
+    <value>Remain quantity</value>
+  </data>
+  <data name="EXECQTTY" xml:space="preserve">
+    <value>Exec quantity</value>
+  </data>
+  <data name="EXPRICE" xml:space="preserve">
+    <value>Executed price</value>
+  </data>
+  <data name="EXQTTY" xml:space="preserve">
+    <value>Executed quantity</value>
+  </data>
+  <data name="PRICESHOULDBESMALLEROREQUALTOEXPRICE" xml:space="preserve">
+    <value>Price should be smaller than or equal to ExPrice</value>
+  </data>
+  <data name="frmODReceive" xml:space="preserve">
+    <value>Order matching</value>
+  </data>
+  <data name="RESULT_CONFIRM_NO" xml:space="preserve">
+    <value>Result Confirm No</value>
+  </data>
+  <data name="RESULT_CUSTODYCD" xml:space="preserve">
+    <value>Result Custody code</value>
+  </data>
+  <data name="RESULT_BORS" xml:space="preserve">
+    <value>Result Buy or sell</value>
+  </data>
+  <data name="RESULT_SEC_CODE" xml:space="preserve">
+    <value>Resutl Securities code</value>
+  </data>
+  <data name="RESULT_QUANTITY" xml:space="preserve">
+    <value>Result quantity</value>
+  </data>
+  <data name="RESULT_PRICE" xml:space="preserve">
+    <value>Result price</value>
+  </data>
+  <data name="OOD_ORGORDERID" xml:space="preserve">
+    <value>OOD_Order ID</value>
+  </data>
+  <data name="OOD_CUSTODYCD" xml:space="preserve">
+    <value>OOD_Custody code</value>
+  </data>
+  <data name="OOD_BORS" xml:space="preserve">
+    <value>OOD_Buy or sell</value>
+  </data>
+  <data name="OOD_SYMBOL" xml:space="preserve">
+    <value>OOD_Symbol</value>
+  </data>
+  <data name="OOD_NORP" xml:space="preserve">
+    <value>OOD_Norl or put</value>
+  </data>
+  <data name="MATCHQTTY" xml:space="preserve">
+    <value>Match quantity</value>
+  </data>
+  <data name="btnReceiveAll" xml:space="preserve">
+    <value>&amp;Receive All</value>
+  </data>
+  <data name="OOD_CODEID" xml:space="preserve">
+    <value>OOD_CodeID</value>
+  </data>
+  <data name="tpgManual" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="tpgAutomatic" xml:space="preserve">
+    <value>Automatic</value>
+  </data>
+  <data name="TRADEUNIT" xml:space="preserve">
+    <value>Trade unit</value>
+  </data>
+  <data name="TXDATE" xml:space="preserve">
+    <value>Match date</value>
+  </data>
+  <data name="TRADELOT" xml:space="preserve">
+    <value>Trade lot</value>
+  </data>
+  <data name="QUANTITYISNOTNUMBER" xml:space="preserve">
+    <value>Quantity should be a number!</value>
+  </data>
+  <data name="QUANTITYISSHOULDBEGREATERTHANOREQUALZERO" xml:space="preserve">
+    <value>Quantity should be greater than zero!</value>
+  </data>
+  <data name="QUANTITYSHOULDBEINTRADELOD" xml:space="preserve">
+    <value>Matching quantity should be in trade lot!</value>
+  </data>
+  <data name="QUANTITYSHOULDBESMALLERTHANEXQTTY" xml:space="preserve">
+    <value>Quantity should be smaller than ex quantity</value>
+  </data>
+  <data name="btnMatch" xml:space="preserve">
+    <value>Auto &amp;Match</value>
+  </data>
+  <data name="OOD_AORN" xml:space="preserve">
+    <value>OOD_All or none</value>
+  </data>
+  <data name="SETTLEDDAY" xml:space="preserve">
+    <value>Settled day</value>
+  </data>
+  <data name="GridEx.GroupByRow" xml:space="preserve">
+    <value>Drag column to group by (F6: Focus to grid, F9: Search)</value>
+  </data>
+  <data name="GridEx.FooterRow" xml:space="preserve">
+    <value>Total records:</value>
+  </data>
+  <data name="lblSSymbol" xml:space="preserve">
+    <value>Symbol</value>
+  </data>
+  <data name="lblSBORS" xml:space="preserve">
+    <value>Buy or Sell</value>
+  </data>
+  <data name="lblDesc" xml:space="preserve">
+    <value>Select Order you want to select and then click Receive to match!</value>
+  </data>
+  <data name="lblTxDesc" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="PRICESHOULDBEINRANGE" xml:space="preserve">
+    <value>Price should be  in range !</value>
+  </data>
+  <data name="lblTXTIME" xml:space="preserve">
+    <value>Match time(HH:MM:SS)</value>
+  </data>
+  <data name="ERR_INVTIMEFORMAT" xml:space="preserve">
+    <value>Incorrect time format !</value>
+  </data>
+  <data name="ERR_PQNOTMATCHING" xml:space="preserve">
+    <value>Price and quantity not matching with reference order trading result!</value>
+  </data>
+  <data name="INV_REFORDER" xml:space="preserve">
+    <value>Invalid reference order trading result!</value>
+  </data>
+  <data name="MSG_SUCCESS" xml:space="preserve">
+    <value>Successful</value>
+  </data>
+  <data name="btnViewTradingResult" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+</root>

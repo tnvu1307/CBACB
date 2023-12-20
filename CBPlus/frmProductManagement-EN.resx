@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="GridEx.GroupByRow">
+		<value>Drag and drop column which should be grouped! (F6: Focus to grid)</value>
+	</data>
+	<data name="GridEx.FooterRow">
+		<value>Sum of records: </value>
+	</data>
+	<data name="frmProductManagement.grbSearchResult">
+		<value>Search result:</value>
+	</data>
+	<data name="frmProductManagement.tbnAdd">
+		<value>&amp;Add</value>
+	</data>
+	<data name="frmProductManagement.tbnView">
+		<value>&amp;View</value>
+	</data>
+	<data name="frmProductManagement.tbnEdit">
+		<value>&amp;Edit</value>
+	</data>
+	<data name="frmProductManagement.tbnDelete">
+		<value>&amp;Delete</value>
+	</data>
+	<data name="frmProductManagement.tbnExit">
+		<value>&amp;Close</value>
+	</data>
+	<data name="frmProductManagement.tbnExecute">
+		<value>&amp;Execute</value>
+	</data>
+	<data name="frmProductManagement.grbSearchFilter">
+		<value>Search condition:</value>
+	</data>
+	<data name="frmProductManagement.grbCondition">
+		<value>Condition:</value>
+	</data>
+	<data name="frmProductManagement.lblField">
+		<value>Field:</value>
+	</data>
+	<data name="frmProductManagement.lblOperator">
+		<value>Operator:</value>
+	</data>
+	<data name="frmProductManagement.lblValue">
+		<value>Value:</value>
+	</data>
+	<data name="frmProductManagement.grbConditionList">
+		<value>Condition list:</value>
+	</data>
+	<data name="frmProductManagement.btnSearch">
+		<value>&amp;Search</value>
+	</data>
+	<data name="frmProductManagement.btnAdd">
+		<value>4</value>
+	</data>
+	<data name="frmProductManagement.btnRemove">
+		<value>3</value>
+	</data>
+	<data name="frmProductManagement.btnRemoveAll">
+		<value>7</value>
+	</data>
+	<data name="ExecuteFlag.AddNew">
+		<value>&amp;Add new</value>
+	</data>
+	<data name="ExecuteFlag.View">
+		<value>&amp;View</value>
+	</data>
+	<data name="ExecuteFlag.Edit">
+		<value>&amp;Edit</value>
+	</data>
+	<data name="ExecuteFlag.Delete">
+		<value>&amp;Delete</value>
+	</data>
+	<data name="frmProductManagement.Searching">
+		<value>Searching...</value>
+	</data>
+	<data name="frmProductManagement.btnExport">
+		<value>E&amp;xport</value>
+	</data>
+	<data name="frmProductManagement.Footer">
+		<value>This is the footer of result grid. Cannot view, edit or delete data!</value>
+	</data>
+	<data name="frmProductManagement.NotSelected">
+		<value>You must select row of data to view, edit or delete!</value>
+	</data>
+	<data name="frmProductManagement.DelSuccess">
+		<value>Data delete successful!</value>
+	</data>
+	<data name="frmProductManagement.DelConfirm">
+		<value>Are you sure to delete this data row?</value>
+	</data>
+	<data name="frmProductManagement.NothingToExport">
+		<value>There is nothing to export!</value>
+	</data>
+	<data name="frmProductManagement.ExportSuccessful">
+		<value>Export data successful!</value>
+	</data>
+	<data name="frmProductManagement.btnBACK">
+		<value>&amp;Back</value>
+	</data>
+	<data name="frmProductManagement.btnNEXT">
+		<value>&amp;Next</value>
+	</data>
+	<data name="GridEx.FooterRowFrom">
+		<value>From row </value>
+	</data>
+	<data name="GridEx.FooterRowTo">
+		<value>to row </value>
+	</data>
+	<data name="GridEx.FooterRowIn">
+		<value>in @ row(s).</value>
+	</data>
+</root>

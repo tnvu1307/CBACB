@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="InitDialogFailed" xml:space="preserve">
+    <value>Không khởi tạo được cửa sổ!</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>&amp;Chấp nhận</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>&amp;Thoát</value>
+  </data>
+  <data name="frmODTYPE" xml:space="preserve">
+    <value>Quản lý loại hình lệnh giao dịch</value>
+  </data>
+  <data name="lblCaption0" xml:space="preserve">
+    <value>Thông tin loại hình lệnh giao dịch.</value>
+  </data>
+  <data name="lblCaption1" xml:space="preserve">
+    <value>Thêm mới loại hình lệnh giao dịch.</value>
+  </data>
+  <data name="lblCaption2" xml:space="preserve">
+    <value>Sửa thông tin loại hình lệnh giao dịch.</value>
+  </data>
+  <data name="ACTYPE" xml:space="preserve">
+    <value>Mã loại hình:</value>
+  </data>
+  <data name="TYPENAME" xml:space="preserve">
+    <value>Tên loại hình:</value>
+  </data>
+  <data name="GLGRP" xml:space="preserve">
+    <value>Mã nhóm KT:</value>
+  </data>
+  <data name="BRATIO" xml:space="preserve">
+    <value>Tỷ lệ ký quỹ :</value>
+  </data>
+  <data name="TIMETYPE" xml:space="preserve">
+    <value>PL theo thời gian:</value>
+  </data>
+  <data name="NORK" xml:space="preserve">
+    <value>Tính hoàn chỉnh:</value>
+  </data>
+  <data name="SavingFailed" xml:space="preserve">
+    <value>Không thể thêm mới hoặc sửa thông tin loại hình lệnh giao dịch!</value>
+  </data>
+  <data name="AddnewSuccessful" xml:space="preserve">
+    <value>Thêm mới dữ liệu thành công!</value>
+  </data>
+  <data name="EditSuccessful" xml:space="preserve">
+    <value>Cập nhật dữ liệu thành công!</value>
+  </data>
+  <data name="VIA" xml:space="preserve">
+    <value>PT đặt lệnh:</value>
+  </data>
+  <data name="STATUS" xml:space="preserve">
+    <value>Đang sử dụng:</value>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>Mô tả:</value>
+  </data>
+  <data name="grpinfo" xml:space="preserve">
+    <value>Loại hình lệnh giao dịch.</value>
+  </data>
+  <data name="Mandatory" xml:space="preserve">
+    <value>Trường [@] không được để trống!</value>
+  </data>
+  <data name="ICCFCD" xml:space="preserve">
+    <value>Mã biểu phí, lãi:</value>
+  </data>
+  <data name="ICCFTIED" xml:space="preserve">
+    <value>Mã biểu phí, lãi có theo LH không ?</value>
+  </data>
+  <data name="TRADELIMIT" xml:space="preserve">
+    <value>Hạn mức tối đa :</value>
+  </data>
+  <data name="EXECTYPE" xml:space="preserve">
+    <value>Phân loại :</value>
+  </data>
+  <data name="PRICETYPE" xml:space="preserve">
+    <value>Loại lệnh:</value>
+  </data>
+  <data name="MATCHTYPE" xml:space="preserve">
+    <value>Phân loại theo PTKL:
+
+</value>
+  </data>
+  <data name="CLEARDAY" xml:space="preserve">
+    <value>Chu kỳ thanh toán:
+</value>
+  </data>
+  <data name="CLEARCD" xml:space="preserve">
+    <value>Cách tính lịch :</value>
+  </data>
+  <data name="NumericDataType" xml:space="preserve">
+    <value>Trường [@] phải là kiểu số!</value>
+  </data>
+  <data name="FEERATE" xml:space="preserve">
+    <value>TL phí:</value>
+  </data>
+  <data name="MAXVAL" xml:space="preserve">
+    <value>Số tối đa:</value>
+  </data>
+  <data name="MINVAL" xml:space="preserve">
+    <value>Số tối thiểu:</value>
+  </data>
+  <data name="ICRATE" xml:space="preserve">
+    <value>Tỷ lệ:</value>
+  </data>
+  <data name="ICRATEID" xml:space="preserve">
+    <value>Mã LS/TL thả nổi:</value>
+  </data>
+  <data name="ICRATECD" xml:space="preserve">
+    <value>Loại tỷ lệ tính:</value>
+  </data>
+  <data name="ICFLAT" xml:space="preserve">
+    <value>Mức tính lãi:</value>
+  </data>
+  <data name="ICTYPE" xml:space="preserve">
+    <value>Cách tính:</value>
+  </data>
+  <data name="PERIODDAY" xml:space="preserve">
+    <value>Ngày định kì tháng:</value>
+  </data>
+  <data name="PERIOD" xml:space="preserve">
+    <value>Chu kì tính:</value>
+  </data>
+  <data name="YEARDAY" xml:space="preserve">
+    <value>Ngày trong năm:</value>
+  </data>
+  <data name="MONTHDAY" xml:space="preserve">
+    <value>Ngày trong tháng:</value>
+  </data>
+  <data name="GLACCTNO" xml:space="preserve">
+    <value>Số TK GL:</value>
+  </data>
+  <data name="RULETYPE" xml:space="preserve">
+    <value>Loại quy tắc:</value>
+  </data>
+  <data name="BALANCETYPE" xml:space="preserve">
+    <value>Số dư TK:</value>
+  </data>
+  <data name="MODCODE" xml:space="preserve">
+    <value>Mã phân hệ:</value>
+  </data>
+  <data name="tabGENERAL" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="tabICCF" xml:space="preserve">
+    <value>ICCF</value>
+  </data>
+  <data name="btnADD" xml:space="preserve">
+    <value>&amp;Thêm mới</value>
+  </data>
+  <data name="btnVIEW" xml:space="preserve">
+    <value>&amp;Xem</value>
+  </data>
+  <data name="btnEDIT" xml:space="preserve">
+    <value>&amp;Sửa</value>
+  </data>
+  <data name="btnDELETE" xml:space="preserve">
+    <value>&amp;Xoá</value>
+  </data>
+  <data name="PnlDETAIL" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="GRID_GLACCTNO" xml:space="preserve">
+    <value>GLACCTNO</value>
+  </data>
+  <data name="GRID_MODCODE" xml:space="preserve">
+    <value>MODCODE</value>
+  </data>
+  <data name="GRID_ACTYPE" xml:space="preserve">
+    <value>ACTYPE</value>
+  </data>
+  <data name="GRID_CCYCD" xml:space="preserve">
+    <value>CCYCD</value>
+  </data>
+  <data name="GRID_BALANCETYPE" xml:space="preserve">
+    <value>BALANCETYPE</value>
+  </data>
+  <data name="GRID_RULETYPE" xml:space="preserve">
+    <value>RULETYPE</value>
+  </data>
+  <data name="GRID_PERIODDAY" xml:space="preserve">
+    <value>PERIODDAY</value>
+  </data>
+  <data name="GRID_ICTYPE" xml:space="preserve">
+    <value>ICTYPE</value>
+  </data>
+  <data name="GRID_ICFLAT" xml:space="preserve">
+    <value>ICFLAT</value>
+  </data>
+  <data name="GRID_ICRATE" xml:space="preserve">
+    <value>ICRATE</value>
+  </data>
+  <data name="GRID_ICRATECD" xml:space="preserve">
+    <value>ICRATECD</value>
+  </data>
+  <data name="GRID_ICRATEID" xml:space="preserve">
+    <value>ICRATEID</value>
+  </data>
+  <data name="GRID_MINVAL" xml:space="preserve">
+    <value>MINVAL</value>
+  </data>
+  <data name="GRID_MAXVAL" xml:space="preserve">
+    <value>MAXVAL</value>
+  </data>
+  <data name="GRID_MONTHDAY" xml:space="preserve">
+    <value>MONTHDAY</value>
+  </data>
+  <data name="GRID_YEARDAY" xml:space="preserve">
+    <value>YEARDAY</value>
+  </data>
+  <data name="GRID_PERIOD" xml:space="preserve">
+    <value>PERIOD</value>
+  </data>
+  <data name="VATRATE" xml:space="preserve">
+    <value>TL VAT:</value>
+  </data>
+  <data name="DelConfirm" xml:space="preserve">
+    <value>Đồng ý xoá dữ liệu?</value>
+  </data>
+  <data name="DelSuccess" xml:space="preserve">
+    <value>Xoá dữ liệu thành công!</value>
+  </data>
+  <data name="NotSelected" xml:space="preserve">
+    <value>Phải chọn dòng thông tin cần xem, sửa, xoá!</value>
+  </data>
+  <data name="GRID_ICCFSTATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="MTRFDAY" xml:space="preserve">
+    <value>Ngày giao tiền:</value>
+  </data>
+</root>

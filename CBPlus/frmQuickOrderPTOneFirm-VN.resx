@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblAFACCTNO" xml:space="preserve">
+    <value>Mã lưu ký:</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>&amp;Chấp nhận</value>
+  </data>
+  <data name="btnCANCEL" xml:space="preserve">
+    <value>&amp;Thoát</value>
+  </data>
+  <data name="lblExecType" xml:space="preserve">
+    <value>Lệnh:</value>
+  </data>
+  <data name="lblMatchType" xml:space="preserve">
+    <value>Loại lệnh</value>
+  </data>
+  <data name="lblQuantity" xml:space="preserve">
+    <value>Khối lượng:</value>
+  </data>
+  <data name="lblSymbol" xml:space="preserve">
+    <value>Mã CK:</value>
+  </data>
+  <data name="chkAllorNone" xml:space="preserve">
+    <value>Tất?</value>
+  </data>
+  <data name="lblPriceType" xml:space="preserve">
+    <value>Giá:</value>
+  </data>
+  <data name="lblLimitPrice" xml:space="preserve">
+    <value>Mức giá:</value>
+  </data>
+  <data name="lblStopPrice" xml:space="preserve">
+    <value>Giá Stop:</value>
+  </data>
+  <data name="lblTimeType" xml:space="preserve">
+    <value>Hiệu lực:</value>
+  </data>
+  <data name="lblExpiredDate" xml:space="preserve">
+    <value>Ngày hết hiệu lực:</value>
+  </data>
+  <data name="lblClearingDay" xml:space="preserve">
+    <value>Chu kỳ thanh toán:</value>
+  </data>
+  <data name="lblReference" xml:space="preserve">
+    <value>Giới thiệu:</value>
+  </data>
+  <data name="lblCIBalance" xml:space="preserve">
+    <value>Số dư:</value>
+  </data>
+  <data name="lblSEBalance" xml:space="preserve">
+    <value>Số dư SE:</value>
+  </data>
+  <data name="FLOORPRICE" xml:space="preserve">
+    <value>Giá sàn:</value>
+  </data>
+  <data name="CEILINGPRICE" xml:space="preserve">
+    <value>Giá trần:</value>
+  </data>
+  <data name="TRADELOT" xml:space="preserve">
+    <value>Lô:</value>
+  </data>
+  <data name="btnPrev" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="btnNext" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="CONTRACTINVALID" xml:space="preserve">
+    <value>Số tiểu khoản không đúng</value>
+  </data>
+  <data name="FULLNAME" xml:space="preserve">
+    <value>Tên đầy đủ:</value>
+  </data>
+  <data name="CUSTODYCD" xml:space="preserve">
+    <value>Mã lưu ký:</value>
+  </data>
+  <data name="TRADELOTINVALID" xml:space="preserve">
+    <value>Lô đặt lệnh không đúng</value>
+  </data>
+  <data name="FLOORINVALID" xml:space="preserve">
+    <value>Giá sàn không đúng</value>
+  </data>
+  <data name="CEILINGINVALID" xml:space="preserve">
+    <value>Giá trần không đúng</value>
+  </data>
+  <data name="QTTYISNOTNUMBER" xml:space="preserve">
+    <value>Trường số lượng phải là số</value>
+  </data>
+  <data name="PRICEISNOTNUMBER" xml:space="preserve">
+    <value>Trường giá phải là số</value>
+  </data>
+  <data name="CLEARINGDAYINVALID" xml:space="preserve">
+    <value>Chu kỳ thanh toán không đúng</value>
+  </data>
+  <data name="IDCODE" xml:space="preserve">
+    <value>CMT/hộ chiếu:</value>
+  </data>
+  <data name="MEMBER_TYP" xml:space="preserve">
+    <value>Kiểu ủy quyền</value>
+  </data>
+  <data name="MEMBER_CUSTID" xml:space="preserve">
+    <value>Mã khách hàng</value>
+  </data>
+  <data name="MEMBER_IDCODE" xml:space="preserve">
+    <value>CMD/hộ chiếu</value>
+  </data>
+  <data name="MEMBER_FULLNAME" xml:space="preserve">
+    <value>Tên đầy đủ</value>
+  </data>
+  <data name="MEMBER_REF" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="lblConsultant" xml:space="preserve">
+    <value>Tư vấn:</value>
+  </data>
+  <data name="lblVoucher" xml:space="preserve">
+    <value>Chứng từ:</value>
+  </data>
+  <data name="lblCalendar" xml:space="preserve">
+    <value>Lịch:</value>
+  </data>
+  <data name="TRADEUNIT" xml:space="preserve">
+    <value>Đơn vị:</value>
+  </data>
+  <data name="ERR_FIELD_NULL" xml:space="preserve">
+    <value>Trường không thể trống!</value>
+  </data>
+  <data name="lblDescription" xml:space="preserve">
+    <value>Diễn giải:</value>
+  </data>
+  <data name="frm_CFMAST" xml:space="preserve">
+    <value>Thông tin khách hàng</value>
+  </data>
+  <data name="frm_CFAUTH" xml:space="preserve">
+    <value>Thông tin uỷ quyền</value>
+  </data>
+  <data name="ERR_PRODUCTTYPE_NOTFOUND" xml:space="preserve">
+    <value>Loại hình không tồn tại</value>
+  </data>
+  <data name="ERR_EXPIREDDATE_INVALID" xml:space="preserve">
+    <value>Ngày hết hạn không đúng</value>
+  </data>
+  <data name="ERR_SEC_INFO" xml:space="preserve">
+    <value>Thông tin chứng khoán không đúng!</value>
+  </data>
+  <data name="MEMBER_SYMBOL" xml:space="preserve">
+    <value>Mã CK</value>
+  </data>
+  <data name="MEMBER_TRADE" xml:space="preserve">
+    <value>Giao dịch</value>
+  </data>
+  <data name="btnAdjust" xml:space="preserve">
+    <value>&amp;Sửa</value>
+  </data>
+  <data name="MEMBER_COSTPRICE" xml:space="preserve">
+    <value>Giá vốn</value>
+  </data>
+  <data name="MEMBER_BASICPRICE" xml:space="preserve">
+    <value>Giá tham chiếu</value>
+  </data>
+  <data name="lblCIAdvance" xml:space="preserve">
+    <value>Tiền ứng trước:</value>
+  </data>
+  <data name="ApproveSuccessful" xml:space="preserve">
+    <value>Duyệt thành công</value>
+  </data>
+  <data name="btnApprove" xml:space="preserve">
+    <value>&amp;Approve</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>&amp;Sửa và Hủy</value>
+  </data>
+  <data name="RefusedSuccessful" xml:space="preserve">
+    <value>Từ chối thành công</value>
+  </data>
+  <data name="RerectedSuccessful" xml:space="preserve">
+    <value>Loại bỏ thành công</value>
+  </data>
+  <data name="btnRefuse" xml:space="preserve">
+    <value>&amp;Từ chối</value>
+  </data>
+  <data name="btnReject" xml:space="preserve">
+    <value>L&amp;oại bỏ</value>
+  </data>
+  <data name="ApproveConfirm" xml:space="preserve">
+    <value>Chắc chắn duyệt?</value>
+  </data>
+  <data name="RejectConfirm" xml:space="preserve">
+    <value>Chắc chắn loại bỏ?</value>
+  </data>
+  <data name="RefuseConfirm" xml:space="preserve">
+    <value>Chắc chắn từ chối?</value>
+  </data>
+  <data name="RejectComment" xml:space="preserve">
+    <value>Nhập chú thích!</value>
+  </data>
+  <data name="lblTotalAmout" xml:space="preserve">
+    <value>Tổng:</value>
+  </data>
+  <data name="REFPRICE" xml:space="preserve">
+    <value>Giá tham chiếu:</value>
+  </data>
+  <data name="lblVia" xml:space="preserve">
+    <value>Kênh:</value>
+  </data>
+  <data name="ERR_ISSUER_MEMBER" xml:space="preserve">
+    <value>Thành viên của tổ chức phát hành !!!</value>
+  </data>
+  <data name="chkTBS" xml:space="preserve">
+    <value>TBS?</value>
+  </data>
+  <data name="PRICEISINVALID" xml:space="preserve">
+    <value>Giá không hợp lệ</value>
+  </data>
+  <data name="MEMBER_MORTAGE" xml:space="preserve">
+    <value>Phong tỏa</value>
+  </data>
+  <data name="CONTRAFIRM" xml:space="preserve">
+    <value>TVLK đối ứng</value>
+  </data>
+  <data name="TRADERID" xml:space="preserve">
+    <value>Đại diện sàn</value>
+  </data>
+  <data name="CLIENTID" xml:space="preserve">
+    <value>TK đối ứng</value>
+  </data>
+  <data name="btnAmend" xml:space="preserve">
+    <value>&amp;Sửa lệnh</value>
+  </data>
+  <data name="btnCanDel" xml:space="preserve">
+    <value>&amp;Hủy lệnh</value>
+  </data>
+  <data name="btnExit" xml:space="preserve">
+    <value>&amp;Thoát</value>
+  </data>
+  <data name="lblAdvIdRef" xml:space="preserve">
+    <value>Lệnh QC gốc:</value>
+  </data>
+  <data name="lblClientID" xml:space="preserve">
+    <value>TK đối ứng:</value>
+  </data>
+  <data name="lblContrafirm" xml:space="preserve">
+    <value>TVLK đối ứng:</value>
+  </data>
+  <data name="lblTraderid" xml:space="preserve">
+    <value>Đại diện sàn:</value>
+  </data>
+  <data name="msgCFNOTFOUND" xml:space="preserve">
+    <value>Không tìm thấy mã khách hàng</value>
+  </data>
+  <data name="lblBuyCustody" xml:space="preserve">
+    <value>Số lưu ký MUA:</value>
+  </data>
+  <data name="lblSellCustody" xml:space="preserve">
+    <value>Số lưu ký BÁN:</value>
+  </data>
+  <data name="ERR_CUSTODY_NULL" xml:space="preserve">
+    <value>Sai mã custody code</value>
+  </data>
+  <data name="ERR_CLEARINGDAY_NULL" xml:space="preserve">
+    <value>Chu kỳ thanh toán không đúng</value>
+  </data>
+  <data name="ERR_CODEID_NOTFOUND" xml:space="preserve">
+    <value>Thông tin chứng khoán không đúng!</value>
+  </data>
+  <data name="chkPTRepo" xml:space="preserve">
+    <value>GD Repo</value>
+  </data>
+  <data name="lblREFORDERID" xml:space="preserve">
+    <value>Lệnh gốc:</value>
+  </data>
+  <data name="lblEXPTDATE" xml:space="preserve">
+    <value>Ngày đáo hạn:</value>
+  </data>
+  <data name="lblEXPTPRICE" xml:space="preserve">
+    <value>Giá lần 2:</value>
+  </data>
+  <data name="INVALID_CODEID" xml:space="preserve">
+    <value>Mã chứng khoán không hợp lệ!</value>
+  </data>
+  <data name="INVALID_CUSTODYCD" xml:space="preserve">
+    <value>Số lưu ký không hợp lệ!</value>
+  </data>
+  <data name="INVALID_STATUS" xml:space="preserve">
+    <value>Trạng thái lệnh gốc không hợp lệ!</value>
+  </data>
+  <data name="INVALID_REFORDERID" xml:space="preserve">
+    <value>Lệnh gốc không đúng!</value>
+  </data>
+  <data name="INVALID_ORDERQTTY" xml:space="preserve">
+    <value>Số lượng không hợp lệ!</value>
+  </data>
+  <data name="msgDEALER_ADMIN_NOTPLO" xml:space="preserve">
+    <value>Quản trị không được phép đặt lệnh</value>
+  </data>
+  <data name="msgDEALER_CHECK_FAILED" xml:space="preserve">
+    <value>Không tuân thủ luật kiểm soát tự doanh</value>
+  </data>
+  <data name="msgDEALER_COMPANY_MAXNAV" xml:space="preserve">
+    <value>Vượt qui định NAV toàn công ty</value>
+  </data>
+  <data name="msgDEALER_COMPANY_MAXQTTYORDER" xml:space="preserve">
+    <value>Vượt qui định KL tối đa một lệnh đặt</value>
+  </data>
+  <data name="msgDEALER_GROUP_MAXNAV" xml:space="preserve">
+    <value>Vượt qui định NAV của nhóm</value>
+  </data>
+  <data name="msgDEALER_LEADER_NOTPLO" xml:space="preserve">
+    <value>Trưởng nhóm không có quyền đặt lệnh</value>
+  </data>
+  <data name="msgDEALER_OVER_DELTA_BUYING_PRICE" xml:space="preserve">
+    <value>Vượt biên độ giá mua qui định</value>
+  </data>
+  <data name="msgDEALER_OVER_DELTA_SELLING_PRICE" xml:space="preserve">
+    <value>Vi phạm biên độ giá bán</value>
+  </data>
+  <data name="msgDEALER_OVER_MAX_BUYING_PRICE" xml:space="preserve">
+    <value>Vượt quá giá mua qui định</value>
+  </data>
+  <data name="msgDEALER_OVER_MIN_SELLING_PRICE" xml:space="preserve">
+    <value>Vi phạm giá bán tối thiểu</value>
+  </data>
+  <data name="msgDEALER_OVER_SYS_CURRENT_NAV_ALL" xml:space="preserve">
+    <value>Vượt giá trị danh mục</value>
+  </data>
+  <data name="msgDEALER_OVER_SYS_MAX_QTTY_PER_ORDER" xml:space="preserve">
+    <value>Vượt quá khối lượng tối của lệnh</value>
+  </data>
+  <data name="msgDEALER_OVER_TOTAL_QTTY" xml:space="preserve">
+    <value>Vượt khối lượng tối đa</value>
+  </data>
+  <data name="msgDEALER_SYMBOL_BUYPRICE" xml:space="preserve">
+    <value>Vượt qui định giá mua tối đa của chứng khoán</value>
+  </data>
+  <data name="msgDEALER_SYMBOL_CANNOT_TRADE" xml:space="preserve">
+    <value>Không được phép giao dịch mã này</value>
+  </data>
+  <data name="msgDEALER_SYMBOL_MAXAVL" xml:space="preserve">
+    <value>Vượt qui định khối lượng nắm giữ tối đa</value>
+  </data>
+  <data name="msgDEALER_SYMBOL_MINAVL" xml:space="preserve">
+    <value>Vượt qui định khối lượng nắm giữ tối thiểu</value>
+  </data>
+  <data name="msgDEALER_SYMBOL_SELLAMT" xml:space="preserve">
+    <value>Vượt qui định giá trị bán tối đa của chứng khoán</value>
+  </data>
+  <data name="msgDEALER_SYMBOL_SELLPRICE" xml:space="preserve">
+    <value>Vượt qui định giá bán tối thiểu của chứng khoán</value>
+  </data>
+  <data name="msgDEALER_TRADER_CANNOT_PLACE_ORDER" xml:space="preserve">
+    <value>Trưởng nhóm không có quyền đặt lệnh</value>
+  </data>
+  <data name="msgDEALER_TRADER_MAXNAV" xml:space="preserve">
+    <value>Vượt qui định NAV của cán bộ</value>
+  </data>
+  <data name="msgDEALER__SYMBOL_BUYAMT" xml:space="preserve">
+    <value>Vượt qui định giá trị mua tối đa của chứng khoán</value>
+  </data>
+  <data name="POLICY_AVLQTTY" xml:space="preserve">
+    <value>KL nắm giữ</value>
+  </data>
+  <data name="POLICY_DELTABPRC" xml:space="preserve">
+    <value>Biên độ giá mua</value>
+  </data>
+  <data name="POLICY_DELTASPRC" xml:space="preserve">
+    <value>Biên độ giá bán</value>
+  </data>
+  <data name="POLICY_FRDATE" xml:space="preserve">
+    <value>Từ ngày</value>
+  </data>
+  <data name="POLICY_LEADER" xml:space="preserve">
+    <value>Phụ trách</value>
+  </data>
+  <data name="POLICY_MAXALLBUY" xml:space="preserve">
+    <value>Mua tối đa</value>
+  </data>
+  <data name="POLICY_MAXALLSELL" xml:space="preserve">
+    <value>Bán tối đa</value>
+  </data>
+  <data name="POLICY_MAXAVLBAL" xml:space="preserve">
+    <value>Số dư tối đa</value>
+  </data>
+  <data name="POLICY_MAXBPRICE" xml:space="preserve">
+    <value>Giá mua tối đa</value>
+  </data>
+  <data name="POLICY_MAXNAV" xml:space="preserve">
+    <value>GT danh mục</value>
+  </data>
+  <data name="POLICY_MINAVLBAL" xml:space="preserve">
+    <value>Số dư tối thiểu</value>
+  </data>
+  <data name="POLICY_MINSPRICE" xml:space="preserve">
+    <value>Giá bán tối đa</value>
+  </data>
+  <data name="POLICY_SYMBOL" xml:space="preserve">
+    <value>Mã CK</value>
+  </data>
+  <data name="POLICY_TODATE" xml:space="preserve">
+    <value>Đến ngày</value>
+  </data>
+  <data name="POLICY_TOTALQTTY" xml:space="preserve">
+    <value>KL tối đa</value>
+  </data>
+  <data name="POLICY_TRADER" xml:space="preserve">
+    <value>Cán bộ</value>
+  </data>
+  <data name="POLICY_AVLBUYAMT" xml:space="preserve">
+    <value>GT mua còn lại</value>
+  </data>
+  <data name="POLICY_AVLSELLAMT" xml:space="preserve">
+    <value>GT bán còn lại</value>
+  </data>
+  <data name="POLICY_BUYAMT" xml:space="preserve">
+    <value>GT mua đã thực hiện</value>
+  </data>
+  <data name="POLICY_SELLAMT" xml:space="preserve">
+    <value>GT bán đã thực hiện</value>
+  </data>
+  <data name="MSG_NOT_EN_MONEY" xml:space="preserve">
+    <value>Tài khoản lưu ký bên ngoài thiếu {0}.Bạn có muốn bổ sung thêm số tiền trên không?</value>
+  </data>
+  <data name="MSG_NOT_EN_STOCK" xml:space="preserve">
+    <value>Tài khoản lưu ký bên ngoài thiếu {0}.Bạn có muốn bổ sung thêm số tiền trên không?</value>
+  </data>
+  <data name="ERR_INVALID_PTORDER" xml:space="preserve">
+    <value>Không thể đặt lệnh thỏa thuận với giá thị trường!</value>
+  </data>
+  <data name="ERR_INVALID_QTTY" xml:space="preserve">
+    <value>Khối lượng không hợp lệ!</value>
+  </data>
+  <data name="ERR_INVALID_STOCK_NUM" xml:space="preserve">
+    <value>Số lượng chứng khoán không hợp lệ!!!</value>
+  </data>
+  <data name="ERR_NOT_ABL" xml:space="preserve">
+    <value>Khống lượng sửa: {0} vượt quá khối lượng gốc!</value>
+  </data>
+  <data name="ERR_NOT_ECI" xml:space="preserve">
+    <value>Tài khoản tiền: {0} không đủ đặt lệnh mua!</value>
+  </data>
+  <data name="ERR_NOT_ENOUGH_SECURITIES" xml:space="preserve">
+    <value>Số lượng chứng khoán không đủ!!!</value>
+  </data>
+  <data name="ERR_NOT_ESE" xml:space="preserve">
+    <value>Số dư chứng khoán: {0} không đủ đặt lệnh bán!</value>
+  </data>
+  <data name="ERR_SHALT" xml:space="preserve">
+    <value>Chứng khoán bị HALT!</value>
+  </data>
+  <data name="ERR_STOCK_HALT" xml:space="preserve">
+    <value>Chứng khoán bị HALT thường!</value>
+  </data>
+  <data name="ERR_STOCK_HALT_PT" xml:space="preserve">
+    <value>Chứng khoán bị HALT thỏa thuận!</value>
+  </data>
+  <data name="ERR_STOCK_NOT_NULL" xml:space="preserve">
+    <value>Trường Mã CK không thể trống</value>
+  </data>
+  <data name="INV_ACC_NUMBER" xml:space="preserve">
+    <value>Số tài khoản không đúng</value>
+  </data>
+  <data name="INV_QTTY1000" xml:space="preserve">
+    <value>Khối lượng không được &lt; {0}</value>
+  </data>
+  <data name="INV_QTTY20000" xml:space="preserve">
+    <value>Khối lượng không được nhỏ hơn {0}</value>
+  </data>
+  <data name="INV_QTTYBETWEEN" xml:space="preserve">
+    <value>Khối lượng không được &lt; {0} và &gt;= {1}</value>
+  </data>
+  <data name="INV_TRADEBUYSELL" xml:space="preserve">
+    <value>Không được mua bán cùng phiên</value>
+  </data>
+  <data name="MSG_ISSUER" xml:space="preserve">
+    <value>Đây là nhân thành viên của tổ chức phát hành, có muốn tiếp tục đặt lệnh?</value>
+  </data>
+  <data name="ERR_NOT_EMT" xml:space="preserve">
+    <value>KL cầm cố: {0} không đủ để bán</value>
+  </data>
+</root>

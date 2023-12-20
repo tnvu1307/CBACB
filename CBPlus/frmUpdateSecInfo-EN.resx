@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="InitDialogFailed">
+		<value>Dialog initiation is failed!</value>
+	</data>
+	<data name="btnOK">
+		<value>&amp;Save</value>
+	</data>
+	<data name="btnCancel">
+		<value>&amp;Close</value>
+	</data>
+	<data name="lblCaption">
+		<value>Update securities information from Quote Server or files.</value>
+	</data>
+	<data name="lblFromCenter">
+		<value>From center :</value>
+	</data>
+	<data name="SavingFailed">
+		<value>Cannot save securities information!</value>
+	</data>
+	<data name="SavingSuccessful">
+		<value>Save securities information successfully!</value>
+	</data>
+	<data name="frmUpdateSecInfo">
+		<value>Update securities information</value>
+	</data>
+	<data name="grbOptions">
+		<value>Options:</value>
+	</data>
+	<data name="grbSecInfo">
+		<value>Securities information:</value>
+	</data>
+	<data name="grbSources">
+		<value>Sources:</value>
+	</data>
+	<data name="grbFiles">
+		<value>From files:</value>
+	</data>
+	<data name="grbQuoteSvr">
+		<value>Quote server:</value>
+	</data>
+	<data name="btnRead">
+		<value>&amp;Read</value>
+	</data>
+	<data name="btnCalc">
+		<value>&amp;Calculate</value>
+	</data>
+	<data name="radioQuoteSvr">
+		<value>From Quote Server</value>
+	</data>
+	<data name="radioFiles">
+		<value>From files</value>
+	</data>
+	<data name="lblFromFile">
+		<value>File name:</value>
+	</data>
+	<data name="lblTradeUnit">
+		<value>Trade unit:</value>
+	</data>
+	<data name="btnBrowse">
+		<value>...</value>
+	</data>
+	<data name="SAVE_CONFIRMATION">
+		<value>Are you sure to save securities information?</value>
+	</data>
+	<data name="CALC_CONFIRMATION">
+		<value>This action will calculate floor price, ceiling price and overwrite them based on closed/average price. Continue any way?</value>
+	</data>
+	<data name="FILENAME_MUST_VALID">
+		<value>File name is invalid. Please re-type file name or click &lt;Browse&gt; button and choose the file.</value>
+	</data>
+	<data name="TRADEUNIT_MUST_NUMERIC">
+		<value>Trade unit must be numeric value.</value>
+	</data>
+	<data name="READ_CONFIRMATION">
+		<value>Are you sure to read securities information from file @?</value>
+	</data>
+	<data name="READ_FILE_SUCCESSFULLY">
+		<value>Read securities information from file @ successfully!</value>
+	</data>
+	<data name="SAVING_STATUS">
+		<value>Saving on row @... Please wait!</value>
+	</data>
+	<data name="SAVED_STATUS">
+		<value>Saving securities information is completed!</value>
+	</data>
+	<data name="lblServerAddress">
+		<value>Server address :</value>
+	</data>
+	<data name="lblSystemTradeUnit">
+		<value>Trade unit :</value>
+	</data>
+	<data name="lblFromCenter">
+		<value>From center :</value>
+	</data>
+	<data name="DEFAULT_VALUE">
+		<value>xxx</value>
+	</data>
+</root>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="frmMarginInfo" xml:space="preserve">
+    <value>Detail information of MR sub-account</value>
+  </data>
+  <data name="lblGR1_Assets" xml:space="preserve">
+    <value>Assets</value>
+  </data>
+  <data name="lblGR1_ConvertVal" xml:space="preserve">
+    <value>Convert Value</value>
+  </data>
+  <data name="lblGR1_MarketVal" xml:space="preserve">
+    <value>Market Value</value>
+  </data>
+  <data name="lblGR1_R1" xml:space="preserve">
+    <value>- Cash + Holded cash</value>
+  </data>
+  <data name="lblGR1_R2" xml:space="preserve">
+    <value>- Advance cash</value>
+  </data>
+  <data name="lblGR1_R3" xml:space="preserve">
+    <value>- Margin securities value</value>
+  </data>
+  <data name="lblGR1_R4" xml:space="preserve">
+    <value>- MR + DP value</value>
+  </data>
+  <data name="lblGR1_R5" xml:space="preserve">
+    <value>- Outside margin securities value</value>
+  </data>
+  <data name="lblGR1_R6" xml:space="preserve">
+    <value>Total of value</value>
+  </data>
+  <data name="lblGR2_DebitType" xml:space="preserve">
+    <value>Debit Types</value>
+  </data>
+  <data name="lblGR2_InterestFees" xml:space="preserve">
+    <value>Interest + Fees</value>
+  </data>
+  <data name="lblGR2_Origin" xml:space="preserve">
+    <value>Origin</value>
+  </data>
+  <data name="lblGR2_OverdueDue" xml:space="preserve">
+    <value>Overdue + Due</value>
+  </data>
+  <data name="lblGR2_R1" xml:space="preserve">
+    <value>- MR debit</value>
+  </data>
+  <data name="lblGR2_R2" xml:space="preserve">
+    <value>- DP debit</value>
+  </data>
+  <data name="lblGR2_R3" xml:space="preserve">
+    <value>- Guarantee debit</value>
+  </data>
+  <data name="lblGR2_R4" xml:space="preserve">
+    <value>- Cash advance debit</value>
+  </data>
+  <data name="lblGR2_R5" xml:space="preserve">
+    <value>- Total of purchase margin</value>
+  </data>
+  <data name="lblGR2_R6" xml:space="preserve">
+    <value>- Total other debt &amp; fees</value>
+  </data>
+  <data name="grbCommonInfo" xml:space="preserve">
+    <value>Common information</value>
+  </data>
+  <data name="grbDetailInfo" xml:space="preserve">
+    <value>Detail information</value>
+  </data>
+  <data name="lblAcctno" xml:space="preserve">
+    <value>Sub-account</value>
+  </data>
+  <data name="lblBLLimit" xml:space="preserve">
+    <value>Guarantee Limit</value>
+  </data>
+  <data name="lblBRID" xml:space="preserve">
+    <value>Branch ID</value>
+  </data>
+  <data name="lblBroker" xml:space="preserve">
+    <value>Broker ID/Name</value>
+  </data>
+  <data name="lblCustodycd" xml:space="preserve">
+    <value>Custody code</value>
+  </data>
+  <data name="lblCustomerLimit" xml:space="preserve">
+    <value>Customer Limit</value>
+  </data>
+  <data name="lblGBroker" xml:space="preserve">
+    <value>Broker leader ID/Name</value>
+  </data>
+  <data name="lblMRLimit" xml:space="preserve">
+    <value>MR Limit</value>
+  </data>
+  <data name="lblNetAssets" xml:space="preserve">
+    <value>Net value of sub-account</value>
+  </data>
+  <data name="lblRtt_MR" xml:space="preserve">
+    <value>Actual ratio (MR)</value>
+  </data>
+  <data name="lblRtt_TC" xml:space="preserve">
+    <value>Actual ratio (DP)</value>
+  </data>
+  <data name="lblTCLimit" xml:space="preserve">
+    <value>DP Limit</value>
+  </data>
+  <data name="INVALID_INFO" xml:space="preserve">
+    <value>Can't load this infomation!</value>
+  </data>
+  <data name="grbCommonInfo2" xml:space="preserve">
+    <value>Common information</value>
+  </data>
+  <data name="grbDetailInfo2" xml:space="preserve">
+    <value>Detail information</value>
+  </data>
+  <data name="INVALID_INFO1" xml:space="preserve">
+    <value>Can't load this infomation!</value>
+  </data>
+  <data name="lblAcctno2" xml:space="preserve">
+    <value>Sub-account</value>
+  </data>
+  <data name="lblBRID2" xml:space="preserve">
+    <value>Branch ID</value>
+  </data>
+  <data name="lblBroker2" xml:space="preserve">
+    <value>Broker ID/Name</value>
+  </data>
+  <data name="lblBrokerGrpID" xml:space="preserve">
+    <value>Group ID</value>
+  </data>
+  <data name="lblCustodycd2" xml:space="preserve">
+    <value>Custody code</value>
+  </data>
+  <data name="lblGBroker2" xml:space="preserve">
+    <value>Broker leader ID/Name</value>
+  </data>
+  <data name="lblGR1Title" xml:space="preserve">
+    <value>The original formula of type</value>
+  </data>
+  <data name="lblGR1_FactorType" xml:space="preserve">
+    <value>Factor type</value>
+  </data>
+  <data name="lblGR1_R1_2" xml:space="preserve">
+    <value>Safety</value>
+  </data>
+  <data name="lblGR1_R2_2" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="lblGR1_R3_2" xml:space="preserve">
+    <value>Handle</value>
+  </data>
+  <data name="lblGR1_R4_2" xml:space="preserve">
+    <value>Sale rate</value>
+  </data>
+  <data name="lblGR1_R5_2" xml:space="preserve">
+    <value>Origin payable amount</value>
+  </data>
+  <data name="lblGR1_R6_2" xml:space="preserve">
+    <value>Payable amount</value>
+  </data>
+  <data name="lblGR1_RB" xml:space="preserve">
+    <value>RB</value>
+  </data>
+  <data name="lblGR1_RC" xml:space="preserve">
+    <value>RC</value>
+  </data>
+  <data name="lblGR1_RM" xml:space="preserve">
+    <value>RM</value>
+  </data>
+  <data name="lblGR2Title" xml:space="preserve">
+    <value>Plus additional values</value>
+  </data>
+  <data name="lblGR2_AddDays" xml:space="preserve">
+    <value>Additional days</value>
+  </data>
+  <data name="lblGR2_AddVal" xml:space="preserve">
+    <value>Additional value</value>
+  </data>
+  <data name="lblGR2_Criteria" xml:space="preserve">
+    <value>Criteria</value>
+  </data>
+  <data name="lblGR2_FactorVal" xml:space="preserve">
+    <value>Factor value</value>
+  </data>
+  <data name="lblGR2_R1_2" xml:space="preserve">
+    <value>SCR</value>
+  </data>
+  <data name="lblGR2_R2_2" xml:space="preserve">
+    <value>OC</value>
+  </data>
+  <data name="lblGR2_R3_2" xml:space="preserve">
+    <value>DL</value>
+  </data>
+  <data name="lblGR2_R4_2" xml:space="preserve">
+    <value>Applied Value</value>
+  </data>
+  <data name="lblGR2_ViolationID" xml:space="preserve">
+    <value>Violation codes</value>
+  </data>
+  <data name="lblNumCall" xml:space="preserve">
+    <value>Number of days call</value>
+  </data>
+  <data name="lblNumSpclCall" xml:space="preserve">
+    <value>Number of days begin call</value>
+  </data>
+  <data name="lblPayVal" xml:space="preserve">
+    <value>Amount paid for safe ratio</value>
+  </data>
+  <data name="lblRtt_MR2" xml:space="preserve">
+    <value>Actual ratio (MR)</value>
+  </data>
+  <data name="lblRtt_TC2" xml:space="preserve">
+    <value>Actual ratio (DP)</value>
+  </data>
+  <data name="lblSaleVal" xml:space="preserve">
+    <value>Amount paid for sell ratio</value>
+  </data>
+  <data name="lblGR2_R7" xml:space="preserve">
+    <value>Total of value</value>
+  </data>
+  <data name="lblAVLWITHDRAW" xml:space="preserve">
+    <value>Available withdraw on PP0</value>
+  </data>
+  <data name="lblBALDEFAVL" xml:space="preserve">
+    <value>Available balance</value>
+  </data>
+  <data name="lblBALDEFOVD" xml:space="preserve">
+    <value>Withdraw amount</value>
+  </data>
+  <data name="lblGR2_R8" xml:space="preserve">
+    <value>- DF Debit</value>
+  </data>
+  <data name="tpGroupInfo1" xml:space="preserve">
+    <value>Detail information 1</value>
+  </data>
+  <data name="tpGroupInfo2" xml:space="preserve">
+    <value>Detail information 2</value>
+  </data>
+</root>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="frmRMOperation" xml:space="preserve">
+    <value>Control board</value>
+  </data>
+  <data name="btnTicker" xml:space="preserve">
+    <value>Reset &amp;ticker</value>
+  </data>
+  <data name="btnCache" xml:space="preserve">
+    <value>Reset &amp;cache</value>
+  </data>
+  <data name="btnSubmit" xml:space="preserve">
+    <value>&amp;Submit</value>
+  </data>
+  <data name="btnClose" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="CheckBox1" xml:space="preserve">
+    <value>Auto-process (s)</value>
+  </data>
+  <data name="SYNCTRANS" xml:space="preserve">
+    <value>SYNCTRANS: Process asynchronous transaction</value>
+  </data>
+  <data name="START_VSMKTINFO" xml:space="preserve">
+    <value>START_VSMKTINFO: Start HoSE Listed market info download</value>
+  </data>
+  <data name="START_VNMKTINFO" xml:space="preserve">
+    <value>START_VNMKTINFO: Start HaSTC Listed market info download</value>
+  </data>
+  <data name="START_VSTRADE" xml:space="preserve">
+    <value>START_VSTRADE: Start HoSE Listed trading data download</value>
+  </data>
+  <data name="START_VNTRADE" xml:space="preserve">
+    <value>START_VNTRADE: Start HaSTC Listed trading data download</value>
+  </data>
+  <data name="GET_VSMARKETWATCH" xml:space="preserve">
+    <value>GET_VSMARKETWATCH: Get HoSE Market watch</value>
+  </data>
+  <data name="GET_VNMARKETWATCH" xml:space="preserve">
+    <value>GET_VNMARKETWATCH: Get HaSTC Market watch</value>
+  </data>
+  <data name="GET_ORDERBOOK" xml:space="preserve">
+    <value>GET_ORDERBOOK: Get HoSE Order book</value>
+  </data>
+  <data name="GET_TRADEBOOK" xml:space="preserve">
+    <value>GET_TRADEBOOK: Get HoSE Trade book</value>
+  </data>
+  <data name="START_MAP_STCORDERBOOK" xml:space="preserve">
+    <value>START_MAP_STCORDERBOOK: Map exchange order book to company order book</value>
+  </data>
+  <data name="START_MAP_STCTRADEBOOK" xml:space="preserve">
+    <value>START_MAP_STCTRADEBOOK: Map exchange trade book to company order book</value>
+  </data>
+  <data name="START_MAP_SECURITIESINFO" xml:space="preserve">
+    <value>START_MAP_SECURITIESINFO: Synchronize Securities with Stock Exchange</value>
+  </data>
+  <data name="AUTOGV" xml:space="preserve">
+    <value>AUTOGV: Auto run general view</value>
+  </data>
+  <data name="SENDCMP" xml:space="preserve">
+    <value>SENDCMP: Send order from FO to company</value>
+  </data>
+  <data name="SENDGTC" xml:space="preserve">
+    <value>SENDGTC: Send GTC order from FO to company</value>
+  </data>
+  <data name="SENDHAGTC" xml:space="preserve">
+    <value>SENDHAGTC: Send Hastc GTC order from FO to company</value>
+  </data>
+  <data name="SENDHOGTC" xml:space="preserve">
+    <value>SENDHOGTC: Send Hose GTC order from FO to company</value>
+  </data>
+  <data name="SENDHASL" xml:space="preserve">
+    <value>SENDHASL: Send Hastc stop limit order from FO to company</value>
+  </data>
+  <data name="SENDHOSL" xml:space="preserve">
+    <value>SENDHOSL: Send Hostc stop limit order from FO to company</value>
+  </data>
+  <data name="BAMTTRF" xml:space="preserve">
+    <value>BAMTTRF: Bank transfer buy amount</value>
+  </data>
+  <data name="BFEETRF" xml:space="preserve">
+    <value>BFEETRF: Bank transfer buy fee</value>
+  </data>
+  <data name="RMEX8879" xml:space="preserve">
+    <value>RMEX8894: Bank transfer retail sell amount</value>
+  </data>
+  <data name="RMEX8879DF" xml:space="preserve">
+    <value>RMEX8894DF: Xuất bảng kê thanh toán thuế từ bán lô lẻ</value>
+  </data>
+  <data name="RMEXCA3350" xml:space="preserve">
+    <value>RMEXCA3350: Bank transfer cash dividen</value>
+  </data>
+  <data name="RMEXCA3350DF" xml:space="preserve">
+    <value>RMEXCA3350DF: Xuất bảng kê thanh toán thuế cổ tức</value>
+  </data>
+  <data name="RMEXCA3384" xml:space="preserve">
+    <value>RMEXCA3384: Bank transfer buy right</value>
+  </data>
+  <data name="RMEXCA3386" xml:space="preserve">
+    <value>RMEXCA3386: Tao bang ke huy dang ky quyen mua</value>
+  </data>
+  <data name="RMEXTRFQUEUE" xml:space="preserve">
+    <value>RMEXTRFQUEUE: Xử lý hàng đợi tạo batch gửi sang NH</value>
+  </data>
+  <data name="RMEXTRFSTS" xml:space="preserve">
+    <value>RMEXTRFSTS: Get EOD Report status</value>
+  </data>
+  <data name="btnGetBank" xml:space="preserve">
+    <value>Lấy DS Ngân Hàng</value>
+  </data>
+  <data name="btnSendRequest" xml:space="preserve">
+    <value>Send request</value>
+  </data>
+  <data name="btnReceiveRequest" xml:space="preserve">
+    <value>Get list of cash collection/payment</value>
+  </data>
+  <data name="btnReconcide" xml:space="preserve">
+    <value>Reconcide</value>
+  </data>
+  <data name="btnGetTransferResult" xml:space="preserve">
+    <value>Get list of cash collection/payment</value>
+  </data>
+  <data name="chkAuto" xml:space="preserve">
+    <value>Auto run (s)</value>
+  </data>
+  <data name="MSG_CTRSUCCESS" xml:space="preserve">
+    <value>Complete transfer to the bank!</value>
+  </data>
+  <data name="MSG_GETLISTTRANFER" xml:space="preserve">
+    <value>Get a list of codes bank transfer success!</value>
+  </data>
+  <data name="MSG_GETSTATUS" xml:space="preserve">
+    <value>Get state successful. See the full list of households to have more detailed information!</value>
+  </data>
+  <data name="MSG_REVSUCCESS" xml:space="preserve">
+    <value>Nhận yêu cầu từ ngân hàng thành công!</value>
+  </data>
+  <data name="MSG_REVTRSUCCESS" xml:space="preserve">
+    <value>Completion of receiving notice from the bank!</value>
+  </data>
+  <data name="MSG_SENDCOMPLETE" xml:space="preserve">
+    <value>Send request to bank success!</value>
+  </data>
+  <data name="btnChangRequest" xml:space="preserve">
+    <value>Change info</value>
+  </data>
+  <data name="btnRefresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="btnEditRequest" xml:space="preserve">
+    <value>Edit status</value>
+  </data>
+  <data name="btnManualMsg" xml:space="preserve">
+    <value>Manual create message</value>
+  </data>
+  <data name="ACCNAME" xml:space="preserve">
+    <value>Sender </value>
+  </data>
+  <data name="AMOUNT" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="BANKCODE" xml:space="preserve">
+    <value>Bank code</value>
+  </data>
+  <data name="BANKNAME" xml:space="preserve">
+    <value>Bank name</value>
+  </data>
+  <data name="CREATEDT" xml:space="preserve">
+    <value>Create date</value>
+  </data>
+  <data name="DESBANKACCOUNT" xml:space="preserve">
+    <value>Send account</value>
+  </data>
+  <data name="ERRORDESC" xml:space="preserve">
+    <value>Error description</value>
+  </data>
+  <data name="KEYACCT1" xml:space="preserve">
+    <value>Receiver</value>
+  </data>
+  <data name="KEYACCT2" xml:space="preserve">
+    <value>Receive account</value>
+  </data>
+  <data name="LOCATION" xml:space="preserve">
+    <value>Loacation</value>
+  </data>
+  <data name="REFCODE" xml:space="preserve">
+    <value>Ref code</value>
+  </data>
+  <data name="REGIONAL" xml:space="preserve">
+    <value>Regional</value>
+  </data>
+  <data name="STATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="S_ACCNAME" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="S_AFACCTNO" xml:space="preserve">
+    <value>Sub account</value>
+  </data>
+  <data name="S_BANKACCT" xml:space="preserve">
+    <value>Bank account</value>
+  </data>
+  <data name="S_BANKCITY" xml:space="preserve">
+    <value>Regional</value>
+  </data>
+  <data name="S_CUSTODYCD" xml:space="preserve">
+    <value>Trading account</value>
+  </data>
+  <data name="S_DESACCTNO" xml:space="preserve">
+    <value>Bank account</value>
+  </data>
+  <data name="S_NOTES" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="S_OBJKEY" xml:space="preserve">
+    <value>Trasaction no.</value>
+  </data>
+  <data name="S_REFCODE" xml:space="preserve">
+    <value>Ref code</value>
+  </data>
+  <data name="S_STATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="S_TXAMT" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="S_TXDATE" xml:space="preserve">
+    <value>Trans desc</value>
+  </data>
+  <data name="TRANSACTIONDESCRIPTION" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="TRANSACTIONNUMBER" xml:space="preserve">
+    <value>Tx number</value>
+  </data>
+  <data name="TRNREF" xml:space="preserve">
+    <value>Ref code</value>
+  </data>
+  <data name="TRN_DT" xml:space="preserve">
+    <value>Trans date</value>
+  </data>
+</root>

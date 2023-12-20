@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ADDRESS" xml:space="preserve">
+    <value>Địa chỉ:</value>
+  </data>
+  <data name="btnAFCALL" xml:space="preserve">
+    <value>Cảnh báo MR</value>
+  </data>
+  <data name="btnAFREPORT" xml:space="preserve">
+    <value>BC Tiểu khoản</value>
+  </data>
+  <data name="btnApply" xml:space="preserve">
+    <value>Ghi</value>
+  </data>
+  <data name="btnApprv" xml:space="preserve">
+    <value>Duyệt</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+  <data name="btnCAREPORT" xml:space="preserve">
+    <value>T/hiện quyền</value>
+  </data>
+  <data name="btnCIREPORT" xml:space="preserve">
+    <value>BC S/kê tiền</value>
+  </data>
+  <data name="btnLNREPORT" xml:space="preserve">
+    <value>Khoản vay</value>
+  </data>
+  <data name="btnODADV" xml:space="preserve">
+    <value>Ứng trước</value>
+  </data>
+  <data name="btnODHISTORY" xml:space="preserve">
+    <value>BC L/sử lệnh</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>Chấp nhận</value>
+  </data>
+  <data name="btnSEREPORT" xml:space="preserve">
+    <value>BC S/kê CK</value>
+  </data>
+  <data name="btnTRFBUY" xml:space="preserve">
+    <value>Thiếu tiền</value>
+  </data>
+  <data name="cboLink.ComboData" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAE5TeXN0ZW0uRGF0YSwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJl
+        PW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABVTeXN0ZW0uRGF0YS5E
+        YXRhVGFibGUDAAAAGURhdGFUYWJsZS5SZW1vdGluZ1ZlcnNpb24JWG1sU2NoZW1hC1htbERpZmZHcmFt
+        AwEBDlN5c3RlbS5WZXJzaW9uAgAAAAkDAAAABgQAAADQBjw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rp
+        bmc9InV0Zi0xNiI/Pg0KPHhzOnNjaGVtYSB4bWxucz0iIiB4bWxuczp4cz0iaHR0cDovL3d3dy53My5v
+        cmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOm1zZGF0YT0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp4
+        bWwtbXNkYXRhIj4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iQ09NQk9CT1giPg0KICAgIDx4czpjb21wbGV4
+        VHlwZT4NCiAgICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iRElTUExB
+        WSIgdHlwZT0ieHM6c3RyaW5nIiBtc2RhdGE6dGFyZ2V0TmFtZXNwYWNlPSIiIG1pbk9jY3Vycz0iMCIg
+        Lz4NCiAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iVkFMVUUiIG1zZGF0YTpEYXRhVHlwZT0iU3lzdGVt
+        Lk9iamVjdCwgbXNjb3JsaWIsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNL
+        ZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5IiB0eXBlPSJ4czphbnlUeXBlIiBtc2RhdGE6dGFyZ2V0TmFt
+        ZXNwYWNlPSIiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgIDwveHM6c2VxdWVuY2U+DQogICAgPC94czpj
+        b21wbGV4VHlwZT4NCiAgPC94czplbGVtZW50Pg0KICA8eHM6ZWxlbWVudCBuYW1lPSJ0bXBEYXRhU2V0
+        IiBtc2RhdGE6SXNEYXRhU2V0PSJ0cnVlIiBtc2RhdGE6TWFpbkRhdGFUYWJsZT0iQ09NQk9CT1giIG1z
+        ZGF0YTpVc2VDdXJyZW50TG9jYWxlPSJ0cnVlIj4NCiAgICA8eHM6Y29tcGxleFR5cGU+DQogICAgICA8
+        eHM6Y2hvaWNlIG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIC8+DQogICAgPC94czpj
+        b21wbGV4VHlwZT4NCiAgPC94czplbGVtZW50Pg0KPC94czpzY2hlbWE+BgUAAACAATxkaWZmZ3I6ZGlm
+        ZmdyYW0geG1sbnM6bXNkYXRhPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOnhtbC1tc2RhdGEiIHht
+        bG5zOmRpZmZncj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp4bWwtZGlmZmdyYW0tdjEiIC8+BAMA
+        AAAOU3lzdGVtLlZlcnNpb24EAAAABl9NYWpvcgZfTWlub3IGX0J1aWxkCV9SZXZpc2lvbgAAAAAICAgI
+        AgAAAAAAAAD//////////ws=
+</value>
+  </data>
+  <data name="FULLNAME" xml:space="preserve">
+    <value>Tên KH: </value>
+  </data>
+  <data name="grbPPSE" xml:space="preserve">
+    <value>Sức mua PPSE</value>
+  </data>
+  <data name="grbReports" xml:space="preserve">
+    <value>Tra cứu &amp; Báo cáo</value>
+  </data>
+  <data name="grbSE" xml:space="preserve">
+    <value>Danh mục chứng khoán</value>
+  </data>
+  <data name="IDCODE" xml:space="preserve">
+    <value>CMND/GPKD:</value>
+  </data>
+  <data name="INVALID_CUSTODYCD" xml:space="preserve">
+    <value>Số TK lưu ký không hợp lệ!</value>
+  </data>
+  <data name="lblAFACCTNO" xml:space="preserve">
+    <value>Số tiểu khoản:</value>
+  </data>
+  <data name="lblBALANCE" xml:space="preserve">
+    <value>1. Tiền tại PHS:</value>
+  </data>
+  <data name="lblCaption0" xml:space="preserve">
+    <value>Thông tin khách hàng.</value>
+  </data>
+  <data name="lblCUSTODYCD" xml:space="preserve">
+    <value>Số TK lưu ký:</value>
+  </data>
+  <data name="lblDFODAMT" xml:space="preserve">
+    <value>Dư nợ DF:</value>
+  </data>
+  <data name="lblDFSEAMT" xml:space="preserve">
+    <value>Tài sản DF:</value>
+  </data>
+  <data name="lblMARGINRATE" xml:space="preserve">
+    <value>8. Tỷ lệ ký quỹ hiện tại:</value>
+  </data>
+  <data name="lblBANKAVLBAL" xml:space="preserve">
+    <value>7. Tiền tại ngân hàng:</value>
+  </data>
+  <data name="lblBANKAVLBALV" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblMARGINRATE_74V" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblNETASSVALUE" xml:space="preserve">
+    <value>4. Tài sản thực có:</value>
+  </data>
+  <data name="lblBUYINGSEAMT" xml:space="preserve">
+    <value>5. Chứng khoán chờ khớp:</value>
+  </data>
+  <data name="lblSESECURED" xml:space="preserve">
+    <value>5. Ký quỹ yêu cầu:</value>
+  </data>
+  <data name="lblMRCRLIMITMAX" xml:space="preserve">
+    <value>Hạn mức vay tối đa:</value>
+  </data>
+  <data name="lblAVLLIMIT" xml:space="preserve">
+    <value>Hạn mức vay còn lại:</value>
+  </data>
+  <data name="lblADVANCELINE" xml:space="preserve">
+    <value>Hạn mức bảo lãnh cấp trong ngày:</value>
+  </data>
+  <data name="lblPP0" xml:space="preserve">
+    <value>7. Thặng dư tài sản:</value>
+  </data>
+  <data name="lblPPSE" xml:space="preserve">
+    <value>PPSE:</value>
+  </data>
+  <data name="lblPRICE" xml:space="preserve">
+    <value>Giá đặt:</value>
+  </data>
+  <data name="lblQTTY" xml:space="preserve">
+    <value>KL đặt:</value>
+  </data>
+  <data name="lblSYMBOL" xml:space="preserve">
+    <value>Mã CK:</value>
+  </data>
+  <data name="lblTOTALODAMT" xml:space="preserve">
+    <value>3. Phải trả:</value>
+  </data>
+  <data name="lblTOTALSEAMT" xml:space="preserve">
+    <value>2. Chứng khoán:</value>
+  </data>
+  <data name="tpAFRPT" xml:space="preserve">
+    <value>Tổng hợp tiểu khoản</value>
+  </data>
+  <data name="tpCAINQ" xml:space="preserve">
+    <value>Thực hiện quyền</value>
+  </data>
+  <data name="tpCALLAF" xml:space="preserve">
+    <value>Cảnh báo margin</value>
+  </data>
+  <data name="tpCIRPT" xml:space="preserve">
+    <value>Sao kê tiền</value>
+  </data>
+  <data name="tpODADV" xml:space="preserve">
+    <value>Ứng trước</value>
+  </data>
+  <data name="tpODAMT" xml:space="preserve">
+    <value>Khoản vay</value>
+  </data>
+  <data name="tpODHIST" xml:space="preserve">
+    <value>Lịch sử lệnh</value>
+  </data>
+  <data name="tpSERPT" xml:space="preserve">
+    <value>Sao kê CK</value>
+  </data>
+  <data name="tpTRFBUY" xml:space="preserve">
+    <value>Thiếu tiền</value>
+  </data>
+  <data name="IDDATE" xml:space="preserve">
+    <value>Ngày cấp:</value>
+  </data>
+  <data name="IDPLACE" xml:space="preserve">
+    <value>Nơi Cấp:</value>
+  </data>
+  <data name="frmBrokerInquiry" xml:space="preserve">
+    <value>Tra cứu thông tin tài khoản</value>
+  </data>
+  <data name="lblMKVALText" xml:space="preserve">
+    <value>Tổng giá trị thị trường:</value>
+  </data>
+  <data name="lblDFMKVALText" xml:space="preserve">
+    <value>Tổng giá trị thị trường cầm cố:</value>
+  </data>
+  <data name="btnMRCALL" xml:space="preserve">
+    <value>Bán xử lý</value>
+  </data>
+  <data name="btnRefresh" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="lblBALANCEV" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblDFODAMTV" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblDFSEAMTV" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblMARGINRATEV" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblNETASSVALUEV" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblPP0V" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTOTALODAMTV" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTOTALSEAMTV" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="SEMASTGrid.MRRATIOLOAN" xml:space="preserve">
+    <value>Tỷ lệ ký quỹ</value>
+  </data>
+  <data name="SEMASTGrid.DEPOSIT" xml:space="preserve">
+    <value>Chờ lưu ký</value>
+  </data>
+  <data name="SEMASTGrid.MATCHINGAMT" xml:space="preserve">
+    <value>Chờ khớp</value>
+  </data>
+  <data name="SEMASTGrid.CARECEIVING" xml:space="preserve">
+    <value>Quyền chờ về</value>
+  </data>
+  <data name="SEMASTGrid.SECURITIES_RECEIVING_T2" xml:space="preserve">
+    <value>Chờ về T2</value>
+  </data>
+  <data name="SEMASTGrid.SECURITIES_RECEIVING_T1" xml:space="preserve">
+    <value>Chờ về T1</value>
+  </data>
+  <data name="SEMASTGrid.SECURITIES_RECEIVING_T0" xml:space="preserve">
+    <value>Chờ về T0</value>
+  </data>
+  <data name="SEMASTGrid.BLOCKED" xml:space="preserve">
+    <value>Phong tỏa</value>
+  </data>
+  <data name="SEMASTGrid.ABSTANDING" xml:space="preserve">
+    <value>Cầm cố VSD</value>
+  </data>
+  <data name="SEMASTGrid.RESTRICTQTTY" xml:space="preserve">
+    <value>Số lượng CK HCCN</value>
+  </data>
+  <data name="SEMASTGrid.DFTRADING" xml:space="preserve">
+    <value>Cầm cố có thể bán</value>
+  </data>
+  <data name="SEMASTGrid.TRADE" xml:space="preserve">
+    <value>CK Giao dịch</value>
+  </data>
+  <data name="SEMASTGrid.SYMBOL" xml:space="preserve">
+    <value>Mã CK</value>
+  </data>
+  <data name="SEMASTGrid.TOTALQTTY" xml:space="preserve">
+    <value>Tổng</value>
+  </data>
+  <data name="SEMASTGrid.FIFOCOSTPRICE" xml:space="preserve">
+    <value>Giá trung bình</value>
+  </data>
+  <data name="SEMASTGrid.BASICPRICE" xml:space="preserve">
+    <value>Giá thị trường</value>
+  </data>
+  <data name="SEMASTGrid.FIFOAMT" xml:space="preserve">
+    <value>Giá trị</value>
+  </data>
+  <data name="SEMASTGrid.MKTAMT" xml:space="preserve">
+    <value>Giá trị TT</value>
+  </data>
+  <data name="SEMASTGrid.PNLAMT" xml:space="preserve">
+    <value>Lãi lỗ dự tính</value>
+  </data>
+  <data name="SEMASTGrid.PNLRATE" xml:space="preserve">
+    <value>%Lãi lỗ dự tính</value>
+  </data>
+  <data name="lblACCOUNTVALUE" xml:space="preserve">
+    <value>6. Ký quỹ hiện có:</value>
+  </data>
+  <data name="lblACCOUNTVALUEV" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblSESECUREDV" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="MOBILE" xml:space="preserve">
+    <value>Điện thoại:</value>
+  </data>
+  <data name="EMAIL" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="TRADETELEPHONE" xml:space="preserve">
+    <value>Đăng ký GD Điện thoại:</value>
+  </data>
+  <data name="TRADEONLINE" xml:space="preserve">
+    <value>Đăng ký GD trực tuyến:</value>
+  </data>
+  <data name="ALTERNATEACCT" xml:space="preserve">
+    <value>Có tài khoản phụ:</value>
+  </data>
+  <data name="COREBANK" xml:space="preserve">
+    <value>Tài khoản @:</value>
+  </data>
+  <data name="AUTOTRF" xml:space="preserve">
+    <value>Tự động chuyển tiền:</value>
+  </data>
+  <data name="BANKNAME" xml:space="preserve">
+    <value>Tên ngân hàng:</value>
+  </data>
+  <data name="BANKACCTNO" xml:space="preserve">
+    <value>Số tài khoản NH:</value>
+  </data>
+</root>

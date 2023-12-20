@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblAFACCTNO" xml:space="preserve">
+    <value>Trading account:</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="btnCANCEL" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="lblExecType" xml:space="preserve">
+    <value>&amp;Exec type:</value>
+  </data>
+  <data name="lblMatchType" xml:space="preserve">
+    <value>&amp;Match type:</value>
+  </data>
+  <data name="lblQuantity" xml:space="preserve">
+    <value>&amp;Quantity:</value>
+  </data>
+  <data name="lblSymbol" xml:space="preserve">
+    <value>&amp;Symbol:</value>
+  </data>
+  <data name="chkAllorNone" xml:space="preserve">
+    <value>All?</value>
+  </data>
+  <data name="lblPriceType" xml:space="preserve">
+    <value>&amp;Price type:</value>
+  </data>
+  <data name="lblExecQtty" xml:space="preserve">
+    <value>Exec Quantity:</value>
+  </data>
+  <data name="lblLimitPrice" xml:space="preserve">
+    <value>&amp;Limit price:</value>
+  </data>
+  <data name="lblStopPrice" xml:space="preserve">
+    <value>Stop price:</value>
+  </data>
+  <data name="lblTimeType" xml:space="preserve">
+    <value>Time type:</value>
+  </data>
+  <data name="lblExpiredDate" xml:space="preserve">
+    <value>Expired date:</value>
+  </data>
+  <data name="lblClearingDay" xml:space="preserve">
+    <value>Settlement cycle:</value>
+  </data>
+  <data name="lblReference" xml:space="preserve">
+    <value>Reference:</value>
+  </data>
+  <data name="lblCIBalance" xml:space="preserve">
+    <value>Available balance:</value>
+  </data>
+  <data name="lblSEBalance" xml:space="preserve">
+    <value>SE balance:</value>
+  </data>
+  <data name="FLOORPRICE" xml:space="preserve">
+    <value>Floor price:</value>
+  </data>
+  <data name="CEILINGPRICE" xml:space="preserve">
+    <value>Ceiling price:</value>
+  </data>
+  <data name="TRADELOT" xml:space="preserve">
+    <value>Lot:</value>
+  </data>
+  <data name="btnPrev" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="btnNext" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="CONTRACTINVALID" xml:space="preserve">
+    <value>Contract is invalid</value>
+  </data>
+  <data name="FULLNAME" xml:space="preserve">
+    <value>Fullname:</value>
+  </data>
+  <data name="CUSTODYCD" xml:space="preserve">
+    <value>Custody code:</value>
+  </data>
+  <data name="TRADELOTINVALID" xml:space="preserve">
+    <value>Tradelot is invalid</value>
+  </data>
+  <data name="FLOORINVALID" xml:space="preserve">
+    <value>Floor price is invalid</value>
+  </data>
+  <data name="CEILINGINVALID" xml:space="preserve">
+    <value>Ceiling price is invalid</value>
+  </data>
+  <data name="QTTYISNOTNUMBER" xml:space="preserve">
+    <value>Quantity should be numeric value</value>
+  </data>
+  <data name="PRICEISNOTNUMBER" xml:space="preserve">
+    <value>Price should be numeric value</value>
+  </data>
+  <data name="CLEARINGDAYINVALID" xml:space="preserve">
+    <value>Settlement cycle is invalid</value>
+  </data>
+  <data name="IDCODE" xml:space="preserve">
+    <value>Identification:</value>
+  </data>
+  <data name="MEMBER_TYP" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="MEMBER_CUSTID" xml:space="preserve">
+    <value>CustID</value>
+  </data>
+  <data name="MEMBER_IDCODE" xml:space="preserve">
+    <value>Idcode</value>
+  </data>
+  <data name="MEMBER_FULLNAME" xml:space="preserve">
+    <value>Fullname</value>
+  </data>
+  <data name="MEMBER_REF" xml:space="preserve">
+    <value>Ref</value>
+  </data>
+  <data name="lblConsultant" xml:space="preserve">
+    <value>Consultant:</value>
+  </data>
+  <data name="lblVoucher" xml:space="preserve">
+    <value>Voucher:</value>
+  </data>
+  <data name="lblCalendar" xml:space="preserve">
+    <value>Calendar:</value>
+  </data>
+  <data name="TRADEUNIT" xml:space="preserve">
+    <value>Unit:</value>
+  </data>
+  <data name="ERR_FIELD_NULL" xml:space="preserve">
+    <value>This field can not be null!</value>
+  </data>
+  <data name="lblDescription" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="frm_CFMAST" xml:space="preserve">
+    <value>Customer information management</value>
+  </data>
+  <data name="frm_CFAUTH" xml:space="preserve">
+    <value>Authorize information management</value>
+  </data>
+  <data name="ERR_PRODUCTTYPE_NOTFOUND" xml:space="preserve">
+    <value>Product type not found</value>
+  </data>
+  <data name="ERR_EXPIREDDATE_INVALID" xml:space="preserve">
+    <value>Expired date is invalid</value>
+  </data>
+  <data name="ERR_SEC_INFO" xml:space="preserve">
+    <value>Invalid securities information!</value>
+  </data>
+  <data name="MEMBER_SYMBOL" xml:space="preserve">
+    <value>Symbol</value>
+  </data>
+  <data name="MEMBER_TRADE" xml:space="preserve">
+    <value>Trading</value>
+  </data>
+  <data name="btnAdjust" xml:space="preserve">
+    <value>&amp;Adjust</value>
+  </data>
+  <data name="MEMBER_COSTPRICE" xml:space="preserve">
+    <value>Cost Price</value>
+  </data>
+  <data name="MEMBER_BASICPRICE" xml:space="preserve">
+    <value>Ref Price</value>
+  </data>
+  <data name="lblCIAdvance" xml:space="preserve">
+    <value>Advance payment</value>
+  </data>
+  <data name="ApproveSuccessful" xml:space="preserve">
+    <value>Approved Successful</value>
+  </data>
+  <data name="btnApprove" xml:space="preserve">
+    <value>A&amp;pprove</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="RefusedSuccessful" xml:space="preserve">
+    <value>Refuse successful!</value>
+  </data>
+  <data name="RerectedSuccessful" xml:space="preserve">
+    <value>Rerected Successful</value>
+  </data>
+  <data name="btnRefuse" xml:space="preserve">
+    <value>Re&amp;fuse</value>
+  </data>
+  <data name="btnReject" xml:space="preserve">
+    <value>&amp;Reject</value>
+  </data>
+  <data name="ApproveConfirm" xml:space="preserve">
+    <value>Are you sure to approve?</value>
+  </data>
+  <data name="RejectConfirm" xml:space="preserve">
+    <value>Are you sure to reject?</value>
+  </data>
+  <data name="RefuseConfirm" xml:space="preserve">
+    <value>Are you sure to refuse?</value>
+  </data>
+  <data name="RejectComment" xml:space="preserve">
+    <value>Please enter your comment!</value>
+  </data>
+  <data name="lblTotalAmout" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="REFPRICE" xml:space="preserve">
+    <value>Ref. price:</value>
+  </data>
+  <data name="lblVia" xml:space="preserve">
+    <value>By Channel:</value>
+  </data>
+  <data name="ERR_ISSUER_MEMBER" xml:space="preserve">
+    <value>Member of this Issuers !!!</value>
+  </data>
+  <data name="chkTBS" xml:space="preserve">
+    <value>TBS?</value>
+  </data>
+  <data name="PRICEISINVALID" xml:space="preserve">
+    <value>Price is invalid</value>
+  </data>
+  <data name="MEMBER_MORTAGE" xml:space="preserve">
+    <value>Mortage</value>
+  </data>
+  <data name="lblEffDate" xml:space="preserve">
+    <value>Effective date</value>
+  </data>
+  <data name="ERR_EFFECTIVEDATE_INVALID" xml:space="preserve">
+    <value>Invalid effective date!</value>
+  </data>
+  <data name="chkOUTPRICEALLOW" xml:space="preserve">
+    <value>Accept out amplitude price?</value>
+  </data>
+  <data name="lblPutType" xml:space="preserve">
+    <value>Puthought type</value>
+  </data>
+  <data name="lblContraFirm" xml:space="preserve">
+    <value>Contra firm</value>
+  </data>
+  <data name="lblContraCus" xml:space="preserve">
+    <value>Contra Order</value>
+  </data>
+  <data name="ERR_CF_NOT_CAREBY" xml:space="preserve">
+    <value>You do not care this customer</value>
+  </data>
+  <data name="ERR_CF_CONTRACT_NOT_FOUND" xml:space="preserve">
+    <value>Contract was not found</value>
+  </data>
+  <data name="ERR_OD_ERROR_ORDER_BLOCKED" xml:space="preserve">
+    <value>Order was sent or Order does not existed!</value>
+  </data>
+  <data name="ERR_OD_ERROR_UPCOM_CANNOT_AMEND" xml:space="preserve">
+    <value>Upcom Order cannot amend</value>
+  </data>
+  <data name="ERR_OD_ERROR_UPCOM_CANCEL_BUY_FIRST" xml:space="preserve">
+    <value>Cancel buy order first!</value>
+  </data>
+  <data name="lblPurchasingPower" xml:space="preserve">
+    <value>PPSE</value>
+  </data>
+  <data name="btnAmend" xml:space="preserve">
+    <value>&amp;Amend</value>
+  </data>
+  <data name="btnCanDel" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="btnExit" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="btnGetDeal" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="lblDealNo" xml:space="preserve">
+    <value>DealID:</value>
+  </data>
+  <data name="DEALINVALID" xml:space="preserve">
+    <value>Invalid deal!</value>
+  </data>
+  <data name="INVALIDDEALNO" xml:space="preserve">
+    <value>Invalid deal to sell!</value>
+  </data>
+  <data name="INVALIDDEALQTTY" xml:space="preserve">
+    <value>Deal notenought to sell!</value>
+  </data>
+  <data name="DESC_AMEND_PREFIX" xml:space="preserve">
+    <value>Amendment </value>
+  </data>
+  <data name="DESC_CANCEL_PREFIX" xml:space="preserve">
+    <value>Cancel </value>
+  </data>
+  <data name="ISSUER_MEMBER" xml:space="preserve">
+    <value>He/she is member of this issuer. Do you want continue place order ?</value>
+  </data>
+  <data name="chkPTRepo" xml:space="preserve">
+    <value>Order Repo</value>
+  </data>
+  <data name="lblREFORDERID" xml:space="preserve">
+    <value>Ref OrderID:</value>
+  </data>
+  <data name="lblEXPTDATE" xml:space="preserve">
+    <value>Ex date:</value>
+  </data>
+  <data name="lblEXPTPRICE" xml:space="preserve">
+    <value>Price 2:</value>
+  </data>
+  <data name="INVALID_CODEID" xml:space="preserve">
+    <value>Symbol invalid!</value>
+  </data>
+  <data name="INVALID_CUSTODYCD" xml:space="preserve">
+    <value>Custodycode invalid!</value>
+  </data>
+  <data name="INVALID_STATUS" xml:space="preserve">
+    <value>Ref Order status invalid!</value>
+  </data>
+  <data name="INVALID_REFORDERID" xml:space="preserve">
+    <value>Invalid RefOrder ID!</value>
+  </data>
+  <data name="INVALID_EXECTYPE" xml:space="preserve">
+    <value>Invalid Exectype!</value>
+  </data>
+  <data name="INVALID_FIRM" xml:space="preserve">
+    <value>Invalid firm!</value>
+  </data>
+  <data name="INVALIDAMENDEDQTTY" xml:space="preserve">
+    <value>The amended quantity must be greater then exected quantity</value>
+  </data>
+  <data name="NOTVALIDTOAMENDED" xml:space="preserve">
+    <value>It's all same as Origin Order</value>
+  </data>
+  <data name="PRICETYPECOULDNOTEDIT" xml:space="preserve">
+    <value>This Price Type not permit to amended</value>
+  </data>
+  <data name="SYMBOLWAITINGFORSEND" xml:space="preserve">
+    <value>Cannot amend symbol waiting for send</value>
+  </data>
+  <data name="NOINVALIDSOPRICE" xml:space="preserve">
+    <value>SO Price must &gt; 0</value>
+  </data>
+  <data name="QUOTEQTTYNOT0" xml:space="preserve">
+    <value>Quote Quantity must &gt; 0</value>
+  </data>
+  <data name="ERR_INVALID_PTORDER" xml:space="preserve">
+    <value>You can not make pouthrought order with market price !!!</value>
+  </data>
+  <data name="ERR_INVALID_QTTY" xml:space="preserve">
+    <value>Invalid correction quantity!</value>
+  </data>
+  <data name="ERR_INVALID_STOCK_NUM" xml:space="preserve">
+    <value>Stock amount is invalid!!!</value>
+  </data>
+  <data name="ERR_NOT_ABL" xml:space="preserve">
+    <value>Amendment Balance: {0} over original balance</value>
+  </data>
+  <data name="ERR_NOT_ECI" xml:space="preserve">
+    <value>CI Balance: {0} not enought to buy</value>
+  </data>
+  <data name="ERR_NOT_EMT" xml:space="preserve">
+    <value>Mortage Balance: {0} not enought to sell</value>
+  </data>
+  <data name="ERR_NOT_ENOUGH_SECURITIES" xml:space="preserve">
+    <value>Not enough securities!!!</value>
+  </data>
+  <data name="ERR_NOT_ESE" xml:space="preserve">
+    <value>SE Balance: {0} not enought to sell</value>
+  </data>
+  <data name="ERR_SHALT" xml:space="preserve">
+    <value>Securities halted!</value>
+  </data>
+  <data name="ERR_STOCK_HALT" xml:space="preserve">
+    <value>Securities halted with nomal trasaction!</value>
+  </data>
+  <data name="ERR_STOCK_HALT_PT" xml:space="preserve">
+    <value>Securities halted with put though trasaction!</value>
+  </data>
+  <data name="ERR_STOCK_NOT_NULL" xml:space="preserve">
+    <value>Stock fields can not be null!</value>
+  </data>
+  <data name="ERR_NOT_EPURC" xml:space="preserve">
+    <value>Purchasing power: {0} not enought to buy</value>
+  </data>
+  <data name="INV_ACCNUMBER" xml:space="preserve">
+    <value>Invalid account number!</value>
+  </data>
+  <data name="INV_MATYTYPELO" xml:space="preserve">
+    <value>Matchtype can't be Putthrough when Pricetype is not LO!!!</value>
+  </data>
+  <data name="INV_QTTY1000" xml:space="preserve">
+    <value>Quantity can't less then {0} when match type is Putthrought!!!</value>
+  </data>
+  <data name="INV_QTTY20000" xml:space="preserve">
+    <value>Quantity must greater than {0} when match type is PT!!!</value>
+  </data>
+  <data name="INV_QTTY5000" xml:space="preserve">
+    <value>Quantity must greater than {1}!</value>
+  </data>
+  <data name="INV_QTTYHOLO" xml:space="preserve">
+    <value>Quantity must less then {0} with HOSE market place!</value>
+  </data>
+  <data name="INV_TRADEBUYSELL" xml:space="preserve">
+    <value>Buy and sell same securities in day !!!</value>
+  </data>
+  <data name="INVALID_ORDERQTTY" xml:space="preserve">
+    <value>Invalid qtty</value>
+  </data>
+  <data name="ERR_CUSTODY_NULL" xml:space="preserve">
+    <value>Custody code can not be null</value>
+  </data>
+  <data name="CF_NOT_FOUND" xml:space="preserve">
+    <value>Can not found custody code</value>
+  </data>
+</root>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Aprove_Export_Caption" xml:space="preserve">
+    <value>Duyệt export số liệu</value>
+  </data>
+	<data name="Aprove_Import_Caption" xml:space="preserve">
+    <value>Duyệt import số liệu</value>
+  </data>
+	<data name="btnAprove" xml:space="preserve">
+    <value>Duyệt</value>
+  </data>
+	<data name="btnSave" xml:space="preserve">
+    <value>Ghi dữ liệu</value>
+  </data>
+	<data name="btnSearch" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+	<data name="Export_Caption" xml:space="preserve">
+    <value>Export số liệu</value>
+  </data>
+	<data name="Import_Caption" xml:space="preserve">
+    <value>Import số liệu</value>
+  </data>
+	<data name="lblBankName" xml:space="preserve">
+    <value>Ngân hàng:</value>
+  </data>
+	<data name="lblBATCHDATE" xml:space="preserve">
+    <value>Ngày thực hiện:</value>
+  </data>
+	<data name="lblBrowse" xml:space="preserve">
+    <value>Chọn</value>
+  </data>
+	<data name="lblEFFECTDATE" xml:space="preserve">
+    <value>Ngày hiệu lực:</value>
+  </data>
+	<data name="lblFileType" xml:space="preserve">
+    <value>Loại file</value>
+  </data>
+	<data name="lblPath" xml:space="preserve">
+    <value>Đường dẫn</value>
+  </data>
+	<data name="lblTranCode" xml:space="preserve">
+    <value>Loại giao dịch:</value>
+  </data>
+	<data name="lblUNHOLD" xml:space="preserve">
+    <value>Phong tỏa:</value>
+  </data>
+	<data name="msg_Format_File_Invalid" xml:space="preserve">
+    <value>Định dạng file dữ liệu không hợp lệ. Vui lòng chuẩn hóa lại file dữ liệu trước khi đồng bộ file!</value>
+  </data>
+	<data name="msg_PathFile_Invalid" xml:space="preserve">
+    <value>Đường dẫn không hợp lệ, vui lòng chọn lại đường dẫn!</value>
+  </data>
+	<data name="msg_Please_Choose_File" xml:space="preserve">
+    <value>Vui lòng chọn đường dẫn đến file [@] cần đọc!</value>
+  </data>
+	<data name="msg_Read_From_File" xml:space="preserve">
+    <value>Dữ liệu nhận từ file [@] dòng!</value>
+  </data>
+	<data name="btnBrowse" xml:space="preserve">
+    <value>&gt;&gt;&gt;</value>
+  </data>
+	<data name="btnCancel" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+	<data name="btnExport" xml:space="preserve">
+    <value>Xuất dữ liệu</value>
+  </data>
+	<data name="btnLoadData" xml:space="preserve">
+    <value>Đọc dữ liệu</value>
+  </data>
+	<data name="msg_Do_Not_Data_To_Export" xml:space="preserve">
+    <value>Không có dữ liệu để kết xuất</value>
+  </data>
+	<data name="msg_Export_Data_Complete" xml:space="preserve">
+    <value>Kết xuất dữ liệu hoàn tất</value>
+  </data>
+	<data name="chkIsSigner" xml:space="preserve">
+    <value>Ký dữ liệu</value>
+  </data>
+	<data name="chkIsVerify" xml:space="preserve">
+    <value>Kiểm tra</value>
+  </data>
+	<data name="btnAutoGen" xml:space="preserve">
+    <value>...</value>
+  </data>
+	<data name="grid.AVLBALANCE" xml:space="preserve">
+    <value>Số dư khả dụng</value>
+  </data>
+	<data name="grid.BALANCE" xml:space="preserve">
+    <value>Số dư</value>
+  </data>
+	<data name="grid.BANKACCTNO" xml:space="preserve">
+    <value>Số TK ngân hàng</value>
+  </data>
+	<data name="grid.BANKNAME" xml:space="preserve">
+    <value>Tên TK ngân hàng</value>
+  </data>
+	<data name="grid.CUSTODYCD" xml:space="preserve">
+    <value> TK lưu ký</value>
+  </data>
+	<data name="grid.FULLNAME" xml:space="preserve">
+    <value>Tên khách hàng</value>
+  </data>
+	<data name="grid.STATUS" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+	<data name="lblBATCHID" xml:space="preserve">
+    <value>BATCHID:</value>
+  </data>
+	<data name="lblCURR" xml:space="preserve">
+    <value>Loại tiền:</value>
+  </data>
+	<data name="lblSCID" xml:space="preserve">
+    <value>SCID:</value>
+  </data>
+	<data name="msg_Bank_BranchID_Not_The_Same" xml:space="preserve">
+    <value>Không trùng mã chi nhánh ngân hàng</value>
+  </data>
+	<data name="msg_Read_Data_Successfull" xml:space="preserve">
+    <value>Đọc dữ liệu thành công, số TK đọc:</value>
+  </data>
+	<data name="_TICK" xml:space="preserve">
+    <value>Chọn</value>
+  </data>
+	<data name="msg_Do_Not_Data_To_Sync" xml:space="preserve">
+    <value>Không có dữ liệu được đồng bộ vào hệ thống!</value>
+  </data>
+	<data name="msg_Input_File_Invalid" xml:space="preserve">
+    <value>File dư liệu đầu vào không hợp lệ!</value>
+  </data>
+	<data name="msg_Syn_Result" xml:space="preserve">
+    <value>Kết quả đồng bộ dữ liệu [@] dòng</value>
+  </data>
+	<data name="msg_Write_Data_Now" xml:space="preserve">
+    <value>Bạn có muốn ghi dữ liệu bây giờ?</value>
+  </data>
+	<data name="msg_Write_Data_Successfull" xml:space="preserve">
+    <value>Ghi dữ liệu thành công!</value>
+  </data>
+	<data name="btnSync" xml:space="preserve">
+    <value>Đông bộ vào hệ thống</value>
+  </data>
+	<data name="msg_Do_Not_Data_To_Save" xml:space="preserve">
+    <value>Không có dữ liệu để ghi!</value>
+  </data>
+	<data name="chkAll" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+	<data name="chkisSum" xml:space="preserve">
+    <value>Tính tổng?</value>
+  </data>
+	<data name="lblStatus" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+	<data name="msg_File_Does_Exist" xml:space="preserve">
+    <value>Đã xuất [@] file bạn có muốn tạo lần nữa không?</value>
+  </data>
+	<data name="msg_Replace_Old_File" xml:space="preserve">
+    <value>Đã xuất file bạn có muốn ghi đè không?</value>
+  </data>
+	<data name="lblCancel" xml:space="preserve">
+    <value>Test khong chap nhan</value>
+  </data>
+	<data name="lblCondition" xml:space="preserve">
+    <value>Tiêu chí:</value>
+  </data>
+	<data name="lblOK" xml:space="preserve">
+    <value>Test Chap nhan </value>
+  </data>
+	<data name="tabExport" xml:space="preserve">
+    <value>Xuất dữ liệu</value>
+  </data>
+	<data name="tabImport" xml:space="preserve">
+    <value>Đồng bộ dữ liệu</value>
+  </data>
+	<data name="tabIorE" xml:space="preserve">
+    <value>Xuất dữ liệu</value>
+  </data>
+	<data name="tabOther" xml:space="preserve">
+    <value>Tab khác</value>
+  </data>
+	<data name="grbSearchResult" xml:space="preserve">
+    <value>Kết quả tìm kiếm</value>
+  </data>
+	<data name="lblTXDATE" xml:space="preserve">
+    <value>Ngày:</value>
+  </data>
+	<data name="msg_Can_Not_Create_BatchID" xml:space="preserve">
+    <value>Không khởi tạo được BatchID, vui lòng kiểm tra và Tìm kiếm lại!</value>
+  </data>
+	<data name="frmRMOfflineManager.chkAll" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+	<data name="msg_Invalid_Import_File_Date" xml:space="preserve">
+    <value>File import có ngày không hợp lệ!</value>
+  </data>
+</root>

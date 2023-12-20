@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="InitDialogFailed" xml:space="preserve">
+    <value>Không khởi tạo được cửa sổ!</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>&amp;Chấp nhận</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>&amp;Thoát</value>
+  </data>
+  <data name="frmOTRIGHT" xml:space="preserve">
+    <value>Đăng ký dịch vụ trực tuyến</value>
+  </data>
+  <data name="lblCaption0" xml:space="preserve">
+    <value>Thông tin đăng ký dịch vụ trực tuyến</value>
+  </data>
+  <data name="lblCaption1" xml:space="preserve">
+    <value>Thêm mới đăng ký dịch vụ trực tuyến</value>
+  </data>
+  <data name="lblCaption2" xml:space="preserve">
+    <value>Sửa thông tin đăng ký dịch vụ trực tuyến</value>
+  </data>
+  <data name="lblAUTHAFACCTNO" xml:space="preserve">
+    <value>Mã tiểu khoản:</value>
+  </data>
+  <data name="lblAUTHCUSTID" xml:space="preserve">
+    <value>Mã khách hàng:</value>
+  </data>
+  <data name="lblIDCODE" xml:space="preserve">
+    <value>Số CMT/HC/giấy ĐKKD:</value>
+  </data>
+  <data name="lblVALDATE" xml:space="preserve">
+    <value>Ngày hiệu lực:</value>
+  </data>
+  <data name="SavingFailed" xml:space="preserve">
+    <value>Không thể thêm mới hoặc sửa thông tin đăng ký dịch vụ trực tuyến!</value>
+  </data>
+  <data name="AddnewSuccessful" xml:space="preserve">
+    <value>Thêm mới dữ liệu thành công!</value>
+  </data>
+  <data name="EditSuccessful" xml:space="preserve">
+    <value>Cập nhật dữ liệu thành công!</value>
+  </data>
+  <data name="Mandatory" xml:space="preserve">
+    <value>Trường [@] không được để trống!</value>
+  </data>
+  <data name="lblEXPDATE" xml:space="preserve">
+    <value>Ngày hết hiệu lực:</value>
+  </data>
+  <data name="DELTD" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="grbRightAssgn" xml:space="preserve">
+    <value>Thông tin đăng ký</value>
+  </data>
+  <data name="lblFULLNAME" xml:space="preserve">
+    <value>Tên KH:</value>
+  </data>
+  <data name="ERR_EXPRISEDDATE_INVALID" xml:space="preserve">
+    <value>Ngày hết hạn phải lớn hơn ngày hiện tại !</value>
+  </data>
+  <data name="ERR_CF_CFAUTH_NULL" xml:space="preserve">
+    <value>Nghiệp vụ ủy quyền không thể trống!</value>
+  </data>
+  <data name="ERR_VALDATE_INVALID" xml:space="preserve">
+    <value>Ngày hiệu lực phải lớn hơn ngày hiện tại !</value>
+  </data>
+  <data name="btnApply" xml:space="preserve">
+    <value>&amp;Ghi</value>
+  </data>
+  <data name="grid.LNDATE" xml:space="preserve">
+    <value>Ngày cấp</value>
+  </data>
+  <data name="msgCUSAUTHORGCUS" xml:space="preserve">
+    <value>Người ủy quyền và người được ủy quyền không thể là một !</value>
+  </data>
+  <data name="ERR_CF_CFAUTH_CUSTID_NOTFOUND" xml:space="preserve">
+    <value>Mã khách hàng không tồn tại !</value>
+  </data>
+  <data name="lblASGNTYPE" xml:space="preserve">
+    <value>Loại đăng ký:</value>
+  </data>
+  <data name="lblAUTHTYPE" xml:space="preserve">
+    <value>Loại xác thực:</value>
+  </data>
+  <data name="ACCTNO_INVALID" xml:space="preserve">
+    <value>Số tài khoản không phù hợp! </value>
+  </data>
+  <data name="grid.DESCRIPTION" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="grid.EDIT" xml:space="preserve">
+    <value>Chỉnh sửa</value>
+  </data>
+  <data name="grid.MENUCODE" xml:space="preserve">
+    <value>Chức năng</value>
+  </data>
+  <data name="grid.SEARCH" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="grid.SUBMIT" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="grid.VIEW" xml:space="preserve">
+    <value>Xem</value>
+  </data>
+  <data name="ACCTNO_OWNER" xml:space="preserve">
+    <value>Không được phép ủy quyền cho chính mình!</value>
+  </data>
+  <data name="ERR_VALDATE_LARGER_EXPDATE" xml:space="preserve">
+    <value>Ngày hết hạn phải sau ngày bắt đầu có hiệu lực!</value>
+  </data>
+  <data name="lblAUTHCUSTODYCD" xml:space="preserve">
+    <value>Số TK lưu ký:</value>
+  </data>
+  <data name="grid.AUTHPASS" xml:space="preserve">
+    <value>Xác thực mật khẩu</value>
+  </data>
+  <data name="grid.AUTHTOKEN" xml:space="preserve">
+    <value>Xác thực Token</value>
+  </data>
+  <data name="ADWINPUT" xml:space="preserve">
+    <value>Ứng trước tiền bán</value>
+  </data>
+  <data name="auth_warning" xml:space="preserve">
+    <value>phải chọn ít nhất một loại xác thực!</value>
+  </data>
+  <data name="BONDSTOSHARES" xml:space="preserve">
+    <value>Chuyển đổi trái phiếu</value>
+  </data>
+  <data name="CASHTRANS" xml:space="preserve">
+    <value>Chuyển tiền</value>
+  </data>
+  <data name="ISSUEINPUT" xml:space="preserve">
+    <value>Đăng ký quyền mua</value>
+  </data>
+  <data name="MORTGAGE" xml:space="preserve">
+    <value>Cầm cố</value>
+  </data>
+  <data name="TERMDEPOSIT" xml:space="preserve">
+    <value>Gửi tiết kiệm</value>
+  </data>
+  <data name="lblSERIALTOKEN" xml:space="preserve">
+    <value>Serial Token:</value>
+  </data>
+  <data name="grid.AUTHMATRIX" xml:space="preserve">
+    <value>Xác thực thẻ Martrix</value>
+  </data>
+  <data name="SERIALTOKEN_INVALID_1" xml:space="preserve">
+    <value>Bắt buộc nhập Serial Token với kiểu xác thực Token!</value>
+  </data>
+  <data name="SERIALTOKEN_INVALID_2" xml:space="preserve">
+    <value>Bắt buộc nhập Serial Token với kiểu xác thực Matrix!</value>
+  </data>
+  <data name="SERIALTOKEN_TEXT" xml:space="preserve">
+    <value>Bắt buộc nhập Serial Token!</value>
+  </data>
+  <data name="SERIAL_MUSTBE_REGISTER_FIRST" xml:space="preserve">
+    <value>Số Serial chưa đăng ký!</value>
+  </data>
+  <data name="ADD_MOBILE_EMAIL" xml:space="preserve">
+    <value>Bạn cần bổ xung thông tin về email hoặc sms !</value>
+  </data>
+  <data name="lblVia" xml:space="preserve">
+    <value>Kênh giao dịch:</value>
+  </data>
+  <data name="grid.AUTHOTPSMS" xml:space="preserve">
+    <value>Xác thực OTP(SMS)</value>
+  </data>
+  <data name="grid.NULL" xml:space="preserve">
+    <value>Loại xác thực</value>
+  </data>
+  <data name="NOSERVICEDIFFORDER" xml:space="preserve">
+    <value>Chỉ cần đăng ký cho chức năng đặt lệnh</value>
+  </data>
+</root>

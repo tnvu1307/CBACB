@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="GridEx.GroupByRow">
+		<value>Hãy kéo cột cần nhóm vào đây! (F6: Focus to grid, F7: Prev, F8: Next, F9: Choose)</value>
+	</data>
+	<data name="GridEx.FooterRow">
+		<value>Tổng số bản ghi tìm kiếm: </value>
+	</data>
+	<data name="frmSearch.grbSearchResult">
+		<value>Kết quả tìm kiếm:</value>
+	</data>
+	<data name="frmSearch.tbnAdd">
+		<value>Thêm mới</value>
+	</data>
+	<data name="frmSearch.tbnView">
+		<value>Xem</value>
+	</data>
+	<data name="frmSearch.tbnEdit">
+		<value>Sửa</value>
+	</data>
+	<data name="frmSearch.tbnDelete">
+		<value>Xoá</value>
+	</data>
+	<data name="frmSearch.tbnExit">
+		<value>Thoát</value>
+	</data>
+	<data name="frmSearch.grbSearchFilter">
+		<value>Điều kiện tìm kiếm:</value>
+	</data>
+	<data name="frmSearch.grbCondition">
+		<value>Điều kiện:</value>
+	</data>
+	<data name="frmSearch.lblField">
+		<value>Tiêu chí:</value>
+	</data>
+	<data name="frmSearch.lblOperator">
+		<value>Điều kiện:</value>
+	</data>
+	<data name="frmSearch.lblValue">
+		<value>Giá trị:</value>
+	</data>
+	<data name="frmSearch.grbConditionList">
+		<value>Danh sách điều kiện tìm kiếm:</value>
+	</data>
+	<data name="frmSearch.btnSearch">
+		<value>&amp;Tìm kiếm</value>
+	</data>
+	<data name="frmSearch.btnAdd">
+		<value>4</value>
+	</data>
+	<data name="frmSearch.btnRemove">
+		<value>3</value>
+	</data>
+	<data name="frmSearch.btnRemoveAll">
+		<value>7</value>
+	</data>
+	<data name="ExecuteFlag.AddNew">
+		<value>Thêm mới</value>
+	</data>
+	<data name="ExecuteFlag.View">
+		<value>Xem</value>
+	</data>
+	<data name="ExecuteFlag.Edit">
+		<value>Sửa</value>
+	</data>
+	<data name="ExecuteFlag.Delete">
+		<value>Xoá</value>
+	</data>
+	<data name="frmSearch.Searching">
+		<value>Đang thực hiện tìm kiếm...</value>
+	</data>
+	<data name="frmSearch.btnExport">
+		<value>Kết xuất</value>
+	</data>
+	<data name="frmSearch.Footer">
+		<value>Đây là footer, không thể xem, sửa, xoá dữ liệu!</value>
+	</data>
+	<data name="frmSearch.NotSelected">
+		<value>Phải chọn dòng thông tin cần xem, sửa, xoá!</value>
+	</data>
+	<data name="frmSearch.DelSuccess">
+		<value>Xoá dữ liệu thành công!</value>
+	</data>
+	<data name="frmSearch.DelConfirm">
+		<value>Đồng ý xoá dữ liệu?</value>
+	</data>
+	<data name="frmSearch.NothingToExport">
+		<value>Không có dữ liệu để kết xuất!</value>
+	</data>
+	<data name="frmSearch.ExportSuccessful">
+		<value>Kết xuất dữ liệu thành công!</value>
+	</data>
+	<data name="frmSearch.btnBACK">
+		<value>BACK</value>
+	</data>
+	<data name="frmSearch.btnNEXT">
+		<value>NEXT</value>
+	</data>
+</root>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="lblExecType">
+		<value>Execute type</value>
+	</data>
+	<data name="lblSymbol">
+		<value>Symbol</value>
+	</data>
+	<data name="lblPenanty">
+		<value>Penalty(%)</value>
+	</data>
+	<data name="lblRPDate">
+		<value>Open date</value>
+	</data>
+	<data name="lblMatchType">
+		<value>Match type</value>
+	</data>
+	<data name="lblQuantity">
+		<value>Quantity</value>
+	</data>
+	<data name="lblContractRate">
+		<value>Contract rate(%)</value>
+	</data>
+	<data name="lblCalendar">
+		<value>Calendar</value>
+	</data>
+	<data name="lblCARight">
+		<value>CA right</value>
+	</data>
+	<data name="lblTPRRate">
+		<value>TPR rate(%)</value>
+	</data>
+	<data name="lblBreakTerm">
+		<value>Break term</value>
+	</data>
+	<data name="lblSpot">
+		<value>Spot</value>
+	</data>
+	<data name="lblForward">
+		<value>Forward</value>
+	</data>
+	<data name="lblSpotPrice">
+		<value>Spot price</value>
+	</data>
+	<data name="lblSpotValue">
+		<value>Spot value</value>
+	</data>
+	<data name="lblSpotDate">
+		<value>Spot date</value>
+	</data>
+	<data name="lblForwardPrice">
+		<value>Forward price</value>
+	</data>
+	<data name="lblForwardValue">
+		<value>Forward value</value>
+	</data>
+	<data name="lblForwardDate">
+		<value>Forward date</value>
+	</data>
+	<data name="btnOK">
+		<value>&amp;Ok</value>
+	</data>
+	<data name="btnCANCEL">
+		<value>&amp;Cancel</value>
+	</data>
+	<data name="lblAFACCTNO">
+		<value>Contract No:</value>
+	</data>
+	<data name="frmRPTransact">
+		<value>Open Repo contract </value>
+	</data>
+	<data name="lblRPACCTNO">
+		<value>Repo account</value>
+	</data>
+	<data name="lblAFNAME">
+		<value></value>
+	</data>
+	<data name="QTTYISNOTNUMBER">
+		<value>Quantity should be a number!</value>
+	</data>
+	<data name="QTTYSHOULDBEPOSITIVENUMBER">
+		<value>Quantity should be a positive number!</value>
+	</data>
+	<data name="TRADELOTINVALID">
+		<value>Trade lot invalid</value>
+	</data>
+	<data name="SPOTPRICEISNOTNUMBER">
+		<value>Spot Price should be a number!</value>
+	</data>
+	<data name="SPOTPRICESHOULDBEPOSITIVENUMBER">
+		<value>Spot price should be a positive number!</value>
+	</data>
+	<data name="SPOTVALUEISNOTNUMBER">
+		<value>Spot value should be a number!</value>
+	</data>
+	<data name="SPOTVALUESHOULDBEPOSITIVENUMBER">
+		<value>Spot value should be a positive number!</value>
+	</data>
+	<data name="PenantyVALUEISNOTNUMBER">
+		<value>Penanty should be a number!</value>
+	</data>
+	<data name="PenantySHOULDBEPOSITIVENUMBER">
+		<value>Penanty should be a positive number!</value>
+	</data>
+	<data name="ContractRateISNOTNUMBER">
+		<value>Contract rate should be a number!</value>
+	</data>
+	<data name="ContractRateSHOULDBEPOSITIVENUMBER">
+		<value>Contract rate should be a positive number!</value>
+	</data>
+	<data name="TPRRateISNOTNUMBER">
+		<value>TPR rate should be a number!</value>
+	</data>
+	<data name="TPRRateSHOULDBEPOSITIVENUMBER">
+		<value>TPR rate should be a positive number!</value>
+	</data>
+	<data name="BreakTermISNOTNUMBER">
+		<value>Break term should be a number!</value>
+	</data>
+	<data name="BreakTermSHOULDBEPOSITIVENUMBER">
+		<value>Break term should be a positive number!</value>
+	</data>
+	<data name="lblYearDay">
+		<value>Year day</value>
+	</data>
+	<data name="FORWARDDATEISSMALLERTHANSPOTDATE">
+		<value>Forward date should be greater than or equal spot date!</value>
+	</data>
+	<data name="ForwardVALUESHOULDBEPOSITIVENUMBER">
+		<value>Forward value should be a positive number</value>
+	</data>
+	<data name="ForwardVALUEISNOTNUMBER">
+		<value>Forward value must be numerical</value>
+	</data>
+	<data name="ForwardPRICESHOULDBEPOSITIVENUMBER">
+		<value>Forward price should be a positve number</value>
+	</data>
+	<data name="ForwardPRICEISNOTNUMBER">
+		<value>Forward price must be numerical</value>
+	</data>
+	<data name="lblACCTNO">
+		<value>RP contract ID</value>
+	</data>
+	<data name="CONTRACTINVALID">
+		<value>Invalid contract account!</value>
+	</data>
+	<data name="lblSECUREDRATIO">
+		<value>Sec ratio (%)</value>
+	</data>
+	<data name="SECUREDRATIOISNOTNUMBER">
+		<value>Secured bratio should be a number!</value>
+	</data>
+	<data name="SECUREDRATIOSHOULDBEINRANGENUMBER">
+		<value>Secured bratio should be in range 0..100!</value>
+	</data>
+	<data name="ERR_FIELD_NULL">
+		<value>This field can not be null!</value>
+	</data>
+	<data name="SPOTDATEISSMALLERTHANCONTRACTDATE">
+		<value>Spot date should be greater than or equal contract date!</value>
+	</data>
+	<data name="FORWARDDATEISSMALLERTHANRPDATE">
+		<value>Forward date should be greater than or equal contract date!</value>
+	</data>
+</root>

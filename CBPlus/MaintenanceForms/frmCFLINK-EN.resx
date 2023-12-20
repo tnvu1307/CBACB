@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="InitDialogFailed">
+		<value>Dialog initiation is failed!</value>
+	</data>
+	<data name="btnOK">
+		<value>&amp;OK</value>
+	</data>
+	<data name="btnCancel">
+		<value>&amp;Cancel</value>
+	</data>
+	<data name="frmCFLINK">
+		<value>Member management</value>
+	</data>
+	<data name="lblCaption0">
+		<value>Member information.</value>
+	</data>
+	<data name="lblCaption1">
+		<value>Add new member.</value>
+	</data>
+	<data name="lblCaption2">
+		<value>Edit contract.</value>
+	</data>
+	<data name="AUTOID">
+		<value>Auto ID:</value>
+	</data>
+	<data name="CUSTID">
+		<value>Customer ID:</value>
+	</data>
+	<data name="ACCTNO">
+		<value>Contract no:</value>
+	</data>
+	<data name="LINKTYPE">
+		<value>Type:</value>
+	</data>
+	<data name="DESCRIPTION">
+		<value>Description:</value>
+	</data>
+	<data name="grbMAINLINK">
+		<value>Member information</value>
+	</data>
+	<data name="SavingFailed">
+		<value>Cannot add new or edit contract!</value>
+	</data>
+	<data name="AddnewSuccessful">
+		<value>Add new successful!</value>
+	</data>
+	<data name="EditSuccessful">
+		<value>Edit successful!</value>
+	</data>
+	<data name="Mandatory">
+		<value>The field [@] should not be empty!</value>
+	</data>
+	<data name="btnApply">
+		<value>&amp;Apply</value>
+	</data>
+	<data name="btnNEXT" xml:space="preserve">
+    <value>&amp;Next</value>
+  </data>
+	<data name="btnPREVIOUS" xml:space="preserve">
+    <value>&amp;Previous</value>
+  </data>
+	<data name="ADDRESS" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+	<data name="TELEPHONE" xml:space="preserve">
+    <value>Telephone:</value>
+  </data>
+	<data name="LICENSENO" xml:space="preserve">
+    <value>Id code:</value>
+  </data>
+	<data name="FULLNAME" xml:space="preserve">
+    <value>Customer name:</value>
+  </data>
+	<data name="LNIDDATE" xml:space="preserve">
+    <value>Issue date</value>
+  </data>
+	<data name="LNPLACE" xml:space="preserve">
+    <value>Issue place</value>
+  </data>
+	<data name="msgCUSAUTHORGCUS" xml:space="preserve">
+    <value>Authorizer and authorized person can not be the same!</value>
+  </data>
+	<data name="ERR_CF_CFAUTH_CUSTID_NOTFOUND" xml:space="preserve">
+    <value>Customer ID not found!</value>
+  </data>
+	<data name="tpSign" xml:space="preserve">
+    <value>Signature</value>
+  </data>
+	<data name="tpMainInfo" xml:space="preserve">
+    <value>Information</value>
+  </data>
+</root>

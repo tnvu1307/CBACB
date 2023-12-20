@@ -1,0 +1,2091 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC2E4047-9529-49C7-B34D-5408DEE94B96}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>_DIRECT.My.MyApplication</StartupObject>
+    <RootNamespace>_DIRECT</RootNamespace>
+    <AssemblyName>CBPlus</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Deployment\Client\</OutputPath>
+    <DocumentationFile>CBPlus.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Optimize>true</Optimize>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Deployment\Client\</OutputPath>
+    <DocumentationFile>CBPlus.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>CB.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="CryptoUtil">
+      <HintPath>..\Libref\CryptoUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libref\Cry\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libref\Cry\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libref\Cry\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libref\Cry\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DataGridViewAutoFilter">
+      <HintPath>..\Libref\DataGridViewAutoFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.BonusSkins.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.Designer.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.Charts.Designer.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.Data.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.DataAccess.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.Docs.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.Images.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v14.1.Core">
+      <HintPath>..\Libref\DevExpress\DevExpress.Office.v14.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v14.1.Core">
+      <HintPath>..\Libref\DevExpress\DevExpress.Pdf.v14.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v14.1.Drawing">
+      <HintPath>..\Libref\DevExpress\DevExpress.Pdf.v14.1.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.1.Core">
+      <HintPath>..\Libref\DevExpress\DevExpress.Printing.v14.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v14.1.Core">
+      <HintPath>..\Libref\DevExpress\DevExpress.RichEdit.v14.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v14.1.Core">
+      <HintPath>..\Libref\DevExpress\DevExpress.Sparkline.v14.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.Utils.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.1.UI">
+      <HintPath>..\Libref\DevExpress\DevExpress.Utils.v14.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.Web.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XapUpdater">
+      <HintPath>..\Libref\DevExpress\DevExpress.XapUpdater.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.Xpf.Core.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Grid.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.Xpf.Grid.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.RichEdit.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.Xpf.RichEdit.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.Xpo.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraBars.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v14.1.UI">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraCharts.v14.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v14.1.Web">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraCharts.v14.1.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraEditors.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraGrid.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraLayout.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraPdfViewer.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraPrinting.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraReports.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.1.Extensions">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraReports.v14.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.1.Service">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraReports.v14.1.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.1.Web">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraReports.v14.1.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraRichEdit.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraScheduler.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraSpreadsheet.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraTreeList.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraVerticalGrid.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v14.1">
+      <HintPath>..\Libref\DevExpress\DevExpress.XtraWizard.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelLibrary">
+      <HintPath>..\Libref\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="HTMLEditorControl">
+      <HintPath>..\Libref\HTMLEditorControl.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Libref\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.BITCEnvelop">
+      <HintPath>..\Libref\Interop.BITCEnvelop.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Excel">
+      <HintPath>..\Libref\Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.SHDocVw">
+      <HintPath>..\Libref\Interop.SHDocVw.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\Libref\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libref\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libref\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="netchartdir">
+      <HintPath>..\Libref\netchartdir.dll</HintPath>
+    </Reference>
+    <Reference Include="quickfix_net">
+      <HintPath>..\Libref\quickfix_net.dll</HintPath>
+    </Reference>
+    <Reference Include="SendFiles">
+      <HintPath>..\Libref\SendFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="SocketServer">
+      <HintPath>..\Libref\SocketServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop">
+      <HintPath>..\Libref\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core">
+      <HintPath>..\Libref\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data">
+      <HintPath>..\Libref\Spring.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="Xceed.Editors, Version=2.5.10075.13300, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libref\Xceed.Editors.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Grid, Version=3.8.10075.13300, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libref\Xceed.Grid.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.SmartUI, Version=3.5.10075.13300, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libref\Xceed.SmartUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.SmartUI.Controls, Version=3.5.10075.13300, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libref\Xceed.SmartUI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.SmartUI.UIStyle, Version=3.5.10075.13300, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libref\Xceed.SmartUI.UIStyle.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.UI, Version=1.3.10075.13300, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libref\Xceed.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Validation, Version=1.2.10075.13300, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libref\Xceed.Validation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="Components\BasedEvent.vb" />
+    <Compile Include="Components\CacheOnSQLite.vb" />
+    <Compile Include="Components\CBusLayer.vb" />
+    <Compile Include="Components\ServiceManagement.vb" />
+    <Compile Include="Controls\ImageViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\usSeach.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\XtraSearch.designer.vb">
+      <DependentUpon>XtraSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\XtraSearch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmApprove-EN.Designer.vb" />
+    <Compile Include="frmApprove-VN.Designer.vb" />
+    <Compile Include="frmBrokerConfirm-EN.Designer.vb" />
+    <Compile Include="frmBrokerConfirm-VN.Designer.vb" />
+    <Compile Include="frmCAVOTING-EN.Designer.vb" />
+    <Compile Include="frmCAVOTING-VN.Designer.vb" />
+    <Compile Include="frmCAVOTING.designer.vb">
+      <DependentUpon>frmCAVOTING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCAVOTING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCFLNKAP-EN.Designer.vb" />
+    <Compile Include="frmCFLNKAP-VN.Designer.vb" />
+    <Compile Include="frmCrbtxreqHold-EN.Designer.vb" />
+    <Compile Include="frmCrbtxreqHold-VN.Designer.vb" />
+    <Compile Include="frmCrbtxreqHold.Designer.vb">
+      <DependentUpon>frmCrbtxreqHold.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrbtxreqHold.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrbtxreqUnHold-EN.Designer.vb" />
+    <Compile Include="frmCrbtxreqUnHold-VN.Designer.vb" />
+    <Compile Include="frmCrbtxreqUnHold.Designer.vb">
+      <DependentUpon>frmCrbtxreqUnHold.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrbtxreqUnHold.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCSVCompare-EN.Designer.vb" />
+    <Compile Include="frmCSVCompare-VN.Designer.vb" />
+    <Compile Include="frmCSVCompare.Designer.vb">
+      <DependentUpon>frmCSVCompare.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCSVCompare.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFABROKERAGE-EN.Designer.vb" />
+    <Compile Include="frmFABROKERAGE-VN.Designer.vb" />
+    <Compile Include="frmFABROKERAGEXTRA-EN.Designer.vb" />
+    <Compile Include="frmFABROKERAGEXTRA-VN.Designer.vb" />
+    <Compile Include="frmHoldUnhold-EN.Designer.vb" />
+    <Compile Include="frmHoldUnhold-VN.Designer.vb" />
+    <Compile Include="frmHoldUnhold.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delivery.vb" />
+    <Compile Include="frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminMessages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAFSERULE-EN.Designer.vb" />
+    <Compile Include="frmAFSERULE-VN.Designer.vb" />
+    <Compile Include="frmAFSERULE.Designer.vb">
+      <DependentUpon>frmAFSERULE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAFSERULE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApprove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApprv-EN.Designer.vb" />
+    <Compile Include="frmApprv-VN.Designer.vb" />
+    <Compile Include="frmApprv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuthTrade-EN.Designer.vb" />
+    <Compile Include="frmAuthTrade-VN.Designer.vb" />
+    <Compile Include="frmAuthTrade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBankOrder-EN.Designer.vb" />
+    <Compile Include="frmBankOrder-VN.Designer.vb" />
+    <Compile Include="frmBankOrder.Designer.vb">
+      <DependentUpon>frmBankOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBankOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBatchMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrokerConfirm.Designer.vb">
+      <DependentUpon>frmBrokerConfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrokerConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrokerDesk-EN.Designer.vb" />
+    <Compile Include="frmBrokerDesk-VN.Designer.vb" />
+    <Compile Include="frmBrokerDesk.Designer.vb">
+      <DependentUpon>frmBrokerDesk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrokerDesk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrokerDeskConfirm.Designer.vb">
+      <DependentUpon>frmBrokerDeskConfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrokerDeskConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrokerInquiry-EN.Designer.vb" />
+    <Compile Include="frmBrokerInquiry-VN.Designer.vb" />
+    <Compile Include="frmBrokerInquiry.Designer.vb">
+      <DependentUpon>frmBrokerInquiry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrokerInquiry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalendar-EN.Designer.vb" />
+    <Compile Include="frmCalendar-VN.Designer.vb" />
+    <Compile Include="frmCalendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangeOrderCustody-EN.Designer.vb" />
+    <Compile Include="frmChangeOrderCustody-VN.Designer.vb" />
+    <Compile Include="frmChangeOrderCustody.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword-EN.Designer.vb" />
+    <Compile Include="frmChangePassword-VN.Designer.vb" />
+    <Compile Include="frmChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompareTradingResult-EN.Designer.vb" />
+    <Compile Include="frmCompareTradingResult-VN.Designer.vb" />
+    <Compile Include="frmCompareTradingResult.designer.vb">
+      <DependentUpon>frmCompareTradingResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompareTradingResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateDFDeal-EN.Designer.vb" />
+    <Compile Include="frmCreateDFDeal-VN.Designer.vb" />
+    <Compile Include="frmCreateDFDeal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateDFGRDeal-EN.Designer.vb" />
+    <Compile Include="frmCreateDFGRDeal-VN.Designer.vb" />
+    <Compile Include="frmCreateDFGRDeal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCUWBIDDING-EN.Designer.vb" />
+    <Compile Include="frmCUWBIDDING-VN.Designer.vb" />
+    <Compile Include="frmCUWBIDDING.Designer.vb">
+      <DependentUpon>frmCUWBIDDING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCUWBIDDING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCWBIDDING-EN.Designer.vb" />
+    <Compile Include="frmCWBIDDING-VN.Designer.vb" />
+    <Compile Include="frmCWBIDDING.Designer.vb">
+      <DependentUpon>frmCWBIDDING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCWBIDDING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDefineCLDR-EN.Designer.vb" />
+    <Compile Include="frmDefineCLDR-VN.Designer.vb" />
+    <Compile Include="frmDefineCLDR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDefineProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDefineRisk-EN.Designer.vb" />
+    <Compile Include="frmDefineRisk-VN.Designer.vb" />
+    <Compile Include="frmDefineRisk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetailFixOD-EN.Designer.vb" />
+    <Compile Include="frmDetailFixOD-VN.Designer.vb" />
+    <Compile Include="frmDetailFixOD.Designer.vb">
+      <DependentUpon>frmDetailFixOD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetailFixOD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDFGroupView-EN.Designer.vb" />
+    <Compile Include="frmDFGroupView-VN.Designer.vb" />
+    <Compile Include="frmDFGroupView.Designer.vb">
+      <DependentUpon>frmDFGroupView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDFGroupView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExchangeSEGRDeal-EN.Designer.vb" />
+    <Compile Include="frmExchangeSEGRDeal-VN.Designer.vb" />
+    <Compile Include="frmExchangeSEGRDeal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFixORDER.Designer.vb">
+      <DependentUpon>frmFixORDER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFixORDER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFuncAssign-EN.Designer.vb" />
+    <Compile Include="frmFuncAssign-VN.Designer.vb" />
+    <Compile Include="frmFuncAssign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGroupOrderPT-EN.Designer.vb" />
+    <Compile Include="frmGroupOrderPT-VN.Designer.vb" />
+    <Compile Include="frmGroupOrderPT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHoldControl-EN.Designer.vb" />
+    <Compile Include="frmHoldControl-VN.Designer.vb" />
+    <Compile Include="frmHoldControl.Designer.vb">
+      <DependentUpon>frmHoldControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHoldControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLNChangeTYPE-VN.Designer.vb" />
+    <Compile Include="frmLNChangeTYPE.Designer.vb">
+      <DependentUpon>frmLNChangeTYPE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLNChangeTYPE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogMR3009-EN.Designer.vb" />
+    <Compile Include="frmLogMR3009-VN.Designer.vb" />
+    <Compile Include="frmLogMR3009.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLookup_Tab-EN.Designer.vb" />
+    <Compile Include="frmLookup_Tab-VN.Designer.vb" />
+    <Compile Include="frmLookup_Tab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMail-EN.Designer.vb" />
+    <Compile Include="frmMail-VN.Designer.vb" />
+    <Compile Include="frmMail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaintenanceMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManualAdvance-EN.Designer.vb" />
+    <Compile Include="frmManualAdvance-VN.Designer.vb" />
+    <Compile Include="frmManualAdvance.Designer.vb">
+      <DependentUpon>frmManualAdvance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManualAdvance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMarginInfo-EN.Designer.vb" />
+    <Compile Include="frmMarginInfo-VN.Designer.vb" />
+    <Compile Include="frmMarginInfo.Designer.vb">
+      <DependentUpon>frmMarginInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMarginInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMarginProcess-EN.Designer.vb" />
+    <Compile Include="frmMarginProcess-VN.Designer.vb" />
+    <Compile Include="frmMarginProcess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMarketInfo-EN.Designer.vb" />
+    <Compile Include="FrmMarketInfo-VN.Designer.vb" />
+    <Compile Include="FrmMarketInfo.Designer.vb">
+      <DependentUpon>FrmMarketInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMarketInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMDIMain-EN.Designer.vb" />
+    <Compile Include="frmMDIMain-VN.Designer.vb" />
+    <Compile Include="frmMDIMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMTDEAL.Designer.vb">
+      <DependentUpon>frmMTDEAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMTDEAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmODDetail-EN.Designer.vb" />
+    <Compile Include="frmODDetail-VN.Designer.vb" />
+    <Compile Include="frmODDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmODMASTCOMPARE-EN.Designer.vb" />
+    <Compile Include="frmODMASTCOMPARE-VN.Designer.vb" />
+    <Compile Include="frmODMASTCOMPARE.Designer.vb">
+      <DependentUpon>frmODMASTCOMPARE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmODMASTCOMPARE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmODReceive-EN.Designer.vb" />
+    <Compile Include="frmODReceive-VN.Designer.vb" />
+    <Compile Include="frmODReceive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmODReceiveHA-EN.Designer.vb" />
+    <Compile Include="frmODReceiveHA-VN.Designer.vb" />
+    <Compile Include="frmODReceiveHA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmODReceiveHO-EN.Designer.vb" />
+    <Compile Include="frmODReceiveHO-VN.Designer.vb" />
+    <Compile Include="frmODReceiveHO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmODSend-EN.Designer.vb" />
+    <Compile Include="frmODSend-VN.Designer.vb" />
+    <Compile Include="frmODSend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmODTransact-EN.Designer.vb" />
+    <Compile Include="frmODTransact-VN.Designer.vb" />
+    <Compile Include="frmODTransact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperation-EN.Designer.vb" />
+    <Compile Include="frmOperation-VN.Designer.vb" />
+    <Compile Include="frmOperation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderSendingConfirm-EN.Designer.vb" />
+    <Compile Include="frmOrderSendingConfirm-VN.Designer.vb" />
+    <Compile Include="frmOrderSendingConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentOrder-EN.Designer.vb" />
+    <Compile Include="frmPaymentOrder-VN.Designer.vb" />
+    <Compile Include="frmPaymentOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProcessAfterTrading-EN.Designer.vb" />
+    <Compile Include="frmProcessAfterTrading-VN.Designer.vb" />
+    <Compile Include="frmProcessAfterTrading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProcessOrder-EN.Designer.vb" />
+    <Compile Include="frmProcessOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductManagement-EN.Designer.vb" />
+    <Compile Include="frmProductManagement-VN.Designer.vb" />
+    <Compile Include="frmProductManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPutthroughAcknowledgment-EN.Designer.vb" />
+    <Compile Include="frmPutthroughAcknowledgment-VN.Designer.vb" />
+    <Compile Include="frmPutthroughAcknowledgment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuickOrderPTOneFirm-EN.Designer.vb" />
+    <Compile Include="frmQuickOrderPTOneFirm-VN.Designer.vb" />
+    <Compile Include="frmQuickOrderPTOneFirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuickOrderTransact-EN.Designer.vb" />
+    <Compile Include="frmQuickOrderTransact-VN.Designer.vb" />
+    <Compile Include="frmQuickOrderTransact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuickOrderTransactPT-EN.Designer.vb" />
+    <Compile Include="frmQuickOrderTransactPT-VN.Designer.vb" />
+    <Compile Include="frmQuickOrderTransactPT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReAddDG-EN.Designer.vb" />
+    <Compile Include="frmReAddDG-VN.Designer.vb" />
+    <Compile Include="frmReAddDG.designer.vb">
+      <DependentUpon>frmReAddDG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReAddDG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReAddRM-EN.Designer.vb" />
+    <Compile Include="frmReAddRM-VN.Designer.vb" />
+    <Compile Include="frmReAddRM.designer.vb">
+      <DependentUpon>frmReAddRM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReAddRM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReadFile-EN.Designer.vb" />
+    <Compile Include="frmReadFile-VN.Designer.vb" />
+    <Compile Include="frmReadFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReadFilecv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReApprove-EN.Designer.vb" />
+    <Compile Include="frmReApprove-VN.Designer.vb" />
+    <Compile Include="frmReApprove.designer.vb">
+      <DependentUpon>frmReApprove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReApprove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReceiverDataMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReChangeRe-EN.Designer.vb" />
+    <Compile Include="frmReChangeRe-VN.Designer.vb" />
+    <Compile Include="frmReChangeRe.designer.vb">
+      <DependentUpon>frmReChangeRe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReChangeRe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportMaster_Tab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRequestMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRightAssignment-EN.Designer.vb" />
+    <Compile Include="frmRightAssignment-VN.Designer.vb" />
+    <Compile Include="frmRightAssignment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRMBankRequest-EN.Designer.vb" />
+    <Compile Include="frmRMBankRequest-VN.Designer.vb" />
+    <Compile Include="frmRMBankRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRMBankRequestUsers-EN.Designer.vb" />
+    <Compile Include="frmRMBankRequestUsers-VN.Designer.vb" />
+    <Compile Include="frmRMBankRequestUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRMChangeRequest-EN.Designer.vb" />
+    <Compile Include="frmRMChangeRequest-VN.Designer.vb" />
+    <Compile Include="frmRMChangeRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRMCmpBankBalance.Designer.vb">
+      <DependentUpon>frmRMCmpBankBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRMCmpBankBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRMCmpBankBalanceTXDATE.Designer.vb">
+      <DependentUpon>frmRMCmpBankBalanceTXDATE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRMCmpBankBalanceTXDATE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRMManualMsg-EN.Designer.vb" />
+    <Compile Include="frmRMManualMsg-VN.Designer.vb" />
+    <Compile Include="frmRMManualMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRMOfflineManager-EN.Designer.vb" />
+    <Compile Include="frmRMOfflineManager-VN.Designer.vb" />
+    <Compile Include="frmRMOfflineManager.Designer.vb">
+      <DependentUpon>frmRMOfflineManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRMOfflineManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRMOperation-EN.Designer.vb" />
+    <Compile Include="frmRMOperation-VN.Designer.vb" />
+    <Compile Include="frmRMOperation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRMRecChangeRequest-EN.Designer.vb" />
+    <Compile Include="frmRMRecChangeRequest-VN.Designer.vb" />
+    <Compile Include="frmRMRecChangeRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptAssign-EN.Designer.vb" />
+    <Compile Include="frmRptAssign-VN.Designer.vb" />
+    <Compile Include="frmRptAssign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRPTransact-EN.Designer.vb" />
+    <Compile Include="frmRPTransact-VN.Designer.vb" />
+    <Compile Include="frmRPTransact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSBETF-EN.Designer.vb" />
+    <Compile Include="frmSBETF.designer.vb">
+      <DependentUpon>frmSBETF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSBETF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchCMP2FILETab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellEstimate2CIWithdraw-EN.Designer.vb" />
+    <Compile Include="frmSellEstimate2CIWithdraw-VN.Designer.vb" />
+    <Compile Include="frmSellEstimate2CIWithdraw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSendSecurities-EN.Designer.vb" />
+    <Compile Include="frmSendSecurities-VN.Designer.vb" />
+    <Compile Include="frmSendSecurities.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowNewsDetail-EN.Designer.vb" />
+    <Compile Include="frmShowNewsDetail-VN.Designer.vb" />
+    <Compile Include="frmShowNewsDetail.Designer.vb">
+      <DependentUpon>frmShowNewsDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowNewsDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSMSEMAIL-EN.Designer.vb" />
+    <Compile Include="frmSMSEMAIL-VN.Designer.vb" />
+    <Compile Include="frmSMSEMAIL.Designer.vb">
+      <DependentUpon>frmSMSEMAIL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSMSEMAIL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockInfo-EN.Designer.vb" />
+    <Compile Include="frmStockInfo-VN.Designer.vb" />
+    <Compile Include="frmStockInfo.Designer.vb">
+      <DependentUpon>frmStockInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSyncFIIN-EN.Designer.vb" />
+    <Compile Include="frmSyncFIIN-VN.Designer.vb" />
+    <Compile Include="frmSyncFIIN.Designer.vb">
+      <DependentUpon>frmSyncFIIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSyncFIIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSyncToFIIN-EN.Designer.vb" />
+    <Compile Include="frmSyncToFIIN-VN.Designer.vb" />
+    <Compile Include="frmSyncToFIIN.Designer.vb">
+      <DependentUpon>frmSyncToFIIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSyncToFIIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTeleInq-EN.Designer.vb" />
+    <Compile Include="frmTeleInq-VN.Designer.vb" />
+    <Compile Include="frmTeleInq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransactEx-EN.Designer.vb" />
+    <Compile Include="frmTransactEx-VN.Designer.vb" />
+    <Compile Include="frmTransactEx.Designer.vb">
+      <DependentUpon>frmTransactEx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransactEx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransactMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransactUpload-EN.Designer.vb" />
+    <Compile Include="frmTransactUpload-VN.Designer.vb" />
+    <Compile Include="frmTransactUpload.Designer.vb">
+      <DependentUpon>frmTransactUpload.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransactUpload.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransAssign-EN.Designer.vb" />
+    <Compile Include="frmTransAssign-VN.Designer.vb" />
+    <Compile Include="frmTransAssign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferInq-EN.Designer.vb" />
+    <Compile Include="frmTransferInq-VN.Designer.vb" />
+    <Compile Include="frmTransferInq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUPCOMSend-EN.Designer.vb" />
+    <Compile Include="frmUPCOMSend-VN.Designer.vb" />
+    <Compile Include="frmUPCOMSend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpcomSendingConfirm-EN.Designer.vb" />
+    <Compile Include="frmUpcomSendingConfirm-VN.Designer.vb" />
+    <Compile Include="frmUpcomSendingConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateReRev-EN.Designer.vb" />
+    <Compile Include="frmUpdateReRev-VN.Designer.vb" />
+    <Compile Include="frmUpdateReRev.designer.vb">
+      <DependentUpon>frmUpdateReRev.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateReRev.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateSecInfo-EN.Designer.vb" />
+    <Compile Include="frmUpdateSecInfo-VN.Designer.vb" />
+    <Compile Include="frmUpdateSecInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewAcc-EN.Designer.vb" />
+    <Compile Include="frmViewAcc-VN.Designer.vb" />
+    <Compile Include="frmViewAcc.Designer.vb">
+      <DependentUpon>frmViewAcc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewAcc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewAcctno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXtraCriterial.designer.vb">
+      <DependentUpon>frmXtraCriterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmXtraCriterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXtraLOGIN-EN.Designer.vb" />
+    <Compile Include="frmXtraLOGIN-VN.Designer.vb" />
+    <Compile Include="frmXtraLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXtraTransactMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Localize-EN.Designer.vb" />
+    <Compile Include="Localize-VN.Designer.vb" />
+    <Compile Include="MaintenanceForms\frmEMAILREPORT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmFAMEMBERSEXTRA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmRPTGENCFG.designer.vb">
+      <DependentUpon>frmRPTGENCFG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmRPTGENCFG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmUSERLOGIN.designer.vb">
+      <DependentUpon>frmUSERLOGIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmUSERLOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmAFMAST.Designer.vb">
+      <DependentUpon>frmAFMAST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmAFMAST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmAFMAST_bk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmAFTXMAP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmBRGRP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmCFAUTH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmCFCONTACT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmCFLINK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmCFMAST.Designer.vb">
+      <DependentUpon>frmCFMAST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmCFMAST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmCFMAST_bk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmCFOTHERACC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmCFRELATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmCFSIGN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmCustomerSign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmDDMAST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmDEPOSIT_MEMBER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmESCROW.Designer.vb">
+      <DependentUpon>frmESCROW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmESCROW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmFILEUPLOAD.Designer.vb">
+      <DependentUpon>frmFILEUPLOAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmFILEUPLOAD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmGROUPUSERS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmISSUER_MEMBER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmOOD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmOTRIGHT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmREAFLNK.Designer.vb">
+      <DependentUpon>frmREAFLNK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmREAFLNK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmRIGHTCOPY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmRISK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmSBACTIDTL.designer.vb">
+      <DependentUpon>frmSBACTIDTL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmSBACTIDTL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmSBACTIFILE.designer.vb">
+      <DependentUpon>frmSBACTIFILE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmSBACTIFILE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmSBACTIMST.designer.vb">
+      <DependentUpon>frmSBACTIMST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmSBACTIMST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmSBCURRENCY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmSBFXRT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmTLGROUPS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForms\frmTLPROFILES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\modCommon.vb" />
+    <Compile Include="Modules\modDirect.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Service References\HOAuthService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HOSTRptService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HOSTService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service\HostServiceStreamed.vb" />
+    <Compile Include="WaitForm1.Designer.vb">
+      <DependentUpon>WaitForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ImageViewer.resx">
+      <DependentUpon>ImageViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucSearch-EN.resx" />
+    <EmbeddedResource Include="Controls\ucSearch-VN.resx" />
+    <EmbeddedResource Include="Controls\usSeach.resx">
+      <DependentUpon>usSeach.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\XtraSearch.resx">
+      <DependentUpon>XtraSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCAVOTING-EN.resx" />
+    <EmbeddedResource Include="frmCAVOTING-VN.resx" />
+    <EmbeddedResource Include="frmCAVOTING.resx">
+      <DependentUpon>frmCAVOTING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrbtxreqHold-EN.resx" />
+    <EmbeddedResource Include="frmCrbtxreqHold-VN.resx" />
+    <EmbeddedResource Include="frmCrbtxreqHold.resx">
+      <DependentUpon>frmCrbtxreqHold.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrbtxreqUnHold-EN.resx" />
+    <EmbeddedResource Include="frmCrbtxreqUnHold-VN.resx" />
+    <EmbeddedResource Include="frmCrbtxreqUnHold.resx">
+      <DependentUpon>frmCrbtxreqUnHold.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCSVCompare-EN.resx" />
+    <EmbeddedResource Include="frmCSVCompare-VN.resx" />
+    <EmbeddedResource Include="frmCSVCompare.resx">
+      <DependentUpon>frmCSVCompare.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCFLNKAP-EN.resx" />
+    <EmbeddedResource Include="frmCFLNKAP-VN.resx" />
+    <EmbeddedResource Include="frmFABROKERAGE-EN.resx" />
+    <EmbeddedResource Include="frmFABROKERAGE-VN.resx" />
+    <EmbeddedResource Include="frmFABROKERAGEXTRA-EN.resx" />
+    <EmbeddedResource Include="frmFABROKERAGEXTRA-VN.resx" />
+    <EmbeddedResource Include="frmLookup_Tab-EN.resx" />
+    <EmbeddedResource Include="frmLookup_Tab-VN.resx" />
+    <EmbeddedResource Include="frmLookup_Tab.resx">
+      <DependentUpon>frmLookup_Tab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMDIMain.resx">
+      <DependentUpon>frmMDIMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmODMASTCOMPARE-EN.resx" />
+    <EmbeddedResource Include="frmODMASTCOMPARE-VN.resx" />
+    <EmbeddedResource Include="frmODMASTCOMPARE.resx">
+      <DependentUpon>frmODMASTCOMPARE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMCmpBankBalance-EN.resx" />
+    <EmbeddedResource Include="frmRMCmpBankBalance-VN.resx" />
+    <EmbeddedResource Include="frmHoldUnhold-EN.resx" />
+    <EmbeddedResource Include="frmHoldUnhold-VN.resx" />
+    <EmbeddedResource Include="frmHoldUnhold.resx">
+      <DependentUpon>frmHoldUnhold.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminMessages.resx">
+      <DependentUpon>frmAdminMessages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAFSERULE-EN.resx" />
+    <EmbeddedResource Include="frmAFSERULE-VN.resx" />
+    <EmbeddedResource Include="frmAFSERULE.resx">
+      <DependentUpon>frmAFSERULE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmApprove-EN.resx" />
+    <EmbeddedResource Include="frmApprove-VN.resx" />
+    <EmbeddedResource Include="frmApprove.resx">
+      <DependentUpon>frmApprove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmApprv-EN.resx" />
+    <EmbeddedResource Include="frmApprv-VN.resx" />
+    <EmbeddedResource Include="frmApprv.resx">
+      <DependentUpon>frmApprv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuthTrade-EN.resx" />
+    <EmbeddedResource Include="frmAuthTrade-VN.resx" />
+    <EmbeddedResource Include="frmAuthTrade.resx">
+      <DependentUpon>frmAuthTrade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBankOrder-EN.resx" />
+    <EmbeddedResource Include="frmBankOrder-VN.resx" />
+    <EmbeddedResource Include="frmBankOrder.resx">
+      <DependentUpon>frmBankOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBatchMaster.resx">
+      <DependentUpon>frmBatchMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrokerConfirm-EN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrokerConfirm-VN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrokerConfirm.resx">
+      <DependentUpon>frmBrokerConfirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrokerDesk-EN.resx" />
+    <EmbeddedResource Include="frmBrokerDesk-VN.resx" />
+    <EmbeddedResource Include="frmBrokerDesk.resx">
+      <DependentUpon>frmBrokerDesk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrokerDeskConfirm.resx">
+      <DependentUpon>frmBrokerDeskConfirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrokerInquiry-EN.resx" />
+    <EmbeddedResource Include="frmBrokerInquiry-VN.resx" />
+    <EmbeddedResource Include="frmBrokerInquiry.resx">
+      <DependentUpon>frmBrokerInquiry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendar-EN.resx" />
+    <EmbeddedResource Include="frmCalendar-VN.resx" />
+    <EmbeddedResource Include="frmCalendar.resx">
+      <DependentUpon>frmCalendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangeOrderCustody-EN.resx" />
+    <EmbeddedResource Include="frmChangeOrderCustody-VN.resx" />
+    <EmbeddedResource Include="frmChangeOrderCustody.resx">
+      <DependentUpon>frmChangeOrderCustody.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword-EN.resx" />
+    <EmbeddedResource Include="frmChangePassword-VN.resx" />
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompareTradingResult-EN.resx" />
+    <EmbeddedResource Include="frmCompareTradingResult-VN.resx" />
+    <EmbeddedResource Include="frmCompareTradingResult.resx">
+      <DependentUpon>frmCompareTradingResult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateDFDeal-EN.resx" />
+    <EmbeddedResource Include="frmCreateDFDeal-VN.resx" />
+    <EmbeddedResource Include="frmCreateDFDeal.resx">
+      <DependentUpon>frmCreateDFDeal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateDFGRDeal-EN.resx" />
+    <EmbeddedResource Include="frmCreateDFGRDeal-VN.resx" />
+    <EmbeddedResource Include="frmCreateDFGRDeal.resx">
+      <DependentUpon>frmCreateDFGRDeal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCUWBIDDING-EN.resx" />
+    <EmbeddedResource Include="frmCUWBIDDING-VN.resx" />
+    <EmbeddedResource Include="frmCUWBIDDING.resx">
+      <DependentUpon>frmCUWBIDDING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCWBIDDING-EN.resx" />
+    <EmbeddedResource Include="frmCWBIDDING-VN.resx" />
+    <EmbeddedResource Include="frmCWBIDDING.resx">
+      <DependentUpon>frmCWBIDDING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDefineCLDR-EN.resx" />
+    <EmbeddedResource Include="frmDefineCLDR-VN.resx" />
+    <EmbeddedResource Include="frmDefineCLDR.resx">
+      <DependentUpon>frmDefineCLDR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDefineProduct.resx">
+      <DependentUpon>frmDefineProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDefineRisk-EN.resx" />
+    <EmbeddedResource Include="frmDefineRisk-VN.resx" />
+    <EmbeddedResource Include="frmDefineRisk.resx">
+      <DependentUpon>frmDefineRisk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetailFixOD-EN.resx" />
+    <EmbeddedResource Include="frmDetailFixOD-VN.resx" />
+    <EmbeddedResource Include="frmDetailFixOD.resx">
+      <DependentUpon>frmDetailFixOD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDFGroupView-EN.resx" />
+    <EmbeddedResource Include="frmDFGroupView-VN.resx" />
+    <EmbeddedResource Include="frmDFGroupView.resx">
+      <DependentUpon>frmDFGroupView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExchangeSEGRDeal-EN.resx" />
+    <EmbeddedResource Include="frmExchangeSEGRDeal-VN.resx" />
+    <EmbeddedResource Include="frmExchangeSEGRDeal.resx">
+      <DependentUpon>frmExchangeSEGRDeal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFixORDER.resx">
+      <DependentUpon>frmFixORDER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFuncAssign-EN.resx" />
+    <EmbeddedResource Include="frmFuncAssign-VN.resx" />
+    <EmbeddedResource Include="frmFuncAssign.resx">
+      <DependentUpon>frmFuncAssign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGroupOrderPT-EN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGroupOrderPT-VN.resx" />
+    <EmbeddedResource Include="frmGroupOrderPT.resx">
+      <DependentUpon>frmGroupOrderPT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHoldControl-EN.resx" />
+    <EmbeddedResource Include="frmHoldControl-VN.resx" />
+    <EmbeddedResource Include="frmHoldControl.resx">
+      <DependentUpon>frmHoldControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLNChangeTYPE-EN.resx" />
+    <EmbeddedResource Include="frmLNChangeTYPE-VN.resx" />
+    <EmbeddedResource Include="frmLNChangeTYPE.resx">
+      <DependentUpon>frmLNChangeTYPE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogMR3009-EN.resx" />
+    <EmbeddedResource Include="frmLogMR3009-VN.resx" />
+    <EmbeddedResource Include="frmLogMR3009.resx">
+      <DependentUpon>frmLogMR3009.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMail-EN.resx" />
+    <EmbeddedResource Include="frmMail-VN.resx" />
+    <EmbeddedResource Include="frmMail.resx">
+      <DependentUpon>frmMail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaintenanceMaster.resx">
+      <DependentUpon>frmMaintenanceMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManualAdvance-EN.resx" />
+    <EmbeddedResource Include="frmManualAdvance-VN.resx" />
+    <EmbeddedResource Include="frmManualAdvance.resx">
+      <DependentUpon>frmManualAdvance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMarginInfo-EN.resx" />
+    <EmbeddedResource Include="frmMarginInfo-VN.resx" />
+    <EmbeddedResource Include="frmMarginInfo.resx">
+      <DependentUpon>frmMarginInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMarginProcess-EN.resx" />
+    <EmbeddedResource Include="frmMarginProcess-VN.resx" />
+    <EmbeddedResource Include="frmMarginProcess.resx">
+      <DependentUpon>frmMarginProcess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMarketInfo-EN.resx" />
+    <EmbeddedResource Include="FrmMarketInfo-VN.resx" />
+    <EmbeddedResource Include="FrmMarketInfo.resx">
+      <DependentUpon>FrmMarketInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMDIMain-EN.resx" />
+    <EmbeddedResource Include="frmMDIMain-VN.resx" />
+    <EmbeddedResource Include="frmMTDEAL.resx">
+      <DependentUpon>frmMTDEAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmODDetail-EN.resx" />
+    <EmbeddedResource Include="frmODDetail-VN.resx" />
+    <EmbeddedResource Include="frmODDetail.resx">
+      <DependentUpon>frmODDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmODReceive-EN.resx" />
+    <EmbeddedResource Include="frmODReceive-VN.resx" />
+    <EmbeddedResource Include="frmODReceive.resx">
+      <DependentUpon>frmODReceive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmODReceiveHA-EN.resx" />
+    <EmbeddedResource Include="frmODReceiveHA-VN.resx" />
+    <EmbeddedResource Include="frmODReceiveHA.resx">
+      <DependentUpon>frmODReceiveHA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmODReceiveHO-EN.resx" />
+    <EmbeddedResource Include="frmODReceiveHO-VN.resx" />
+    <EmbeddedResource Include="frmODReceiveHO.resx">
+      <DependentUpon>frmODReceiveHO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmODSend-EN.resx" />
+    <EmbeddedResource Include="frmODSend-VN.resx" />
+    <EmbeddedResource Include="frmODSend.resx">
+      <DependentUpon>frmODSend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmODTransact-EN.resx" />
+    <EmbeddedResource Include="frmODTransact-VN.resx" />
+    <EmbeddedResource Include="frmODTransact.resx">
+      <DependentUpon>frmODTransact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperation-EN.resx" />
+    <EmbeddedResource Include="frmOperation-VN.resx" />
+    <EmbeddedResource Include="frmOperation.resx">
+      <DependentUpon>frmOperation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderSendingConfirm-EN.resx" />
+    <EmbeddedResource Include="frmOrderSendingConfirm-VN.resx" />
+    <EmbeddedResource Include="frmOrderSendingConfirm.resx">
+      <DependentUpon>frmOrderSendingConfirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentOrder-EN.resx" />
+    <EmbeddedResource Include="frmPaymentOrder-VN.resx" />
+    <EmbeddedResource Include="frmPaymentOrder.resx">
+      <DependentUpon>frmPaymentOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcessAfterTrading-EN.resx" />
+    <EmbeddedResource Include="frmProcessAfterTrading-VN.resx" />
+    <EmbeddedResource Include="frmProcessAfterTrading.resx">
+      <DependentUpon>frmProcessAfterTrading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcessOrder-EN.resx" />
+    <EmbeddedResource Include="frmProcessOrder-VN.resx" />
+    <EmbeddedResource Include="frmProcessOrder.resx">
+      <DependentUpon>frmProcessOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductManagement-EN.resx" />
+    <EmbeddedResource Include="frmProductManagement-VN.resx" />
+    <EmbeddedResource Include="frmProductManagement.resx">
+      <DependentUpon>frmProductManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPutthroughAcknowledgment-EN.resx" />
+    <EmbeddedResource Include="frmPutthroughAcknowledgment-VN.resx" />
+    <EmbeddedResource Include="frmPutthroughAcknowledgment.resx">
+      <DependentUpon>frmPutthroughAcknowledgment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuickOrderPTOneFirm-EN.resx" />
+    <EmbeddedResource Include="frmQuickOrderPTOneFirm-VN.resx" />
+    <EmbeddedResource Include="frmQuickOrderPTOneFirm.resx">
+      <DependentUpon>frmQuickOrderPTOneFirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuickOrderTransact-EN.resx" />
+    <EmbeddedResource Include="frmQuickOrderTransact-VN.resx" />
+    <EmbeddedResource Include="frmQuickOrderTransact.resx">
+      <DependentUpon>frmQuickOrderTransact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuickOrderTransactPT-EN.resx" />
+    <EmbeddedResource Include="frmQuickOrderTransactPT-VN.resx" />
+    <EmbeddedResource Include="frmQuickOrderTransactPT.resx">
+      <DependentUpon>frmQuickOrderTransactPT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReAddDG-EN.resx" />
+    <EmbeddedResource Include="frmReAddDG-VN.resx" />
+    <EmbeddedResource Include="frmReAddDG.resx">
+      <DependentUpon>frmReAddDG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReAddRM-EN.resx" />
+    <EmbeddedResource Include="frmReAddRM-VN.resx" />
+    <EmbeddedResource Include="frmReAddRM.resx">
+      <DependentUpon>frmReAddRM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReadFile-EN.resx" />
+    <EmbeddedResource Include="frmReadFile-VN.resx" />
+    <EmbeddedResource Include="frmReadFile.resx">
+      <DependentUpon>frmReadFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReadFilecv.resx">
+      <DependentUpon>frmReadFilecv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReApprove-EN.resx" />
+    <EmbeddedResource Include="frmReApprove-VN.resx" />
+    <EmbeddedResource Include="frmReApprove.resx">
+      <DependentUpon>frmReApprove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReceiverDataMaster.resx">
+      <DependentUpon>frmReceiverDataMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReChangeRe-EN.resx" />
+    <EmbeddedResource Include="frmReChangeRe-VN.resx" />
+    <EmbeddedResource Include="frmReChangeRe.resx">
+      <DependentUpon>frmReChangeRe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRightAssignment-EN.resx" />
+    <EmbeddedResource Include="frmRightAssignment-VN.resx" />
+    <EmbeddedResource Include="frmRightAssignment.resx">
+      <DependentUpon>frmRightAssignment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMBankRequest-EN.resx" />
+    <EmbeddedResource Include="frmRMBankRequest-VN.resx" />
+    <EmbeddedResource Include="frmRMBankRequest.resx">
+      <DependentUpon>frmRMBankRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMBankRequestUsers-EN.resx" />
+    <EmbeddedResource Include="frmRMBankRequestUsers-VN.resx" />
+    <EmbeddedResource Include="frmRMBankRequestUsers.resx">
+      <DependentUpon>frmRMBankRequestUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMChangeRequest-EN.resx" />
+    <EmbeddedResource Include="frmRMChangeRequest-VN.resx" />
+    <EmbeddedResource Include="frmRMChangeRequest.resx">
+      <DependentUpon>frmRMChangeRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMCmpBankBalance.resx">
+      <DependentUpon>frmRMCmpBankBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMCmpBankBalanceTXDATE-EN.resx" />
+    <EmbeddedResource Include="frmRMCmpBankBalanceTXDATE-VN.resx" />
+    <EmbeddedResource Include="frmRMCmpBankBalanceTXDATE.resx">
+      <DependentUpon>frmRMCmpBankBalanceTXDATE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMManualMsg-EN.resx" />
+    <EmbeddedResource Include="frmRMManualMsg-VN.resx" />
+    <EmbeddedResource Include="frmRMManualMsg.resx">
+      <DependentUpon>frmRMManualMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMOfflineManager-EN.resx" />
+    <EmbeddedResource Include="frmRMOfflineManager-VN.resx" />
+    <EmbeddedResource Include="frmRMOfflineManager.resx">
+      <DependentUpon>frmRMOfflineManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMOperation-EN.resx" />
+    <EmbeddedResource Include="frmRMOperation-VN.resx" />
+    <EmbeddedResource Include="frmRMOperation.resx">
+      <DependentUpon>frmRMOperation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMRecChangeRequest-EN.resx" />
+    <EmbeddedResource Include="frmRMRecChangeRequest-VN.resx" />
+    <EmbeddedResource Include="frmRMRecChangeRequest.resx">
+      <DependentUpon>frmRMRecChangeRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptAssign-EN.resx" />
+    <EmbeddedResource Include="frmRptAssign-VN.resx" />
+    <EmbeddedResource Include="frmRptAssign.resx">
+      <DependentUpon>frmRptAssign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRPTransact-EN.resx" />
+    <EmbeddedResource Include="frmRPTransact-VN.resx" />
+    <EmbeddedResource Include="frmRPTransact.resx">
+      <DependentUpon>frmRPTransact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSBETF-EN.resx" />
+    <EmbeddedResource Include="frmSBETF-VN.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSBETF.resx">
+      <DependentUpon>frmSBETF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchCMP2FILETab-EN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchCMP2FILETab-VN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchCMP2FILETab.resx">
+      <DependentUpon>frmSearchCMP2FILETab.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellEstimate2CIWithdraw-EN.resx" />
+    <EmbeddedResource Include="frmSellEstimate2CIWithdraw-VN.resx" />
+    <EmbeddedResource Include="frmSellEstimate2CIWithdraw.resx">
+      <DependentUpon>frmSellEstimate2CIWithdraw.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSendSecurities-EN.resx" />
+    <EmbeddedResource Include="frmSendSecurities-VN.resx" />
+    <EmbeddedResource Include="frmSendSecurities.resx">
+      <DependentUpon>frmSendSecurities.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowNewsDetail-EN.resx" />
+    <EmbeddedResource Include="frmShowNewsDetail-VN.resx" />
+    <EmbeddedResource Include="frmShowNewsDetail.resx">
+      <DependentUpon>frmShowNewsDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSMSEMAIL-EN.resx" />
+    <EmbeddedResource Include="frmSMSEMAIL-VN.resx" />
+    <EmbeddedResource Include="frmSMSEMAIL.resx">
+      <DependentUpon>frmSMSEMAIL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockInfo-EN.resx" />
+    <EmbeddedResource Include="frmStockInfo-VN.resx" />
+    <EmbeddedResource Include="frmStockInfo.resx">
+      <DependentUpon>frmStockInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSyncFIIN-EN.resx" />
+    <EmbeddedResource Include="frmSyncFIIN-VN.resx" />
+    <EmbeddedResource Include="frmSyncFIIN.resx">
+      <DependentUpon>frmSyncFIIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSyncToFIIN-EN.resx" />
+    <EmbeddedResource Include="frmSyncToFIIN-VN.resx" />
+    <EmbeddedResource Include="frmSyncToFIIN.resx">
+      <DependentUpon>frmSyncToFIIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTeleInq-EN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTeleInq-VN.resx" />
+    <EmbeddedResource Include="frmTeleInq.resx">
+      <DependentUpon>frmTeleInq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransactEx-EN.resx" />
+    <EmbeddedResource Include="frmTransactEx-VN.resx" />
+    <EmbeddedResource Include="frmTransactEx.resx">
+      <DependentUpon>frmTransactEx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransactMaster.resx">
+      <DependentUpon>frmTransactMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransactUpload-EN.resx" />
+    <EmbeddedResource Include="frmTransactUpload-VN.resx" />
+    <EmbeddedResource Include="frmTransactUpload.resx">
+      <DependentUpon>frmTransactUpload.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransAssign-EN.resx" />
+    <EmbeddedResource Include="frmTransAssign-VN.resx" />
+    <EmbeddedResource Include="frmTransAssign.resx">
+      <DependentUpon>frmTransAssign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransferInq-EN.resx" />
+    <EmbeddedResource Include="frmTransferInq-VN.resx" />
+    <EmbeddedResource Include="frmTransferInq.resx">
+      <DependentUpon>frmTransferInq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUPCOMSend-EN.resx" />
+    <EmbeddedResource Include="frmUPCOMSend-VN.resx" />
+    <EmbeddedResource Include="frmUPCOMSend.resx">
+      <DependentUpon>frmUPCOMSend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpcomSendingConfirm-EN.resx" />
+    <EmbeddedResource Include="frmUpcomSendingConfirm-VN.resx" />
+    <EmbeddedResource Include="frmUpcomSendingConfirm.resx">
+      <DependentUpon>frmUpcomSendingConfirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateReRev-EN.resx" />
+    <EmbeddedResource Include="frmUpdateReRev-VN.resx" />
+    <EmbeddedResource Include="frmUpdateReRev.resx">
+      <DependentUpon>frmUpdateReRev.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateSecInfo-EN.resx" />
+    <EmbeddedResource Include="frmUpdateSecInfo-VN.resx" />
+    <EmbeddedResource Include="frmUpdateSecInfo.resx">
+      <DependentUpon>frmUpdateSecInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewAcc-EN.resx" />
+    <EmbeddedResource Include="frmViewAcc-VN.resx" />
+    <EmbeddedResource Include="frmViewAcc.resx">
+      <DependentUpon>frmViewAcc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXtraCriterial.resx">
+      <DependentUpon>frmXtraCriterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXtraLOGIN-EN.resx" />
+    <EmbeddedResource Include="frmXtraLOGIN-VN.resx" />
+    <EmbeddedResource Include="frmXtraLogin.resx">
+      <DependentUpon>frmXtraLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localize-EN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localize-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmEMAILREPORT-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmEMAILREPORT-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmEMAILREPORT.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmFAMEMBERSEXTRA-EN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmFAMEMBERSEXTRA-VN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmFAMEMBERSEXTRA.resx">
+      <DependentUpon>frmFAMEMBERSEXTRA.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmRPTGENCFG-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmRPTGENCFG-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmRPTGENCFG.resx">
+      <DependentUpon>frmRPTGENCFG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmUSERLOGIN.resx">
+      <DependentUpon>frmUSERLOGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmUSERLOGIN-EN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmUSERLOGIN-VN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmDDMAST-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmDDMAST-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmDDMAST.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmESCROW-EN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmESCROW-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmAFMAST-EN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmAFMAST-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmAFMAST.resx">
+      <DependentUpon>frmAFMAST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmAFMAST_bk-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmAFMAST_bk-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmAFMAST_bk.resx">
+      <DependentUpon>frmAFMAST_bk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmAFTXMAP-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmAFTXMAP-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmAFTXMAP.resx">
+      <DependentUpon>frmAFTXMAP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmBRGRP-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmBRGRP-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmBRGRP.resx">
+      <DependentUpon>frmBRGRP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmCFAUTH-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmCFAUTH-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmCFAUTH.resx">
+      <DependentUpon>frmCFAUTH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmCFCONTACT-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmCFCONTACT-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmCFCONTACT.resx">
+      <DependentUpon>frmCFCONTACT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmCFLINK-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmCFLINK-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmCFLINK.resx">
+      <DependentUpon>frmCFLINK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmCFMAST-EN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmCFMAST-VN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmCFMAST.resx">
+      <DependentUpon>frmCFMAST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmCFMAST_bk-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmCFMAST_bk-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmCFMAST_bk.resx">
+      <DependentUpon>frmCFMAST_bk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmCFOTHERACC-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmCFOTHERACC-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmCFOTHERACC.resx">
+      <DependentUpon>frmCFOTHERACC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmCFRELATION-EN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmCFRELATION-VN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmCFRELATION.resx">
+      <DependentUpon>frmCFRELATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmCFSIGN-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmCFSIGN-VN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmCFSIGN.resx">
+      <DependentUpon>frmCFSIGN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmCustomerSign.resx">
+      <DependentUpon>frmCustomerSign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmDEPOSIT_MEMBER-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmDEPOSIT_MEMBER-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmDEPOSIT_MEMBER.resx">
+      <DependentUpon>frmDEPOSIT_MEMBER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmESCROW.resx">
+      <DependentUpon>frmESCROW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmFILEUPLOAD-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmFILEUPLOAD-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmFILEUPLOAD.resx">
+      <DependentUpon>frmFILEUPLOAD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmGROUPUSERS-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmGROUPUSERS-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmGROUPUSERS.resx">
+      <DependentUpon>frmGROUPUSERS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmISSUER_MEMBER-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmISSUER_MEMBER-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmISSUER_MEMBER.resx">
+      <DependentUpon>frmISSUER_MEMBER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmOOD-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmOOD-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmOOD.resx">
+      <DependentUpon>frmOOD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmOTRIGHT-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmOTRIGHT-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmOTRIGHT.resx">
+      <DependentUpon>frmOTRIGHT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmREAFLNK-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmREAFLNK-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmREAFLNK.resx">
+      <DependentUpon>frmREAFLNK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmRIGHTCOPY-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmRIGHTCOPY-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmRIGHTCOPY.resx">
+      <DependentUpon>frmRIGHTCOPY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmRISK-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmRISK.resx">
+      <DependentUpon>frmRISK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmSBACTIDTL-EN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmSBACTIDTL-VN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmSBACTIDTL.resx">
+      <DependentUpon>frmSBACTIDTL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmSBACTIFILE-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmSBACTIFILE-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmSBACTIFILE.resx">
+      <DependentUpon>frmSBACTIFILE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmSBACTIMST-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmSBACTIMST-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmSBACTIMST.resx">
+      <DependentUpon>frmSBACTIMST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmSBCURRENCY-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmSBCURRENCY-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmSBCURRENCY.resx">
+      <DependentUpon>frmSBCURRENCY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmSBFXRT-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmSBFXRT-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmSBFXRT.resx">
+      <DependentUpon>frmSBFXRT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmTLGROUPS-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmTLGROUPS-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmTLGROUPS.resx">
+      <DependentUpon>frmTLGROUPS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForms\frmTLPROFILES-EN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmTLPROFILES-VN.resx" />
+    <EmbeddedResource Include="MaintenanceForms\frmTLPROFILES.resx">
+      <DependentUpon>frmTLPROFILES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\XtraResources.resx" />
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\%40DIRECT.exe.config" />
+    <None Include="bin\Release\CBPlus.exe.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\CommonLibrary.CTellerProfile.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HOAuthService\HOAuthService.wsdl" />
+    <None Include="Service References\HOAuthService\HOAuthService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HOAuthService\HOAuthService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HOAuthService\HOAuthService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HOAuthService\_DIRECT.HOAuthService.DoWorkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOAuthService\_DIRECT.HOAuthService.GetAuthorizationTicketResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOAuthService\_DIRECT.HOAuthService.GetLeftAdjustMenuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOAuthService\_DIRECT.HOAuthService.GetLeftMenuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOAuthService\_DIRECT.HOAuthService.GetTellerProfileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOSTRptService\HOSTRptService.wsdl" />
+    <None Include="Service References\HOSTRptService\HOSTRptService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HOSTRptService\HOSTRptService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HOSTRptService\_DIRECT.HOSTRptService.DoWorkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOSTRptService\_DIRECT.HOSTRptService.GetErrorMessageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOSTRptService\_DIRECT.HOSTRptService.MessageByteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOSTRptService\_DIRECT.HOSTRptService.MessageStringResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOSTService\HOSTService.wsdl" />
+    <None Include="Service References\HOSTService\HOSTService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HOSTService\HOSTService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HOSTService\HOSTService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HOSTService\_DIRECT.HOSTService.DoWorkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOSTService\_DIRECT.HOSTService.GetFlagSignatureResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOSTService\_DIRECT.HOSTService.MessageByteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOSTService\_DIRECT.HOSTService.MessageStringResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOSTService\_DIRECT.HOSTService.OMessageByteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOSTService\_DIRECT.HOSTService.OMessageStringResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Release\%40DIRECT.exe" />
+    <Content Include="bin\Release\%40DIRECT.pdb" />
+    <Content Include="bin\Release\CBPlus.exe" />
+    <Content Include="bin\Release\CBPlus.pdb" />
+    <Content Include="CB.ico" />
+    <Content Include="CBPlus icon Final.ico" />
+    <Content Include="CBPlus-Final-256.ico" />
+    <Content Include="FlexIcon.ico" />
+    <None Include="Resources\new_sh.png" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\logo %281%29.png" />
+    <None Include="Resources\new_sh1.png" />
+    <Content Include="My Project\new_sh.png" />
+    <Content Include="Resources\picSplash.Image.png" />
+    <Content Include="Resources\picSplash.Image2.png" />
+    <None Include="Resources\Shinhan_Bank-logo-05BA468620-seeklogo.com.png" />
+    <None Include="Resources\Shinhan_Bank-logo-05BA468620-seeklogo.com1.png" />
+    <None Include="Service References\HOSTRptService\configuration91.svcinfo" />
+    <None Include="Service References\HOSTRptService\configuration.svcinfo" />
+    <None Include="Service References\HOSTRptService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\HOSTService\configuration91.svcinfo" />
+    <None Include="Service References\HOSTService\configuration.svcinfo" />
+    <None Include="Service References\HOSTService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\HOAuthService\configuration91.svcinfo" />
+    <None Include="Service References\HOAuthService\configuration.svcinfo" />
+    <None Include="Service References\HOAuthService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\HOAuthService\" />
+    <WCFMetadataStorage Include="Service References\HOSTRptService\" />
+    <WCFMetadataStorage Include="Service References\HOSTService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppCore\AppCore.vbproj">
+      <Project>{929f1e6e-6a34-47c7-b2e4-e3f13b28e243}</Project>
+      <Name>AppCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.vbproj">
+      <Project>{d08773cc-eeb0-403e-b66b-d1964626f985}</Project>
+      <Name>CommonLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\updateclient\updateclient.vbproj">
+      <Project>{fcb78396-a204-44c6-9449-96705299dd2d}</Project>
+      <Name>updateclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\update\update.csproj">
+      <Project>{19dbdec2-ce4b-4344-af68-fd769a2b65a7}</Project>
+      <Name>update</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\" />
+    <Folder Include="obj\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

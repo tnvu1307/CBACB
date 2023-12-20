@@ -1,0 +1,837 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnCanceOrder" xml:space="preserve">
+    <value>Cancel order</value>
+  </data>
+  <data name="btnDetail" xml:space="preserve">
+    <value>View detail</value>
+  </data>
+  <data name="btnGuarantee" xml:space="preserve">
+    <value>Guarantee</value>
+  </data>
+  <data name="btnRefresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="btnReport" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="btnSubmit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="CFSRCH_CUSTID" xml:space="preserve">
+    <value>Customer ID</value>
+  </data>
+  <data name="CFSRCH_CUSTODYCD" xml:space="preserve">
+    <value>Custody code</value>
+  </data>
+  <data name="CFSRCH_IDCODE" xml:space="preserve">
+    <value>Identification number</value>
+  </data>
+  <data name="frmBrokerDesk" xml:space="preserve">
+    <value>Broker desk</value>
+  </data>
+  <data name="lblCashInfo" xml:space="preserve">
+    <value>CASH</value>
+  </data>
+  <data name="lblSecuritiesInfo" xml:space="preserve">
+    <value>SECURITIES</value>
+  </data>
+  <data name="tabPageAccount" xml:space="preserve">
+    <value>[Ctrl+E] Account</value>
+  </data>
+  <data name="tabPageLoan" xml:space="preserve">
+    <value>[Ctrl+L] Outstanding loan</value>
+  </data>
+  <data name="tabPageOrder" xml:space="preserve">
+    <value>[Ctrl+O] Order book</value>
+  </data>
+  <data name="EXECTYPE_MS" xml:space="preserve">
+    <value>MS: Mortgage sell</value>
+  </data>
+  <data name="EXECTYPE_NB" xml:space="preserve">
+    <value>NB: Normal buy</value>
+  </data>
+  <data name="EXECTYPE_NS" xml:space="preserve">
+    <value>NB: Normal sell</value>
+  </data>
+  <data name="PRICE_ATC" xml:space="preserve">
+    <value>ATC</value>
+  </data>
+  <data name="PRICE_ATO" xml:space="preserve">
+    <value>ATO</value>
+  </data>
+  <data name="PRICE_LO" xml:space="preserve">
+    <value>LO</value>
+  </data>
+  <data name="PRICE_MP" xml:space="preserve">
+    <value>MP</value>
+  </data>
+  <data name="msgINVALIDSYMBOL" xml:space="preserve">
+    <value>Invalid symbol</value>
+  </data>
+  <data name="msgSYMBOLDESCRIPTION" xml:space="preserve">
+    <value>$TRADEPLACE-$REFNAME,  CE:$CEPRICE, FL: $FLPRICE, RF: $REFPRICE</value>
+  </data>
+  <data name="GREATER_THAN_CEPRICE" xml:space="preserve">
+    <value>Cannnot greater than ceilling price</value>
+  </data>
+  <data name="INVALID_NUMBER" xml:space="preserve">
+    <value>Invalid number</value>
+  </data>
+  <data name="INVALID_TICKSIZE" xml:space="preserve">
+    <value>Invalid ticksize</value>
+  </data>
+  <data name="INVALID_TRADELOT" xml:space="preserve">
+    <value>Invalid trade lot</value>
+  </data>
+  <data name="INVALID_TRADEUNIT" xml:space="preserve">
+    <value>Invalid trade unit</value>
+  </data>
+  <data name="LESS_THAN_FLPRICE" xml:space="preserve">
+    <value>Cannot less than floor price</value>
+  </data>
+  <data name="TICKSIZE_IS_NOT_DEFINED" xml:space="preserve">
+    <value>Ticksize is not defined</value>
+  </data>
+  <data name="btnCFSrch" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="btnDealNo" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="msgCFNOTFOUND" xml:space="preserve">
+    <value>Customer not found</value>
+  </data>
+  <data name="AFACCTNO" xml:space="preserve">
+    <value>Sub account number</value>
+  </data>
+  <data name="CASH_ON_HAND" xml:space="preserve">
+    <value>Cash on hand</value>
+  </data>
+  <data name="CASH_RECEIVING_T0" xml:space="preserve">
+    <value>Cash in on T0</value>
+  </data>
+  <data name="CASH_RECEIVING_T1" xml:space="preserve">
+    <value>Cash in on T1</value>
+  </data>
+  <data name="CASH_RECEIVING_T2" xml:space="preserve">
+    <value>Cash in on T2</value>
+  </data>
+  <data name="CASH_RECEIVING_T3" xml:space="preserve">
+    <value>Cash in on T3</value>
+  </data>
+  <data name="CASH_RECEIVING_TN" xml:space="preserve">
+    <value>Cash in on TN</value>
+  </data>
+  <data name="CASH_SENDING_T0" xml:space="preserve">
+    <value>Cash out on T0</value>
+  </data>
+  <data name="CASH_SENDING_T1" xml:space="preserve">
+    <value>Cash out on T1</value>
+  </data>
+  <data name="CASH_SENDING_T2" xml:space="preserve">
+    <value>Cash out on T2</value>
+  </data>
+  <data name="CASH_SENDING_T3" xml:space="preserve">
+    <value>Cash out on T3</value>
+  </data>
+  <data name="CASH_SENDING_TN" xml:space="preserve">
+    <value>Cash out on TN</value>
+  </data>
+  <data name="OUTSTANDING" xml:space="preserve">
+    <value>Outstanding today</value>
+  </data>
+  <data name="PURCHASINGPOWER" xml:space="preserve">
+    <value>Purchasing power</value>
+  </data>
+  <data name="DEALFINANCING_QTTY" xml:space="preserve">
+    <value>Margin Loan/Forward</value>
+  </data>
+  <data name="SECURITIES_RECEIVING_T0" xml:space="preserve">
+    <value>Receiving on T0</value>
+  </data>
+  <data name="SECURITIES_RECEIVING_T1" xml:space="preserve">
+    <value>Receiving on T1</value>
+  </data>
+  <data name="SECURITIES_RECEIVING_T2" xml:space="preserve">
+    <value>Receiving on T2</value>
+  </data>
+  <data name="SECURITIES_RECEIVING_T3" xml:space="preserve">
+    <value>Receiving on T3</value>
+  </data>
+  <data name="SECURITIES_RECEIVING_TN" xml:space="preserve">
+    <value>Receiving on TN</value>
+  </data>
+  <data name="SECURITIES_SENDING_T0" xml:space="preserve">
+    <value>Sending on T0</value>
+  </data>
+  <data name="SECURITIES_SENDING_T1" xml:space="preserve">
+    <value>Sending on T1</value>
+  </data>
+  <data name="SECURITIES_SENDING_T2" xml:space="preserve">
+    <value>Sending on T2</value>
+  </data>
+  <data name="SECURITIES_SENDING_T3" xml:space="preserve">
+    <value>Sending on T3</value>
+  </data>
+  <data name="SECURITIES_SENDING_TN" xml:space="preserve">
+    <value>Sending on TN</value>
+  </data>
+  <data name="SYMBOL" xml:space="preserve">
+    <value>Symbol</value>
+  </data>
+  <data name="TRADE_QTTY" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="lblHelp" xml:space="preserve">
+    <value>PgUp: BUY, PgDown: SELL, F1: account focus, F3: Authorize, F5: refresh, F9: view subaccount, F11: symbol focus, DEL: cancel order</value>
+  </data>
+  <data name="tabPageDeal" xml:space="preserve">
+    <value>[Ctrl+D] Execution</value>
+  </data>
+  <data name="ADJUSTQTTY" xml:space="preserve">
+    <value>Admend qtty</value>
+  </data>
+  <data name="BORS_DESC" xml:space="preserve">
+    <value>Buy/Sell</value>
+  </data>
+  <data name="CANCELQTTY" xml:space="preserve">
+    <value>Cancel qtty</value>
+  </data>
+  <data name="CONFIRM_NO" xml:space="preserve">
+    <value>Confirm No</value>
+  </data>
+  <data name="CUSTODYCD" xml:space="preserve">
+    <value>Custody code</value>
+  </data>
+  <data name="EXECAMT" xml:space="preserve">
+    <value>Executed amount</value>
+  </data>
+  <data name="EXECQTTY" xml:space="preserve">
+    <value>Executed qtty</value>
+  </data>
+  <data name="EXECTYPE" xml:space="preserve">
+    <value>Order type</value>
+  </data>
+  <data name="ORDERID" xml:space="preserve">
+    <value>Order ID</value>
+  </data>
+  <data name="ORDERQTTY" xml:space="preserve">
+    <value>Qtty</value>
+  </data>
+  <data name="ORSTATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="PRICE" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="PRICETYPE" xml:space="preserve">
+    <value>Price type</value>
+  </data>
+  <data name="QTTY" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="QUOTEPRICE" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="REMAINQTTY" xml:space="preserve">
+    <value>Remain qtty</value>
+  </data>
+  <data name="TRADEPLACE" xml:space="preserve">
+    <value>Exchange</value>
+  </data>
+  <data name="lblDeal" xml:space="preserve">
+    <value>Deal financing</value>
+  </data>
+  <data name="lblOrderType" xml:space="preserve">
+    <value>Order type</value>
+  </data>
+  <data name="lblPrice" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="lblQtty" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="lblSymbol" xml:space="preserve">
+    <value>Symbol</value>
+  </data>
+  <data name="CF_NOT_FOUND" xml:space="preserve">
+    <value>Customer not found</value>
+  </data>
+  <data name="INVALID_SYMBOL" xml:space="preserve">
+    <value>Invalid symbol</value>
+  </data>
+  <data name="FEEDBACKMSG" xml:space="preserve">
+    <value>Feedback message</value>
+  </data>
+  <data name="ORDERAMT" xml:space="preserve">
+    <value>Amount on BUY</value>
+  </data>
+  <data name="ORDERQTTY_BLOCKED" xml:space="preserve">
+    <value>Blocked qtty on SELL</value>
+  </data>
+  <data name="ORDERQTTY_BUY" xml:space="preserve">
+    <value>BUY qtty</value>
+  </data>
+  <data name="ORDERQTTY_NORMAL" xml:space="preserve">
+    <value>Normal qtty on SELL</value>
+  </data>
+  <data name="btnCancelOrder" xml:space="preserve">
+    <value>Cancel order</value>
+  </data>
+  <data name="CFSRCH_ACCTNO" xml:space="preserve">
+    <value>Sub account</value>
+  </data>
+  <data name="ORDER_CONFIRM_MSG" xml:space="preserve">
+    <value>$CUSTODYCD - sub account $AFACCTNO $EXECTYPE $SYMBOL, Qtty: $QTTY, Price: $PRICE</value>
+  </data>
+  <data name="MS" xml:space="preserve">
+    <value>SELL on mortgage</value>
+  </data>
+  <data name="NB" xml:space="preserve">
+    <value>BUY</value>
+  </data>
+  <data name="NS" xml:space="preserve">
+    <value>SELL</value>
+  </data>
+  <data name="CB" xml:space="preserve">
+    <value>Cancel BUY</value>
+  </data>
+  <data name="CS" xml:space="preserve">
+    <value>Cancel SELL</value>
+  </data>
+  <data name="btnMoveDeal" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="lblDealAFACCTNO" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="lblDealSymbol" xml:space="preserve">
+    <value>Symbol</value>
+  </data>
+  <data name="lblDealType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="tabPageMoveDeal" xml:space="preserve">
+    <value>[Ctrl+G] Move deal</value>
+  </data>
+  <data name="MOVE_QTTY" xml:space="preserve">
+    <value>Moving qtty</value>
+  </data>
+  <data name="lblDealMoveQtty" xml:space="preserve">
+    <value>Deal moving qtty</value>
+  </data>
+  <data name="REFID" xml:space="preserve">
+    <value>Reference ID</value>
+  </data>
+  <data name="INVALID_MOVE_QTTY" xml:space="preserve">
+    <value>Invalid moving qtty</value>
+  </data>
+  <data name="CANNOT_MOVE_SAME_AFACCTNO" xml:space="preserve">
+    <value>Cannot move to the same sub account</value>
+  </data>
+  <data name="MOVE_DEAL_MSG" xml:space="preserve">
+    <value>Move $BORS $SYMBOL QTTY=$QTTY, AMT=$AMT </value>
+  </data>
+  <data name="lblOption" xml:space="preserve">
+    <value>Option</value>
+  </data>
+  <data name="lblParameter" xml:space="preserve">
+    <value>Split option</value>
+  </data>
+  <data name="OPTION_NORMAL" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="OPTION_SPECIAL" xml:space="preserve">
+    <value>Split</value>
+  </data>
+  <data name="SPLIT_COUNT" xml:space="preserve">
+    <value>By orders</value>
+  </data>
+  <data name="SPLIT_QTTY" xml:space="preserve">
+    <value>By qtty</value>
+  </data>
+  <data name="msgINVALIDMAX_CNT" xml:space="preserve">
+    <value>The split value greater than maximum orders</value>
+  </data>
+  <data name="msgINVALIDMAX_QTTY" xml:space="preserve">
+    <value>The split value greater than maximum quantity</value>
+  </data>
+  <data name="msgINVALIDMIN_CNT" xml:space="preserve">
+    <value>The split value less than minimum orders</value>
+  </data>
+  <data name="msgINVALIDMIN_QTTY" xml:space="preserve">
+    <value>The split value less than minimum quantity</value>
+  </data>
+  <data name="ERR_TLTXCD_NOTFOUND" xml:space="preserve">
+    <value>Transaction code not found</value>
+  </data>
+  <data name="OD_PRODUCT_NOTFOUND" xml:space="preserve">
+    <value>Order product not found</value>
+  </data>
+  <data name="MSG_CONFIRMED_ORDER_ACTIVATED" xml:space="preserve">
+    <value>The order has been activated</value>
+  </data>
+  <data name="MSG_CONFIRMED_ORDER_ADMANMENT" xml:space="preserve">
+    <value>The order has been modified</value>
+  </data>
+  <data name="MSG_CONFIRMED_ORDER_CANCALLED" xml:space="preserve">
+    <value>The order has been cancelled</value>
+  </data>
+  <data name="MSG_CONFIRMED_ORDER_RECEIVED" xml:space="preserve">
+    <value>The order has been received and pending to process</value>
+  </data>
+  <data name="MSG_REJECT_CANCEL_ORDER" xml:space="preserve">
+    <value>Cannot cancel the order</value>
+  </data>
+  <data name="MSG_ADMENT_ORDER_RECEIVED" xml:space="preserve">
+    <value>The amend order has been received</value>
+  </data>
+  <data name="MSG_CANCEL_ORDER_IS_RECEIVED" xml:space="preserve">
+    <value>The cancel order has been received</value>
+  </data>
+  <data name="INVALID_NORMAL_MAXQTTY" xml:space="preserve">
+    <value>Invalid max quantity for normal order</value>
+  </data>
+  <data name="INVALID_NORMAL_MINQTTY" xml:space="preserve">
+    <value>Invalid min quantity for normal order</value>
+  </data>
+  <data name="DESC_EXECTYPE" xml:space="preserve">
+    <value>Order type</value>
+  </data>
+  <data name="btnMove" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="lblOrderInfo" xml:space="preserve">
+    <value>Order book</value>
+  </data>
+  <data name="lblSplitValue" xml:space="preserve">
+    <value>Orders</value>
+  </data>
+  <data name="lblCustodyCD" xml:space="preserve">
+    <value>Trading account</value>
+  </data>
+  <data name="lblSystemParameters" xml:space="preserve">
+    <value>Advanced payment (rate=$ADVINT %/year, min=$ADVMIN), HOSE break size=$HSX_CNT, HNX break size=$HNX_CNT</value>
+  </data>
+  <data name="ADVANCEDLINE" xml:space="preserve">
+    <value>Guarantee limit</value>
+  </data>
+  <data name="AVLADVANCED" xml:space="preserve">
+    <value>Available advanced payment</value>
+  </data>
+  <data name="PAIDAMT" xml:space="preserve">
+    <value>Paid for deal</value>
+  </data>
+  <data name="MRCRLIMITMAX" xml:space="preserve">
+    <value>Maximum credit line</value>
+  </data>
+  <data name="DFACCTNO" xml:space="preserve">
+    <value>Deal number</value>
+  </data>
+  <data name="DFQTTY" xml:space="preserve">
+    <value>Deal quantity</value>
+  </data>
+  <data name="DFTRADE" xml:space="preserve">
+    <value>Available sale</value>
+  </data>
+  <data name="FEEAMT" xml:space="preserve">
+    <value>Fee</value>
+  </data>
+  <data name="INDUEAMT" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="OVERDUEAMT" xml:space="preserve">
+    <value>Overdue</value>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="QTTY_GREATER_THAN_0" xml:space="preserve">
+    <value>The quantiy must greater than 0</value>
+  </data>
+  <data name="DFTYP" xml:space="preserve">
+    <value>Deal type</value>
+  </data>
+  <data name="FORWARD_QTTY" xml:space="preserve">
+    <value>Forward/Margin qtty</value>
+  </data>
+  <data name="MORTGAGE_QTTY" xml:space="preserve">
+    <value>Mortgage qtty</value>
+  </data>
+  <data name="TOTAL_QTTY" xml:space="preserve">
+    <value>Total qtty</value>
+  </data>
+  <data name="BLOCKED_QTTY" xml:space="preserve">
+    <value>Blocked qtty</value>
+  </data>
+  <data name="NETTING_QTTY" xml:space="preserve">
+    <value>Delivery qtty</value>
+  </data>
+  <data name="msgMSINVALIDDEALNO" xml:space="preserve">
+    <value>Invalid deal no for block sell order!</value>
+  </data>
+  <data name="msgCREDITLINEDESCRIPTION" xml:space="preserve">
+    <value>PPSE:$PPSE, Rate: $LOANRATE, Price: $LOANPRICE, Max buy Quantity: $MAXBUYQTTY</value>
+  </data>
+  <data name="tabPageCustomer" xml:space="preserve">
+    <value>Assest</value>
+  </data>
+  <data name="ITEM" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="SUBACCTNO" xml:space="preserve">
+    <value>Sub account</value>
+  </data>
+  <data name="SUBACNAME" xml:space="preserve">
+    <value>Product name</value>
+  </data>
+  <data name="VAL" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="AMT" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="COSTPRICE" xml:space="preserve">
+    <value>Cost Price</value>
+  </data>
+  <data name="PROFITANDLOSS" xml:space="preserve">
+    <value>Profit/Loss</value>
+  </data>
+  <data name="DEBIT" xml:space="preserve">
+    <value>Debit</value>
+  </data>
+  <data name="CASHONHAND" xml:space="preserve">
+    <value>Cash on hand</value>
+  </data>
+  <data name="DUEDATE" xml:space="preserve">
+    <value>Due date</value>
+  </data>
+  <data name="RLSDATE" xml:space="preserve">
+    <value>Drawndown date</value>
+  </data>
+  <data name="DFPRICE" xml:space="preserve">
+    <value>Deal price</value>
+  </data>
+  <data name="TRIGGERPRICE" xml:space="preserve">
+    <value>Trigger price</value>
+  </data>
+  <data name="chkAutoRefresh" xml:space="preserve">
+    <value>Auto refresh</value>
+  </data>
+  <data name="RadioCustodyCD" xml:space="preserve">
+    <value>By Custody code</value>
+  </data>
+  <data name="RadioSubAcctno" xml:space="preserve">
+    <value>By SubAccount</value>
+  </data>
+  <data name="ChkByUser" xml:space="preserve">
+    <value>By User </value>
+  </data>
+  <data name="CANCELSTATUS" xml:space="preserve">
+    <value>Cancel status</value>
+  </data>
+  <data name="NOT_ENOUGHT_BUYPOWER" xml:space="preserve">
+    <value>Not enought purchasing power</value>
+  </data>
+  <data name="NOT_ENOUGHT_MORTGAGEQTTY" xml:space="preserve">
+    <value>Not enought quantity for mortgage sale</value>
+  </data>
+  <data name="NOT_ENOUGHT_TRADEQTTY" xml:space="preserve">
+    <value>Not enought quantity for normal sale</value>
+  </data>
+  <data name="REQUIRED_SPLITVALUE" xml:space="preserve">
+    <value>Split value is required</value>
+  </data>
+  <data name="MATCHAMT" xml:space="preserve">
+    <value>Match amount</value>
+  </data>
+  <data name="Export2ExcelToolStripMenuItem" xml:space="preserve">
+    <value>Export to excel</value>
+  </data>
+  <data name="ExportSuccessful" xml:space="preserve">
+    <value>Export successful</value>
+  </data>
+  <data name="NothingToExport" xml:space="preserve">
+    <value>Nothing to export</value>
+  </data>
+  <data name="AVLLIMIT" xml:space="preserve">
+    <value>Available buy limit</value>
+  </data>
+  <data name="tabPageOrders" xml:space="preserve">
+    <value>Matching orders</value>
+  </data>
+  <data name="CANCEL_ORDER" xml:space="preserve">
+    <value>Cancel order $ORDERTYPE: $CUSTODYCD - sub account $AFACCTNO- quantity $QTTY, order price $ORDERPRICE </value>
+  </data>
+  <data name="GROUP_CANCEL_ORDER" xml:space="preserve">
+    <value>Group cancel order for: $CUSTODYCD - sub account $AFACCTNO </value>
+  </data>
+  <data name="GROUP_CANCEL_ORDER_BYCUSTODYCD" xml:space="preserve">
+    <value>Group cancel order for: $CUSTODYCD </value>
+  </data>
+  <data name="GROUP_CANCEL_ORDER_BYUSER" xml:space="preserve">
+    <value>Group cancel order for: Maker $TELLERID </value>
+  </data>
+  <data name="SDTIME" xml:space="preserve">
+    <value>Send time</value>
+  </data>
+  <data name="TXTIME" xml:space="preserve">
+    <value>Order time</value>
+  </data>
+  <data name="TLNAME" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="CTCI_ORDER" xml:space="preserve">
+    <value>Confirm order id</value>
+  </data>
+  <data name="QTTY_GREATER_THAN_MIN" xml:space="preserve">
+    <value>Must greater than minimum quantity</value>
+  </data>
+  <data name="QTTY_LESS_THAN_MAX" xml:space="preserve">
+    <value>Must be less than maximum quantity</value>
+  </data>
+  <data name="lblBorrowCustodycd" xml:space="preserve">
+    <value>Borrower</value>
+  </data>
+  <data name="msgCFBORROWERNOTFOUND" xml:space="preserve">
+    <value>Borrower not found!</value>
+  </data>
+  <data name="SSAFACCTNO" xml:space="preserve">
+    <value>Borrower account</value>
+  </data>
+  <data name="btnUserOrder" xml:space="preserve">
+    <value>User's order book</value>
+  </data>
+  <data name="btnOrder" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="ISSUER_MEMBER" xml:space="preserve">
+    <value>Mr/Mrs: &lt;&lt;FULLNAME&gt;&gt;  is &lt;&lt;CDCONTENT&gt;&gt; of &lt;&lt;COMPANYNAME&gt;&gt;. Continue?</value>
+  </data>
+  <data name="ADVANCED_BALANCE" xml:space="preserve">
+    <value>Advanced amount</value>
+  </data>
+  <data name="BALDEFOVD" xml:space="preserve">
+    <value>Available withdraw</value>
+  </data>
+  <data name="DEALPAIDAMT" xml:space="preserve">
+    <value>Deal</value>
+  </data>
+  <data name="TOTALDEB" xml:space="preserve">
+    <value>Total debit</value>
+  </data>
+  <data name="FieldName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="FieldValue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="AVGPRICE" xml:space="preserve">
+    <value>Average price</value>
+  </data>
+  <data name="CASHMAP" xml:space="preserve">
+    <value>Cash map</value>
+  </data>
+  <data name="CEPRICE" xml:space="preserve">
+    <value>CE Price</value>
+  </data>
+  <data name="CHGBYRATIO" xml:space="preserve">
+    <value>% Up/Down</value>
+  </data>
+  <data name="CHGBYVALUE" xml:space="preserve">
+    <value>Up/Down</value>
+  </data>
+  <data name="CURRPRICE" xml:space="preserve">
+    <value>Current price</value>
+  </data>
+  <data name="FBUYAMT" xml:space="preserve">
+    <value>Foreign buy amount</value>
+  </data>
+  <data name="FBUYVOL" xml:space="preserve">
+    <value>Foreign buy vol</value>
+  </data>
+  <data name="FLPRICE" xml:space="preserve">
+    <value>LO Price</value>
+  </data>
+  <data name="FROOM" xml:space="preserve">
+    <value>Foreign room</value>
+  </data>
+  <data name="FSELLAMT" xml:space="preserve">
+    <value>Foreign sell amount</value>
+  </data>
+  <data name="FSELLVOL" xml:space="preserve">
+    <value>Foreign sell vol</value>
+  </data>
+  <data name="HIPRICE" xml:space="preserve">
+    <value>Highest price</value>
+  </data>
+  <data name="LOGCHG" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="LOGPRICE" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="LOGTIME" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="LOGVOL" xml:space="preserve">
+    <value>Volume</value>
+  </data>
+  <data name="LOPRICE" xml:space="preserve">
+    <value>Lowest price</value>
+  </data>
+  <data name="RFPRICE" xml:space="preserve">
+    <value>Ref Price</value>
+  </data>
+  <data name="TOTALAMT" xml:space="preserve">
+    <value>Turnover</value>
+  </data>
+  <data name="TOTALTRADES" xml:space="preserve">
+    <value>Total trades</value>
+  </data>
+  <data name="TOTALVOL" xml:space="preserve">
+    <value>Total vol</value>
+  </data>
+  <data name="SYMBIDOFFER_BID" xml:space="preserve">
+    <value>BID</value>
+  </data>
+  <data name="SYMBIDOFFER_BIDPRICE" xml:space="preserve">
+    <value>BID</value>
+  </data>
+  <data name="SYMBIDOFFER_BIDVOL" xml:space="preserve">
+    <value>VOL</value>
+  </data>
+  <data name="SYMBIDOFFER_OFFER" xml:space="preserve">
+    <value>OFFER</value>
+  </data>
+  <data name="SYMBIDOFFER_OFFERPRICE" xml:space="preserve">
+    <value>OFFER</value>
+  </data>
+  <data name="SYMBIDOFFER_OFFERVOL" xml:space="preserve">
+    <value>VOL</value>
+  </data>
+  <data name="PROCESS_PLACEORDER_REQUEST" xml:space="preserve">
+    <value>The place order request has been submit to server</value>
+  </data>
+  <data name="tabPageSecurities" xml:space="preserve">
+    <value>Securities</value>
+  </data>
+</root>

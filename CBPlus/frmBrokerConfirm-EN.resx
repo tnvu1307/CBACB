@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tmrOrder.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.TrayHeight" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="ApproveSuccessful" xml:space="preserve">
+    <value>Successful</value>
+  </data>
+  <data name="BANKACCTNO" xml:space="preserve">
+    <value>Bank account</value>
+  </data>
+  <data name="BANKBALANCE" xml:space="preserve">
+    <value>Bank available</value>
+  </data>
+  <data name="BANKHOLDBALANCE" xml:space="preserve">
+    <value>Bank hold balance</value>
+  </data>
+  <data name="BRNAME" xml:space="preserve">
+    <value>Employer</value>
+  </data>
+  <data name="BRPHONE" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="btnCashUnhold" xml:space="preserve">
+    <value>Unhold</value>
+  </data>
+  <data name="btnHoldCash" xml:space="preserve">
+    <value>Hold</value>
+  </data>
+  <data name="btnSEBlock" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="btnSEUnBlock" xml:space="preserve">
+    <value>Unblock</value>
+  </data>
+  <data name="CCYCD" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="CURRENCY" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="CUSTODYCD" xml:space="preserve">
+    <value>Custodycd code</value>
+  </data>
+  <data name="frmBrokerConfirm" xml:space="preserve">
+    <value>Broker confirm</value>
+  </data>
+  <data name="HoldCashSuccessful" xml:space="preserve">
+    <value>Hold cash succesfully !</value>
+  </data>
+  <data name="HoldSeSuccessful" xml:space="preserve">
+    <value>Block security succesfully !</value>
+  </data>
+  <data name="LASTCHANGE" xml:space="preserve">
+    <value>Last update</value>
+  </data>
+  <data name="lblAccountNo" xml:space="preserve">
+    <value>Account no</value>
+  </data>
+  <data name="lblAMOUNT" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="lblAVAILABLE" xml:space="preserve">
+    <value>Available balance</value>
+  </data>
+  <data name="lblAvaiQtty" xml:space="preserve">
+    <value>Available quantity</value>
+  </data>
+  <data name="lblBankAccount" xml:space="preserve">
+    <value>Bank account</value>
+  </data>
+  <data name="lblBROKER" xml:space="preserve">
+    <value>Broker company</value>
+  </data>
+  <data name="lblEmploy" xml:space="preserve">
+    <value>Broker</value>
+  </data>
+  <data name="lblER" xml:space="preserve">
+    <value>Exchange rate</value>
+  </data>
+  <data name="lblEXCHANGERATE" xml:space="preserve">
+    <value>Exchange rate</value>
+  </data>
+  <data name="lblFX" xml:space="preserve">
+    <value>FX</value>
+  </data>
+  <data name="lblHOLD" xml:space="preserve">
+    <value>Total hold</value>
+  </data>
+  <data name="lblHOLDBR" xml:space="preserve">
+    <value>Total hold by broker</value>
+  </data>
+  <data name="lblLockbyBroker" xml:space="preserve">
+    <value>Blocked by broker</value>
+  </data>
+  <data name="lblMARKETVALUE" xml:space="preserve">
+    <value>Market value</value>
+  </data>
+  <data name="lblNameEN" xml:space="preserve">
+    <value>Full name (EN)</value>
+  </data>
+  <data name="lblNameVN" xml:space="preserve">
+    <value>Full name (VN)</value>
+  </data>
+  <data name="lblNOTE" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="lblNoteSE" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="lblPHONE" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="lblQuantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="lblSECID" xml:space="preserve">
+    <value>Symbol (Ticker)</value>
+  </data>
+  <data name="lblSTC" xml:space="preserve">
+    <value>Trading account</value>
+  </data>
+  <data name="lblTotalBlockQtty" xml:space="preserve">
+    <value>Total blocked quantity</value>
+  </data>
+  <data name="NOTE" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="QTTY" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="REFCASAACCT" xml:space="preserve">
+    <value>Bank account</value>
+  </data>
+  <data name="SHORTNAME" xml:space="preserve">
+    <value>Broker</value>
+  </data>
+  <data name="STATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="SYMBOL" xml:space="preserve">
+    <value>Symbol</value>
+  </data>
+  <data name="TLNAME" xml:space="preserve">
+    <value>Hold by</value>
+  </data>
+  <data name="TXDESC" xml:space="preserve">
+    <value>Transaction type</value>
+  </data>
+  <data name="TXNUM" xml:space="preserve">
+    <value>Transaction code</value>
+  </data>
+  <data name="TXTIME" xml:space="preserve">
+    <value>Hold time</value>
+  </data>
+  <data name="UnHoldCashSuccessful" xml:space="preserve">
+    <value>Unhold cash succesfully, total {0} records !</value>
+  </data>
+  <data name="UnHoldSeSuccessful" xml:space="preserve">
+    <value>Unblock security succesfully, total {0} records !</value>
+  </data>
+  <data name="VND" xml:space="preserve">
+    <value>VND</value>
+  </data>
+  <data name="2212" xml:space="preserve">
+    <value>Do you want to hod quantity :</value>
+  </data>
+  <data name="2213" xml:space="preserve">
+    <value>Do you want to unhold quantity :</value>
+  </data>
+  <data name="6690" xml:space="preserve">
+    <value>Do you want to hold amount : </value>
+  </data>
+  <data name="6691" xml:space="preserve">
+    <value>Do you want to unhold amount :</value>
+  </data>
+  <data name="INVALIDAMOUNT" xml:space="preserve">
+    <value>Amount is invalid !</value>
+  </data>
+  <data name="INVALIDAMOUNT&lt;AVAI" xml:space="preserve">
+    <value>Hold amount can not greater than available amount !</value>
+  </data>
+  <data name="INVALIDAMOUNT&lt;BRO" xml:space="preserve">
+    <value>Unhold amount can not greater than hold amount by Broker !</value>
+  </data>
+  <data name="INVALIDAMOUNT=0" xml:space="preserve">
+    <value>Amount must be greater than 0 !</value>
+  </data>
+  <data name="INVALIDAQTTY=0" xml:space="preserve">
+    <value>Quantity must be greater than 0 !</value>
+  </data>
+  <data name="INVALIDQTTY" xml:space="preserve">
+    <value>Quantity is invalid !</value>
+  </data>
+  <data name="INVALIDQTTY&lt;AVAI" xml:space="preserve">
+    <value>Hold quantity can not greater than available quantity !</value>
+  </data>
+  <data name="INVALIDQTTY&lt;BRO" xml:space="preserve">
+    <value>Unhold quantity can not greater than hold quantity by Broker !</value>
+  </data>
+  <data name="tabBROKER_DDMAST" xml:space="preserve">
+    <value>Cash balance</value>
+  </data>
+  <data name="tabBROKER_CASHHOLD" xml:space="preserve">
+    <value>Cash hold </value>
+  </data>
+  <data name="tabBROKER_SEMAST" xml:space="preserve">
+    <value>Stock balance</value>
+  </data>
+  <data name="tabBROKER_SEHOLD" xml:space="preserve">
+    <value>Stock hold</value>
+  </data>
+  <data name="CUSTODYCD_INVALID_LENGTH" xml:space="preserve">
+    <value>Invalid custody code</value>
+  </data>
+  <data name="lblCash" xml:space="preserve">
+    <value>CASH</value>
+  </data>
+  <data name="lblSE" xml:space="preserve">
+    <value>SECURITIES</value>
+  </data>
+  <data name="lblAmountbyword" xml:space="preserve">
+    <value>Amount by words</value>
+  </data>
+  <data name="tabBROKER_CASHUNHOLD" xml:space="preserve">
+    <value>Cash unhold</value>
+  </data>
+  <data name="tabBROKER_SEUNHOLD" xml:space="preserve">
+    <value>Stock unhold</value>
+  </data>
+  <data name="ConfirmComment" xml:space="preserve">
+    <value>Please input reason to unhold ( unblock) !</value>
+  </data>
+  <data name="lblQByword" xml:space="preserve">
+    <value>Quantity in words</value>
+  </data>
+  <data name="1UnHoldSeSuccessful" xml:space="preserve">
+    <value>Unblock security succesfully !</value>
+  </data>
+  <data name="SendMailSuccessful" xml:space="preserve">
+    <value>Send mail Successful !</value>
+  </data>
+  <data name="SendMailUnHoldSecurities" xml:space="preserve">
+    <value>Would you like to send email notification for securities confirmation case (2) as below !</value>
+  </data>
+  <data name="SendMailUnHoldCash" xml:space="preserve">
+    <value>Would you like to send email notification for cash confirmation case (1) as below !</value>
+  </data>
+  <data name="SendMailUnHoldCashSecurities" xml:space="preserve">
+    <value>Would you like to send email notification for cash confirmation case (1) or securities confirmation case (2) as below ?</value>
+  </data>
+  <data name="btnSendMail" xml:space="preserve">
+    <value>Send mail</value>
+  </data>
+  <data name="6603" xml:space="preserve">
+    <value>Do you want to hold amount :</value>
+  </data>
+  <data name="6604" xml:space="preserve">
+    <value>Do you want to unhold amount :</value>
+  </data>
+  <data name="BROKER_INVALID" xml:space="preserve">
+    <value>Broker invalid !</value>
+  </data>
+  <data name="DDMAST_INVALID" xml:space="preserve">
+    <value>Account no invalid !</value>
+  </data>
+  <data name="tabCASH_SUMMARY_BROKER" xml:space="preserve">
+    <value>Cash Summary Information</value>
+  </data>
+  <data name="tabSE_SUMMARY_BROKER" xml:space="preserve">
+    <value>Securities Summary Information</value>
+  </data>
+  <data name="tabNOTE" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="lblMCUSTODYCD" xml:space="preserve">
+    <value>Master account</value>
+  </data>
+</root>

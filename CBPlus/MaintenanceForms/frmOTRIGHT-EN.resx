@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="InitDialogFailed" xml:space="preserve">
+    <value>Dialog intiation is failed!</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="frmCFAUTH" xml:space="preserve">
+    <value>Authorize information management</value>
+  </data>
+  <data name="lblCaption0" xml:space="preserve">
+    <value>Authorize infomation.</value>
+  </data>
+  <data name="lblCaption1" xml:space="preserve">
+    <value>Addnew anthorize.</value>
+  </data>
+  <data name="lblCaption2" xml:space="preserve">
+    <value>Modify anthorize infomation..</value>
+  </data>
+  <data name="ACCTNO" xml:space="preserve">
+    <value>Account Num:</value>
+  </data>
+  <data name="CUSTID" xml:space="preserve">
+    <value>Cust ID:</value>
+  </data>
+  <data name="ADDRESS" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="TELEPHONE" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="LICENSENO" xml:space="preserve">
+    <value>Licenseno:</value>
+  </data>
+  <data name="VALDATE" xml:space="preserve">
+    <value>Val Date:</value>
+  </data>
+  <data name="SavingFailed" xml:space="preserve">
+    <value>Cannot add new or edit !</value>
+  </data>
+  <data name="AddnewSuccessful" xml:space="preserve">
+    <value>Add new successful!</value>
+  </data>
+  <data name="EditSuccessful" xml:space="preserve">
+    <value>Edit authorize information successfully!</value>
+  </data>
+  <data name="Mandatory" xml:space="preserve">
+    <value>The field [@] should not be empty!</value>
+  </data>
+  <data name="EXPDATE" xml:space="preserve">
+    <value>Exp Date:</value>
+  </data>
+  <data name="DELTD" xml:space="preserve">
+    <value>Delete?</value>
+  </data>
+  <data name="GpAuth" xml:space="preserve">
+    <value>Anthorize infomation</value>
+  </data>
+  <data name="FULLNAME" xml:space="preserve">
+    <value>Full name:</value>
+  </data>
+  <data name="tpAuthInfo" xml:space="preserve">
+    <value>Authorize information</value>
+  </data>
+  <data name="tpSign" xml:space="preserve">
+    <value>Signature</value>
+  </data>
+  <data name="btnBROWSER" xml:space="preserve">
+    <value>&amp;Browser</value>
+  </data>
+  <data name="btnApply" xml:space="preserve">
+    <value>&amp;Apply</value>
+  </data>
+  <data name="ERR_EXPRISEDDATE_INVALID" xml:space="preserve">
+    <value>Exprised date should be greater than Bus date !</value>
+  </data>
+  <data name="ERR_CF_CFAUTH_NULL" xml:space="preserve">
+    <value>The authentication cant be null !</value>
+  </data>
+  <data name="ERR_VALDATE_INVALID" xml:space="preserve">
+    <value>Valueable date should be greater than Bus date !</value>
+  </data>
+  <data name="LINKAUTH" xml:space="preserve">
+    <value>LINKAUTH</value>
+  </data>
+  <data name="ACCOUNTNAME" xml:space="preserve">
+    <value>Account name:</value>
+  </data>
+  <data name="BANKNAME" xml:space="preserve">
+    <value>Bank name:</value>
+  </data>
+  <data name="BANKACCOUNT" xml:space="preserve">
+    <value>Bank account:</value>
+  </data>
+  <data name="msgCUSAUTHORGCUS" xml:space="preserve">
+    <value>CFAUTH IS NOT SAME CFMAST</value>
+  </data>
+  <data name="ERR_CF_CFAUTH_CUSTID_NOTFOUND" xml:space="preserve">
+    <value>Can not find custid !</value>
+  </data>
+  <data name="ADWINPUT" xml:space="preserve">
+    <value>Advance payment</value>
+  </data>
+  <data name="auth_warning" xml:space="preserve">
+    <value>must be selected at least one auth method!</value>
+  </data>
+  <data name="BONDSTOSHARES" xml:space="preserve">
+    <value>Bonds to shares</value>
+  </data>
+  <data name="CASHTRANS" xml:space="preserve">
+    <value>Cash transfer</value>
+  </data>
+  <data name="ISSUEINPUT" xml:space="preserve">
+    <value>Stock right off register</value>
+  </data>
+  <data name="MORTGAGE" xml:space="preserve">
+    <value>Mortage</value>
+  </data>
+  <data name="TERMDEPOSIT" xml:space="preserve">
+    <value>Term deposit</value>
+  </data>
+  <data name="INVALID_PHONE_EMAIL" xml:space="preserve">
+    <value>Invalid phone number or Emai address</value>
+  </data>
+  <data name="INVALID_SERIALTOKEN" xml:space="preserve">
+    <value>Invalid Serial token</value>
+  </data>
+  <data name="frmOTRIGHT" xml:space="preserve">
+    <value>Online services register</value>
+  </data>
+  <data name="lblAUTHAFACCTNO" xml:space="preserve">
+    <value>Subaccount:</value>
+  </data>
+  <data name="lblAUTHCUSTID" xml:space="preserve">
+    <value>Customer ID:</value>
+  </data>
+  <data name="lblIDCODE" xml:space="preserve">
+    <value>ID code</value>
+  </data>
+  <data name="lblVALDATE" xml:space="preserve">
+    <value>Effective date:</value>
+  </data>
+  <data name="lblEXPDATE" xml:space="preserve">
+    <value>Expired date:</value>
+  </data>
+  <data name="grbRightAssgn" xml:space="preserve">
+    <value>Register information</value>
+  </data>
+  <data name="lblFULLNAME" xml:space="preserve">
+    <value>Full name:</value>
+  </data>
+  <data name="grid.LNDATE" xml:space="preserve">
+    <value>Issue date</value>
+  </data>
+  <data name="lblASGNTYPE" xml:space="preserve">
+    <value>Register type:</value>
+  </data>
+  <data name="lblAUTHTYPE" xml:space="preserve">
+    <value>Authorize type:</value>
+  </data>
+  <data name="ACCTNO_INVALID" xml:space="preserve">
+    <value>Subaccount invalid!</value>
+  </data>
+  <data name="grid.DESCRIPTION" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="grid.EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="grid.MENUCODE" xml:space="preserve">
+    <value>Module</value>
+  </data>
+  <data name="grid.SEARCH" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="grid.SUBMIT" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="grid.VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="ACCTNO_OWNER" xml:space="preserve">
+    <value>Cannot authorize by yourself!</value>
+  </data>
+  <data name="ERR_VALDATE_LARGER_EXPDATE" xml:space="preserve">
+    <value>Expired date must be greater than effective date!</value>
+  </data>
+  <data name="lblAUTHCUSTODYCD" xml:space="preserve">
+    <value>Custody code:</value>
+  </data>
+  <data name="grid.AUTHPASS" xml:space="preserve">
+    <value>Password authorization</value>
+  </data>
+  <data name="grid.AUTHTOKEN" xml:space="preserve">
+    <value>Token authorization</value>
+  </data>
+  <data name="lblSERIALTOKEN" xml:space="preserve">
+    <value>Serial Token</value>
+  </data>
+  <data name="grid.AUTHMATRIX" xml:space="preserve">
+    <value>Matrix card</value>
+  </data>
+  <data name="grid.NULL" xml:space="preserve">
+    <value>Authorize type</value>
+  </data>
+  <data name="SERIALTOKEN_INVALID_1" xml:space="preserve">
+    <value>Serial Token and Token authorization type must be entered!</value>
+  </data>
+  <data name="SERIALTOKEN_INVALID_2" xml:space="preserve">
+    <value>Serial Token and Matrix authorization type must be entered!</value>
+  </data>
+  <data name="SERIALTOKEN_TEXT" xml:space="preserve">
+    <value>Please enter Serial Token</value>
+  </data>
+  <data name="SERIAL_MUSTBE_REGISTER_FIRST" xml:space="preserve">
+    <value>Serial number not registered!</value>
+  </data>
+  <data name="ADD_MOBILE_EMAIL" xml:space="preserve">
+    <value>Need to update sms or email!</value>
+  </data>
+  <data name="NOSERVICEDIFFORDER" xml:space="preserve">
+    <value>Just register for order function</value>
+  </data>
+</root>

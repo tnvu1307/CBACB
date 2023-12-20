@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="lblAcType" xml:space="preserve">
+    <value>Product ID</value>
+  </data>
+	<data name="lblAFACCTNO" xml:space="preserve">
+    <value>Account no.</value>
+  </data>
+	<data name="frmCreateDFDeal" xml:space="preserve">
+    <value>Create DF deal</value>
+  </data>
+	<data name="lblRefPrice" xml:space="preserve">
+    <value>Ref. price</value>
+  </data>
+	<data name="lblSymbol" xml:space="preserve">
+    <value>Symbol</value>
+  </data>
+	<data name="btnApprove" xml:space="preserve">
+    <value>&amp;Approve</value>
+  </data>
+	<data name="btnCANCEL" xml:space="preserve">
+    <value>&amp;Exit</value>
+  </data>
+	<data name="btnOK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+	<data name="lblCIAdvance" xml:space="preserve">
+    <value>Advance amount</value>
+  </data>
+	<data name="lblCIBalance" xml:space="preserve">
+    <value>CI banlance</value>
+  </data>
+	<data name="lblDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+	<data name="lblDFPrice" xml:space="preserve">
+    <value>DF Price</value>
+  </data>
+	<data name="lblDFRATE" xml:space="preserve">
+    <value>DF rate</value>
+  </data>
+	<data name="lblIRATE" xml:space="preserve">
+    <value>Initial rate(%)</value>
+  </data>
+	<data name="lblLRATE" xml:space="preserve">
+    <value>Trigger rate(%)</value>
+  </data>
+	<data name="lblMortage" xml:space="preserve">
+    <value>Mortage</value>
+  </data>
+	<data name="lblMRATE" xml:space="preserve">
+    <value>Call rate(%)</value>
+  </data>
+	<data name="lblPurchasingPower" xml:space="preserve">
+    <value>Purchasing power</value>
+  </data>
+	<data name="lblQuantity" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+	<data name="lblREF" xml:space="preserve">
+    <value>Ref</value>
+  </data>
+	<data name="lblSEBalance" xml:space="preserve">
+    <value>SE balance </value>
+  </data>
+	<data name="lblTotalAmout" xml:space="preserve">
+    <value>Total</value>
+  </data>
+	<data name="lblTRIGPRICE" xml:space="preserve">
+    <value>Trigger price</value>
+  </data>
+	<data name="MEMBER_BASICPRICE" xml:space="preserve">
+    <value>Ref price</value>
+  </data>
+	<data name="MEMBER_COSTPRICE" xml:space="preserve">
+    <value>Cost price</value>
+  </data>
+	<data name="MEMBER_MORTAGE" xml:space="preserve">
+    <value>Mortage</value>
+  </data>
+	<data name="MEMBER_SYMBOL" xml:space="preserve">
+    <value>Symbol</value>
+  </data>
+	<data name="MEMBER_TRADE" xml:space="preserve">
+    <value>Trade</value>
+  </data>
+	<data name="txtDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+	<data name="ERR_SEC_INFO" xml:space="preserve">
+    <value>Stock info invalid!</value>
+  </data>
+	<data name="PRICEISNOTNUMBER" xml:space="preserve">
+    <value>Price must be &gt; 0</value>
+  </data>
+	<data name="QTTYISNOTNUMBER" xml:space="preserve">
+    <value>Qtty must be number!</value>
+  </data>
+	<data name="RATENONUMBER" xml:space="preserve">
+    <value>Rate mus be number!</value>
+  </data>
+	<data name="BFWQTTYLESSQTTY" xml:space="preserve">
+    <value>Input qtty must be greater than  qtty for block forward !</value>
+  </data>
+	<data name="DESC2670" xml:space="preserve">
+    <value>Create deal DF.</value>
+  </data>
+	<data name="ERR_FIELD_NULL" xml:space="preserve">
+    <value>Field can't be null!</value>
+  </data>
+	<data name="FWQTTYLESSQTTY" xml:space="preserve">
+    <value>Input qtty must be greater than  qtty for forward !</value>
+  </data>
+	<data name="TRADEQTTYLESSQTTY" xml:space="preserve">
+    <value>Block qtty must be greater than trade qtty!</value>
+  </data>
+	<data name="DEALINVALID" xml:space="preserve">
+    <value>Mã tham chiếu không hợp lệ</value>
+  </data>
+	<data name="MEMBER_QTTY" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+	<data name="MEMBER_TYPENAME" xml:space="preserve">
+    <value>Loại</value>
+  </data>
+	<data name="chkAUTODRAWNDOWN" xml:space="preserve">
+    <value>Auto drawndown</value>
+  </data>
+	<data name="DFTYPEINVALID" xml:space="preserve">
+    <value>DF type invalid or securities basket was not initial!</value>
+  </data>
+	<data name="lblAFACCCBO" xml:space="preserve">
+    <value>Account no</value>
+  </data>
+	<data name="lblCUSTODYCD" xml:space="preserve">
+    <value>Custody code</value>
+  </data>
+	<data name="ERR_CF_NOT_CAREBY" xml:space="preserve">
+    <value>User is not in CareBy group</value>
+  </data>
+	<data name="lblDFAMT" xml:space="preserve">
+    <value>DF amount</value>
+  </data>
+	<data name="lblMATVAL" xml:space="preserve">
+    <value>Match amount (excluding fees and VAT)</value>
+  </data>
+	<data name="chkENDNEWDEAL" xml:space="preserve">
+    <value>Settle and renew</value>
+  </data>
+	<data name="lblOLDDEALNO" xml:space="preserve">
+    <value>Old deal number</value>
+  </data>
+	<data name="lblOLDDFQTTY" xml:space="preserve">
+    <value>Max quantity for release</value>
+  </data>
+	<data name="NEWQTTYABOVEOLDQTTY" xml:space="preserve">
+    <value>In case settle and renew the qtty for renew must be less than  qtty for settle !</value>
+  </data>
+	<data name="lblREMAINBAL" xml:space="preserve">
+    <value>Remain balance</value>
+  </data>
+	<data name="lblREMAINADVLINE" xml:space="preserve">
+    <value>Paid by advline</value>
+  </data>
+	<data name="lblNETBALANCE" xml:space="preserve">
+    <value>Net settle deal/ renew deal</value>
+  </data>
+	<data name="NOTENOUGHMONEY" xml:space="preserve">
+    <value>total available balance and underwrite could not cover outstanding between disposal deal and new one</value>
+  </data>
+	<data name="HASTOAUTODRAWNDOWN" xml:space="preserve">
+    <value>Disposal and renew loan require auto drawdown!</value>
+  </data>
+	<data name="ERR_QTTY_NOT_TRADELOT" xml:space="preserve">
+    <value>DF trade lot could not be odd lot!</value>
+  </data>
+	<data name="chkOPTIONSTOCK" xml:space="preserve">
+    <value>Loan base on receiving quantity of right issue</value>
+  </data>
+	<data name="lblOLDACTYPE" xml:space="preserve">
+    <value>Product ID for Disp/Renew</value>
+  </data>
+	<data name="lblOLDDFRATE" xml:space="preserve">
+    <value>Loan rate by DF basket</value>
+  </data>
+	<data name="lblBALDEFOVD" xml:space="preserve">
+    <value>Avaiable balance</value>
+  </data>
+	<data name="BALNOTENOUGH" xml:space="preserve">
+    <value>Balance not enough for subscription rights!</value>
+  </data>
+	<data name="lblBALADDOPT" xml:space="preserve">
+    <value>Additonal amount</value>
+  </data>
+	<data name="MEMBER_BALDEFOVD" xml:space="preserve">
+    <value>Avaibale balance</value>
+  </data>
+	<data name="MEMBER_CAMASTID" xml:space="preserve">
+    <value>Event code right</value>
+  </data>
+	<data name="MEMBER_DUEDATE" xml:space="preserve">
+    <value>Due date</value>
+  </data>
+	<data name="MEMBER_PRICE" xml:space="preserve">
+    <value>Buying price</value>
+  </data>
+	<data name="MEMBER_REPORTDATE" xml:space="preserve">
+    <value>Report date</value>
+  </data>
+	<data name="MAXDFOPTION" xml:space="preserve">
+    <value>Amount of loan can't be greater than max loan amount!</value>
+  </data>
+	<data name="AVLWITHDRAW" xml:space="preserve">
+    <value>Available Withdraw</value>
+  </data>
+	<data name="INVALID_SYMBOL" xml:space="preserve">
+    <value>Invalid symbol</value>
+  </data>
+	<data name="ERR_INVALID_DIS_ACCOUNT" xml:space="preserve">
+    <value>Disbursement Account is invalid!</value>
+  </data>
+	<data name="ERR_INVALID_STK_ACCOUNT" xml:space="preserve">
+    <value>Securities account is invalid!</value>
+  </data>
+	<data name="ERR_INV_AMOUNT" xml:space="preserve">
+    <value>Invalid release amount!</value>
+  </data>
+	<data name="ERR_INV_RATE" xml:space="preserve">
+    <value>Loan rate is invalid!</value>
+  </data>
+	<data name="ERR_NULL_STOCK" xml:space="preserve">
+    <value>No stocks have been pledged!</value>
+  </data>
+	<data name="frmCreateDFGRDeal" xml:space="preserve">
+		<value>Create df group</value>
+	</data>
+	<data name="btnReject" xml:space="preserve">
+		<value>Reject</value>
+	</data>
+	<data name="btnGetDeal" xml:space="preserve">
+		<value>Get deal info</value>
+	</data>
+	<data name="DFPRICE_OVER_REFPRICE" xml:space="preserve">
+		<value>DF price must be less than basic price</value>
+	</data>
+	<data name="TRIGGERPRICE_OVER_REFPRICE" xml:space="preserve">
+		<value>Trigger price must be less than basic price</value>
+	</data>
+	<data name="ERR_CF_CONTRACT_NOT_FOUND" xml:space="preserve">
+		<value>Account no. not found!</value>
+	</data>
+	<data name="AUTOID" xml:space="preserve">
+		<value>Auto ID</value>
+	</data>
+	<data name="MEMBER_CUSTID" xml:space="preserve">
+		<value>Customer ID</value>
+	</data>
+	<data name="MEMBER_FULLNAME" xml:space="preserve">
+		<value>Full name</value>
+	</data>
+	<data name="MEMBER_IDCODE" xml:space="preserve">
+		<value>ID code</value>
+	</data>
+	<data name="MEMBER_REF" xml:space="preserve">
+		<value>Address</value>
+	</data>
+	<data name="MEMBER_TYP" xml:space="preserve">
+		<value>Auth type</value>
+	</data>
+	<data name="NOMAL_CANNOT_MAKE_ML" xml:space="preserve">
+		<value>Normal account can not use margin loan</value>
+	</data>
+	<data name="CLEARDATE" xml:space="preserve">
+		<value>Clear date</value>
+	</data>
+	<data name="TXDATE" xml:space="preserve">
+		<value>Trans date</value>
+	</data>
+	<data name="NUMBER_IS_INVALID" xml:space="preserve">
+		<value>Number invalid</value>
+	</data>
+	<data name="OTHERS" xml:space="preserve">
+		<value>Others</value>
+	</data>
+	<data name="AFACCTNO_IS_NOT_MATCHING" xml:space="preserve">
+		<value>Sub account on transaction and disposal contract are not the same. Please enter again</value>
+	</data>
+	<data name="AFACCTNO_IS_NOT_MATCHING2" xml:space="preserve">
+		<value>Sub account on transaction and disposal contract are not the same. Please enter again</value>
+	</data>
+	<data name="TRIGGER_MUST_BE_HIGHT_THAN_REFPRICE" xml:space="preserve">
+		<value>Sub account on transaction and SE account are not the same. Please enter again</value>
+	</data>
+	<data name="btnAdjust" xml:space="preserve">
+		<value>&amp;Adjust</value>
+	</data>
+	<data name="DFGR_AFACCTNO" xml:space="preserve">
+		<value>Sub account</value>
+	</data>
+	<data name="DFGR_SYMBOL" xml:space="preserve">
+		<value>Symbol</value>
+	</data>
+	<data name="DFGR_QTTY" xml:space="preserve">
+		<value>Qtty</value>
+	</data>
+	<data name="DFGR_DTYPE" xml:space="preserve">
+		<value>DF type</value>
+	</data>
+	<data name="DFGR_DFPRICE" xml:space="preserve">
+		<value>DF price</value>
+	</data>
+	<data name="DFGR_AMT" xml:space="preserve">
+		<value>Release amt.</value>
+	</data>
+	<data name="DFGR_DFRATE" xml:space="preserve">
+		<value>DF rate</value>
+	</data>
+	<data name="LBLAFACCTNODRD" xml:space="preserve">
+		<value>Release to account</value>
+	</data>
+	<data name="chkisapprove" xml:space="preserve">
+		<value>Is approve?</value>
+	</data>
+	<data name="btnAdd" xml:space="preserve">
+		<value>Add</value>
+	</data>
+	<data name="btnDEL" xml:space="preserve">
+		<value>Delete</value>
+	</data>
+	<data name="QTTYSYMBOL" xml:space="preserve">
+		<value>Securities have been added to the group deal</value>
+	</data>
+	<data name="lblTOLAMT" xml:space="preserve">
+		<value>Total amount</value>
+	</data>
+	<data name="DFGR_REF" xml:space="preserve">
+		<value>Ref ID</value>
+	</data>
+	<data name="ApproveConfirm" xml:space="preserve">
+		<value>Approve confirm</value>
+	</data>
+	<data name="SuccessConfirm" xml:space="preserve">
+		<value>Success</value>
+	</data>
+	<data name="Reject" xml:space="preserve">
+		<value>Reject</value>
+	</data>
+	<data name="SuccessReject" xml:space="preserve">
+		<value>Reeject success</value>
+	</data>
+	<data name="ERR_BLOCK_CA_ONLYONE" xml:space="preserve">
+		<value>Only allowed to make one deal with CA receiving money.</value>
+	</data>
+	<data name="DescCACash" xml:space="preserve">
+		<value>Advance cash dividends {0}, date {1}</value>
+	</data>
+	<data name="lblDFFeemap" xml:space="preserve">
+		<value>Fee map</value>
+	</data>
+	<data name="lblFeeAmt" xml:space="preserve">
+		<value>Fee amt.</value>
+	</data>
+	<data name="lblFeeRate" xml:space="preserve">
+		<value>Fee rate</value>
+	</data>
+	<data name="lblRefSide" xml:space="preserve">
+		<value>Ref side</value>
+	</data>
+</root>

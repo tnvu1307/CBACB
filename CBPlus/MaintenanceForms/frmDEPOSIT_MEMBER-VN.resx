@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="ResMimeType">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="Version">
+        <value>1.0.0.0</value>
+    </resheader>
+    <resheader name="Reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="Writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="InitDialogFailed">
+        <value>Không thể kởi tạo được!</value>
+    </data>
+    <data name="btnOK">
+        <value>&amp;Chấp nhận</value>
+    </data>
+    <data name="btnCancel">
+        <value>&amp;Thoát</value>
+    </data>
+    <data name="frmDEPOSIT_MEMBER">
+        <value>Quản lý thành viên lưu ký</value>
+    </data>
+    <data name="lblCaption0">
+        <value>Thông tin thành viên lưu ký</value>
+    </data>
+    <data name="lblCaption1">
+        <value>Thêm mới thành viên lưu ký</value>
+    </data>
+    <data name="lblCaption2">
+        <value>Sửa đổi thông tin thành viên lưu ký</value>
+    </data>
+    <data name="SavingFailed">
+        <value>Không thể thêm mới hoặc sửa thông tin!</value>
+    </data>
+    <data name="AddnewSuccessful">
+        <value>Thêm mới thành công!</value>
+    </data>
+    <data name="EditSuccessful">
+        <value>Sửa đổi thành công!</value>
+    </data>
+    <data name="Mandatory">
+        <value>Trường [@] không được để trống!</value>
+    </data>
+    <data name="btnApply">
+        <value>&amp;Ghi</value>
+    </data>
+    <data name="DEPOSITID">
+        <value>Mã lưu ký:</value>
+    </data>
+    <data name="SHORTNAME">
+        <value>Tên viết tắt:</value>
+    </data>
+    <data name="FULLNAME">
+        <value>Tên đầy đủ:</value>
+    </data>
+    <data name="OFFICENAME">
+        <value>Tên giao dịch:</value>
+    </data>
+    <data name="ADDRESS">
+        <value>Địa chỉ:</value>
+    </data>
+    <data name="PHONE">
+        <value>Điện thoại</value>
+    </data>
+    <data name="FAX">
+        <value>FAX:</value>
+    </data>
+    <data name="DESCRIPTION">
+        <value>Ghi chú:</value>
+    </data>
+    <data name="grbDepositMember">
+        <value>Quản lý thành viên lưu ký</value>
+    </data>
+</root>

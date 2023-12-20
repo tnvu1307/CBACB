@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="lblExecType">
+		<value>Loại hình:</value>
+	</data>
+	<data name="lblSymbol">
+		<value>Chứng khoán</value>
+	</data>
+	<data name="lblPenanty">
+		<value>Phạt(%):</value>
+	</data>
+	<data name="lblRPDate">
+		<value>Ngày repo: </value>
+	</data>
+	<data name="lblMatchType">
+		<value>Kiểu khớp:</value>
+	</data>
+	<data name="lblQuantity">
+		<value>Số lượng:</value>
+	</data>
+	<data name="lblContractRate">
+		<value>Tỷ lệ hợp đồng:</value>
+	</data>
+	<data name="lblCalendar">
+		<value>Lịch:</value>
+	</data>
+	<data name="lblCARight">
+		<value>Quyền:</value>
+	</data>
+	<data name="lblTPRRate">
+		<value>Tỷ lệ TPR(%):</value>
+	</data>
+	<data name="lblBreakTerm">
+		<value>Đ/k phá vỡ HĐ:</value>
+	</data>
+	<data name="lblSpot">
+		<value>Giao ngay:</value>
+	</data>
+	<data name="lblForward">
+		<value>Đặt trước:</value>
+	</data>
+	<data name="lblSpotPrice">
+		<value>Giá giao:</value>
+	</data>
+	<data name="lblSpotValue">
+		<value>Giá trị giao:</value>
+	</data>
+	<data name="lblSpotDate">
+		<value>Ngày giao:</value>
+	</data>
+	<data name="lblForwardPrice">
+		<value>Giá đặt trước:</value>
+	</data>
+	<data name="lblForwardValue">
+		<value>Giá trị đặt trước:</value>
+	</data>
+	<data name="lblForwardDate">
+		<value>Ngày đặt trước:</value>
+	</data>
+	<data name="btnOK">
+		<value>&amp;Chấp nhận</value>
+	</data>
+	<data name="btnCANCEL">
+		<value>&amp;Huỷ</value>
+	</data>
+	<data name="lblAFACCTNO">
+		<value>Hợp đồng KH:</value>
+	</data>
+	<data name="frmRPTransact">
+		<value>Giao dịch repo:</value>
+	</data>
+	<data name="lblRPACCTNO">
+		<value>Số tài khoản RP:</value>
+	</data>
+	<data name="lblAFNAME">
+		<value></value>
+	</data>
+	<data name="QTTYISNOTNUMBER">
+		<value>Số lượng phải là số!</value>
+	</data>
+	<data name="QTTYSHOULDBEPOSITIVENUMBER">
+		<value>Số lượng phải là số dương!</value>
+	</data>
+	<data name="TRADELOTINVALID">
+		<value>Lô giao dịch không đúng</value>
+	</data>
+	<data name="SPOTPRICEISNOTNUMBER">
+		<value>Giá giao phải là số!</value>
+	</data>
+	<data name="SPOTPRICESHOULDBEPOSITIVENUMBER">
+		<value>Giá giao phải là số dương!</value>
+	</data>
+	<data name="SPOTVALUEISNOTNUMBER">
+		<value>Giá trị giao ngay phải là số!</value>
+	</data>
+	<data name="SPOTVALUESHOULDBEPOSITIVENUMBER">
+		<value>Giá trị giao ngay phải là số dương!</value>
+	</data>
+	<data name="PenantyVALUEISNOTNUMBER">
+		<value>Phạt phải là số!</value>
+	</data>
+	<data name="PenantySHOULDBEPOSITIVENUMBER">
+		<value>Phạt phải là số dương!</value>
+	</data>
+	<data name="ContractRateISNOTNUMBER">
+		<value>Tỷ lệ hợp đồng phải là số!</value>
+	</data>
+	<data name="ContractRateSHOULDBEPOSITIVENUMBER">
+		<value>Tỷ lệ hợp đồng phải là số dương!</value>
+	</data>
+	<data name="TPRRateISNOTNUMBER">
+		<value>Tỷ lệ TPR phải là số!</value>
+	</data>
+	<data name="TPRRateSHOULDBEPOSITIVENUMBER">
+		<value>Tỷ lệ TPR phải là số dương!</value>
+	</data>
+	<data name="BreakTermISNOTNUMBER">
+		<value>Điều khoản phá vỡ HĐ phải là số!</value>
+	</data>
+	<data name="BreakTermSHOULDBEPOSITIVENUMBER">
+		<value>Điều khoản phá vỡ HĐ phải là số dương!</value>
+	</data>
+	<data name="lblYearDay">
+		<value>Ngày theo năm</value>
+	</data>
+	<data name="FORWARDDATEISSMALLERTHANSPOTDATE">
+		<value>Ngày đặt trước không được nhỏ hơn ngày giao!</value>
+	</data>
+	<data name="ForwardVALUESHOULDBEPOSITIVENUMBER">
+		<value>Giá trị đặt trước phải là số dương</value>
+	</data>
+	<data name="ForwardVALUEISNOTNUMBER">
+		<value>Giá trị đặt trước phải là số</value>
+	</data>
+	<data name="ForwardPRICESHOULDBEPOSITIVENUMBER">
+		<value>Giá đặt trước phải là số dương</value>
+	</data>
+	<data name="ForwardPRICEISNOTNUMBER">
+		<value>Giá đặt trước phải là số</value>
+	</data>
+	<data name="lblACCTNO">
+		<value>Mã hợp đồng RP</value>
+	</data>
+	<data name="CONTRACTINVALID">
+		<value>Số hợp đồng không đúng!</value>
+	</data>
+	<data name="ERR_FIELD_NULL">
+		<value>Trường không thể trống!</value>
+	</data>
+	<data name="FORWARDDATEISSMALLERTHANRPDATE">
+		<value>Ngày đặt trước không được nhỏ hơn ngày hợp đồng!</value>
+	</data>
+	<data name="lblSECUREDRATIO">
+		<value>Tỷ lệ ký quỹ(%)</value>
+	</data>
+	<data name="SECUREDRATIOISNOTNUMBER">
+		<value>Tỷ lệ ký quỹ phải là số!</value>
+	</data>
+	<data name="SECUREDRATIOSHOULDBEINRANGENUMBER">
+		<value>T/L ký quỹ phải nằm trong 0..100!</value>
+	</data>
+	<data name="SPOTDATEISSMALLERTHANCONTRACTDATE">
+		<value>Ngày giao không được nhỏ hơn ngày hợp đồng!</value>
+	</data>
+</root>

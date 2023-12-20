@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="InitDialogFailed" xml:space="preserve">
+    <value>Không khởi tạo được cửa sổ!</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>&amp;Chấp nhận</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>&amp;Thoát</value>
+  </data>
+  <data name="frmCFMAST" xml:space="preserve">
+    <value>Quản lý thông tin KH</value>
+  </data>
+  <data name="lblCaption0" xml:space="preserve">
+    <value>Thông tin khách hàng.</value>
+  </data>
+  <data name="lblCaption1" xml:space="preserve">
+    <value>Thêm mới khách hàng.</value>
+  </data>
+  <data name="lblCaption2" xml:space="preserve">
+    <value>Sửa thông tin khách hàng.</value>
+  </data>
+  <data name="ACTYPE" xml:space="preserve">
+    <value>LH tiền gửi:</value>
+  </data>
+  <data name="ACCTNO" xml:space="preserve">
+    <value>Mã số hợp đồng:</value>
+  </data>
+  <data name="AFTYPE" xml:space="preserve">
+    <value>Loại hợp đồng:</value>
+  </data>
+  <data name="IFRULECD" xml:space="preserve">
+    <value>Mã biểu phí:</value>
+  </data>
+  <data name="BRID" xml:space="preserve">
+    <value>Mã chi nhánh:</value>
+  </data>
+  <data name="CUSTODYCD" xml:space="preserve">
+    <value>Số TK lưu ký:</value>
+  </data>
+  <data name="TRADEFLOOR" xml:space="preserve">
+    <value>Giao dịch tại sàn:</value>
+  </data>
+  <data name="SavingFailed" xml:space="preserve">
+    <value>Không thể thêm mới hoặc sửa thông tin chi nhánh/đại lý!</value>
+  </data>
+  <data name="AddnewSuccessful" xml:space="preserve">
+    <value>Thêm mới dữ liệu thành công!</value>
+  </data>
+  <data name="EditSuccessful" xml:space="preserve">
+    <value>Cập nhật dữ liệu thành công!</value>
+  </data>
+  <data name="CUSTID" xml:space="preserve">
+    <value>Mã KH:</value>
+  </data>
+  <data name="CUSTATCOM" xml:space="preserve">
+    <value>Lưu ký tại công ty:</value>
+  </data>
+  <data name="CUSTTYPE" xml:space="preserve">
+    <value>Loại:</value>
+  </data>
+  <data name="SHORTNAME" xml:space="preserve">
+    <value>Tên viết tắt:</value>
+  </data>
+  <data name="FULLNAME" xml:space="preserve">
+    <value>Tên đầy đủ:</value>
+  </data>
+  <data name="MNEMONIC" xml:space="preserve">
+    <value>Tên dễ nhớ:</value>
+  </data>
+  <data name="DATEOFBIRTH" xml:space="preserve">
+    <value>Ngày sinh:</value>
+  </data>
+  <data name="IDTYPE" xml:space="preserve">
+    <value>Loại giấy tờ:</value>
+  </data>
+  <data name="IDCODE" xml:space="preserve">
+    <value>Số CMND/Giấy ĐKKD:</value>
+  </data>
+  <data name="IDDATE" xml:space="preserve">
+    <value>Ngày cấp:</value>
+  </data>
+  <data name="IDPLACE" xml:space="preserve">
+    <value>Nơi cấp:</value>
+  </data>
+  <data name="IDEXPIRED" xml:space="preserve">
+    <value>Ngày hết hạn:</value>
+  </data>
+  <data name="ADDRESS" xml:space="preserve">
+    <value>Địa chỉ liên hệ:</value>
+  </data>
+  <data name="MOBILE" xml:space="preserve">
+    <value>Số Mobile:</value>
+  </data>
+  <data name="PHONE" xml:space="preserve">
+    <value>Điện thoại CĐ:</value>
+  </data>
+  <data name="FAX" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="EMAIL" xml:space="preserve">
+    <value>Địa chỉ Email:</value>
+  </data>
+  <data name="COUNTRY" xml:space="preserve">
+    <value>Mã quốc gia:</value>
+  </data>
+  <data name="PROVINCE" xml:space="preserve">
+    <value>Mã tỉnh:</value>
+  </data>
+  <data name="POSTCODE" xml:space="preserve">
+    <value>Mã bưu điện:</value>
+  </data>
+  <data name="RESIDENT" xml:space="preserve">
+    <value>Cư trú:</value>
+  </data>
+  <data name="CLASS" xml:space="preserve">
+    <value>Phân loại KH:</value>
+  </data>
+  <data name="GRINVESTOR" xml:space="preserve">
+    <value>Phân loại nhóm NĐT:</value>
+  </data>
+  <data name="INVESTRANGE" xml:space="preserve">
+    <value>Nhu cầu ĐT:</value>
+  </data>
+  <data name="TIMETOJOIN" xml:space="preserve">
+    <value>Thời gian Tham gia TT:</value>
+  </data>
+  <data name="STAFF" xml:space="preserve">
+    <value>Phân loại KH:</value>
+  </data>
+  <data name="COMPANYID" xml:space="preserve">
+    <value>Mã CT KH trực thuộc:</value>
+  </data>
+  <data name="ISSUERID" xml:space="preserve">
+    <value>Mã tổ chức PH:</value>
+  </data>
+  <data name="POSITION" xml:space="preserve">
+    <value>Phân loại vị trí:</value>
+  </data>
+  <data name="SEX" xml:space="preserve">
+    <value>Giới tính :</value>
+  </data>
+  <data name="SECTOR" xml:space="preserve">
+    <value>Ngành nghề KT:</value>
+  </data>
+  <data name="FOCUSTYPE" xml:space="preserve">
+    <value>KH mục tiêu:</value>
+  </data>
+  <data name="BUSINESSTYPE" xml:space="preserve">
+    <value>Phân loại  hinh KT:</value>
+  </data>
+  <data name="INVESTTYPE" xml:space="preserve">
+    <value>Phân loại  tiêu chí ĐT:</value>
+  </data>
+  <data name="EXPERIENCETYPE" xml:space="preserve">
+    <value>Phân loại  KN ĐT:</value>
+  </data>
+  <data name="INCOMERANGE" xml:space="preserve">
+    <value>Phân loại  thu nhập:</value>
+  </data>
+  <data name="ASSETRANGE" xml:space="preserve">
+    <value>Phân loại theo TS:</value>
+  </data>
+  <data name="CAREBY" xml:space="preserve">
+    <value>Nhóm quản lý KH:</value>
+  </data>
+  <data name="MARGINLIMIT" xml:space="preserve">
+    <value>Hạn mức margin:</value>
+  </data>
+  <data name="TRADELIMIT" xml:space="preserve">
+    <value>Hạn mức giao dịch:</value>
+  </data>
+  <data name="ADVANCELIMIT" xml:space="preserve">
+    <value>Hạn mức ứng trước:</value>
+  </data>
+  <data name="REPOLIMIT" xml:space="preserve">
+    <value>Hạn mức Repo:</value>
+  </data>
+  <data name="DEPOSITLIMIT" xml:space="preserve">
+    <value>Hạn mức tiền gửi:</value>
+  </data>
+  <data name="MORTAGERATE" xml:space="preserve">
+    <value>Tỷ lệ cầm cố:</value>
+  </data>
+  <data name="LANGUAGE" xml:space="preserve">
+    <value>Ngôn ngữ:</value>
+  </data>
+  <data name="BANKACCTNO" xml:space="preserve">
+    <value>Số tài khoản ngân hàng:</value>
+  </data>
+  <data name="BANKCODE" xml:space="preserve">
+    <value>Ngân hàng mở TK:</value>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>Tên chủ tài khoản:</value>
+  </data>
+  <data name="IDENTIFICATION" xml:space="preserve">
+    <value>Thông tin xác nhận KH</value>
+  </data>
+  <data name="CLASSIFICATION" xml:space="preserve">
+    <value>Phân loại KH</value>
+  </data>
+  <data name="SERVICES" xml:space="preserve">
+    <value>Dịch vụ</value>
+  </data>
+  <data name="CONTACTS" xml:space="preserve">
+    <value>Liên hệ</value>
+  </data>
+  <data name="SIGNATURES" xml:space="preserve">
+    <value>Chữ ký</value>
+  </data>
+  <data name="CONTRACTS" xml:space="preserve">
+    <value>Tiểu khoản</value>
+  </data>
+  <data name="btnCADD" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="btnCEDIT" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="btnCDEL" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="btnCVIEW" xml:space="preserve">
+    <value>Xem</value>
+  </data>
+  <data name="btnSVIEW" xml:space="preserve">
+    <value>Xem</value>
+  </data>
+  <data name="btnSDEL" xml:space="preserve">
+    <value>Xoá</value>
+  </data>
+  <data name="btnSEDIT" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="btnSADD" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="ERR_CUSTID_NULL" xml:space="preserve">
+    <value>Mã KH không được null</value>
+  </data>
+  <data name="ERR_MNEMONIC_NULL" xml:space="preserve">
+    <value>Tên dễ nhớ không được null</value>
+  </data>
+  <data name="Mandatory" xml:space="preserve">
+    <value>Trường [@] không được để trống!</value>
+  </data>
+  <data name="MARRIED" xml:space="preserve">
+    <value>Hôn nhân:</value>
+  </data>
+  <data name="REFNAME" xml:space="preserve">
+    <value>Người giới thiệu:</value>
+  </data>
+  <data name="RELATION" xml:space="preserve">
+    <value>Quan hệ</value>
+  </data>
+  <data name="GridEx.GroupByRow" xml:space="preserve">
+    <value>Hãy kéo cột cần nhóm vào đây.</value>
+  </data>
+  <data name="GridEx.FooterRow" xml:space="preserve">
+    <value>Tổng số bản ghi tìm kiếm: </value>
+  </data>
+  <data name="Footer" xml:space="preserve">
+    <value>Đây là footer, không thể xem, sửa, xoá dữ liệu!</value>
+  </data>
+  <data name="NotSelected" xml:space="preserve">
+    <value>Phải chọn dòng thông tin cần xem, sửa, xoá!</value>
+  </data>
+  <data name="DelSuccess" xml:space="preserve">
+    <value>Xoá dữ liệu thành công!</value>
+  </data>
+  <data name="DelConfirm" xml:space="preserve">
+    <value>Đồng ý xoá dữ liệu?</value>
+  </data>
+  <data name="TAXCODE" xml:space="preserve">
+    <value>Mã số thuế:</value>
+  </data>
+  <data name="EDUCATION" xml:space="preserve">
+    <value>Trình độ VH:</value>
+  </data>
+  <data name="FAX1" xml:space="preserve">
+    <value>Fax 1:</value>
+  </data>
+  <data name="PHONE1" xml:space="preserve">
+    <value>Điện thoại 1:</value>
+  </data>
+  <data name="ORGINF" xml:space="preserve">
+    <value>Sô TK ngân hàng:</value>
+  </data>
+  <data name="INTERNATION" xml:space="preserve">
+    <value>Tên quốc tế:</value>
+  </data>
+  <data name="grid.NAME" xml:space="preserve">
+    <value>Tên KH</value>
+  </data>
+  <data name="btnNEXT" xml:space="preserve">
+    <value>Tới</value>
+  </data>
+  <data name="btnPREVIOUS" xml:space="preserve">
+    <value>Trước</value>
+  </data>
+  <data name="OCCUPATION" xml:space="preserve">
+    <value>Nghề nghiệp</value>
+  </data>
+  <data name="NumericDataType" xml:space="preserve">
+    <value>Trường [@] phải là kiểu số!</value>
+  </data>
+  <data name="ISSUERIDEMPTY" xml:space="preserve">
+    <value>Mã tổ chức không được để trống!</value>
+  </data>
+  <data name="btnGETCUSTID" xml:space="preserve">
+    <value>Lấy mã</value>
+  </data>
+  <data name="btnRADD" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="btnRVIEW" xml:space="preserve">
+    <value>Xem</value>
+  </data>
+  <data name="btnREDIT" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="btnRDEL" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="ApproveSuccessful" xml:space="preserve">
+    <value>Duyệt dữ liệu thành công !</value>
+  </data>
+  <data name="ApproveCustomerProfile" xml:space="preserve">
+    <value>Duyệt thông tin khách hàng</value>
+  </data>
+  <data name="ISBANKING" xml:space="preserve">
+    <value>Ngân hàng:</value>
+  </data>
+  <data name="btnADDISSUER" xml:space="preserve">
+    <value>&amp;Thêm mới</value>
+  </data>
+  <data name="btnApply" xml:space="preserve">
+    <value>&amp;Ghi</value>
+  </data>
+  <data name="btnAPPROVE" xml:space="preserve">
+    <value>&amp;Duyệt</value>
+  </data>
+  <data name="btnDELISSUER" xml:space="preserve">
+    <value>&amp;Xoá</value>
+  </data>
+  <data name="btnEDITISSUER" xml:space="preserve">
+    <value>&amp;Sửa</value>
+  </data>
+  <data name="btnREFUSE" xml:space="preserve">
+    <value>Từ chối</value>
+  </data>
+  <data name="btnREJECT" xml:space="preserve">
+    <value>&amp;Huỷ bỏ</value>
+  </data>
+  <data name="btnVIEWISSUER" xml:space="preserve">
+    <value>&amp;Xem</value>
+  </data>
+  <data name="chkBOND" xml:space="preserve">
+    <value>Bond</value>
+  </data>
+  <data name="chkEQUITIES" xml:space="preserve">
+    <value>Equities</value>
+  </data>
+  <data name="chkFOREX" xml:space="preserve">
+    <value>Forex</value>
+  </data>
+  <data name="chkOTHERS" xml:space="preserve">
+    <value>Khác</value>
+  </data>
+  <data name="chkREALESTATE" xml:space="preserve">
+    <value>Real estate</value>
+  </data>
+  <data name="grbEXPERIENCES" xml:space="preserve">
+    <value>Kinh nghiệm đầu tư</value>
+  </data>
+  <data name="grid.ADDRESS" xml:space="preserve">
+    <value>Thông tin liên lạc</value>
+  </data>
+  <data name="grid.AUTOID" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="grid.BANKACCOUNT" xml:space="preserve">
+    <value>Tài khoản NH</value>
+  </data>
+  <data name="grid.BANKNAME" xml:space="preserve">
+    <value>Tên ngân hàng</value>
+  </data>
+  <data name="grid.BUSINESSTYPE" xml:space="preserve">
+    <value>Loại kinh doanh</value>
+  </data>
+  <data name="grid.CUSTID" xml:space="preserve">
+    <value>Mã khách hàng</value>
+  </data>
+  <data name="grid.CUSTATCOM" xml:space="preserve">
+    <value>Lưu ký tại công ty</value>
+  </data>
+  <data name="grid.DESCRIPTION" xml:space="preserve">
+    <value>Diễn tả</value>
+  </data>
+  <data name="grid.ECONIMIC" xml:space="preserve">
+    <value>Kinh tế</value>
+  </data>
+  <data name="grid.FAX" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="grid.FULLNAME" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="grid.IDDATE" xml:space="preserve">
+    <value>Ngày cấp</value>
+  </data>
+  <data name="grid.IDEXPIRED" xml:space="preserve">
+    <value>Ngày hết hạn</value>
+  </data>
+  <data name="grid.IDPLACE" xml:space="preserve">
+    <value>Nơi cấp</value>
+  </data>
+  <data name="grid.INFOADDRESS" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="grid.ISSUERID" xml:space="preserve">
+    <value>Mã tổ chức</value>
+  </data>
+  <data name="grid.LEGALCAPTIAL" xml:space="preserve">
+    <value>Vốn pháp định</value>
+  </data>
+  <data name="grid.LICENSEDATE" xml:space="preserve">
+    <value>Ngày cấp giấy phép thành lập</value>
+  </data>
+  <data name="grid.LICENSENO" xml:space="preserve">
+    <value>Số giấy phép</value>
+  </data>
+  <data name="grid.LINCENSEPLACE" xml:space="preserve">
+    <value>Nơi cấp</value>
+  </data>
+  <data name="grid.MARKETSIZE" xml:space="preserve">
+    <value>Thị trường</value>
+  </data>
+  <data name="grid.OFFICENAME" xml:space="preserve">
+    <value>Tên giao dịch</value>
+  </data>
+  <data name="grid.OPERATEDATE" xml:space="preserve">
+    <value>Ngày cấp GPHĐ</value>
+  </data>
+  <data name="grid.OPERATENO" xml:space="preserve">
+    <value>Số GPHĐ</value>
+  </data>
+  <data name="grid.OPERATEPLACE" xml:space="preserve">
+    <value>Nơi cấp GPHĐ</value>
+  </data>
+  <data name="grid.PHONE" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="grid.PRPERSON" xml:space="preserve">
+    <value>Người phát ngôn</value>
+  </data>
+  <data name="grid.RECUSTID" xml:space="preserve">
+    <value>Người liên lạc</value>
+  </data>
+  <data name="grid.RETYPE" xml:space="preserve">
+    <value>Loại quan hệ </value>
+  </data>
+  <data name="grid.ROLECD" xml:space="preserve">
+    <value>Vai trò</value>
+  </data>
+  <data name="grid.SHARECAPITAL" xml:space="preserve">
+    <value>Vốn cổ phần</value>
+  </data>
+  <data name="grid.SHORTNAME" xml:space="preserve">
+    <value>Tên tắt</value>
+  </data>
+  <data name="NotCareBy" xml:space="preserve">
+    <value>Xin lỗi, bạn không quản lý khách hàng này!</value>
+  </data>
+  <data name="NotCareByGroup" xml:space="preserve">
+    <value>Xin lỗi, bạn không thuộc nhóm quản lý khách hàng nào cả!</value>
+  </data>
+  <data name="RefuseSuccessful" xml:space="preserve">
+    <value>Từ chối thành công!</value>
+  </data>
+  <data name="RejectSuccessful" xml:space="preserve">
+    <value>Huỷ bỏ thành công!</value>
+  </data>
+  <data name="STATUS" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="tabISSUER" xml:space="preserve">
+    <value>Tổ chức phát hành</value>
+  </data>
+  <data name="CONTACT_AUTOID_EN" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="CONTACT_TYPE_EN" xml:space="preserve">
+    <value>Loại</value>
+  </data>
+  <data name="CONTACT_PERSON_EN" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="CONTACT_ADDRESS_EN" xml:space="preserve">
+    <value>Địa chỉ thường trú</value>
+  </data>
+  <data name="CONTACT_PHONE_EN" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="CONTACT_FAX_EN" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="CONTACT_EMAIL_EN" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="CONTACT_DESCRIPTION_EN" xml:space="preserve">
+    <value>Diễn tả</value>
+  </data>
+  <data name="ACCOUNT_AFACCTNO_EN" xml:space="preserve">
+    <value>Số tiểu khoản</value>
+  </data>
+  <data name="ACCOUNT_AFROLE_EN" xml:space="preserve">
+    <value>Vai trò</value>
+  </data>
+  <data name="ACCOUNT_MODULE_EN" xml:space="preserve">
+    <value>Loại tài khoản</value>
+  </data>
+  <data name="ACCOUNT_SYMBOL_EN" xml:space="preserve">
+    <value>Chứng khoán</value>
+  </data>
+  <data name="ACCOUNT_ACCTNO_EN" xml:space="preserve">
+    <value>Số tài khoản</value>
+  </data>
+  <data name="ACCOUNT_BALANCE_EN" xml:space="preserve">
+    <value>Số dư</value>
+  </data>
+  <data name="ACCOUNT_AFTYPE_EN" xml:space="preserve">
+    <value>Loại hình hợp đồng</value>
+  </data>
+  <data name="ACCOUNT_AFTYPE_NAME_EN" xml:space="preserve">
+    <value>Tên loại hình tiểu khoản</value>
+  </data>
+  <data name="MRLOANLIMIT" xml:space="preserve">
+    <value>HM vay Margin:</value>
+  </data>
+  <data name="btnApprv" xml:space="preserve">
+    <value>Duyệt</value>
+  </data>
+  <data name="EXPERIENCECD" xml:space="preserve">
+    <value>Kinh nghiệm trong  lĩnh vực</value>
+  </data>
+  <data name="MobileNotValid" xml:space="preserve">
+    <value>Số điện thoại di động không đúng mẫu.</value>
+  </data>
+  <data name="PhoneNotValid" xml:space="preserve">
+    <value>Số điện thoại không đúng mẫu.</value>
+  </data>
+  <data name="RISKLEVEL" xml:space="preserve">
+    <value>Mức độ rủi ro:</value>
+  </data>
+  <data name="MsgNOTNULLBANKACC" xml:space="preserve">
+    <value>[Số tài khoản ngân hàng] không được để trống !</value>
+  </data>
+  <data name="IDDATEOVERBUSDATE" xml:space="preserve">
+    <value>Ngày cấp giấy chứng minh phải nhỏ hơn ngày hiện tại !</value>
+  </data>
+  <data name="MsgNOTNULLTAXCODE" xml:space="preserve">
+    <value>Mã số thuế không được để trống !</value>
+  </data>
+  <data name="EXPDATE" xml:space="preserve">
+    <value>Ngày hết hiệu lực</value>
+  </data>
+  <data name="VALDATE" xml:space="preserve">
+    <value>Ngày hiệu lực</value>
+  </data>
+  <data name="TRADINGCODE" xml:space="preserve">
+    <value>Trading code</value>
+  </data>
+  <data name="TRADINGCODEDT" xml:space="preserve">
+    <value>Ngày cấp Trading code</value>
+  </data>
+  <data name="msgCHECKTRADINGCODE" xml:space="preserve">
+    <value>Chú ý: 6 ký tự đầu của Trading code phải bằng 6 ký tự cuối cùng của số lưu ký, nếu không có số lưu ký thì không cần nhập Trading code !</value>
+  </data>
+  <data name="msgCANNOTADDSIGN" xml:space="preserve">
+    <value>Lưu ý: Thông tin khách hàng chưa được hệ thống ghi nhận nên không thể thêm mới chữ ký ! Vui lòng nhấp vào nút [Ghi] để ghi nhận thông tin khách hàng trước !</value>
+  </data>
+  <data name="TLID" xml:space="preserve">
+    <value>User careby:</value>
+  </data>
+  <data name="OPNDATE" xml:space="preserve">
+    <value>Ngày mở TK:</value>
+  </data>
+  <data name="CONTRACTCHK" xml:space="preserve">
+    <value>Có ký HĐ khung:</value>
+  </data>
+  <data name="MARGINALLOW" xml:space="preserve">
+    <value>Giao dịch margin:</value>
+  </data>
+  <data name="LNLIMITMAX" xml:space="preserve">
+    <value>Hạn mức giải ngân tối đa:</value>
+  </data>
+  <data name="CFLNLIMITMAX" xml:space="preserve">
+    <value>Hạn mức giải ngân tối đa/KH:</value>
+  </data>
+  <data name="grbLNLIMITMAX" xml:space="preserve">
+    <value>Nguồn ngân hàng</value>
+  </data>
+  <data name="tabLNLIMITMAX" xml:space="preserve">
+    <value>Hạn mức cấp KH</value>
+  </data>
+  <data name="btnLNLIMITMAXVIEW" xml:space="preserve">
+    <value>Xem:</value>
+  </data>
+  <data name="CFCUSTID" xml:space="preserve">
+    <value>Mã KH</value>
+  </data>
+  <data name="CFFULLNAME" xml:space="preserve">
+    <value>Tên KH</value>
+  </data>
+  <data name="CFLIMIT" xml:space="preserve">
+    <value>Hạn mức vay tối đa</value>
+  </data>
+  <data name="IDEXPIREDLESSTHANBUSDATE" xml:space="preserve">
+    <value>CMT/HC/GPKD của Chủ tài khoản đã hết hạn!</value>
+  </data>
+  <data name="msgCHECKEXISTSMARGINACCOUNT" xml:space="preserve">
+    <value>Khách hàng đã tồn tại tiểu khoản Margin!</value>
+  </data>
+  <data name="CFLMTYP" xml:space="preserve">
+    <value>Loại</value>
+  </data>
+  <data name="CFLMCHKTYP" xml:space="preserve">
+    <value>Căn cứ số dư</value>
+  </data>
+  <data name="CFLMSUBTYPE" xml:space="preserve">
+    <value>Nghiệp vụ</value>
+  </data>
+  <data name="grid.ADDRESS" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="grid.LICENSENO" xml:space="preserve">
+    <value>CMND</value>
+  </data>
+  <data name="grid.LNIDDATE" xml:space="preserve">
+    <value>Ngày cấp</value>
+  </data>
+  <data name="grid.LNPLACE" xml:space="preserve">
+    <value>Nơi cấp</value>
+  </data>
+  <data name="grid.ADDRESS" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="grid.TELEPHONE" xml:space="preserve">
+    <value>Số ĐT</value>
+  </data>
+  <data name="grid.ISS_FULLNAME" xml:space="preserve">
+    <value>Tên TCPH</value>
+  </data>
+  <data name="msgINVALIDEMAILFORMAT" xml:space="preserve">
+    <value>Địa chỉ Email phải đúng theo định dạng mail (x@y.z)</value>
+  </data>
+  
+</root>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ADVSCHD_ISVSD" xml:space="preserve">
+    <value>Mortage of VSD</value>
+  </data>
+  <data name="btnPRINT" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="INVALIDCUSTODYCD" xml:space="preserve">
+    <value>Custody Code is Invalid!</value>
+  </data>
+  <data name="ReportCreateSucessfully" xml:space="preserve">
+    <value>Create report sucessfully</value>
+  </data>
+  <data name="lblBALDEFOVD" xml:space="preserve">
+    <value>Balance available</value>
+  </data>
+  <data name="msgtxtADVAMTNOTVALID" xml:space="preserve">
+    <value>Advance amount must be greater than min amount. Please correct !</value>
+  </data>
+  <data name="ADVSCHD_ADVAMT" xml:space="preserve">
+    <value>Advance receiving amount</value>
+  </data>
+  <data name="ADVSCHD_AVLADVAMT" xml:space="preserve">
+    <value>Max advance amount</value>
+  </data>
+  <data name="ADVSCHD_BNKFEEAMT" xml:space="preserve">
+    <value>Advance fee per month</value>
+  </data>
+  <data name="ADVSCHD_DAYS" xml:space="preserve">
+    <value>Advance days</value>
+  </data>
+  <data name="ADVSCHD_DESC" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ADVSCHD_DUEDATE" xml:space="preserve">
+    <value>Due date</value>
+  </data>
+  <data name="ADVSCHD_FEEAMT" xml:space="preserve">
+    <value>Advance fee</value>
+  </data>
+  <data name="ADVSCHD_MATCHDATE" xml:space="preserve">
+    <value>Match date</value>
+  </data>
+  <data name="ADVSCHD_RCVADVAMT" xml:space="preserve">
+    <value>Real receving amount</value>
+  </data>
+  <data name="ADVSCHD_VATAMT" xml:space="preserve">
+    <value>VAT</value>
+  </data>
+  <data name="btnAdjust" xml:space="preserve">
+    <value>Adjust</value>
+  </data>
+  <data name="btnApply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ConfirmApply" xml:space="preserve">
+    <value>Continue advance</value>
+  </data>
+  <data name="ERR_TLTXCD_NOTFOUND" xml:space="preserve">
+    <value>Transact no. not found</value>
+  </data>
+  <data name="frmManualAdvance" xml:space="preserve">
+    <value>Advance payment</value>
+  </data>
+  <data name="grbAdvInfo" xml:space="preserve">
+    <value>Advance info</value>
+  </data>
+  <data name="grbAdvSchd" xml:space="preserve">
+    <value>Advance schedule</value>
+  </data>
+  <data name="grbCFInfo" xml:space="preserve">
+    <value>Customer info</value>
+  </data>
+  <data name="INVALIDCUSTINFO" xml:space="preserve">
+    <value>Customer info invalid</value>
+  </data>
+  <data name="lblADDRESS" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="lblADTYPE" xml:space="preserve">
+    <value>Advance type</value>
+  </data>
+  <data name="lblADVAMT" xml:space="preserve">
+    <value>Advance amount</value>
+  </data>
+  <data name="lblAVLADVAMT" xml:space="preserve">
+    <value>Max advance amount</value>
+  </data>
+  <data name="lblBNKMINBAL" xml:space="preserve">
+    <value>Min advance fee for bank</value>
+  </data>
+  <data name="lblBNKRATE" xml:space="preserve">
+    <value>Advance fee for bank</value>
+  </data>
+  <data name="lblCMPMAXBAL" xml:space="preserve">
+    <value>Max advance fee</value>
+  </data>
+  <data name="lblCMPMINBAL" xml:space="preserve">
+    <value>Min advance fee</value>
+  </data>
+  <data name="lblCUSTODYCD" xml:space="preserve">
+    <value>Custody code</value>
+  </data>
+  <data name="lblFULLNAME" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="lblIDCODE" xml:space="preserve">
+    <value>ID code</value>
+  </data>
+  <data name="lblIDDATE" xml:space="preserve">
+    <value>ID date</value>
+  </data>
+  <data name="lblIDPLACE" xml:space="preserve">
+    <value>ID place</value>
+  </data>
+  <data name="lblINTRATE" xml:space="preserve">
+    <value>Advance fee</value>
+  </data>
+  <data name="lblMINADVAMT" xml:space="preserve">
+    <value>Min advance</value>
+  </data>
+  <data name="lblRCVADVAMT" xml:space="preserve">
+    <value>Max receiving amount</value>
+  </data>
+  <data name="lblVAT" xml:space="preserve">
+    <value>VAT</value>
+  </data>
+  <data name="TransactionSuccessful" xml:space="preserve">
+    <value>Trasaction successful</value>
+  </data>
+  <data name="INVALIDAFTYPEADTYPE" xml:space="preserve">
+    <value>Advance type invalid</value>
+  </data>
+  <data name="lblBANKACCT" xml:space="preserve">
+    <value>Bank account</value>
+  </data>
+  <data name="lblBANKCODE" xml:space="preserve">
+    <value>Bank code</value>
+  </data>
+  <data name="INVALIDADVAMT" xml:space="preserve">
+    <value>Invalid request number</value>
+  </data>
+  <data name="msgtxtADVAMTERROR" xml:space="preserve">
+    <value>Input must be grester than 0!</value>
+  </data>
+  <data name="lblREMAINADV" xml:space="preserve">
+    <value>Customer’s advance remain limit of the day</value>
+  </data>
+  <data name="lblREMAINADV_SYS" xml:space="preserve">
+    <value>Company’s advance remain limit of the day</value>
+  </data>
+</root>

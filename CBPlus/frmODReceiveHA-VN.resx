@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="ResMimeType">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="Version">
+        <value>1.0.0.0</value>
+    </resheader>
+    <resheader name="Reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="Writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="ORGORDERID">
+        <value>Số hiệu lệnh</value>
+    </data>
+    <data name="CODEID">
+        <value>Mã chứng khoán</value>
+    </data>
+    <data name="SYMBOL">
+        <value>Chứng khoán</value>
+    </data>
+    <data name="CUSTODYCD">
+        <value>Tài khoản lưu ký</value>
+    </data>
+    <data name="BORS">
+        <value>Mua/Bán</value>
+    </data>
+    <data name="NORP">
+        <value>Thường/Thoả thuận</value>
+    </data>
+    <data name="AORN">
+        <value>Tính hoàn chỉnh</value>
+    </data>
+    <data name="PRICE">
+        <value>Giá</value>
+    </data>
+    <data name="QTTY">
+        <value>Khối lượng</value>
+    </data>
+    <data name="CLEARDAY">
+        <value>Ngày thanh toán</value>
+    </data>
+    <data name="CLEARCD">
+        <value>Loại lịch</value>
+    </data>
+    <data name="SEACCTNO">
+        <value>Tài khoản CK</value>
+    </data>
+    <data name="CIACCTNO">
+        <value>Tài khoản tiền</value>
+    </data>
+    <data name="AFACCTNO">
+        <value>Số hợp đồng</value>
+    </data>
+    <data name="lblMatchType">
+        <value>Phương thức khớp</value>
+    </data>
+    <data name="lblExecType">
+        <value>Loại thực hiện</value>
+    </data>
+    <data name="lblSymbol">
+        <value>Chứng khoán</value>
+    </data>
+    <data name="lblClearCD">
+        <value>Loại lịch TT</value>
+    </data>
+    <data name="lblRefOrderID">
+        <value>Lệnh tham chiếu</value>
+    </data>
+    <data name="lblExQuantity">
+        <value>Khối lượng thực hiện</value>
+    </data>
+    <data name="lblQuantity">
+        <value>Khôi lượng</value>
+    </data>
+    <data name="lblClearDay">
+        <value>Ngày thanh toán</value>
+    </data>
+    <data name="lblREFCUSTCD">
+        <value>K/H tham chiếu</value>
+    </data>
+    <data name="lblExPrice">
+        <value>Giá thực hiện</value>
+    </data>
+    <data name="lblPrice">
+        <value>Giá</value>
+    </data>
+    <data name="btnReceive">
+        <value>&amp;Khớp lệnh</value>
+    </data>
+    <data name="btnOK">
+        <value>&amp;Chấp nhận</value>
+    </data>
+    <data name="btnCANCEL">
+        <value>&amp;Thoát</value>
+    </data>
+    <data name="chkAORN">
+        <value>Tính hoàn chỉnh</value>
+    </data>
+    <data name="lblBORS">
+        <value>Mua/Bán</value>
+    </data>
+    <data name="lblNORP">
+        <value>Thường/Thoả thuận</value>
+    </data>
+    <data name="PRICEISNOTNUMBER">
+        <value>Giá phải là giá trị số!</value>
+    </data>
+    <data name="PRICEISSHOULDBEGREATERTHANOREQUALZERO">
+        <value>Giá phải lớn hơn 0!</value>
+    </data>
+    <data name="QTTYISNOTNUMBER">
+        <value>Khối lượng phải là giá trị số!</value>
+    </data>
+    <data name="QTTYISSHOULDBEGREATERTHANOREQUALZERO">
+        <value>Khối lượng phải lớn hơn 0!</value>
+    </data>
+    <data name="lblREMAINQTTY">
+        <value>Khôi lượng còn lại</value>
+    </data>
+    <data name="lblEXECQTTY">
+        <value>Khối lượng khớp</value>
+    </data>
+    <data name="PRICESHOULDBEGREATEROREQUALTOEXPRICE">
+        <value>Giá khớp phải lớn hơn hay bằng giá đặt</value>
+    </data>
+    <data name="PRICETYPE">
+        <value>Loại giá</value>
+    </data>
+    <data name="REMAINQTTY">
+        <value>Khối lượng còn lại</value>
+    </data>
+    <data name="EXECQTTY">
+        <value>Khối lượng khớp</value>
+    </data>
+    <data name="EXPRICE">
+        <value>Giá khớp</value>
+    </data>
+    <data name="EXQTTY">
+        <value>Khối lượng thực hiện</value>
+    </data>
+    <data name="PRICESHOULDBESMALLEROREQUALTOEXPRICE">
+        <value>Giá khớp phải nhỏ hơn hay bằng giá đặt!</value>
+    </data>
+    <data name="frmODReceive">
+        <value>Khớp lệnh</value>
+    </data>
+    <data name="RESULT_CONFIRM_NO">
+        <value>Mã khớp trả về</value>
+    </data>
+    <data name="RESULT_CUSTODYCD">
+        <value>TK lưu ký trả về</value>
+    </data>
+    <data name="RESULT_BORS">
+        <value>Mua/Bán trả về</value>
+    </data>
+    <data name="RESULT_SEC_CODE">
+        <value>Mã CK trả về</value>
+    </data>
+    <data name="RESULT_QUANTITY">
+        <value>Khối lượng trả về</value>
+    </data>
+    <data name="RESULT_PRICE">
+        <value>Giá trả về</value>
+    </data>
+    <data name="OOD_ORGORDERID">
+        <value>Số hiệu lệnh</value>
+    </data>
+    <data name="OOD_CUSTODYCD">
+        <value>TK lưy ký</value>
+    </data>
+    <data name="OOD_BORS">
+        <value>Mua/Bán</value>
+    </data>
+    <data name="OOD_SYMBOL">
+        <value>Chứng khoán</value>
+    </data>
+    <data name="OOD_NORP">
+        <value>Thường/Thoả thuận</value>
+    </data>
+    <data name="MATCHQTTY">
+        <value>Khối lượng khớp</value>
+    </data>
+    <data name="btnReceiveAll">
+        <value>&amp; Khớp hết</value>
+    </data>
+    <data name="OOD_CODEID">
+        <value>Mã CK</value>
+    </data>
+    <data name="tpgManual">
+        <value>Khớp bằng tay</value>
+    </data>
+    <data name="tpgAutomatic">
+        <value>Khớp tự động</value>
+    </data>
+    <data name="TRADEUNIT">
+        <value>Đơn vị giao dịch</value>
+    </data>
+    <data name="TXDATE">
+        <value>Ngày khớp</value>
+    </data>
+    <data name="TRADELOT">
+        <value>Lô</value>
+    </data>
+    <data name="QUANTITYISNOTNUMBER">
+        <value>Khối lợng nhập phải kiểu số!</value>
+    </data>
+    <data name="QUANTITYISSHOULDBEGREATERTHANOREQUALZERO">
+        <value>Khối lượng nhập phải lớn hơn hay bằng 0!</value>
+    </data>
+    <data name="QUANTITYSHOULDBEINTRADELOD">
+        <value>Khối lượng khớp phải chia hết cho lô!</value>
+    </data>
+    <data name="QUANTITYSHOULDBESMALLERTHANEXQTTY">
+        <value>Khối lượng khớp phải nhỏ hơn khối lượng còn lại!</value>
+    </data>
+    <data name="btnMatch">
+        <value>Khớp &amp;Tự động</value>
+    </data>
+    <data name="btnMatch">
+        <value>Khớp &amp;Tự động</value>
+    </data>
+    <data name="OOD_AORN">
+        <value>Tính hoàn chỉnh</value>
+    </data>
+    <data name="SETTLEDDAY">
+        <value>Ngày thanh toán</value>
+    </data>
+    <data name="GridEx.GroupByRow">
+        <value>Kéo cột để nhóm (F6:vào lưới, F9: Tìm kiếm)</value>
+    </data>
+    <data name="GridEx.FooterRow">
+        <value>Tổng số bản ghi:</value>
+    </data>
+    <data name="lblSSymbol">
+        <value>Chứng khoán</value>
+    </data>
+    <data name="lblSBORS">
+        <value>Mua/Bán</value>
+    </data>
+    <data name="lblDesc">
+        <value>Chọn lệnh bạn muốn khớp rồi sau đó chọn nút khớp lệnh!</value>
+    </data>
+    <data name="lblTxDesc">
+        <value>Diễn giải</value>
+    </data>
+    <data name="PRICESHOULDBEINRANGE">
+        <value>Giá phải nằm trong khoảng trần sàn!</value>
+    </data>
+</root>

@@ -1,0 +1,1533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="cboLink.ComboData" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAE5TeXN0ZW0uRGF0YSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJl
+        PW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABVTeXN0ZW0uRGF0YS5E
+        YXRhVGFibGUDAAAAGURhdGFUYWJsZS5SZW1vdGluZ1ZlcnNpb24JWG1sU2NoZW1hC1htbERpZmZHcmFt
+        AwEBDlN5c3RlbS5WZXJzaW9uAgAAAAkDAAAABgQAAADjBTw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rp
+        bmc9InV0Zi0xNiI/Pg0KPHhzOnNjaGVtYSB4bWxucz0iIiB4bWxuczp4cz0iaHR0cDovL3d3dy53My5v
+        cmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOm1zZGF0YT0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp4
+        bWwtbXNkYXRhIj4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iQ09NQk9CT1giPg0KICAgIDx4czpjb21wbGV4
+        VHlwZT4NCiAgICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iRElTUExB
+        WSIgdHlwZT0ieHM6c3RyaW5nIiBtc2RhdGE6dGFyZ2V0TmFtZXNwYWNlPSIiIG1pbk9jY3Vycz0iMCIg
+        Lz4NCiAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iVkFMVUUiIHR5cGU9InhzOmFueVR5cGUiIG1zZGF0
+        YTp0YXJnZXROYW1lc3BhY2U9IiIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgPC94czpzZXF1ZW5jZT4N
+        CiAgICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8L3hzOmVsZW1lbnQ+DQogIDx4czplbGVtZW50IG5hbWU9
+        InRtcERhdGFTZXQiIG1zZGF0YTpJc0RhdGFTZXQ9InRydWUiIG1zZGF0YTpNYWluRGF0YVRhYmxlPSJD
+        T01CT0JPWCIgbXNkYXRhOlVzZUN1cnJlbnRMb2NhbGU9InRydWUiPg0KICAgIDx4czpjb21wbGV4VHlw
+        ZT4NCiAgICAgIDx4czpjaG9pY2UgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgLz4N
+        CiAgICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8L3hzOmVsZW1lbnQ+DQo8L3hzOnNjaGVtYT4GBQAAAIAB
+        PGRpZmZncjpkaWZmZ3JhbSB4bWxuczptc2RhdGE9InVybjpzY2hlbWFzLW1pY3Jvc29mdC1jb206eG1s
+        LW1zZGF0YSIgeG1sbnM6ZGlmZmdyPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOnhtbC1kaWZmZ3Jh
+        bS12MSIgLz4EAwAAAA5TeXN0ZW0uVmVyc2lvbgQAAAAGX01ham9yBl9NaW5vcgZfQnVpbGQJX1Jldmlz
+        aW9uAAAAAAgICAgCAAAAAAAAAP//////////Cw==
+</value>
+  </data>
+  <data name="msgNULLCHECKTRADINGCODE" xml:space="preserve">
+    <value>Foreign customer must enter Tradingcode!</value>
+  </data>
+  <data name="ADDRESS" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="ADVANCELIMIT" xml:space="preserve">
+    <value>Advance limit:</value>
+  </data>
+  <data name="APPROVEID" xml:space="preserve">
+    <value>Approver</value>
+  </data>
+  <data name="ASSETRANGE" xml:space="preserve">
+    <value>Asset range:</value>
+  </data>
+  <data name="AUDITDATE" xml:space="preserve">
+    <value>Last audit date:</value>
+  </data>
+  <data name="AUDITORID" xml:space="preserve">
+    <value>Audit CustomerID</value>
+  </data>
+  <data name="BANKACCTNO" xml:space="preserve">
+    <value>Bank account number:</value>
+  </data>
+  <data name="BANKCODE" xml:space="preserve">
+    <value>Bank:</value>
+  </data>
+  <data name="BRID" xml:space="preserve">
+    <value>Branch:</value>
+  </data>
+  <data name="btnAFMAST_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnAFMAST_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnAFMAST_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnAFMAST_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="btnCORPORATE_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnCORPORATE_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnCORPORATE_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnCORPORATE_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="btnApply" xml:space="preserve">
+    <value>&amp;Apply</value>
+  </data>
+  <data name="btnApprv" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="btnCFCONTACT_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnCFCONTACT_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnCFCONTACT_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnCFCONTACT_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="btnCURRENTACC_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnCURRENTACC_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnCURRENTACC_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnCURRENTACC_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="btnCFRELATION_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnCFRELATION_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnCFRELATION_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnCFRELATION_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="btnCFSIGN_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnCFSIGN_BACK" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="btnCFSIGN_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnCFSIGN_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnCFSIGN_NEXT" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="btnCFSIGN_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="btnISSUER_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnISSUER_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnISSUER_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnISSUER_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="BUSINESSTYPE" xml:space="preserve">
+    <value>Classtify by economic:</value>
+  </data>
+  <data name="CAREBY" xml:space="preserve">
+    <value>Careby group:</value>
+  </data>
+  <data name="CFCommon" xml:space="preserve">
+    <value>General information</value>
+  </data>
+  <data name="chkBOND" xml:space="preserve">
+    <value>Bond</value>
+  </data>
+  <data name="chkEQUITIES" xml:space="preserve">
+    <value>Equities</value>
+  </data>
+  <data name="chkFOREX" xml:space="preserve">
+    <value>Forex</value>
+  </data>
+  <data name="chkOTHERS" xml:space="preserve">
+    <value>Others</value>
+  </data>
+  <data name="chkREALESTATE" xml:space="preserve">
+    <value>Real estate</value>
+  </data>
+  <data name="CLASS" xml:space="preserve">
+    <value>Customer type:</value>
+  </data>
+  <data name="COMMRATE" xml:space="preserve">
+    <value>Commission rate:</value>
+  </data>
+  <data name="COMPANYID" xml:space="preserve">
+    <value>Company ID:</value>
+  </data>
+  <data name="COUNTRY" xml:space="preserve">
+    <value>Nationality:</value>
+  </data>
+  <data name="CUSTATCOM" xml:space="preserve">
+    <value>Local depository:</value>
+  </data>
+  <data name="CUSTID" xml:space="preserve">
+    <value>Customer ID:</value>
+  </data>
+  <data name="CUSTODYCD" xml:space="preserve">
+    <value>Trading account:</value>
+  </data>
+  <data name="CUSTTYPE" xml:space="preserve">
+    <value>Customer type:</value>
+  </data>
+  <data name="DATEOFBIRTH" xml:space="preserve">
+    <value>Date of birth:</value>
+  </data>
+  <data name="DEPOSITLIMIT" xml:space="preserve">
+    <value>Deposit limit</value>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="EDUCATION" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="EMAIL" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="EXPDATE" xml:space="preserve">
+    <value>Signature expired date:</value>
+  </data>
+  <data name="EXPERIENCECD" xml:space="preserve">
+    <value>Experienced fields:</value>
+  </data>
+  <data name="EXPERIENCETYPE" xml:space="preserve">
+    <value>Classify by experience:</value>
+  </data>
+  <data name="FAX" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="FOCUSTYPE" xml:space="preserve">
+    <value>Customer classification:</value>
+  </data>
+  <data name="frmCFMAST" xml:space="preserve">
+    <value>Target customer</value>
+  </data>
+  <data name="FULLNAME" xml:space="preserve">
+    <value>Full name:</value>
+  </data>
+  <data name="GenCheckCustID" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="GenCheckCUSTODYCD" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="grbCLASS" xml:space="preserve">
+    <value>Customer type</value>
+  </data>
+  <data name="grbLIMIT" xml:space="preserve">
+    <value>Limit</value>
+  </data>
+  <data name="grbOTHERS" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="GRINVESTOR" xml:space="preserve">
+    <value>Investing group:</value>
+  </data>
+  <data name="IDCODE" xml:space="preserve">
+    <value>ID code:</value>
+  </data>
+  <data name="IDDATE" xml:space="preserve">
+    <value>Issue date:</value>
+  </data>
+  <data name="IDEXPIRED" xml:space="preserve">
+    <value>Expired date:</value>
+  </data>
+  <data name="IDPLACE" xml:space="preserve">
+    <value>Issue place:</value>
+  </data>
+  <data name="IDTYPE" xml:space="preserve">
+    <value>ID type:</value>
+  </data>
+  <data name="INCOMERANGE" xml:space="preserve">
+    <value>Classify by income:</value>
+  </data>
+  <data name="INTERNATION" xml:space="preserve">
+    <value>Aither name:</value>
+  </data>
+  <data name="INVESTRANGE" xml:space="preserve">
+    <value>Invest demand:</value>
+  </data>
+  <data name="INVESTTYPE" xml:space="preserve">
+    <value>Classify by organization:</value>
+  </data>
+  <data name="ISBANKING" xml:space="preserve">
+    <value>Is bank:</value>
+  </data>
+  <data name="ISSUERID" xml:space="preserve">
+    <value>Issuer:</value>
+  </data>
+  <data name="LANGUAGE" xml:space="preserve">
+    <value>Language:</value>
+  </data>
+  <data name="LASTDATE" xml:space="preserve">
+    <value>Last update:</value>
+  </data>
+  <data name="lblCaption0" xml:space="preserve">
+    <value>Customer information</value>
+  </data>
+  <data name="lblCaption1" xml:space="preserve">
+    <value>Add new customer</value>
+  </data>
+  <data name="lblCaption2" xml:space="preserve">
+    <value>Edit customer infor</value>
+  </data>
+  <data name="MARGINALLOW" xml:space="preserve">
+    <value>Is margin allow:</value>
+  </data>
+  <data name="MARGINLIMIT" xml:space="preserve">
+    <value>Margin limit:</value>
+  </data>
+  <data name="MARRIED" xml:space="preserve">
+    <value>Married:</value>
+  </data>
+  <data name="MNEMONIC" xml:space="preserve">
+    <value>Full name (without tone):</value>
+  </data>
+  <data name="MOBILE" xml:space="preserve">
+    <value>Mobile 2/fixed:</value>
+  </data>
+  <data name="MOBILESMS" xml:space="preserve">
+    <value>Phone No:</value>
+  </data>
+  <data name="MORTAGERATE" xml:space="preserve">
+    <value>Mortgage ratio:</value>
+  </data>
+  <data name="MRLOANLIMIT" xml:space="preserve">
+    <value>Margin loan limit</value>
+  </data>
+  <data name="MsgINVALIDCUSTID" xml:space="preserve">
+    <value>Customer ID invalid!</value>
+  </data>
+  <data name="MsgINVALIDCUSTODYCD" xml:space="preserve">
+    <value>Custody code invalid!</value>
+  </data>
+  <data name="MsgISBANKING_SHORTNAME_INVALID" xml:space="preserve">
+    <value>If customer is bank, 4 letter short name required!</value>
+  </data>
+  <data name="OCCUPATION" xml:space="preserve">
+    <value>Job:</value>
+  </data>
+  <data name="OPNDATE" xml:space="preserve">
+    <value>Open date:</value>
+  </data>
+  <data name="ORGINF" xml:space="preserve">
+    <value>Organization information:</value>
+  </data>
+  <data name="PHONE" xml:space="preserve">
+    <value>Telephone:</value>
+  </data>
+  <data name="PIN" xml:space="preserve">
+    <value>PIN:</value>
+  </data>
+  <data name="POSITION" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="POSTCODE" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="PROVINCE" xml:space="preserve">
+    <value>Province:</value>
+  </data>
+  <data name="REFNAME" xml:space="preserve">
+    <value>Introducer:</value>
+  </data>
+  <data name="REPOLIMIT" xml:space="preserve">
+    <value>Repo limit:</value>
+  </data>
+  <data name="RESIDENT" xml:space="preserve">
+    <value>Residence:</value>
+  </data>
+  <data name="RISKLEVEL" xml:space="preserve">
+    <value>Risk level:</value>
+  </data>
+  <data name="SECTOR" xml:space="preserve">
+    <value>Economic sector:</value>
+  </data>
+  <data name="SEX" xml:space="preserve">
+    <value>Gender:</value>
+  </data>
+  <data name="SHORTNAME" xml:space="preserve">
+    <value>Short name:</value>
+  </data>
+  <data name="STAFF" xml:space="preserve">
+    <value>Classify by SSC:</value>
+  </data>
+  <data name="STATUS" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="T0LOANLIMIT" xml:space="preserve">
+    <value>T0 loan limit</value>
+  </data>
+  <data name="TAXCODE" xml:space="preserve">
+    <value>Tax code:</value>
+  </data>
+  <data name="TIMETOJOIN" xml:space="preserve">
+    <value>Join time:</value>
+  </data>
+  <data name="TLID" xml:space="preserve">
+    <value>User:</value>
+  </data>
+  <data name="tpAFMAST" xml:space="preserve">
+    <value>Sub-Account</value>
+  </data>
+  <data name="tpCFCONTACT" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="tpCFEXTEND" xml:space="preserve">
+    <value>Extend infor.</value>
+  </data>
+  <data name="tpCFMAST" xml:space="preserve">
+    <value>Customer infor.</value>
+  </data>
+  <data name="tpCFRELATION" xml:space="preserve">
+    <value>Member</value>
+  </data>
+  <data name="tpCFSIGN" xml:space="preserve">
+    <value>Signature</value>
+  </data>
+  <data name="tpISSUER" xml:space="preserve">
+    <value>Issuer</value>
+  </data>
+  <data name="TRADEFLOOR" xml:space="preserve">
+    <value>At floor:</value>
+  </data>
+  <data name="TRADELIMIT" xml:space="preserve">
+    <value>Trading limit:</value>
+  </data>
+  <data name="TRADEONLINE" xml:space="preserve">
+    <value>Online:</value>
+  </data>
+  <data name="TRADETELEPHONE" xml:space="preserve">
+    <value>Tele:</value>
+  </data>
+  <data name="TRADINGCODE" xml:space="preserve">
+    <value>STC:</value>
+  </data>
+  <data name="TRADINGCODEDT" xml:space="preserve">
+    <value>Trading Code issue date:</value>
+  </data>
+  <data name="VALDATE" xml:space="preserve">
+    <value>Signature effective date:</value>
+  </data>
+  <data name="VALUDADDED" xml:space="preserve">
+    <value>Register to use VAT:</value>
+  </data>
+  <data name="VAT" xml:space="preserve">
+    <value>FCT:</value>
+  </data>
+  <data name="AddnewSuccessful" xml:space="preserve">
+    <value>Add new successfully!</value>
+  </data>
+  <data name="EditSuccessful" xml:space="preserve">
+    <value>Update successfully!</value>
+  </data>
+  <data name="MsgCOMMRATE_FORMAT_INVALID" xml:space="preserve">
+    <value>Commission rate (%), value must be between 0 and 100!</value>
+  </data>
+  <data name="MsgIDCODEISEMPTY" xml:space="preserve">
+    <value>"ID code" must be enter!</value>
+  </data>
+  <data name="MsgIDDATEOVERBUSDATE" xml:space="preserve">
+    <value>Issue date must be lower than system date!</value>
+  </data>
+  <data name="MsgIDEXPIREDLESSTHANBUSDATE" xml:space="preserve">
+    <value>Expired date must be greater than system date!</value>
+  </data>
+  <data name="MsgMOBILEISEMPTY" xml:space="preserve">
+    <value>Mobile number should not be empty!</value>
+  </data>
+  <data name="MsgPINISEMPTY" xml:space="preserve">
+    <value>PIN should not be empty!</value>
+  </data>
+  <data name="MsgTRADINGCODEISEMPTY" xml:space="preserve">
+    <value>"Trading Code" must be enter!</value>
+  </data>
+  <data name="MsgSUBACCOUNTISFOREIGN" xml:space="preserve">
+    <value>Trading account is a foreign customer!</value>
+  </data>
+  <data name="MsgREMINDFEE" xml:space="preserve">
+    <value>Opening STC accounts will require a fee!</value>
+  </data>
+  <data name="SavingFailed" xml:space="preserve">
+    <value>Saving failed!</value>
+  </data>
+  <data name="DelConfirm" xml:space="preserve">
+    <value>You're in delete action. Press OK to continue?</value>
+  </data>
+  <data name="DelSuccess" xml:space="preserve">
+    <value>Delete successfully!</value>
+  </data>
+  <data name="MsgCANNOTADDSIGN" xml:space="preserve">
+    <value>Cannot add new signature</value>
+  </data>
+  <data name="AFMASTgrid.ACTYPE" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="AFMASTgrid.AFACCTNO" xml:space="preserve">
+    <value>Subaccount</value>
+  </data>
+  <data name="AFMASTgrid.AUTOADV" xml:space="preserve">
+    <value>Auto advance?</value>
+  </data>
+  <data name="AFMASTgrid.CITYPE" xml:space="preserve">
+    <value>CI type</value>
+  </data>
+  <data name="AFMASTgrid.COREBANK" xml:space="preserve">
+    <value>Corebank?</value>
+  </data>
+  <data name="AFMASTgrid.MRTYPE" xml:space="preserve">
+    <value>Margin type</value>
+  </data>
+  <data name="AFMASTgrid.STATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="AFMASTgrid.TYPENAME" xml:space="preserve">
+    <value>Type name</value>
+  </data>
+  <data name="CFCONTACTGrid.ADDRESS" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="CFCONTACTGrid.AUTOID" xml:space="preserve">
+    <value>Auto ID</value>
+  </data>
+  <data name="CFCONTACTGrid.CONTACTTYPE" xml:space="preserve">
+    <value>Contact type</value>
+  </data>
+  <data name="CFCONTACTGrid.DESCRIPTION" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="CFCONTACTGrid.EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="CFCONTACTGrid.FAX" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="CFCONTACTGrid.PERSON" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="CFCONTACTGrid.PHONE" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="CFRELATIONGrid.ADDRESS" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="CFRELATIONGrid.AUTOID" xml:space="preserve">
+    <value>Auto ID</value>
+  </data>
+  <data name="CFRELATIONGrid.DESCRIPTION" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="CFRELATIONGrid.FULLNAME" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="CFRELATIONGrid.LICENSENO" xml:space="preserve">
+    <value>ID code</value>
+  </data>
+  <data name="CFRELATIONGrid.LNIDDATE" xml:space="preserve">
+    <value>Issue date</value>
+  </data>
+  <data name="CFRELATIONGrid.LNPLACE" xml:space="preserve">
+    <value>Issue place</value>
+  </data>
+  <data name="CFRELATIONGrid.RECUSTID" xml:space="preserve">
+    <value>Related customer ID</value>
+  </data>
+  <data name="CFRELATIONGrid.RETYPE" xml:space="preserve">
+    <value>Relationship type</value>
+  </data>
+  <data name="CFRELATIONGrid.TELEPHONE" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="frmSearch.NotSelected" xml:space="preserve">
+    <value>Data does not selected!</value>
+  </data>
+  <data name="ISSUERGrid.AUTOID" xml:space="preserve">
+    <value>Auto ID</value>
+  </data>
+  <data name="ISSUERGrid.CUSTID" xml:space="preserve">
+    <value>Customer ID</value>
+  </data>
+  <data name="ISSUERGrid.DESCRIPTION" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ISSUERGrid.IDDATE" xml:space="preserve">
+    <value>Issue date</value>
+  </data>
+  <data name="ISSUERGrid.IDEXPIRED" xml:space="preserve">
+    <value>Expired date</value>
+  </data>
+  <data name="ISSUERGrid.IDPLACE" xml:space="preserve">
+    <value>Issue place</value>
+  </data>
+  <data name="ISSUERGrid.ISS_FULLNAME" xml:space="preserve">
+    <value>Issuer name</value>
+  </data>
+  <data name="ISSUERGrid.LICENSENO" xml:space="preserve">
+    <value>License no.</value>
+  </data>
+  <data name="ISSUERGrid.ROLECD" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="NotCareBy" xml:space="preserve">
+    <value>Sorry, you're not careby this customer!</value>
+  </data>
+  <data name="NotCareByGroup" xml:space="preserve">
+    <value>Sorry, you're not careby any customer!</value>
+  </data>
+  <data name="ACTIVESTS" xml:space="preserve">
+    <value>Active VSD:</value>
+  </data>
+  <data name="msgCHECKTRADINGCODE" xml:space="preserve">
+    <value>Trading Code invalid</value>
+  </data>
+  <data name="msgCHECKADDRESS" xml:space="preserve">
+    <value>Address length must be greater than 15 characters!</value>
+  </data>
+  <data name="msgINVALIDEMAILFORMAT" xml:space="preserve">
+    <value>Email format invalid!</value>
+  </data>
+  <data name="btnAFMAST_APPROVE" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="PASSPORT_IDCODE" xml:space="preserve">
+    <value>Passport code:</value>
+  </data>
+  <data name="tpCFOTHERACC" xml:space="preserve">
+    <value>Online cash transfer</value>
+  </data>
+  <data name="btnCFAUTH_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnCFAUTH_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnCFAUTH_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnCFAUTH_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="btnFABROKERAGE_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnFABROKERAGE_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnFABROKERAGE_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnFABROKERAGE_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="btnCFOTHERACC_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnCFOTHERACC_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnCFOTHERACC_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnCFOTHERACC_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="btnCFRPTAFMAST_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnCFRPTAFMAST_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnCFRPTAFMAST_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnCFRPTAFMAST_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="btnOTRIGHT_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnOTRIGHT_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnOTRIGHT_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnOTRIGHT_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="btnTEMPLATE_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnTEMPLATE_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnTEMPLATE_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnTEMPLATE_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="tpCFAUTH" xml:space="preserve">
+    <value>Authorize</value>
+  </data>
+  <data name="tpCFRPTAFMAST" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="tpOTRIGHT" xml:space="preserve">
+    <value>Online services information</value>
+  </data>
+  <data name="tpTemplates" xml:space="preserve">
+    <value>SMS/Email register</value>
+  </data>
+  <data name="MsgCUSTID_INVALID" xml:space="preserve">
+    <value>Customer information does not existed!</value>
+  </data>
+  <data name="AFTEMPLATESGrid.TEMPLATE_AUTOID" xml:space="preserve">
+    <value>Auto ID</value>
+  </data>
+  <data name="AFTEMPLATESGrid.TEMPLATE_DESCRIPTION" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="AFTEMPLATESGrid.TEMPLATE_ID" xml:space="preserve">
+    <value>SMS/Email ID</value>
+  </data>
+  <data name="CFAUTHGrid.ADDRESS" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="CFAUTHGrid.AUTOID" xml:space="preserve">
+    <value>Auto ID</value>
+  </data>
+  <data name="CFAUTHGrid.CUSTID" xml:space="preserve">
+    <value>Authorized customer ID</value>
+  </data>
+  <data name="CFAUTHGrid.DELTD" xml:space="preserve">
+    <value>Status (Active/ Inactive)</value>
+  </data>
+  <data name="CFAUTHGrid.EXPDATE" xml:space="preserve">
+    <value>Expired date</value>
+  </data>
+  <data name="CFAUTHGrid.FULLNAME" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="CFAUTHGrid.SHORTNAME" xml:space="preserve">
+    <value>Short name</value>
+  </data>
+  <data name="CFAUTHGrid.LICENSENO" xml:space="preserve">
+    <value>Customer license no.</value>
+  </data>
+  <data name="CFAUTHGrid.LNIDDATE" xml:space="preserve">
+    <value>Issue date</value>
+  </data>
+  <data name="CFAUTHGrid.LNPLACE" xml:space="preserve">
+    <value>Issue place</value>
+  </data>
+  <data name="CFAUTHGrid.EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="CFAUTHGrid.VALDATE" xml:space="preserve">
+    <value>Effective date</value>
+  </data>
+  <data name="CFOTHERACCGrid.ACNIDCODE" xml:space="preserve">
+    <value>License ID</value>
+  </data>
+  <data name="CFOTHERACCGrid.ACNIDDATE" xml:space="preserve">
+    <value>Issue date</value>
+  </data>
+  <data name="CFOTHERACCGrid.ACNIDPLACE" xml:space="preserve">
+    <value>Issue place</value>
+  </data>
+  <data name="CFOTHERACCGrid.BANKACC" xml:space="preserve">
+    <value>Bank account number</value>
+  </data>
+  <data name="CFOTHERACCGrid.BANKACNAME" xml:space="preserve">
+    <value>Bank account name</value>
+  </data>
+  <data name="CFOTHERACCGrid.BANKNAME" xml:space="preserve">
+    <value>Bank name</value>
+  </data>
+  <data name="CFOTHERACCGrid.CITYBANK" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="CFOTHERACCGrid.CITYEF" xml:space="preserve">
+    <value>Province</value>
+  </data>
+  <data name="CFOTHERACCGrid.CUSTID" xml:space="preserve">
+    <value>Customer ID</value>
+  </data>
+  <data name="CFRPTAFMASTGrid.AUTOID" xml:space="preserve">
+    <value>Auto ID</value>
+  </data>
+  <data name="CFRPTAFMASTGrid.CMDCODE" xml:space="preserve">
+    <value>Report ID</value>
+  </data>
+  <data name="CFRPTAFMASTGrid.CMDTITLE" xml:space="preserve">
+    <value>Report name</value>
+  </data>
+  <data name="CFRPTAFMASTGrid.EXCYCLE" xml:space="preserve">
+    <value>Excycle</value>
+  </data>
+  <data name="CFRPTAFMASTGrid.EXPDATE" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="CFRPTAFMASTGrid.STATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="DeleteOTRIGHTSuccessful" xml:space="preserve">
+    <value>Delete online permission successfully!</value>
+  </data>
+  <data name="OTRightDeleteConfirm" xml:space="preserve">
+    <value>You're in delete online permission action! Press OK to continue!</value>
+  </data>
+  <data name="OTRIGTGrid.ADDRESS" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="OTRIGTGrid.AUTHTYPE" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="OTRIGTGrid.AUTOID" xml:space="preserve">
+    <value>Auto ID</value>
+  </data>
+  <data name="OTRIGTGrid.CUSTID" xml:space="preserve">
+    <value>Customer ID</value>
+  </data>
+  <data name="OTRIGTGrid.EXPDATE" xml:space="preserve">
+    <value>Expired date</value>
+  </data>
+  <data name="OTRIGTGrid.FULLNAME" xml:space="preserve">
+    <value>Customer name</value>
+  </data>
+  <data name="OTRIGTGrid.LICENSENO" xml:space="preserve">
+    <value>License no.</value>
+  </data>
+  <data name="OTRIGTGrid.TELEPHONE" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="OTRIGTGrid.VALDATE" xml:space="preserve">
+    <value>Effective date</value>
+  </data>
+  <data name="TEMPLATE_AUTOID_INVALID" xml:space="preserve">
+    <value>Selected data invalid!</value>
+  </data>
+  <data name="CFOTHERACCGrid.CIACCOUNT" xml:space="preserve">
+    <value>Receive subaccount</value>
+  </data>
+  <data name="FABROKERAGEGrid.BRKNAME" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="FABROKERAGEGrid.ENBRKNAME" xml:space="preserve">
+    <value>English name</value>
+  </data>
+  <data name="FABROKERAGEGrid.BRKID" xml:space="preserve">
+    <value>Short name</value>
+  </data>
+  <data name="CFOTHERACCGrid.CINAME" xml:space="preserve">
+    <value>Receive customer name</value>
+  </data>
+  <data name="CFOTHERACCGrid.TRFTYPE" xml:space="preserve">
+    <value>Register type</value>
+  </data>
+  <data name="OTRIGTGrid.SERIALTOKEN" xml:space="preserve">
+    <value>Serial token</value>
+  </data>
+  <data name="lblCaption01" xml:space="preserve">
+    <value>Customer infor.</value>
+  </data>
+  <data name="lblCaption11" xml:space="preserve">
+    <value>Add new customer</value>
+  </data>
+  <data name="lblCaption21" xml:space="preserve">
+    <value>Edit customer infor.</value>
+  </data>
+  <data name="ApproveCustomerProfile" xml:space="preserve">
+    <value>Approve customer info.</value>
+  </data>
+  <data name="ApproveSuccessful" xml:space="preserve">
+    <value>Approve successfully!</value>
+  </data>
+  <data name="Footer" xml:space="preserve">
+    <value>Cannot view, edit, delete data!</value>
+  </data>
+  <data name="GridEx.FooterRow" xml:space="preserve">
+    <value>Total records:</value>
+  </data>
+  <data name="GridEx.GroupByRow" xml:space="preserve">
+    <value>Drag here to group by.</value>
+  </data>
+  <data name="InitDialogFailed" xml:space="preserve">
+    <value>Cannot initalize window!</value>
+  </data>
+  <data name="Mandatory" xml:space="preserve">
+    <value>The field [@] should not be empty!</value>
+  </data>
+  <data name="MobileNotValid" xml:space="preserve">
+    <value>Phone number invalid</value>
+  </data>
+  <data name="NotSelected" xml:space="preserve">
+    <value>Please select data to view, edit, delete!</value>
+  </data>
+  <data name="NumericDataType" xml:space="preserve">
+    <value>The field [@] must be numeric!</value>
+  </data>
+  <data name="PhoneNotValid" xml:space="preserve">
+    <value>Phone number invalid</value>
+  </data>
+  <data name="RefuseSuccessful" xml:space="preserve">
+    <value>Refuse successfully!</value>
+  </data>
+  <data name="RejectSuccessful" xml:space="preserve">
+    <value>Reject successfully!</value>
+  </data>
+  <data name="CustodycdInvalid" xml:space="preserve">
+    <value>Custody code invalid, please check again.</value>
+  </data>
+  <data name="CUSTODYCD_6RUNNINGNUMBER_INVALID" xml:space="preserve">
+    <value>Last 6 characters of domestic investor must be numeric!</value>
+  </data>
+  <data name="MsgTRADINGCODEISFOREIGN" xml:space="preserve">
+    <value>Enter the Trading code for foreign customers!</value>
+  </data>
+  <data name="CUSTODYCD_COMPANY_PCFLAG_EQUAL_F" xml:space="preserve">
+    <value>Custody code invalid! Foreign investor must be F...</value>
+  </data>
+  <data name="CUSTODYCD_COMPANY_PCFLAG_NOT_EQUAL_F" xml:space="preserve">
+    <value>Custody code invalid! Domestic investor cannot be F</value>
+  </data>
+  <data name="CUSTODYCD_FOREIGN_CHARACTER" xml:space="preserve">
+    <value>Foreign investor's custody code: 5th character must be "I" or "C" and 6th character must be letter!</value>
+  </data>
+  <data name="CUSTODYCD_INVALID" xml:space="preserve">
+    <value>Trading code code invalid</value>
+  </data>
+  <data name="CUSTODYCD_INVALID_LENGTH" xml:space="preserve">
+    <value>Custody code length invalid!</value>
+  </data>
+  <data name="CUSTODYCD_INVALID_PCFLAG" xml:space="preserve">
+    <value>Custody code must be contain: &lt;A, B, C, E, F&gt;</value>
+  </data>
+  <data name="CUSTODYCD_PREFIX_MUST_BE_COMPANY_STANDARD" xml:space="preserve">
+    <value>Local depository account must have 3 first characters are local depository member ID</value>
+  </data>
+  <data name="CUSTODYCD_PREFIX_MUST_BE_DIFF_COMPANY_STANDARD" xml:space="preserve">
+    <value>Deposit elswhere account require: first 3 letters must be different with company depository code or the forth letter must be F</value>
+  </data>
+  <data name="CUSTODYCD_RUNNINGNUMBER_INVALID" xml:space="preserve">
+    <value>Last 4 characters of custody code must be numeric!</value>
+  </data>
+  <data name="msgSEXISNOTHING" xml:space="preserve">
+    <value>Gender cannot be null!</value>
+  </data>
+  <data name="btnREAFLNK_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnREAFLNK_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnREAFLNK_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="REAFLNKGrid.AUTOID" xml:space="preserve">
+    <value>Auto ID</value>
+  </data>
+  <data name="REAFLNKGrid.FRDATE" xml:space="preserve">
+    <value>Effective date</value>
+  </data>
+  <data name="REAFLNKGrid.FUREACCTNO" xml:space="preserve">
+    <value>Recommend remiser account</value>
+  </data>
+  <data name="REAFLNKGrid.FUREFULLNAME" xml:space="preserve">
+    <value>Recommend remiser full name</value>
+  </data>
+  <data name="REAFLNKGrid.FUREROLE" xml:space="preserve">
+    <value>Recommend remiser role</value>
+  </data>
+  <data name="REAFLNKGrid.FUTYPENAME" xml:space="preserve">
+    <value>Recomment remiser type</value>
+  </data>
+  <data name="REAFLNKGrid.REACCTNO" xml:space="preserve">
+    <value>Careby remiser account</value>
+  </data>
+  <data name="REAFLNKGrid.REFULLNAME" xml:space="preserve">
+    <value>Careby remiser full name</value>
+  </data>
+  <data name="REAFLNKGrid.REROLE" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="REAFLNKGrid.STATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="REAFLNKGrid.TODATE" xml:space="preserve">
+    <value>Expired date</value>
+  </data>
+  <data name="REAFLNKGrid.TYPENAME" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="tpREAFLNK" xml:space="preserve">
+    <value>Remiser management</value>
+  </data>
+  <data name="AFMAST_EXISTS" xml:space="preserve">
+    <value>Customer opened subaccount, cannot edit remiser management information!</value>
+  </data>
+  <data name="REAFLNK_NOT_EXISTS" xml:space="preserve">
+    <value>Customer not assigned user careby. Prsee OK to continue?</value>
+  </data>
+  <data name="btnPRINT" xml:space="preserve">
+    <value>Print Contract</value>
+  </data>
+  <data name="msgREGISTEREMAIL" xml:space="preserve">
+    <value>Account registered online services, please enter email</value>
+  </data>
+  <data name="MsgMobileSMS" xml:space="preserve">
+    <value>Account registered telephone trading, please enter phone number</value>
+  </data>
+  <data name="msgREGEMAIL" xml:space="preserve">
+    <value>Account registered online services, please enter email or phone number</value>
+  </data>
+  <data name="msgCHECKVSDRULE" xml:space="preserve">
+    <value>Cannot edit VSD information for activated account</value>
+  </data>
+  <data name="MsgErrorAcc" xml:space="preserve">
+    <value>Chief accountant info exist</value>
+  </data>
+  <data name="MsgErrorAccc" xml:space="preserve">
+    <value>Authorize person info exist</value>
+  </data>
+  <data name="CFRELATIONGrid.ACDATE" xml:space="preserve">
+    <value>Update date</value>
+  </data>
+  <data name="CFRELATIONGrid.ACTIVES" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="msgTAXCODE" xml:space="preserve">
+    <value>Organization customer should enter their Tax code!</value>
+  </data>
+  <data name="MsgLESSCUSTODYCD" xml:space="preserve">
+    <value>Cusotdy code is not in allowed range! Please enter again.</value>
+  </data>
+  <data name="MsgLIMITCUSTODYCD" xml:space="preserve">
+    <value>Exceed limit allocated! Please allocated more!</value>
+  </data>
+  <data name="MsgOVERCUSTODYCD" xml:space="preserve">
+    <value>Cusotdy code is not in allowed range! Please enter again</value>
+  </data>
+  <data name="IDCODE_EXISTS" xml:space="preserve">
+    <value>ID code existed!</value>
+  </data>
+  <data name="MANAGETYPE" xml:space="preserve">
+    <value>Manage type:</value>
+  </data>
+  <data name="msgCareBy" xml:space="preserve">
+    <value>User careby must be entered!</value>
+  </data>
+  <data name="ONLINETRADEALLOW" xml:space="preserve">
+    <value>Online:</value>
+  </data>
+  <data name="CONTRACTNO" xml:space="preserve">
+    <value>Reference Bank Account:</value>
+  </data>
+  <data name="CFAUTHGrid.AUTHTYPE" xml:space="preserve">
+    <value>Authorized type</value>
+  </data>
+  <data name="msgNOT_ALLOW_MARGIN" xml:space="preserve">
+    <value>Account is not margin allow!</value>
+  </data>
+  <data name="ISFORCUSTMASTACC" xml:space="preserve">
+    <value>Forg cust master account:</value>
+  </data>
+  <data name="CIFID" xml:space="preserve">
+    <value>Portfolio No.:</value>
+  </data>
+  <data name="msgNULLCHECKPROVINCE" xml:space="preserve">
+    <value>Customer must enter Province!</value>
+  </data>
+  <data name="msg_INVALID_AGE" xml:space="preserve">
+    <value>Invalid Age !</value>
+  </data>
+  <data name="AFMASTgrid.BANKACCTNO" xml:space="preserve">
+    <value>Bank Acc No.</value>
+  </data>
+  <data name="AFMASTgrid.BANKNAME" xml:space="preserve">
+    <value>Bank name</value>
+  </data>
+  <data name="ISCHKONLIMIT" xml:space="preserve">
+    <value>Online transferring:</value>
+  </data>
+  <data name="CFOTHERACCGrid.APPRVDT" xml:space="preserve">
+    <value>Approve date</value>
+  </data>
+  <data name="CFOTHERACCGrid.CREATEDDT" xml:space="preserve">
+    <value>Create date</value>
+  </data>
+  <data name="CFOTHERACCGrid.OFFNAME" xml:space="preserve">
+    <value>Approver</value>
+  </data>
+  <data name="CFOTHERACCGrid.STATUS_DESC" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="CFOTHERACCGrid.TLNAME" xml:space="preserve">
+    <value>Maker</value>
+  </data>
+  <data name="AFMASTgrid.AUTOTRF" xml:space="preserve">
+    <value>Auto transfer to account at the bank?</value>
+  </data>
+  <data name="EMAILBR" xml:space="preserve">
+    <value>Email broker:</value>
+  </data>
+  <data name="PLACEOFBIRTH" xml:space="preserve">
+    <value>Birthplace:</value>
+  </data>
+  <data name="CUSTODYCDERROR" xml:space="preserve">
+    <value>Number of custody accounts is duplicated!</value>
+  </data>
+  <data name="SUBTAXCODE" xml:space="preserve">
+    <value>Sub tax code:</value>
+  </data>
+  <data name="TAXCODEDATE" xml:space="preserve">
+    <value>Tax code date:</value>
+  </data>
+  <data name="FAXNO" xml:space="preserve">
+    <value>Fax No:</value>
+  </data>
+  <data name="TAXCODEEXPIRYDATE" xml:space="preserve">
+    <value>Tax code expiry date:</value>
+  </data>
+  <data name="TAXCODEISSUEORGAN" xml:space="preserve">
+    <value>Tax code issue Organ:</value>
+  </data>
+  <data name="AMC" xml:space="preserve">
+    <value>AMC:</value>
+  </data>
+  <data name="GCB" xml:space="preserve">
+    <value>GCB:</value>
+  </data>
+  <data name="LCBID" xml:space="preserve">
+    <value>LCB:</value>
+  </data>
+  <data name="TRUSTEE" xml:space="preserve">
+    <value>Trustee:</value>
+  </data>
+  <data name="TRUADRESS" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="CURRENTACC" xml:space="preserve">
+    <value>Cash Accounts</value>
+  </data>
+  <data name="ORGANIZE" xml:space="preserve">
+    <value>Corporate Infor.</value>
+  </data>
+  <data name="tbcINCORP" xml:space="preserve">
+    <value>Broker company</value>
+  </data>
+  <data name="ESTABLISHDATE" xml:space="preserve">
+    <value>Establish date:</value>
+  </data>
+  <data name="OPERATINGMODE" xml:space="preserve">
+    <value>Operating mode:</value>
+  </data>
+  <data name="HEADOFFICECORP" xml:space="preserve">
+    <value>Head office:</value>
+  </data>
+  <data name="CEO" xml:space="preserve">
+    <value>CEO name:</value>
+  </data>
+  <data name="lblCCY" xml:space="preserve">
+    <value>Ccy:</value>
+  </data>
+  <data name="lblACCOUNT" xml:space="preserve">
+    <value>Account:</value>
+  </data>
+  <data name="lblACCFORSETTLEMENT" xml:space="preserve">
+    <value>Acc for settlement:</value>
+  </data>
+  <data name="lblDATEOFOPENING" xml:space="preserve">
+    <value>Date of opening:</value>
+  </data>
+  <data name="SWIFTCODE" xml:space="preserve">
+    <value>SWIFTCODE:</value>
+  </data>
+  <data name="INCORPORATION" xml:space="preserve">
+    <value>Corporate Infor.</value>
+  </data>
+  <data name="FULLCTCK" xml:space="preserve">
+    <value>Fullname CTCK:</value>
+  </data>
+  <data name="SHORTCKCT" xml:space="preserve">
+    <value>Shortname CTCK:</value>
+  </data>
+  <data name="tpBROKER" xml:space="preserve">
+    <value>Broker company</value>
+  </data>
+  <data name="tpESTABLISHED" xml:space="preserve">
+    <value>Corporate Infor.</value>
+  </data>
+  <data name="lblCCYBANK" xml:space="preserve">
+    <value>Ccy:</value>
+  </data>
+  <data name="lblACCOUNTTYPE" xml:space="preserve">
+    <value>Account type:</value>
+  </data>
+  <data name="lblACCOUNTBANK" xml:space="preserve">
+    <value>Account:</value>
+  </data>
+  <data name="lblACCSETTLEMENT" xml:space="preserve">
+    <value>Acc for settlement:</value>
+  </data>
+  <data name="lblDATEOPEN" xml:space="preserve">
+    <value>Date of opening:</value>
+  </data>
+  <data name="lblBANKATADDRESS" xml:space="preserve">
+    <value>Bank Address:</value>
+  </data>
+  <data name="lblFULLCTCK" xml:space="preserve">
+    <value>Fullname CTCK:</value>
+  </data>
+  <data name="lblSHORTCKCT" xml:space="preserve">
+    <value>Shortname CTCK:</value>
+  </data>
+  <data name="CURRENTACCGrid.AUTOID" xml:space="preserve">
+    <value>Number of self</value>
+  </data>
+  <data name="CURRENTACCGrid.ACCOUNTTYPE" xml:space="preserve">
+    <value>Account type</value>
+  </data>
+  <data name="CURRENTACCGrid.ACCOUNTBANK" xml:space="preserve">
+    <value>Account No.</value>
+  </data>
+  <data name="CURRENTACCGrid.CCYBANK" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="CURRENTACCGrid.ACCSETTLEMENT" xml:space="preserve">
+    <value>Acc for settlement</value>
+  </data>
+  <data name="CURRENTACCGrid.DATEOPEN" xml:space="preserve">
+    <value>Open date</value>
+  </data>
+  <data name="CURRENTACCGrid.STATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="SUPEBANK" xml:space="preserve">
+    <value>Fund service:</value>
+  </data>
+  <data name="FEEDAILY" xml:space="preserve">
+    <value>Daily fee:</value>
+  </data>
+  <data name="MsgTRADINGCODEP" xml:space="preserve">
+    <value>ID type must not be blank!</value>
+  </data>
+  <data name="SENDSWIFT" xml:space="preserve">
+    <value>Send swift:</value>
+  </data>
+  <data name="CFAUTHGrid.TELEPHONE" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="ORGANIZATION" xml:space="preserve">
+    <value>Establishment date:</value>
+  </data>
+  <data name="IDCODE_WARNING" xml:space="preserve">
+    <value>Idcode exists!</value>
+  </data>
+  <data name="CFRELATIONGrid.EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="CFRELATIONGrid.HOLDING" xml:space="preserve">
+    <value>Holding</value>
+  </data>
+  <data name="tpAP" xml:space="preserve">
+    <value>Authorised Participant</value>
+  </data>
+  <data name="FAAPGrid.BRKID" xml:space="preserve">
+    <value>Short name</value>
+  </data>
+  <data name="FAAPGrid.BRKNAME" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="FAAPGrid.ENBRKNAME" xml:space="preserve">
+    <value>English name</value>
+  </data>
+  <data name="MsgEDIT_StatusInvalid" xml:space="preserve">
+    <value>Invalid account status</value>
+  </data>
+  <data name="btnAP_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnAP_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnAP_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnAP_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="FOUNDINGDATE" xml:space="preserve">
+    <value>Establishment date:</value>
+  </data>
+  <data name="BUSINESS_REGISTRATION" xml:space="preserve">
+    <value>Business licence:</value>
+  </data>
+  <data name="FUNDCODE" xml:space="preserve">
+    <value>Fund code:</value>
+  </data>
+  <data name="BONDAGENT" xml:space="preserve">
+    <value>Bond agent:</value>
+  </data>
+  <data name="ERR_DATE_VALUE" xml:space="preserve">
+    <value>Invalid date value!</value>
+  </data>
+  <data name="CURRENTACCGrid.AUTOTRANSFER" xml:space="preserve">
+    <value>Transfer auto</value>
+  </data>
+  <data name="btnEMAILREPORT_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnEMAILREPORT_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnEMAILREPORT_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnEMAILREPORT_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="EMAILREPORTGrid.CUSTID" xml:space="preserve">
+    <value>Customer ID</value>
+  </data>
+  <data name="EMAILREPORTGrid.EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EMAILREPORTGrid.REGISTTYPE" xml:space="preserve">
+    <value>Register type</value>
+  </data>
+  <data name="spcEmailReport" xml:space="preserve">
+    <value>Position report Email Register</value>
+  </data>
+  <data name="MCUSTODYCD" xml:space="preserve">
+    <value>Master account:</value>
+  </data>
+  <data name="MCIFID" xml:space="preserve">
+    <value>Master CIF:</value>
+  </data>
+  <data name="MT535NU" xml:space="preserve">
+    <value>MT535 no unlisted:</value>
+  </data>
+  <data name="CLOSEFEE" xml:space="preserve">
+    <value>Settle closing fee:</value>
+  </data>
+  <data name="CLOSEFEEDATE" xml:space="preserve">
+    <value>Closing fee date:</value>
+  </data>
+  <data name="STCREVOKE" xml:space="preserve">
+    <value>STC revoke:</value>
+  </data>
+  <data name="STCREVOKEDATE" xml:space="preserve">
+    <value>STC revoke date:</value>
+  </data>
+  <data name="CFAUTHGrid.TITLE" xml:space="preserve">
+    <value>Job Title</value>
+  </data>
+  <data name="CFCONTACTGrid.TITLECONTACT" xml:space="preserve">
+    <value>Job Title</value>
+  </data>
+  <data name="CFRELATIONGrid.TITLECFRELATION" xml:space="preserve">
+    <value>Job Title</value>
+  </data>
+  <data name="MAILPOSITION" xml:space="preserve">
+    <value>Send mail:</value>
+  </data>
+  <data name="SBCHECK" xml:space="preserve">
+    <value>Supervising bank:</value>
+  </data>
+  <data name="AUTOSETTLEFEE" xml:space="preserve">
+    <value>Auto monthly fee payment</value>
+  </data>
+  <data name="CURRENTACCGrid.PAYMENTFEE" xml:space="preserve">
+    <value>Payment Fee</value>
+  </data>
+  <data name="SETTLETYPE" xml:space="preserve">
+    <value>Settle type</value>
+  </data>
+  <data name="btnCFDOMAIN_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnCFDOMAIN_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnCFDOMAIN_EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnCFDOMAIN_VIEW" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="CFDOMAINGrid.CVSDSTATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="CFDOMAINGrid.DOMAINNAME" xml:space="preserve">
+    <value>Domain name</value>
+  </data>
+  <data name="PCOD" xml:space="preserve">
+    <value>PCOD code</value>
+  </data>
+  <data name="SIDC" xml:space="preserve">
+    <value>SIDC code</value>
+  </data>
+  <data name="tpCFDomain" xml:space="preserve">
+    <value>Domain</value>
+  </data>
+  <data name="CFDOMAINGrid.DOMAINCODE" xml:space="preserve">
+    <value>Domain Code</value>
+  </data>
+  <data name="CITADFEERT" xml:space="preserve">
+    <value>Citad fee real-time:</value>
+  </data>
+</root>

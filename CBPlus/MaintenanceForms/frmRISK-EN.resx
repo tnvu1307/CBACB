@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="InitDialogFailed">
+		<value>Cannot initialize dialog</value>
+	</data>
+	<data name="btnOK">
+		<value>&amp;Ok</value>
+	</data>
+	<data name="btnCancel">
+		<value>&amp;Cancel</value>
+	</data>
+	<data name="frmRISK">
+		<value>Securities risk  management</value>
+	</data>
+	<data name="lblCaption0">
+		<value>Securities risk information</value>
+	</data>
+	<data name="lblCaption1">
+		<value>Addnew  securities risk  information</value>
+	</data>
+	<data name="lblCaption2">
+		<value>Modify securities risk information</value>
+	</data>
+	<data name="SavingFailed">
+		<value>Saving failed</value>
+	</data>
+	<data name="AddnewSuccessful">
+		<value>Addnew successfully</value>
+	</data>
+	<data name="EditSuccessful">
+		<value>Saving successfully</value>
+	</data>
+	<data name="AUTOID">
+		<value>Auto ID</value>
+	</data>
+	<data name="CODEID">
+		<value>Internal code:</value>
+	</data>
+	<data name="SYMBOL">
+		<value>Symbol:</value>
+	</data>
+	<data name="TXDATE">
+		<value>Trading date:</value>
+	</data>
+	<data name="LISTINGQTTY">
+		<value>Listing quantity:</value>
+	</data>
+	<data name="TRADEUNIT">
+		<value>Trade unit:</value>
+	</data>
+	<data name="LISTINGSTATUS">
+		<value>Listing status:</value>
+	</data>
+	<data name="ADJUSTQTTY">
+		<value>Adjust quantity:</value>
+	</data>
+	<data name="LISTTINGDATE">
+		<value>Listing date:</value>
+	</data>
+	<data name="REFERENCESTATUS">
+		<value>Ref status:</value>
+	</data>
+	<data name="ADJUSTRATE">
+		<value>Adjust rate:</value>
+	</data>
+	<data name="REFERENCERATE">
+		<value>Ref rate:</value>
+	</data>
+	<data name="REFERENCEDATE">
+		<value>Ref date:</value>
+	</data>
+	<data name="STATUS">
+		<value>Status:</value>
+	</data>
+	<data name="BASICPRICE">
+		<value>Basic price:</value>
+	</data>
+	<data name="OPENPRICE">
+		<value>Open price:</value>
+	</data>
+	<data name="PREVCLOSEPRICE">
+		<value>Prv closed price:</value>
+	</data>
+	<data name="CURRPRICE">
+		<value>Current price:</value>
+	</data>
+	<data name="AVGPRICE">
+		<value>Avarage price:</value>
+	</data>
+	<data name="CEILINGPRICE">
+		<value>Ceiling price:</value>
+	</data>
+	<data name="FLOORPRICE">
+		<value>Floor price:</value>
+	</data>
+	<data name="MTMPRICE">
+		<value>Mark to MP:</value>
+	</data>
+	<data name="MTMPRICECD">
+		<value>Way to get MP:</value>
+	</data>
+	<data name="INTERNALBIDPRICE">
+		<value>Inter bid price:</value>
+	</data>
+	<data name="INTERNALASKPRICE">
+		<value>Inter ask price:</value>
+	</data>
+	<data name="PE">
+		<value>P/E:</value>
+	</data>
+	<data name="EPS">
+		<value>EPS:</value>
+	</data>
+	<data name="DIVYEILD">
+		<value>Divyeild:</value>
+	</data>
+	<data name="DAYRANGE">
+		<value>Day range:</value>
+	</data>
+	<data name="YEARRANGE">
+		<value>Year range:</value>
+	</data>
+	<data name="grbCommonInfo">
+		<value>General information:</value>
+	</data>
+	<data name="grbPrices">
+		<value>Price information:</value>
+	</data>
+	<data name="Mandatory">
+		<value>The field [@] should not be empty!</value>
+	</data>
+	<data name="TRADELOT">
+		<value>Lot:</value>
+	</data>
+	<data name="TRADEBUYSELL">
+		<value>Buy/Sell:</value>
+	</data>
+	<data name="TELELIMITMIN">
+		<value>Tele limit min:</value>
+	</data>
+	<data name="TELELIMITMAX">
+		<value>Tele limit max:</value>
+	</data>
+	<data name="ONLINELIMITMIN">
+		<value>Online limit min:</value>
+	</data>
+	<data name="ONLINELIMITMAX">
+		<value>Online limit max:</value>
+	</data>
+	<data name="REPOLIMITMIN">
+		<value>Repo limit min:</value>
+	</data>
+	<data name="REPOLIMITMAX">
+		<value>Repo limit max:</value>
+	</data>
+	<data name="ADVANCEDLIMITMIN">
+		<value>Advanced limit min:</value>
+	</data>
+	<data name="ADVANCEDLIMITMAX">
+		<value>Advanced limit max:</value>
+	</data>
+	<data name="MARGINLIMITMIN">
+		<value>Margin limit min:</value>
+	</data>
+	<data name="MARGINLIMITMAX">
+		<value>Margin limit max:</value>
+	</data>
+	<data name="SECUREDRATIOMIN">
+		<value>Secure ratio min:</value>
+	</data>
+	<data name="SECUREDRATIOMAX">
+		<value>Secure ratio max:</value>
+	</data>
+	<data name="tabGeneral">
+		<value>General</value>
+	</data>
+	<data name="tabRisk">
+		<value>Securities risk  management</value>
+	</data>
+	<data name="NumericDataType">
+		<value>The field [@] data type should be numeric!</value>
+	</data>
+	<data name="DEPOFEEUNIT">
+		<value>Depofee unit</value>
+	</data>
+	<data name="DEPOFEELOT">
+		<value>Depofee lot</value>
+	</data>
+	<data name="MORTAGERATIOMIN">
+		<value>Mortage ratio Min:</value>
+	</data>
+	<data name="MORTAGERATIOMAX">
+		<value>Mortage ratio Max:</value>
+	</data>
+	<data name="btnApply">
+		<value>&amp;Apply</value>
+	</data>
+</root>
