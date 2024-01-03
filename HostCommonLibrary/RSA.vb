@@ -4,8 +4,6 @@ Imports Org.BouncyCastle.Crypto
 Imports Org.BouncyCastle.Crypto.Encodings
 Imports Org.BouncyCastle.Crypto.Engines
 Imports Org.BouncyCastle.OpenSsl
-Imports DataAccessLayer
-Imports System.Data
 Public Class RSA
 
     Public Shared Function RsaEncryptWithPublic(ByVal clearText As String, ByVal publicKey As String) As String

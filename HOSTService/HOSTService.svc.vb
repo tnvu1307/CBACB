@@ -15,33 +15,33 @@ Public Class HOSTService
         Dim v_strErrorMessage As String
         Dim v_strErrorSource As String
         Dim pv_strMessage As String
-        Dim v_xmlDoc As XmlDocument = New XmlDocumentEx()
-        Dim v_xmlDocumentMessage As XmlDocument = New XmlDocumentEx()
+        Dim xmlDoc As XmlDocument = New XmlDocumentEx()
+        Dim xmlDocMessage As XmlDocument = New XmlDocumentEx()
 
         Try
 
-            Dim v_strObjMsg As String = ""
+            Dim buildSqlString As String = ""
             Dim sql As String
             sql = " SELECT v.REPORTVERSION , v.ACTUALVERSION  FROM VERSION v ORDER BY ACTUALVERSION DESC FETCH FIRST 1 ROW ONLY"
-            v_strObjMsg = BuildXMLObjMsg(, , , , gc_IsNotLocalMsg, gc_MsgTypeObj, OBJNAME_SA_SYSVAR, gc_ActionInquiry, sql)
-            v_lngErr = (New Host.objRouter()).Transfer(v_strObjMsg)
+            buildSqlString = BuildXMLObjMsg(, , , , gc_IsNotLocalMsg, gc_MsgTypeObj, OBJNAME_SA_SYSVAR, gc_ActionInquiry, sql)
+            v_lngErr = (New Host.objRouter()).Transfer(buildSqlString)
 
             If v_lngErr <> ERR_SYSTEM_OK Then
                 v_strErrorMessage = GetErrorMessage(v_lngErr)
-                ReplaceXMLErrorException(v_strObjMsg, v_strErrorSource, v_lngErr, v_strErrorMessage)
+                ReplaceXMLErrorException(buildSqlString, v_strErrorSource, v_lngErr, v_strErrorMessage)
 
                 LogError.Write("::MessageByte:: ERRCODE: " & v_lngErr & " ERRMSG: " & v_strErrorMessage, "EventLogEntryType.Error")
             End If
 
-            v_xmlDoc.LoadXml(v_strObjMsg)
-            v_xmlDoc.DocumentElement.Attributes.RemoveNamedItem(modCommond.gc_AtributeSignature)
-            v_strObjMsg = v_xmlDoc.OuterXml
+            xmlDoc.LoadXml(buildSqlString)
+            xmlDoc.DocumentElement.Attributes.RemoveNamedItem(modCommond.gc_AtributeSignature)
+            buildSqlString = xmlDoc.OuterXml
 
-            LogError.Write("::MessageByte:: [END]" & v_strObjMsg)
+            LogError.Write("::Version:: [END]" & buildSqlString)
 
             ''Compress message
-            v_strObjMsg = TripleDesEncryptData(v_strObjMsg)
-            pv_arrByteMessage = ZetaCompressionLibrary.CompressionHelper.CompressString(v_strObjMsg)
+            buildSqlString = TripleDesEncryptData(buildSqlString)
+            pv_arrByteMessage = ZetaCompressionLibrary.CompressionHelper.CompressString(buildSqlString)
 
             Return v_lngErr
         Catch ex As Exception
