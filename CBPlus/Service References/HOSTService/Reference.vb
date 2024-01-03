@@ -29,281 +29,335 @@ Namespace HOSTService
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/MessageByte", ReplyAction:="http://tempuri.org/IHOSTService/MessageByteResponse")>  _
         Function MessageByteAsync(ByVal request As HOSTService.MessageByteRequest) As System.Threading.Tasks.Task(Of HOSTService.MessageByteResponse)
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/MessageString", ReplyAction:="http://tempuri.org/IHOSTService/MessageStringResponse")>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/GetVersion", ReplyAction:="http://tempuri.org/IHOSTService/GetVersionResponse")>
+        Function GetVersion(ByVal request As HOSTService.GetVersionRequest) As HOSTService.GetVersionResponse
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/GetVersion", ReplyAction:="http://tempuri.org/IHOSTService/GetVersionResponse")>
+        Function GetVersionAsync(ByVal request As HOSTService.GetVersionRequest) As System.Threading.Tasks.Task(Of HOSTService.GetVersionResponse)
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/MessageString", ReplyAction:="http://tempuri.org/IHOSTService/MessageStringResponse")>
         Function MessageString(ByVal request As HOSTService.MessageStringRequest) As HOSTService.MessageStringResponse
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/MessageString", ReplyAction:="http://tempuri.org/IHOSTService/MessageStringResponse")>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/MessageString", ReplyAction:="http://tempuri.org/IHOSTService/MessageStringResponse")>
         Function MessageStringAsync(ByVal request As HOSTService.MessageStringRequest) As System.Threading.Tasks.Task(Of HOSTService.MessageStringResponse)
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/OMessageByte", ReplyAction:="http://tempuri.org/IHOSTService/OMessageByteResponse"),  _
-         System.ServiceModel.ServiceKnownTypeAttribute(GetType(Object()))>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/OMessageByte", ReplyAction:="http://tempuri.org/IHOSTService/OMessageByteResponse"),
+         System.ServiceModel.ServiceKnownTypeAttribute(GetType(Object()))>
         Function OMessageByte(ByVal request As HOSTService.OMessageByteRequest) As HOSTService.OMessageByteResponse
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/OMessageByte", ReplyAction:="http://tempuri.org/IHOSTService/OMessageByteResponse")>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/OMessageByte", ReplyAction:="http://tempuri.org/IHOSTService/OMessageByteResponse")>
         Function OMessageByteAsync(ByVal request As HOSTService.OMessageByteRequest) As System.Threading.Tasks.Task(Of HOSTService.OMessageByteResponse)
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/OMessageString", ReplyAction:="http://tempuri.org/IHOSTService/OMessageStringResponse"),  _
-         System.ServiceModel.ServiceKnownTypeAttribute(GetType(Object()))>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/OMessageString", ReplyAction:="http://tempuri.org/IHOSTService/OMessageStringResponse"),
+         System.ServiceModel.ServiceKnownTypeAttribute(GetType(Object()))>
         Function OMessageString(ByVal request As HOSTService.OMessageStringRequest) As HOSTService.OMessageStringResponse
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/OMessageString", ReplyAction:="http://tempuri.org/IHOSTService/OMessageStringResponse")>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/OMessageString", ReplyAction:="http://tempuri.org/IHOSTService/OMessageStringResponse")>
         Function OMessageStringAsync(ByVal request As HOSTService.OMessageStringRequest) As System.Threading.Tasks.Task(Of HOSTService.OMessageStringResponse)
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/GetFlagSignature", ReplyAction:="http://tempuri.org/IHOSTService/GetFlagSignatureResponse")>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/GetFlagSignature", ReplyAction:="http://tempuri.org/IHOSTService/GetFlagSignatureResponse")>
         Function GetFlagSignature(ByVal request As HOSTService.GetFlagSignatureRequest) As HOSTService.GetFlagSignatureResponse
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/GetFlagSignature", ReplyAction:="http://tempuri.org/IHOSTService/GetFlagSignatureResponse")>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/GetFlagSignature", ReplyAction:="http://tempuri.org/IHOSTService/GetFlagSignatureResponse")>
         Function GetFlagSignatureAsync(ByVal request As HOSTService.GetFlagSignatureRequest) As System.Threading.Tasks.Task(Of HOSTService.GetFlagSignatureResponse)
     End Interface
-    
-    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
-     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.MessageContractAttribute(WrapperName:="DoWork", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
+
+    <System.Diagnostics.DebuggerStepThroughAttribute(),
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),
+     System.ServiceModel.MessageContractAttribute(WrapperName:="DoWork", WrapperNamespace:="http://tempuri.org/", IsWrapped:=True)>
     Partial Public Class DoWorkRequest
-        
+
         Public Sub New()
             MyBase.New
         End Sub
     End Class
-    
-    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
-     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.MessageContractAttribute(WrapperName:="DoWorkResponse", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
+
+    <System.Diagnostics.DebuggerStepThroughAttribute(),
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),
+     System.ServiceModel.MessageContractAttribute(WrapperName:="DoWorkResponse", WrapperNamespace:="http://tempuri.org/", IsWrapped:=True)>
     Partial Public Class DoWorkResponse
-        
+
         Public Sub New()
             MyBase.New
         End Sub
     End Class
-    
-    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
-     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.MessageContractAttribute(WrapperName:="MessageByte", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
+
+    <System.Diagnostics.DebuggerStepThroughAttribute(),
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),
+     System.ServiceModel.MessageContractAttribute(WrapperName:="MessageByte", WrapperNamespace:="http://tempuri.org/", IsWrapped:=True)>
     Partial Public Class MessageByteRequest
-        
-        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>  _
+
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>
         Public pv_arrByteMessage() As Byte
-        
+
         Public Sub New()
             MyBase.New
         End Sub
-        
+
         Public Sub New(ByVal pv_arrByteMessage() As Byte)
             MyBase.New
             Me.pv_arrByteMessage = pv_arrByteMessage
         End Sub
     End Class
-    
-    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
-     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.MessageContractAttribute(WrapperName:="MessageByteResponse", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
+
+    <System.Diagnostics.DebuggerStepThroughAttribute(),
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),
+     System.ServiceModel.MessageContractAttribute(WrapperName:="MessageByteResponse", WrapperNamespace:="http://tempuri.org/", IsWrapped:=True)>
     Partial Public Class MessageByteResponse
-        
-        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>  _
+
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>
         Public MessageByteResult As Long
-        
-        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=1)>  _
+
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=1)>
         Public pv_arrByteMessage() As Byte
-        
+
         Public Sub New()
             MyBase.New
         End Sub
-        
+
         Public Sub New(ByVal MessageByteResult As Long, ByVal pv_arrByteMessage() As Byte)
             MyBase.New
             Me.MessageByteResult = MessageByteResult
             Me.pv_arrByteMessage = pv_arrByteMessage
         End Sub
     End Class
-    
-    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
-     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.MessageContractAttribute(WrapperName:="MessageString", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
-    Partial Public Class MessageStringRequest
-        
-        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>  _
-        Public pv_strMessage As String
-        
+
+    <System.Diagnostics.DebuggerStepThroughAttribute(),
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),
+     System.ServiceModel.MessageContractAttribute(WrapperName:="GetVersion", WrapperNamespace:="http://tempuri.org/", IsWrapped:=True)>
+    Partial Public Class GetVersionRequest
+
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>
+        Public pv_arrByteMessage() As Byte
+
         Public Sub New()
             MyBase.New
         End Sub
-        
+
+        Public Sub New(ByVal pv_arrByteMessage() As Byte)
+            MyBase.New
+            Me.pv_arrByteMessage = pv_arrByteMessage
+        End Sub
+    End Class
+
+    <System.Diagnostics.DebuggerStepThroughAttribute(),
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),
+     System.ServiceModel.MessageContractAttribute(WrapperName:="GetVersionResponse", WrapperNamespace:="http://tempuri.org/", IsWrapped:=True)>
+    Partial Public Class GetVersionResponse
+
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>
+        Public GetVersionResult As Long
+
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=1)>
+        Public pv_arrByteMessage() As Byte
+
+        Public Sub New()
+            MyBase.New
+        End Sub
+
+        Public Sub New(ByVal GetVersionResult As Long, ByVal pv_arrByteMessage() As Byte)
+            MyBase.New
+            Me.GetVersionResult = GetVersionResult
+            Me.pv_arrByteMessage = pv_arrByteMessage
+        End Sub
+    End Class
+
+    <System.Diagnostics.DebuggerStepThroughAttribute(),
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),
+     System.ServiceModel.MessageContractAttribute(WrapperName:="MessageString", WrapperNamespace:="http://tempuri.org/", IsWrapped:=True)>
+    Partial Public Class MessageStringRequest
+
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>
+        Public pv_strMessage As String
+
+        Public Sub New()
+            MyBase.New
+        End Sub
+
         Public Sub New(ByVal pv_strMessage As String)
             MyBase.New
             Me.pv_strMessage = pv_strMessage
         End Sub
     End Class
-    
-    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
-     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.MessageContractAttribute(WrapperName:="MessageStringResponse", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
+
+    <System.Diagnostics.DebuggerStepThroughAttribute(),
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),
+     System.ServiceModel.MessageContractAttribute(WrapperName:="MessageStringResponse", WrapperNamespace:="http://tempuri.org/", IsWrapped:=True)>
     Partial Public Class MessageStringResponse
-        
-        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>  _
+
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>
         Public MessageStringResult As Long
-        
-        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=1)>  _
+
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=1)>
         Public pv_strMessage As String
-        
+
         Public Sub New()
             MyBase.New
         End Sub
-        
+
         Public Sub New(ByVal MessageStringResult As Long, ByVal pv_strMessage As String)
             MyBase.New
             Me.MessageStringResult = MessageStringResult
             Me.pv_strMessage = pv_strMessage
         End Sub
     End Class
-    
-    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
-     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.MessageContractAttribute(WrapperName:="OMessageByte", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
+
+    <System.Diagnostics.DebuggerStepThroughAttribute(),
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),
+     System.ServiceModel.MessageContractAttribute(WrapperName:="OMessageByte", WrapperNamespace:="http://tempuri.org/", IsWrapped:=True)>
     Partial Public Class OMessageByteRequest
-        
-        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>  _
+
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>
         Public pv_arrByteMessage() As Byte
-        
+
         Public Sub New()
             MyBase.New
         End Sub
-        
+
         Public Sub New(ByVal pv_arrByteMessage() As Byte)
             MyBase.New
             Me.pv_arrByteMessage = pv_arrByteMessage
         End Sub
     End Class
-    
-    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
-     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.MessageContractAttribute(WrapperName:="OMessageByteResponse", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
+
+    <System.Diagnostics.DebuggerStepThroughAttribute(),
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),
+     System.ServiceModel.MessageContractAttribute(WrapperName:="OMessageByteResponse", WrapperNamespace:="http://tempuri.org/", IsWrapped:=True)>
     Partial Public Class OMessageByteResponse
-        
-        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>  _
+
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>
         Public OMessageByteResult() As Object
-        
+
         Public Sub New()
             MyBase.New
         End Sub
-        
+
         Public Sub New(ByVal OMessageByteResult() As Object)
             MyBase.New
             Me.OMessageByteResult = OMessageByteResult
         End Sub
     End Class
-    
-    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
-     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.MessageContractAttribute(WrapperName:="OMessageString", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
+
+    <System.Diagnostics.DebuggerStepThroughAttribute(),
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),
+     System.ServiceModel.MessageContractAttribute(WrapperName:="OMessageString", WrapperNamespace:="http://tempuri.org/", IsWrapped:=True)>
     Partial Public Class OMessageStringRequest
-        
-        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>  _
+
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>
         Public pv_strMessage As String
-        
+
         Public Sub New()
             MyBase.New
         End Sub
-        
+
         Public Sub New(ByVal pv_strMessage As String)
             MyBase.New
             Me.pv_strMessage = pv_strMessage
         End Sub
     End Class
-    
-    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
-     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.MessageContractAttribute(WrapperName:="OMessageStringResponse", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
+
+    <System.Diagnostics.DebuggerStepThroughAttribute(),
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),
+     System.ServiceModel.MessageContractAttribute(WrapperName:="OMessageStringResponse", WrapperNamespace:="http://tempuri.org/", IsWrapped:=True)>
     Partial Public Class OMessageStringResponse
-        
-        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>  _
+
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>
         Public OMessageStringResult() As Object
-        
+
         Public Sub New()
             MyBase.New
         End Sub
-        
+
         Public Sub New(ByVal OMessageStringResult() As Object)
             MyBase.New
             Me.OMessageStringResult = OMessageStringResult
         End Sub
     End Class
-    
-    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
-     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.MessageContractAttribute(WrapperName:="GetFlagSignature", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
+
+    <System.Diagnostics.DebuggerStepThroughAttribute(),
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),
+     System.ServiceModel.MessageContractAttribute(WrapperName:="GetFlagSignature", WrapperNamespace:="http://tempuri.org/", IsWrapped:=True)>
     Partial Public Class GetFlagSignatureRequest
-        
+
         Public Sub New()
             MyBase.New
         End Sub
     End Class
-    
-    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
-     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.MessageContractAttribute(WrapperName:="GetFlagSignatureResponse", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
+
+    <System.Diagnostics.DebuggerStepThroughAttribute(),
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),
+     System.ServiceModel.MessageContractAttribute(WrapperName:="GetFlagSignatureResponse", WrapperNamespace:="http://tempuri.org/", IsWrapped:=True)>
     Partial Public Class GetFlagSignatureResponse
-        
-        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>  _
+
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>
         Public GetFlagSignatureResult As String
-        
+
         Public Sub New()
             MyBase.New
         End Sub
-        
+
         Public Sub New(ByVal GetFlagSignatureResult As String)
             MyBase.New
             Me.GetFlagSignatureResult = GetFlagSignatureResult
         End Sub
     End Class
-    
-    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
+
+    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>
     Public Interface IHOSTServiceChannel
         Inherits HOSTService.IHOSTService, System.ServiceModel.IClientChannel
     End Interface
-    
-    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
-     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
+
+    <System.Diagnostics.DebuggerStepThroughAttribute(),
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>
     Partial Public Class HOSTServiceClient
         Inherits System.ServiceModel.ClientBase(Of HOSTService.IHOSTService)
         Implements HOSTService.IHOSTService
-        
+
         Public Sub New()
             MyBase.New
         End Sub
-        
+
         Public Sub New(ByVal endpointConfigurationName As String)
             MyBase.New(endpointConfigurationName)
         End Sub
-        
+
         Public Sub New(ByVal endpointConfigurationName As String, ByVal remoteAddress As String)
             MyBase.New(endpointConfigurationName, remoteAddress)
         End Sub
-        
+
         Public Sub New(ByVal endpointConfigurationName As String, ByVal remoteAddress As System.ServiceModel.EndpointAddress)
             MyBase.New(endpointConfigurationName, remoteAddress)
         End Sub
-        
+
         Public Sub New(ByVal binding As System.ServiceModel.Channels.Binding, ByVal remoteAddress As System.ServiceModel.EndpointAddress)
             MyBase.New(binding, remoteAddress)
         End Sub
-        
+
         Public Function DoWork(ByVal request As HOSTService.DoWorkRequest) As HOSTService.DoWorkResponse Implements HOSTService.IHOSTService.DoWork
             Return MyBase.Channel.DoWork(request)
         End Function
-        
+
         Public Function DoWorkAsync(ByVal request As HOSTService.DoWorkRequest) As System.Threading.Tasks.Task(Of HOSTService.DoWorkResponse) Implements HOSTService.IHOSTService.DoWorkAsync
             Return MyBase.Channel.DoWorkAsync(request)
         End Function
-        
+
         Public Function MessageByte(ByVal request As HOSTService.MessageByteRequest) As HOSTService.MessageByteResponse Implements HOSTService.IHOSTService.MessageByte
             Return MyBase.Channel.MessageByte(request)
         End Function
-        
+
         Public Function MessageByteAsync(ByVal request As HOSTService.MessageByteRequest) As System.Threading.Tasks.Task(Of HOSTService.MessageByteResponse) Implements HOSTService.IHOSTService.MessageByteAsync
             Return MyBase.Channel.MessageByteAsync(request)
         End Function
-        
+
+        Public Function GetVersion(ByVal request As HOSTService.GetVersionRequest) As HOSTService.GetVersionResponse Implements HOSTService.IHOSTService.GetVersion
+            Return MyBase.Channel.GetVersion(request)
+        End Function
+
+        Public Function GetVersionAsync(ByVal request As HOSTService.GetVersionRequest) As System.Threading.Tasks.Task(Of HOSTService.GetVersionResponse) Implements HOSTService.IHOSTService.GetVersionAsync
+            Return MyBase.Channel.GetVersionAsync(request)
+        End Function
+
         Public Function MessageString(ByVal request As HOSTService.MessageStringRequest) As HOSTService.MessageStringResponse Implements HOSTService.IHOSTService.MessageString
             Return MyBase.Channel.MessageString(request)
         End Function

@@ -427,48 +427,41 @@ Public Class frmXtraLogin
     End Sub
 
 
-    Private Sub GetVersion()
-        Try
-            'Get version from SYSVAL table on BDS
-            Dim v_strSQL As String = String.Empty
-            Dim v_ws As New BDSDeliveryManagement    'BDSDelivery.BDSDelivery
-            Dim v_xmlDocument As New XmlDocumentEx
-            Dim v_nodeList As Xml.XmlNodeList
-            Dim v_strValue, v_strFLDNAME As String
-            Dim v_Vesion As String = String.Empty
+    'Private Sub GetVersion()
+    '    Try
+    '        'Get version from SYSVAL table on BDS
+    '        Dim v_strSQL As String = String.Empty
+    '        Dim v_ws As New BDSDeliveryManagement    'BDSDelivery.BDSDelivery
+    '        Dim v_xmlDocument As New XmlDocumentEx
+    '        Dim v_nodeList As Xml.XmlNodeList
+    '        Dim v_strValue, v_strFLDNAME As String
+    '        Dim v_Vesion As String = String.Empty
+    '        Dim myBuildInfo As FileVersionInfo = FileVersionInfo.GetVersionInfo(Application.ExecutablePath)
 
-            v_strSQL = "SELECT VARVALUE FROM SYSVAR WHERE GRNAME = 'SYSTEM' AND VARNAME = 'VERSION'"
-            Dim v_strObjMsg As String = BuildXMLObjMsg(, , , , gc_IsNotLocalMsg, gc_MsgTypeObj, OBJNAME_CF_AFMAST, gc_ActionInquiry, v_strSQL)
-            v_ws.Message(v_strObjMsg)
+    '        Dim a = myBuildInfo.FileVersion
+    '        v_strSQL = "SELECT * FROM VERSION ORDER BY ACTUALVERSION DESC FETCH FIRST 1 ROW ONLY"
+    '        Dim v_strObjMsg As String = BuildXMLObjMsg(, , , , gc_IsNotLocalMsg, gc_MsgTypeObj, OBJNAME_CF_AFMAST, gc_ActionInquiry, v_strSQL)
+    '        v_ws.UnCheckKey(v_strObjMsg)
 
-            v_xmlDocument.LoadXml(v_strObjMsg)
-            v_nodeList = v_xmlDocument.SelectNodes("/ObjectMessage/ObjData")
+    '        v_xmlDocument.LoadXml(v_strObjMsg)
+    '        v_nodeList = v_xmlDocument.SelectNodes("/ObjectMessage/ObjData")
 
-            For i As Integer = 0 To v_nodeList.Count - 1
-                For j As Integer = 0 To v_nodeList.Item(i).ChildNodes.Count - 1
-                    With v_nodeList.Item(i).ChildNodes(j)
-                        v_strValue = .InnerText.ToString
-                        v_strFLDNAME = CStr(CType(.Attributes.GetNamedItem("fldname"), Xml.XmlAttribute).Value)
+    '        For i As Integer = 0 To v_nodeList.Count - 1
+    '            For j As Integer = 0 To v_nodeList.Item(i).ChildNodes.Count - 1
+    '                With v_nodeList.Item(i).ChildNodes(j)
+    '                    v_strValue = .InnerText.ToString
+    '                    v_strFLDNAME = CStr(CType(.Attributes.GetNamedItem("fldname"), Xml.XmlAttribute).Value)
 
-                        Select Case Trim(v_strFLDNAME)
-                            Case "VARVALUE"
-                                v_Vesion = v_strValue.Trim()
-                        End Select
-                    End With
-                Next
-            Next
+    '                    Select Case Trim(v_strFLDNAME)
+    '                        Case "SYSTEMVERSION"
+    '                            v_Vesion = v_strValue.Trim()
+    '                    End Select
+    '                End With
+    '            Next
+    '        Next
 
-            If Not v_Vesion = "1.0.6.2.1" Then
-                MsgBox("Version khong dung, hay cap nhat version moi nhat hoac lien he IT de duoc tro giup", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)
-                End
-            End If
-
-        Catch ex As Exception
-            LogError.Write("Error source: " & ex.Source & vbNewLine _
-                         & "Error code: System error!" & vbNewLine _
-                         & "Error message: " & ex.Message, EventLogEntryType.Error)
-            MsgBox(ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, gc_ApplicationTitle)
-        End Try
-    End Sub
+    '    Catch ex As Exception
+    '    End Try
+    'End Sub
 
 End Class

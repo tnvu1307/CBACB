@@ -18,6 +18,8 @@ Deploy/
 *Debug*
 *Release*
 Publish/
+Dockerfile
+*.yml
 UpgradeLog*
 *.VS*
 *packages*

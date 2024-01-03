@@ -1545,7 +1545,7 @@ Public Class objRouter
                         Case gc_ActionAdd
                             retval = aType.InvokeMember("Add", Reflection.BindingFlags.InvokeMethod, Nothing, obj, args)
 
-                            
+
                         Case gc_ActionEdit
                             retval = aType.InvokeMember("Edit", Reflection.BindingFlags.InvokeMethod, Nothing, obj, args)
 
@@ -1588,6 +1588,8 @@ Public Class objRouter
             Throw ex
         End Try
     End Function
+
+
 
     Public Function BuildXMLMarketData(ByVal pv_ds As DataSet,
                                    ByRef pv_strObjectMessage As String,
@@ -1972,6 +1974,53 @@ Public Class objRouter
             Return v_lngErrCode
         Catch ex As Exception
             Rollback()
+            LogError.WriteException(ex)
+            Throw ex
+        End Try
+    End Function
+    Public Function GetVersion()
+        Try
+            'Get version from SYSVAL table on BDS
+            Dim v_strSQL As String = String.Empty
+            Dim listData As DataSet
+            Dim v_xmlDocument As New XmlDocumentEx
+            Dim v_nodeList As Xml.XmlNodeList
+            Dim v_strLocal As String
+            Dim v_strValue, v_strFLDNAME As String
+            Dim v_Vesion As String = String.Empty
+            Dim v_obj As DataAccess
+            If v_strLocal = "Y" Then
+                v_obj = New DataAccess
+            ElseIf v_strLocal = "N" Then
+                v_obj = New DataAccess
+                v_obj.NewDBInstance(gc_MODULE_HOST)
+            End If
+            v_strSQL = " SELECT v.REPORTVERSION , v.ACTUALVERSION , 'Y' AS AUTOUPDATE FROM VERSION v ORDER BY ACTUALVERSION DESC FETCH FIRST 1 ROW ONLY"
+
+            listData = v_obj.ExecuteSQLReturnDataset(CommandType.Text, v_strSQL)
+
+            For i As Integer = 0 To listData.Tables(0).Rows.Count - 1
+                For j As Integer = 0 To listData.Tables(0).Columns.Count - 1
+                    With listData.Tables(0).Rows(i)(j)
+                        v_strValue = .InnerText.ToString
+                        v_strFLDNAME = CStr(CType(.Attributes.GetNamedItem("fldname"), Xml.XmlAttribute).Value)
+
+                        Select Case Trim(v_strFLDNAME)
+                            Case "SYSTEMVERSION"
+                                v_Vesion = v_strValue.Trim()
+                        End Select
+                    End With
+                Next
+            Next
+
+            If IsNothing(v_Vesion) Then
+                Return -1
+            End If
+
+            Return v_Vesion
+
+        Catch ex As Exception
+            Rollback() 'ContextUtil.SetAbort()
             LogError.WriteException(ex)
             Throw ex
         End Try
