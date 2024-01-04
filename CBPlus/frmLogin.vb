@@ -350,9 +350,6 @@ Public Class frmLogin
             Dim v_nodeList As Xml.XmlNodeList
             Dim v_strValue, v_strFLDNAME As String
             Dim v_Vesion As String = String.Empty
-            Dim myBuildInfo As FileVersionInfo = FileVersionInfo.GetVersionInfo(Application.ExecutablePath)
-
-            Dim a = myBuildInfo.FileVersion
 
             v_strSQL = "SELECT * FROM VERSION ORDER BY ACTUALVERSION DESC FETCH FIRST 1 ROW ONLY"
             Dim v_strObjMsg As String = BuildXMLObjMsg(, , , , gc_IsNotLocalMsg, gc_MsgTypeObj, OBJNAME_CF_AFMAST, gc_ActionInquiry, v_strSQL)
