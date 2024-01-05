@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<RootNamespace>Host</RootNamespace>
-		<TargetFramework>net6</TargetFramework>
+		<TargetFramework>net6.0</TargetFramework>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 		<DebugType>none</DebugType>
@@ -33,5 +33,7 @@
         <ProjectReference Include="..\SA\SA.vbproj" />
         <ProjectReference Include="..\ST\ST.vbproj" />
         <ProjectReference Include="..\SY\SY.vbproj" />
+		<ProjectReference Include="..\RM\RM.vbproj" />
+		<ProjectReference Include="..\GL\GL.vbproj" />
     </ItemGroup>
 </Project>
