@@ -258,11 +258,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Libref\Xceed.Validation.dll</HintPath>
     </Reference>
-    <ProjectReference Include="..\CommonLibrary\CommonLibrary.vbproj">
-      <Name>CommonLibrary</Name>
-      <Project>{D08773CC-EEB0-403E-B66B-D1964626F985}</Project>
-      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -309,6 +304,26 @@
     </Compile>
     <Compile Include="frmBatch-EN.Designer.vb" />
     <Compile Include="frmBatch-VN.Designer.vb" />
+    <Compile Include="frmClearingSchedule-EN.Designer.vb" />
+    <Compile Include="frmClearingSchedule-VN.Designer.vb" />
+    <Compile Include="frmClearingSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContractInfo-EN.Designer.vb" />
+    <Compile Include="frmContractInfo-VN.Designer.vb" />
+    <Compile Include="frmContractInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistory-EN.Designer.vb" />
+    <Compile Include="frmHistory-VN.Designer.vb" />
+    <Compile Include="frmHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInquiry-EN.Designer.vb" />
+    <Compile Include="frmInquiry-VN.Designer.vb" />
+    <Compile Include="frmInquiry.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLookup-EN.Designer.vb" />
     <Compile Include="frmLookup-VN.Designer.vb" />
     <Compile Include="frmLookup.vb">
@@ -316,8 +331,23 @@
     </Compile>
     <Compile Include="frmMaster-EN.Designer.vb" />
     <Compile Include="frmMaster-VN.Designer.vb" />
+    <Compile Include="frmPostmap-EN.Designer.vb" />
+    <Compile Include="frmPostmap-VN.Designer.vb" />
+    <Compile Include="frmPostmap.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmProcessing-EN.Designer.vb" />
     <Compile Include="frmProcessing-VN.Designer.vb" />
+    <Compile Include="frmReceiverData-EN.Designer.vb" />
+    <Compile Include="frmReceiverData-VN.Designer.vb" />
+    <Compile Include="frmReceiverData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRECONCILE-EN.Designer.vb" />
+    <Compile Include="frmRECONCILE-VN.Designer.vb" />
+    <Compile Include="frmRECONCILE.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmReportList-EN.Designer.vb" />
     <Compile Include="frmReportList-VN.Designer.vb" />
     <Compile Include="frmReportList_Tab.vb">
@@ -334,6 +364,14 @@
     <Compile Include="frmSearchCMP2FILE-VN.Designer.vb" />
     <Compile Include="frmTransact-EN.Designer.vb" />
     <Compile Include="frmTransact-VN.Designer.vb" />
+    <Compile Include="frmVouchers-EN.Designer.vb" />
+    <Compile Include="frmVouchers-VN.Designer.vb" />
+    <Compile Include="frmVouchers.Designer.vb">
+      <DependentUpon>frmVouchers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVouchers.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmXtraApprove-EN.Designer.vb" />
     <Compile Include="frmXtraApprove-EN1.Designer.vb" />
     <Compile Include="frmXtraApprove-VN.Designer.vb" />
@@ -367,8 +405,6 @@
     <Compile Include="frmXtraTransact.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\modCommon.vb" />
-    <Compile Include="Modules\modDirect.vb" />
     <Compile Include="Service References\HOAuthService\Reference.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -400,16 +436,53 @@
     <EmbeddedResource Include="Controls\UCLoadingPage.resx">
       <DependentUpon>UCLoadingPage.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmClearingSchedule-EN.resx" />
+    <EmbeddedResource Include="frmClearingSchedule-VN.resx" />
+    <EmbeddedResource Include="frmClearingSchedule.resx">
+      <DependentUpon>frmClearingSchedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContractInfo-EN.resx" />
+    <EmbeddedResource Include="frmContractInfo-VN.resx" />
+    <EmbeddedResource Include="frmContractInfo.resx">
+      <DependentUpon>frmContractInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistory-EN.resx" />
+    <EmbeddedResource Include="frmHistory-VN.resx" />
+    <EmbeddedResource Include="frmHistory.resx">
+      <DependentUpon>frmHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInquiry-EN.resx" />
+    <EmbeddedResource Include="frmInquiry-VN.resx" />
+    <EmbeddedResource Include="frmInquiry.resx">
+      <DependentUpon>frmInquiry.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLookup-EN.resx" />
     <EmbeddedResource Include="frmLookup-VN.resx" />
     <EmbeddedResource Include="frmLookup.resx">
       <DependentUpon>frmLookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPostmap-EN.resx" />
+    <EmbeddedResource Include="frmPostmap-VN.resx" />
+    <EmbeddedResource Include="frmPostmap.resx">
+      <DependentUpon>frmPostmap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReceiverData-EN.resx" />
+    <EmbeddedResource Include="frmReceiverData-VN.resx" />
+    <EmbeddedResource Include="frmReceiverData.resx">
+      <DependentUpon>frmReceiverData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRECONCILE-EN.resx" />
+    <EmbeddedResource Include="frmRECONCILE-VN.resx" />
+    <EmbeddedResource Include="frmRECONCILE.resx">
+      <DependentUpon>frmRECONCILE.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReportList_Tab-EN.resx" />
     <EmbeddedResource Include="frmReportList_Tab-VN.resx" />
     <EmbeddedResource Include="frmReportList_Tab.resx">
       <DependentUpon>frmReportList_Tab.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmVouchers-EN.resx" />
+    <EmbeddedResource Include="frmVouchers-VN.resx" />
     <EmbeddedResource Include="frmXtraApprove-EN.resx" />
     <EmbeddedResource Include="frmXtraApprove-VN.resx" />
     <EmbeddedResource Include="frmXtraApprove.resx">
@@ -772,6 +845,12 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.vbproj">
+      <Project>{d08773cc-eeb0-403e-b66b-d1964626f985}</Project>
+      <Name>CommonLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <PropertyGroup>
