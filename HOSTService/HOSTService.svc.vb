@@ -1,5 +1,6 @@
 ﻿Imports System.Xml
 Imports HostCommonLibrary
+Imports System.Configuration
 ' NOTE: If you change the class name "HOSTService" here, you must also update the reference to "HOSTService" in Web.config and in the associated .svc file.
 
 Public Class HOSTService
@@ -9,6 +10,46 @@ Public Class HOSTService
 
     Public Sub DoWork() Implements IHOSTService.DoWork
     End Sub
+
+    Public Function GetVersion(ByRef pv_arrByteMessage() As Byte) As Long Implements IHOSTService.GetVersion
+        Dim v_lngErr As Long = 0
+        Dim v_strErrorMessage As String
+        Dim v_strErrorSource As String
+        Dim pv_strMessage As String
+        Dim v_xmlDoc As XmlDocument = New XmlDocumentEx()
+        Dim v_xmlDocumentMessage As XmlDocument = New XmlDocumentEx()
+
+        Try
+
+            Dim v_strObjMsg As String = ""
+            Dim sql As String
+            sql = " SELECT v.REPORTVERSION , v.ACTUALVERSION  FROM VERSION v ORDER BY ACTUALVERSION DESC FETCH FIRST 1 ROW ONLY"
+            v_strObjMsg = BuildXMLObjMsg(, , , , gc_IsNotLocalMsg, gc_MsgTypeObj, OBJNAME_SA_SYSVAR, gc_ActionInquiry, sql)
+            v_lngErr = (New Host.objRouter()).Transfer(v_strObjMsg)
+
+            If v_lngErr <> ERR_SYSTEM_OK Then
+                v_strErrorMessage = GetErrorMessage(v_lngErr)
+                ReplaceXMLErrorException(v_strObjMsg, v_strErrorSource, v_lngErr, v_strErrorMessage)
+
+                LogError.Write("::MessageByte:: ERRCODE: " & v_lngErr & " ERRMSG: " & v_strErrorMessage, "EventLogEntryType.Error")
+            End If
+
+            v_xmlDoc.LoadXml(v_strObjMsg)
+            v_xmlDoc.DocumentElement.Attributes.RemoveNamedItem(modCommond.gc_AtributeSignature)
+            v_strObjMsg = v_xmlDoc.OuterXml
+
+            LogError.Write("::MessageByte:: [END]" & v_strObjMsg)
+
+            ''Compress message
+            v_strObjMsg = TripleDesEncryptData(v_strObjMsg)
+            pv_arrByteMessage = ZetaCompressionLibrary.CompressionHelper.CompressString(v_strObjMsg)
+
+            Return v_lngErr
+        Catch ex As Exception
+            LogError.WriteException(ex)
+            Return modCommond.ERR_SYSTEM_START
+        End Try
+    End Function
 
 
     Public Function MessageByte(ByRef pv_arrByteMessage() As Byte) As Long Implements IHOSTService.MessageByte

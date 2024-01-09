@@ -1545,7 +1545,7 @@ Public Class objRouter
                         Case gc_ActionAdd
                             retval = aType.InvokeMember("Add", Reflection.BindingFlags.InvokeMethod, Nothing, obj, args)
 
-                            
+
                         Case gc_ActionEdit
                             retval = aType.InvokeMember("Edit", Reflection.BindingFlags.InvokeMethod, Nothing, obj, args)
 
@@ -1588,6 +1588,8 @@ Public Class objRouter
             Throw ex
         End Try
     End Function
+
+
 
     Public Function BuildXMLMarketData(ByVal pv_ds As DataSet,
                                    ByRef pv_strObjectMessage As String,

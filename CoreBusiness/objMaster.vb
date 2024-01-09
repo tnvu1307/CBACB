@@ -155,6 +155,8 @@ Public Class objMaster
         Return 0
     End Function
 
+
+
     Public Function CoreEdit(ByRef pv_xmlDocument As XmlDocumentEx) As Long
         Dim v_lngErrorCode As Long
         Dim v_strSYSVAR As String, v_DataAccess As New DataAccess
@@ -442,6 +444,8 @@ Public Class objMaster
             Throw ex
         End Try
     End Function
+
+
 #End Region
 
 #Region " Implement functions - Must override "

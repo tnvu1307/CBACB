@@ -351,7 +351,7 @@ Public Class frmLogin
             Dim v_strValue, v_strFLDNAME As String
             Dim v_Vesion As String = String.Empty
 
-            v_strSQL = "SELECT VARVALUE FROM SYSVAR WHERE GRNAME = 'SYSTEM' AND VARNAME = 'VERSION'"
+            v_strSQL = "SELECT * FROM VERSION ORDER BY ACTUALVERSION DESC FETCH FIRST 1 ROW ONLY"
             Dim v_strObjMsg As String = BuildXMLObjMsg(, , , , gc_IsNotLocalMsg, gc_MsgTypeObj, OBJNAME_CF_AFMAST, gc_ActionInquiry, v_strSQL)
             v_ws.Message(v_strObjMsg)
 
@@ -365,8 +365,9 @@ Public Class frmLogin
                         v_strFLDNAME = CStr(CType(.Attributes.GetNamedItem("fldname"), Xml.XmlAttribute).Value)
 
                         Select Case Trim(v_strFLDNAME)
-                            Case "VARVALUE"
+                            Case "SYSTEMVERSION"
                                 v_Vesion = v_strValue.Trim()
+
                         End Select
                     End With
                 Next

@@ -1,12 +1,14 @@
 {
   "profiles": {
     "HOSTService": {
-      "commandName": "Project",
-      "launchBrowser": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "https://localhost:52543;http://localhost:52544"
+        "commandName": "Project",
+        "launchBrowser": true,
+        "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+        },
+        "applicationUrl": "https://localhost:52514;http://localhost:52514",
+        "nativeDebugging": false,
+        "sqlDebugging": false
     }
   }
 }
