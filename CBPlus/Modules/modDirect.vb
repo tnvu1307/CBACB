@@ -23,6 +23,7 @@
     Public Const gc_SYSERR_RE_TYPE = "SYS-000007"
     Public Const gc_SYSERR_UNKNOWN_ERROR = "SYS-000008"
     Public Const gc_SYSERR_CHECK_EVENT_LOG = "SYS-000009"
+    Public Const gc_SYSERR_CHECK_ACCOUNT_BLOCK = "SYS-000010"
 #End Region
 
 End Module
