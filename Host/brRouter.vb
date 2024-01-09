@@ -3011,8 +3011,8 @@ Public Class brRouter
         End Try
     End Function
 
-    Public Function GetTellerProfile(ByVal BrachId As String, ByVal TellerId As String) As CTellerProfile
-        Dim tlProfile As New CTellerProfile
+    Public Function GetTellNewerProfile(ByVal BrachId As String, ByVal TellerId As String) As CTellerProfile
+        Dim tlProfile As CTellerProfile
         Dim v_strObjMsg As String
         Dim v_XmlDocument As New Xml.XmlDocument
         Dim v_strTLTYPE, v_strGRPTYPE, v_strMaxType As String
@@ -3027,7 +3027,6 @@ Public Class brRouter
             & " WHERE  TL.TLID = TLGRP.TLID AND GRP.GRPID = TLGRP.GRPID  AND TL.TLID = '" & TellerId & "') GRPRIGHT " _
             & "from BRGRP B, TLPROFILES P " _
             & "where B.BRID = P.BRID and P.BRID = '" & BrachId & "' and P.TLID = '" & TellerId & "'"
-
         Dim v_bCmd As New BusinessCommand
         v_bCmd.ExecuteUser = "minhtk"
         v_bCmd.SQLCommand = v_strSQL
@@ -3045,6 +3044,7 @@ Public Class brRouter
         v_dal.LogCommand = True
 
         Dim v_ds As DataSet = v_dal.ExecuteSQLReturnDataset(v_bCmd)
+
 
         'Dim v_ds As DataSet = OracleHelper.ExecuteDataset(mv_strConnectionString, CommandType.Text, v_strSQL)
 
@@ -3835,6 +3835,112 @@ Public Class brRouter
             Throw ex
         End Try
     End Function
+
+    Public Function GetTellerProfile(ByVal BrachId As String, ByVal TellerId As String) As CTellerProfile
+        Dim tlProfile As New CTellerProfile
+        Dim v_strObjMsg As String
+        Dim v_XmlDocument As New Xml.XmlDocument
+        Dim v_strTLTYPE, v_strGRPTYPE, v_strMaxType As String
+
+        Dim v_obj As New DataAccess
+        v_obj.NewDBInstance(gc_MODULE_HOST)
+
+        Dim v_strSQL As String = "Select P.BRID BDSID, P.TLID TLID, B.BRNAME BRNAME, P.DESCRIPTION DESCRIPTION, P.TLTYPE TLTYPE, " _
+            & "P.TLGROUP TLGROUP, P.TLID TLID, P.TLLEV TLLEV, P.TLNAME TLNAME, P.TLPRN TLPRN, P.TLTITLE TLTITLE, P.TLFULLNAME TLFULLNAME, P.PIN PIN, " _
+            & " (SELECT MAX(SUBSTR(GRPRIGHT,1,1)) || MAX(SUBSTR(GRPRIGHT,2,1)) || MAX(SUBSTR(GRPRIGHT,3,1)) || MAX(SUBSTR(GRPRIGHT,4,1)) GRPRIGHT " _
+            & " FROM TLPROFILES TL, TLGROUPS GRP, TLGRPUSERS TLGRP " _
+            & " WHERE  TL.TLID = TLGRP.TLID AND GRP.GRPID = TLGRP.GRPID  AND TL.TLID = '" & TellerId & "') GRPRIGHT " _
+            & "from BRGRP B, TLPROFILES P " _
+            & "where B.BRID = P.BRID and P.BRID = '" & BrachId & "' and P.TLID = '" & TellerId & "'"
+
+        Dim v_bCmd As New BusinessCommand
+        v_bCmd.ExecuteUser = "minhtk"
+        v_bCmd.SQLCommand = v_strSQL
+
+        Dim v_dal As New DataAccess
+        v_dal.NewDBInstance(gc_MODULE_HOST)
+        Dim v_strBUSDATE, v_strNEXTDATE, v_strINTERVAL, v_strSYSVAR, v_strTIMESEARCH, v_strCOMPANYCD, v_strCOMPANYNAME As String, v_lngError As Long
+        v_lngError = v_dal.GetSysVar("SYSTEM", "CURRDATE", v_strBUSDATE)
+        v_lngError = v_dal.GetSysVar("SYSTEM", "NEXTDATE", v_strNEXTDATE)
+        v_lngError = v_dal.GetSysVar("SYSTEM", "TLLOGINTERVAL", v_strINTERVAL)
+        v_lngError = v_dal.GetSysVar("SYSTEM", "TIMESEARCH", v_strTIMESEARCH)
+        v_lngError = v_dal.GetSysVar("SYSTEM", "HEADOFFICE", v_strCOMPANYNAME)
+        v_lngError = v_dal.GetSysVar("SYSTEM", "DEALINGCUSTODYCD", v_strCOMPANYCD)
+        v_strCOMPANYCD = v_strCOMPANYCD.Replace("P", String.Empty)
+        v_dal.LogCommand = True
+
+        Dim v_ds As DataSet = v_dal.ExecuteSQLReturnDataset(v_bCmd)
+
+        'Dim v_ds As DataSet = OracleHelper.ExecuteDataset(mv_strConnectionString, CommandType.Text, v_strSQL)
+
+        If v_ds.Tables(0).Rows.Count = 1 Then
+            tlProfile.BranchId = gf_CorrectStringField(v_ds.Tables(0).Rows(0)("BDSID"))
+            BranchID = tlProfile.BranchId
+            tlProfile.BranchName = gf_CorrectStringField(v_ds.Tables(0).Rows(0)("BRNAME"))
+            tlProfile.Description = gf_CorrectStringField(v_ds.Tables(0).Rows(0)("DESCRIPTION"))
+            v_strGRPTYPE = gf_CorrectStringField(v_ds.Tables(0).Rows(0)("TLTYPE"))
+            v_strTLTYPE = gf_CorrectStringField(v_ds.Tables(0).Rows(0)("GRPRIGHT"))
+            v_strMaxType = ""
+            If Trim(v_strGRPTYPE).Length >= 4 Then
+                If Mid(v_strGRPTYPE, 1, 1) > Mid(v_strTLTYPE, 1, 1) Then
+                    v_strMaxType &= Mid(v_strGRPTYPE, 1, 1)
+                Else
+                    v_strMaxType &= Mid(v_strTLTYPE, 1, 1)
+                End If
+                If Mid(v_strGRPTYPE, 2, 1) > Mid(v_strTLTYPE, 2, 1) Then
+                    v_strMaxType &= Mid(v_strGRPTYPE, 2, 1)
+                Else
+                    v_strMaxType &= Mid(v_strTLTYPE, 2, 1)
+                End If
+                If Mid(v_strGRPTYPE, 3, 1) > Mid(v_strTLTYPE, 3, 1) Then
+                    v_strMaxType &= Mid(v_strGRPTYPE, 3, 1)
+                Else
+                    v_strMaxType &= Mid(v_strTLTYPE, 3, 1)
+                End If
+                If Mid(v_strGRPTYPE, 4, 1) > Mid(v_strTLTYPE, 4, 1) Then
+                    v_strMaxType &= Mid(v_strGRPTYPE, 4, 1)
+                Else
+                    v_strMaxType &= Mid(v_strTLTYPE, 4, 1)
+                End If
+                v_strMaxType &= Mid(v_strTLTYPE, 5)
+            End If
+            'tlProfile.TellerRight = gf_CorrectStringField(v_ds.Tables(0).Rows(0)("TLTYPE"))
+            tlProfile.TellerRight = v_strMaxType
+            tlProfile.TellerGroup = gf_CorrectStringField(v_ds.Tables(0).Rows(0)("TLGROUP"))
+            tlProfile.TellerId = gf_CorrectStringField(v_ds.Tables(0).Rows(0)("TLID"))
+            tlProfile.TellerLevel = gf_CorrectNumericField(v_ds.Tables(0).Rows(0)("TLLEV"))
+            tlProfile.TellerName = gf_CorrectStringField(v_ds.Tables(0).Rows(0)("TLNAME"))
+            tlProfile.TellerFullName = gf_CorrectStringField(v_ds.Tables(0).Rows(0)("TLFULLNAME"))
+            tlProfile.TellerPrinterName = gf_CorrectStringField(v_ds.Tables(0).Rows(0)("TLPRN"))
+            tlProfile.TellerTitle = gf_CorrectStringField(v_ds.Tables(0).Rows(0)("TLTITLE"))
+            tlProfile.Password = gf_CorrectStringField(v_ds.Tables(0).Rows(0)("PIN"))
+            tlProfile.BusDate = v_strBUSDATE
+            tlProfile.NextDate = v_strNEXTDATE
+            tlProfile.Interval = v_strINTERVAL
+            tlProfile.TimeSearch = v_strTIMESEARCH
+            tlProfile.CompanyName = v_strCOMPANYNAME
+            tlProfile.CompanyCode = v_strCOMPANYCD
+
+        End If
+
+        'Get system time form database HOST
+        v_strObjMsg = modCommond.BuildXMLObjMsg(Now.Date, tlProfile.BranchId, Now.Date,
+            tlProfile.TellerId, modCommond.gc_IsLocalMsg, modCommond.gc_MsgTypeObj,
+            OBJNAME_SY_AUTHENTICATION, modCommond.gc_ActionInquiry, , tlProfile.TellerId, "GetSystemTime", , , "")
+
+        v_XmlDocument.LoadXml(v_strObjMsg)
+
+        Dim v_strLoginTime As String = Trim(v_XmlDocument.DocumentElement.Attributes(gc_AtributeCLAUSE).Value.ToString)
+        tlProfile.LoginTime = v_strLoginTime
+        Dim currentTime As DateTime = DateTime.Now
+        Dim updateCurrentDateLogin As String = "UPDATE TLPROFILES SET LASTLOGINDATE = TO_TIMESTAMP('" & currentTime & "', 'DD/MM/YYYY hh:mi:ss AM') WHERE TLID ='" & TellerId & "'"
+        v_bCmd.ExecuteUser = "admin"
+        v_bCmd.SQLCommand = updateCurrentDateLogin
+        Dim result As DataSet = v_dal.ExecuteSQLReturnDataset(v_bCmd)
+        Complete() 'ContextUtil.SetComplete()
+        Return tlProfile
+    End Function
+
 
     Public Function GetUserChildMenu(ByRef pv_strObjMsg As String) As Long
         Dim XMLDocument As New Xml.XmlDocument
