@@ -2987,7 +2987,7 @@ Public Class brRouter
                 v_strEncryPass = gf_CorrectStringField(v_ds.Tables(0).Rows(0)("ENCRYPASS"))
                 isLockAccount = gf_CorrectStringField(v_ds.Tables(0).Rows(0)("ACTIVE"))
                 If isLockAccount = "B" Then
-                    v_strRetval = 6
+                    v_strRetval = "6"
                 ElseIf v_strBranchId = String.Empty Or v_strTellerId = String.Empty Then
                     v_strRetval = Nothing
                 Else
@@ -3007,12 +3007,12 @@ Public Class brRouter
                                     v_bCmd.SQLCommand = updateAmountStr
                                     Dim amount As DataSet = v_dal.ExecuteSQLReturnDataset(v_bCmd)
                                 Else
-                                    Dim insertAmountStr = "INSERT INTO ENTERWRONGPASS (TLID, AMOUNT, TLNAME, LOCKDATE) VALUES('" & v_strTellerId & "',1,'','" & currentTime & "')"
+                                    Dim insertAmountStr = "INSERT INTO ENTERWRONGPASS (TLID, AMOUNT, TLNAME, LOCKDATE) VALUES('" & v_strTellerId & "',1,'', TO_TIMESTAMP('" & currentTime & "', 'DD/MM/YYYY hh:mi:ss AM'))"
                                     v_bCmd.ExecuteUser = "admin"
                                     v_bCmd.SQLCommand = insertAmountStr
                                     v_dal.ExecuteSQLReturnDataset(v_bCmd)
                                 End If
-                                Dim checkAmountStr = "SELECT * FROM ENTERWRONGPASS WHERE TLID = '" & v_strTellerId & "' AND AMOUNT = 5"
+                                Dim checkAmountStr = "SELECT * FROM ENTERWRONGPASS WHERE TLID = '" & v_strTellerId & "' AND AMOUNT >= (SELECT VARVALUE FROM SYSVAR WHERE VARNAME = 'USERLOGINFALSE')"
                                 v_bCmd.ExecuteUser = "admin"
                                 v_bCmd.SQLCommand = checkAmountStr
                                 Dim rs As DataSet = v_dal.ExecuteSQLReturnDataset(v_bCmd)
@@ -3024,12 +3024,12 @@ Public Class brRouter
                                     v_strRetval = 6
                                 End If
                             Catch ex As Exception
-                                Throw ex
+                                LogError.WriteException(ex)
                             End Try
                             v_strRetval = Nothing
                         Else
                             v_strRetval = v_strBranchId & "|" & v_strTellerId & "|" & DataProtection.UnprotectData(v_strPIN)
-                            Dim checkAmountWrong = "SELECT * FROM ENTERWRONGPASS WHERE TLID = '" & v_strTellerId & "' AND AMOUNT < 5"
+                            Dim checkAmountWrong = "SELECT * FROM ENTERWRONGPASS WHERE TLID = '" & v_strTellerId & "' AND AMOUNT < 3"
                             v_bCmd.ExecuteUser = "admin"
                             v_bCmd.SQLCommand = checkAmountWrong
                             Dim resultQuery As DataSet = v_dal.ExecuteSQLReturnDataset(v_bCmd)
@@ -3046,7 +3046,7 @@ Public Class brRouter
                                 v_bCmd.SQLCommand = updateCurrentDateLogin
                                 v_dal.ExecuteSQLReturnDataset(v_bCmd)
                             Catch ex As Exception
-                                Throw ex
+                                LogError.WriteException(ex)
                             End Try
                         End If
                     Else    'Sử dụng LDAP để lưu mật khẩu

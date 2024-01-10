@@ -416,7 +416,7 @@ Public Class frmXtraLogin
                 ElseIf blResult = BusLayerResult.AuthenticationFailure Then
                     MsgBox(m_ResourceManager.GetString(gc_SYSERR_INCORRECT_USR_OR_PWD) & " " & m_ResourceManager.GetString(gc_SYSERR_RE_TYPE),
                         MsgBoxStyle.Information + MsgBoxStyle.OkOnly, gc_ApplicationTitle)
-                ElseIf blResult = BusLayerResult.AccountBlock Then
+                ElseIf blResult = CType(BusLayerResult.AccountBlock, String) Then
                     MsgBox("Tài khoản của bạn đã bị khóa. Vui lòng liên hệ admin để được hỗ trợ!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, gc_ApplicationTitle)
                 Else
                     MsgBox(m_ResourceManager.GetString(gc_SYSERR_UNKNOWN_ERROR) & " " & m_ResourceManager.GetString(gc_SYSERR_CHECK_EVENT_LOG),
