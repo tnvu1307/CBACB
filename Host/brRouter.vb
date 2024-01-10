@@ -3012,7 +3012,17 @@ Public Class brRouter
                                     v_bCmd.SQLCommand = insertAmountStr
                                     v_dal.ExecuteSQLReturnDataset(v_bCmd)
                                 End If
-                                Dim checkAmountStr = "SELECT * FROM ENTERWRONGPASS WHERE TLID = '" & v_strTellerId & "' AND AMOUNT >= (SELECT VARVALUE FROM SYSVAR WHERE VARNAME = 'USERLOGINFALSE')"
+                                Dim checkAmountStr As String
+                                Dim defaultAmount = "SELECT VARVALUE FROM SYSVAR WHERE VARNAME = 'USERLOGINFALSE'"
+                                v_bCmd.ExecuteUser = "admin"
+                                v_bCmd.SQLCommand = defaultAmount
+                                Dim checkIsAmount As DataSet = v_dal.ExecuteSQLReturnDataset(v_bCmd)
+                                If String.IsNullOrEmpty(gf_CorrectStringField(checkIsAmount.Tables(0).Rows(0)("VARVALUE"))) Then
+                                    checkAmountStr = "SELECT * FROM ENTERWRONGPASS WHERE TLID = '" & v_strTellerId & "' AND AMOUNT >= 5"
+                                Else
+                                    checkAmountStr = "SELECT * FROM ENTERWRONGPASS WHERE TLID = '" & v_strTellerId & "' AND AMOUNT >= (" & defaultAmount & ")"
+                                End If
+
                                 v_bCmd.ExecuteUser = "admin"
                                 v_bCmd.SQLCommand = checkAmountStr
                                 Dim rs As DataSet = v_dal.ExecuteSQLReturnDataset(v_bCmd)
