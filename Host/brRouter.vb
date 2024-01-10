@@ -3039,7 +3039,7 @@ Public Class brRouter
                             v_strRetval = Nothing
                         Else
                             v_strRetval = v_strBranchId & "|" & v_strTellerId & "|" & DataProtection.UnprotectData(v_strPIN)
-                            Dim checkAmountWrong = "SELECT * FROM ENTERWRONGPASS WHERE TLID = '" & v_strTellerId & "' AND AMOUNT < 3"
+                            Dim checkAmountWrong = "SELECT * FROM ENTERWRONGPASS WHERE TLID = '" & v_strTellerId & "' AND AMOUNT < (SELECT VARVALUE FROM SYSVAR WHERE VARNAME = 'USERLOGINFALSE')"
                             v_bCmd.ExecuteUser = "admin"
                             v_bCmd.SQLCommand = checkAmountWrong
                             Dim resultQuery As DataSet = v_dal.ExecuteSQLReturnDataset(v_bCmd)
