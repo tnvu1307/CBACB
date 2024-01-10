@@ -3031,7 +3031,7 @@ Public Class brRouter
                                     v_bCmd.ExecuteUser = "admin"
                                     v_bCmd.SQLCommand = updateLockStr
                                     v_dal.ExecuteSQLReturnDataset(v_bCmd)
-                                    v_strRetval = 6
+                                    v_strRetval = "6"
                                 End If
                             Catch ex As Exception
                                 LogError.WriteException(ex)
@@ -3039,16 +3039,10 @@ Public Class brRouter
                             v_strRetval = Nothing
                         Else
                             v_strRetval = v_strBranchId & "|" & v_strTellerId & "|" & DataProtection.UnprotectData(v_strPIN)
-                            Dim checkAmountWrong = "SELECT * FROM ENTERWRONGPASS WHERE TLID = '" & v_strTellerId & "' AND AMOUNT < (SELECT VARVALUE FROM SYSVAR WHERE VARNAME = 'USERLOGINFALSE')"
+                            Dim delete = "DELETE FROM ENTERWRONGPASS  WHERE TLID = '" & v_strTellerId & "'"
                             v_bCmd.ExecuteUser = "admin"
-                            v_bCmd.SQLCommand = checkAmountWrong
-                            Dim resultQuery As DataSet = v_dal.ExecuteSQLReturnDataset(v_bCmd)
-                            If resultQuery.Tables(0).Rows.Count = 1 Then
-                                Dim delete = "DELETE FROM ENTERWRONGPASS  WHERE TLID = '" & v_strTellerId & "'"
-                                v_bCmd.ExecuteUser = "admin"
                                 v_bCmd.SQLCommand = delete
                                 v_dal.ExecuteSQLReturnDataset(v_bCmd)
-                            End If
                             Try
 
                                 Dim updateCurrentDateLogin As String = "UPDATE TLPROFILES Set LASTLOGINDATE = TO_TIMESTAMP('" & currentTime & "', 'DD/MM/YYYY hh:mi:ss AM') WHERE TLID ='" & v_strTellerId & "'"
