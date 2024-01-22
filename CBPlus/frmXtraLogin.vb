@@ -1,5 +1,7 @@
 ﻿Imports Microsoft.Win32
 Imports CommonLibrary
+Imports Newtonsoft.Json
+Imports Newtonsoft.Json.Linq
 
 Public Class frmXtraLogin
     Inherits DevExpress.XtraEditors.XtraForm
@@ -280,7 +282,7 @@ Public Class frmXtraLogin
         'Me.cboBusinessArea.SelectedValue = "FA"
 
 
-       
+
         '#If DEBUG Then
         Dim v_strUserName As String = String.Empty
         Dim v_strPassword As String = String.Empty
@@ -465,5 +467,97 @@ Public Class frmXtraLogin
     '    Catch ex As Exception
     '    End Try
     'End Sub
+
+    Private Sub sbLoginMicrosoft_func(sender As Object, e As EventArgs)
+        Dim v_strObjMsg, v_strErrorSource, v_strErrorMessage As String
+        Dim v_lngErr As Long
+        Dim v_ws As New BDSDeliveryManagement
+        Dim v_jsonMsg As String
+
+        ''1. Call HOSTService to get info authorization Microsoft
+        v_strObjMsg = BuildXMLObjMsg()
+        v_lngErr = v_ws.GetInfoAuthorMicrosoft(v_strObjMsg)
+
+        If v_lngErr <> ERR_SYSTEM_OK Then
+            GetErrorFromMessage(v_strObjMsg, v_strErrorSource, v_lngErr, v_strErrorMessage, m_BusLayer.AppLanguage)
+            Cursor.Current = Cursors.Default
+            MsgBox(v_strErrorMessage, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, Me.Text)
+            Me.Close()
+        End If
+
+        Dim jsonRes = JToken.Parse(v_strObjMsg)
+
+        ''2. Call API Microsoft to get access_token and user_id
+        Dim frmLoginMicrosoft As New frmLoginMicrosoft(jsonRes("urlAuthorizeCode").ToString(),
+                                                       jsonRes("urlAccessToken").ToString(),
+                                                       jsonRes("redirectUri").ToString(),
+                                                       jsonRes("clientId").ToString(),
+                                                       jsonRes("clientSecret").ToString(),
+                                                       jsonRes("scope").ToString())
+        Dim frmLoginMicrosoftResult As DialogResult = frmLoginMicrosoft.ShowDialog(Me)
+
+        If (frmLoginMicrosoftResult = DialogResult.OK) Then
+            'Get access_token and user_id successful
+            Dim authenMicrosoft = frmLoginMicrosoft.AuthenMicrosoft
+
+            ''3. Insert new account or Update accessToken account Microsoft
+            v_jsonMsg = JsonConvert.SerializeObject(authenMicrosoft)
+            v_lngErr = v_ws.InsertOrUpdateAccMicrosoft(v_jsonMsg)
+
+            If v_lngErr <> ERR_SYSTEM_OK Then
+                GetErrorFromMessage(v_strObjMsg, v_strErrorSource, v_lngErr, v_strErrorMessage, m_BusLayer.AppLanguage)
+                Cursor.Current = Cursors.Default
+                MsgBox(v_strErrorMessage, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, Me.Text)
+
+                Me.Close()
+            End If
+
+            ''4. Get info acc Microsoft + Show frmTLPROFILES (edit) if TLNAME account Microsoft is null"
+            'Get info acc Microsoft
+            Dim blResult As BusLayerResult = m_BusLayer.LoginMicrosoft(v_jsonMsg)
+
+            'If TLNAME is null => Show form fill info account
+            If blResult = BusLayerResult.Success Then
+                If String.IsNullOrEmpty(m_BusLayer.CurrentTellerProfile.TellerName) = True Then
+                    Dim v_strFullObjName As String
+
+                    Dim v_frm As Object
+                    Dim moduleCode = "SA"
+                    Dim tableName = "TLPROFILES"
+
+                    v_frm = frmSearchMaster.GetFormByName("frmTLPROFILES")
+                    v_strFullObjName = moduleCode & "." & tableName
+
+                    v_frm.ExeFlag = ExecuteFlag.Edit
+                    v_frm.UserLanguage = m_BusLayer.AppLanguage
+                    v_frm.ModuleCode = moduleCode
+                    v_frm.ObjectName = v_strFullObjName
+                    v_frm.TableName = tableName
+                    v_frm.LocalObject = "N"
+                    v_frm.Text = "Thông tin tài khoản"
+                    v_frm.TellerId = m_BusLayer.CurrentTellerProfile.TellerId
+                    v_frm.TellerRight = "YYYY"
+                    v_frm.AuthString = "YYYYY"
+                    'v_frm.GroupCareBy = GroupCareBy
+                    v_frm.BranchId = m_BusLayer.CurrentTellerProfile.BranchId
+                    v_frm.Busdate = m_BusLayer.CurrentTellerProfile.BusDate
+                    v_frm.KeyFieldName = "TLID"
+                    v_frm.KeyFieldType = "C"
+                    v_frm.Tellername = m_BusLayer.CurrentTellerProfile.TellerName
+                    v_frm.KeyFieldValue = m_BusLayer.CurrentTellerProfile.TellerId
+
+                    Dim frmResult As DialogResult = v_frm.ShowDialog()
+                End If
+
+                'm_BusLayer.CurrentTellerProfile.AccessArea = Me.cboBusinessArea.Text
+                Me.DialogResult = DialogResult.OK
+                Me.Close()
+
+            ElseIf blResult = BusLayerResult.AuthenticationFailure Then
+                MsgBox(m_ResourceManager.GetString(gc_SYSERR_INCORRECT_USR_OR_PWD) & " " & m_ResourceManager.GetString(gc_SYSERR_RE_TYPE),
+                   MsgBoxStyle.Information + MsgBoxStyle.OkOnly, gc_ApplicationTitle)
+            End If
+        End If
+    End Sub
 
 End Class

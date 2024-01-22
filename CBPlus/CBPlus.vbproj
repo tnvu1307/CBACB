@@ -1892,6 +1892,7 @@
     <EmbeddedResource Include="MaintenanceForms\frmTLPROFILES.resx">
       <DependentUpon>frmTLPROFILES.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -1980,7 +1981,13 @@
     <None Include="Service References\HOSTService\_DIRECT.HOSTService.GetFlagSignatureResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\HOSTService\_DIRECT.HOSTService.GetInfoAuthorMicrosoftResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\HOSTService\_DIRECT.HOSTService.GetVersionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOSTService\_DIRECT.HOSTService.InsertOrUpdateAccMicrosoftResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\HOSTService\_DIRECT.HOSTService.MessageByteResponse.datasource">
