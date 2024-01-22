@@ -68,6 +68,55 @@ Public Class frmXtraLogin
     Friend WithEvents ceSavePassword As DevExpress.XtraEditors.CheckEdit
     Friend WithEvents sbLogin As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents PictureEdit1 As DevExpress.XtraEditors.PictureEdit
+    Friend WithEvents sbLoginMicrosoft As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents DataTable1 As DataTable
+    Friend WithEvents DataTable2 As DataTable
+    Friend WithEvents DataTable3 As DataTable
+    Friend WithEvents DataTable4 As DataTable
+    Friend WithEvents DataTable5 As DataTable
+    Friend WithEvents DataTable6 As DataTable
+    Friend WithEvents DataTable7 As DataTable
+    Friend WithEvents DataTable8 As DataTable
+    Friend WithEvents DataTable9 As DataTable
+    Friend WithEvents DataTable10 As DataTable
+    Friend WithEvents DataTable11 As DataTable
+    Friend WithEvents DataTable12 As DataTable
+    Friend WithEvents DataTable13 As DataTable
+    Friend WithEvents DataTable14 As DataTable
+    Friend WithEvents DataTable15 As DataTable
+    Friend WithEvents DataTable16 As DataTable
+    Friend WithEvents DataTable17 As DataTable
+    Friend WithEvents DataTable18 As DataTable
+    Friend WithEvents DataTable19 As DataTable
+    Friend WithEvents DataTable20 As DataTable
+    Friend WithEvents DataTable21 As DataTable
+    Friend WithEvents DataTable22 As DataTable
+    Friend WithEvents DataTable23 As DataTable
+    Friend WithEvents DataTable24 As DataTable
+    Friend WithEvents DataTable25 As DataTable
+    Friend WithEvents DataTable26 As DataTable
+    Friend WithEvents DataTable27 As DataTable
+    Friend WithEvents DataTable28 As DataTable
+    Friend WithEvents DataTable29 As DataTable
+    Friend WithEvents DataTable30 As DataTable
+    Friend WithEvents DataTable31 As DataTable
+    Friend WithEvents DataTable32 As DataTable
+    Friend WithEvents DataTable33 As DataTable
+    Friend WithEvents DataTable34 As DataTable
+    Friend WithEvents DataTable35 As DataTable
+    Friend WithEvents DataTable36 As DataTable
+    Friend WithEvents DataTable37 As DataTable
+    Friend WithEvents DataTable38 As DataTable
+    Friend WithEvents DataTable39 As DataTable
+    Friend WithEvents DataTable40 As DataTable
+    Friend WithEvents DataTable41 As DataTable
+    Friend WithEvents DataTable42 As DataTable
+    Friend WithEvents DataTable43 As DataTable
+    Friend WithEvents DataTable44 As DataTable
+    Friend WithEvents DataTable45 As DataTable
+    Friend WithEvents DataTable46 As DataTable
+    Friend WithEvents DataTable47 As DataTable
+    Friend WithEvents DataTable48 As DataTable
     Friend WithEvents sbCancel As DevExpress.XtraEditors.SimpleButton
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmXtraLogin))
@@ -80,11 +129,108 @@ Public Class frmXtraLogin
         Me.sbCancel = New DevExpress.XtraEditors.SimpleButton()
         Me.PictureEdit1 = New DevExpress.XtraEditors.PictureEdit()
         Me.ceSavePassword = New DevExpress.XtraEditors.CheckEdit()
+        Me.sbLoginMicrosoft = New DevExpress.XtraEditors.SimpleButton()
+        Me.DataTable1 = New System.Data.DataTable()
+        Me.DataTable2 = New System.Data.DataTable()
+        Me.DataTable3 = New System.Data.DataTable()
+        Me.DataTable4 = New System.Data.DataTable()
+        Me.DataTable5 = New System.Data.DataTable()
+        Me.DataTable6 = New System.Data.DataTable()
+        Me.DataTable7 = New System.Data.DataTable()
+        Me.DataTable8 = New System.Data.DataTable()
+        Me.DataTable9 = New System.Data.DataTable()
+        Me.DataTable10 = New System.Data.DataTable()
+        Me.DataTable11 = New System.Data.DataTable()
+        Me.DataTable12 = New System.Data.DataTable()
+        Me.DataTable13 = New System.Data.DataTable()
+        Me.DataTable14 = New System.Data.DataTable()
+        Me.DataTable15 = New System.Data.DataTable()
+        Me.DataTable16 = New System.Data.DataTable()
+        Me.DataTable17 = New System.Data.DataTable()
+        Me.DataTable18 = New System.Data.DataTable()
+        Me.DataTable19 = New System.Data.DataTable()
+        Me.DataTable20 = New System.Data.DataTable()
+        Me.DataTable21 = New System.Data.DataTable()
+        Me.DataTable22 = New System.Data.DataTable()
+        Me.DataTable23 = New System.Data.DataTable()
+        Me.DataTable24 = New System.Data.DataTable()
+        Me.DataTable25 = New System.Data.DataTable()
+        Me.DataTable26 = New System.Data.DataTable()
+        Me.DataTable27 = New System.Data.DataTable()
+        Me.DataTable28 = New System.Data.DataTable()
+        Me.DataTable29 = New System.Data.DataTable()
+        Me.DataTable30 = New System.Data.DataTable()
+        Me.DataTable31 = New System.Data.DataTable()
+        Me.DataTable32 = New System.Data.DataTable()
+        Me.DataTable33 = New System.Data.DataTable()
+        Me.DataTable34 = New System.Data.DataTable()
+        Me.DataTable35 = New System.Data.DataTable()
+        Me.DataTable36 = New System.Data.DataTable()
+        Me.DataTable37 = New System.Data.DataTable()
+        Me.DataTable38 = New System.Data.DataTable()
+        Me.DataTable39 = New System.Data.DataTable()
+        Me.DataTable40 = New System.Data.DataTable()
+        Me.DataTable41 = New System.Data.DataTable()
+        Me.DataTable42 = New System.Data.DataTable()
+        Me.DataTable43 = New System.Data.DataTable()
+        Me.DataTable44 = New System.Data.DataTable()
+        Me.DataTable45 = New System.Data.DataTable()
+        Me.DataTable46 = New System.Data.DataTable()
+        Me.DataTable47 = New System.Data.DataTable()
+        Me.DataTable48 = New System.Data.DataTable()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.tePassword.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.teUsername.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ceSavePassword.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable19, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable27, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable28, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable29, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable30, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable31, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable32, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable33, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable34, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable35, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable36, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable37, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable38, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable39, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable40, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable41, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable42, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable43, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable44, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable45, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable46, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable47, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTable48, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -102,6 +248,7 @@ Public Class frmXtraLogin
         Me.TableLayoutPanel1.Controls.Add(Me.sbCancel, 2, 5)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureEdit1, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.ceSavePassword, 1, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.sbLoginMicrosoft, 3, 3)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -112,17 +259,17 @@ Public Class frmXtraLogin
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(471, 342)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(546, 335)
         Me.TableLayoutPanel1.TabIndex = 8
         '
         'tePassword
         '
         Me.tePassword.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TableLayoutPanel1.SetColumnSpan(Me.tePassword, 3)
-        Me.tePassword.Location = New System.Drawing.Point(138, 195)
+        Me.tePassword.Location = New System.Drawing.Point(176, 195)
         Me.tePassword.Name = "tePassword"
         Me.tePassword.Properties.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.tePassword.Size = New System.Drawing.Size(330, 20)
+        Me.tePassword.Size = New System.Drawing.Size(367, 20)
         Me.tePassword.TabIndex = 3
         '
         'lcPassword
@@ -138,9 +285,9 @@ Public Class frmXtraLogin
         '
         Me.teUsername.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TableLayoutPanel1.SetColumnSpan(Me.teUsername, 3)
-        Me.teUsername.Location = New System.Drawing.Point(138, 165)
+        Me.teUsername.Location = New System.Drawing.Point(176, 165)
         Me.teUsername.Name = "teUsername"
-        Me.teUsername.Size = New System.Drawing.Size(330, 20)
+        Me.teUsername.Size = New System.Drawing.Size(367, 20)
         Me.teUsername.TabIndex = 2
         '
         'lcUsername
@@ -156,7 +303,7 @@ Public Class frmXtraLogin
         '
         Me.sbLogin.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.sbLogin.Image = CType(resources.GetObject("sbLogin.Image"), System.Drawing.Image)
-        Me.sbLogin.Location = New System.Drawing.Point(141, 301)
+        Me.sbLogin.Location = New System.Drawing.Point(179, 297)
         Me.sbLogin.Margin = New System.Windows.Forms.Padding(6, 3, 6, 3)
         Me.sbLogin.Name = "sbLogin"
         Me.sbLogin.Size = New System.Drawing.Size(88, 25)
@@ -168,7 +315,7 @@ Public Class frmXtraLogin
         Me.sbCancel.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.sbCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.sbCancel.Image = CType(resources.GetObject("sbCancel.Image"), System.Drawing.Image)
-        Me.sbCancel.Location = New System.Drawing.Point(241, 301)
+        Me.sbCancel.Location = New System.Drawing.Point(279, 297)
         Me.sbCancel.Margin = New System.Windows.Forms.Padding(6, 3, 6, 3)
         Me.sbCancel.Name = "sbCancel"
         Me.sbCancel.Size = New System.Drawing.Size(88, 25)
@@ -187,25 +334,276 @@ Public Class frmXtraLogin
         Me.PictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.PictureEdit1.Properties.Appearance.Options.UseBackColor = True
         Me.PictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.PictureEdit1.Size = New System.Drawing.Size(471, 160)
+        Me.PictureEdit1.Size = New System.Drawing.Size(546, 160)
         Me.PictureEdit1.TabIndex = 7
         '
         'ceSavePassword
         '
         Me.ceSavePassword.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TableLayoutPanel1.SetColumnSpan(Me.ceSavePassword, 2)
-        Me.ceSavePassword.Location = New System.Drawing.Point(138, 225)
+        Me.ceSavePassword.Location = New System.Drawing.Point(176, 225)
         Me.ceSavePassword.Name = "ceSavePassword"
         Me.ceSavePassword.Properties.Caption = "Lưu mật khẩu"
         Me.ceSavePassword.Size = New System.Drawing.Size(194, 19)
         Me.ceSavePassword.TabIndex = 5
+        '
+        'sbLoginMicrosoft
+        '
+        Me.sbLoginMicrosoft.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.sbLoginMicrosoft.Image = CType(resources.GetObject("sbLoginMicrosoft.Image"), System.Drawing.Image)
+        Me.sbLoginMicrosoft.Location = New System.Drawing.Point(379, 223)
+        Me.sbLoginMicrosoft.Margin = New System.Windows.Forms.Padding(6, 3, 6, 3)
+        Me.sbLoginMicrosoft.Name = "sbLoginMicrosoft"
+        Me.sbLoginMicrosoft.Size = New System.Drawing.Size(161, 24)
+        Me.sbLoginMicrosoft.TabIndex = 8
+        Me.sbLoginMicrosoft.Text = "Đăng nhập bằng Microsoft"
+        '
+        'DataTable1
+        '
+        Me.DataTable1.Namespace = ""
+        Me.DataTable1.TableName = "COMBOBOX"
+        '
+        'DataTable2
+        '
+        Me.DataTable2.Namespace = ""
+        Me.DataTable2.TableName = "COMBOBOX"
+        '
+        'DataTable3
+        '
+        Me.DataTable3.Namespace = ""
+        Me.DataTable3.TableName = "COMBOBOX"
+        '
+        'DataTable4
+        '
+        Me.DataTable4.Namespace = ""
+        Me.DataTable4.TableName = "COMBOBOX"
+        '
+        'DataTable5
+        '
+        Me.DataTable5.Namespace = ""
+        Me.DataTable5.TableName = "COMBOBOX"
+        '
+        'DataTable6
+        '
+        Me.DataTable6.Namespace = ""
+        Me.DataTable6.TableName = "COMBOBOX"
+        '
+        'DataTable7
+        '
+        Me.DataTable7.Namespace = ""
+        Me.DataTable7.TableName = "COMBOBOX"
+        '
+        'DataTable8
+        '
+        Me.DataTable8.Namespace = ""
+        Me.DataTable8.TableName = "COMBOBOX"
+        '
+        'DataTable9
+        '
+        Me.DataTable9.Namespace = ""
+        Me.DataTable9.TableName = "COMBOBOX"
+        '
+        'DataTable10
+        '
+        Me.DataTable10.Namespace = ""
+        Me.DataTable10.TableName = "COMBOBOX"
+        '
+        'DataTable11
+        '
+        Me.DataTable11.Namespace = ""
+        Me.DataTable11.TableName = "COMBOBOX"
+        '
+        'DataTable12
+        '
+        Me.DataTable12.Namespace = ""
+        Me.DataTable12.TableName = "COMBOBOX"
+        '
+        'DataTable13
+        '
+        Me.DataTable13.Namespace = ""
+        Me.DataTable13.TableName = "COMBOBOX"
+        '
+        'DataTable14
+        '
+        Me.DataTable14.Namespace = ""
+        Me.DataTable14.TableName = "COMBOBOX"
+        '
+        'DataTable15
+        '
+        Me.DataTable15.Namespace = ""
+        Me.DataTable15.TableName = "COMBOBOX"
+        '
+        'DataTable16
+        '
+        Me.DataTable16.Namespace = ""
+        Me.DataTable16.TableName = "COMBOBOX"
+        '
+        'DataTable17
+        '
+        Me.DataTable17.Namespace = ""
+        Me.DataTable17.TableName = "COMBOBOX"
+        '
+        'DataTable18
+        '
+        Me.DataTable18.Namespace = ""
+        Me.DataTable18.TableName = "COMBOBOX"
+        '
+        'DataTable19
+        '
+        Me.DataTable19.Namespace = ""
+        Me.DataTable19.TableName = "COMBOBOX"
+        '
+        'DataTable20
+        '
+        Me.DataTable20.Namespace = ""
+        Me.DataTable20.TableName = "COMBOBOX"
+        '
+        'DataTable21
+        '
+        Me.DataTable21.Namespace = ""
+        Me.DataTable21.TableName = "COMBOBOX"
+        '
+        'DataTable22
+        '
+        Me.DataTable22.Namespace = ""
+        Me.DataTable22.TableName = "COMBOBOX"
+        '
+        'DataTable23
+        '
+        Me.DataTable23.Namespace = ""
+        Me.DataTable23.TableName = "COMBOBOX"
+        '
+        'DataTable24
+        '
+        Me.DataTable24.Namespace = ""
+        Me.DataTable24.TableName = "COMBOBOX"
+        '
+        'DataTable25
+        '
+        Me.DataTable25.Namespace = ""
+        Me.DataTable25.TableName = "COMBOBOX"
+        '
+        'DataTable26
+        '
+        Me.DataTable26.Namespace = ""
+        Me.DataTable26.TableName = "COMBOBOX"
+        '
+        'DataTable27
+        '
+        Me.DataTable27.Namespace = ""
+        Me.DataTable27.TableName = "COMBOBOX"
+        '
+        'DataTable28
+        '
+        Me.DataTable28.Namespace = ""
+        Me.DataTable28.TableName = "COMBOBOX"
+        '
+        'DataTable29
+        '
+        Me.DataTable29.Namespace = ""
+        Me.DataTable29.TableName = "COMBOBOX"
+        '
+        'DataTable30
+        '
+        Me.DataTable30.Namespace = ""
+        Me.DataTable30.TableName = "COMBOBOX"
+        '
+        'DataTable31
+        '
+        Me.DataTable31.Namespace = ""
+        Me.DataTable31.TableName = "COMBOBOX"
+        '
+        'DataTable32
+        '
+        Me.DataTable32.Namespace = ""
+        Me.DataTable32.TableName = "COMBOBOX"
+        '
+        'DataTable33
+        '
+        Me.DataTable33.Namespace = ""
+        Me.DataTable33.TableName = "COMBOBOX"
+        '
+        'DataTable34
+        '
+        Me.DataTable34.Namespace = ""
+        Me.DataTable34.TableName = "COMBOBOX"
+        '
+        'DataTable35
+        '
+        Me.DataTable35.Namespace = ""
+        Me.DataTable35.TableName = "COMBOBOX"
+        '
+        'DataTable36
+        '
+        Me.DataTable36.Namespace = ""
+        Me.DataTable36.TableName = "COMBOBOX"
+        '
+        'DataTable37
+        '
+        Me.DataTable37.Namespace = ""
+        Me.DataTable37.TableName = "COMBOBOX"
+        '
+        'DataTable38
+        '
+        Me.DataTable38.Namespace = ""
+        Me.DataTable38.TableName = "COMBOBOX"
+        '
+        'DataTable39
+        '
+        Me.DataTable39.Namespace = ""
+        Me.DataTable39.TableName = "COMBOBOX"
+        '
+        'DataTable40
+        '
+        Me.DataTable40.Namespace = ""
+        Me.DataTable40.TableName = "COMBOBOX"
+        '
+        'DataTable41
+        '
+        Me.DataTable41.Namespace = ""
+        Me.DataTable41.TableName = "COMBOBOX"
+        '
+        'DataTable42
+        '
+        Me.DataTable42.Namespace = ""
+        Me.DataTable42.TableName = "COMBOBOX"
+        '
+        'DataTable43
+        '
+        Me.DataTable43.Namespace = ""
+        Me.DataTable43.TableName = "COMBOBOX"
+        '
+        'DataTable44
+        '
+        Me.DataTable44.Namespace = ""
+        Me.DataTable44.TableName = "COMBOBOX"
+        '
+        'DataTable45
+        '
+        Me.DataTable45.Namespace = ""
+        Me.DataTable45.TableName = "COMBOBOX"
+        '
+        'DataTable46
+        '
+        Me.DataTable46.Namespace = ""
+        Me.DataTable46.TableName = "COMBOBOX"
+        '
+        'DataTable47
+        '
+        Me.DataTable47.Namespace = ""
+        Me.DataTable47.TableName = "COMBOBOX"
+        '
+        'DataTable48
+        '
+        Me.DataTable48.Namespace = ""
+        Me.DataTable48.TableName = "COMBOBOX"
         '
         'frmXtraLogin
         '
         Me.Appearance.Options.UseFont = True
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 14)
         Me.CancelButton = Me.sbCancel
-        Me.ClientSize = New System.Drawing.Size(471, 342)
+        Me.ClientSize = New System.Drawing.Size(546, 335)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -224,6 +622,54 @@ Public Class frmXtraLogin
         CType(Me.teUsername.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ceSavePassword.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable19, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable21, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable23, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable24, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable25, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable26, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable27, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable28, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable29, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable30, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable31, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable32, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable33, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable34, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable35, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable36, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable37, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable38, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable39, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable40, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable41, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable42, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable43, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable44, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable45, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable46, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable47, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTable48, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -468,7 +914,7 @@ Public Class frmXtraLogin
     '    End Try
     'End Sub
 
-    Private Sub sbLoginMicrosoft_func(sender As Object, e As EventArgs)
+    Private Sub sbLoginMicrosoft_Click(sender As Object, e As EventArgs) Handles sbLoginMicrosoft.Click
         Dim v_strObjMsg, v_strErrorSource, v_strErrorMessage As String
         Dim v_lngErr As Long
         Dim v_ws As New BDSDeliveryManagement
@@ -543,7 +989,7 @@ Public Class frmXtraLogin
                     v_frm.Busdate = m_BusLayer.CurrentTellerProfile.BusDate
                     v_frm.KeyFieldName = "TLID"
                     v_frm.KeyFieldType = "C"
-                    v_frm.Tellername = m_BusLayer.CurrentTellerProfile.TellerName
+                    'v_frm.TellerNameField = m_BusLayer.CurrentTellerProfile.TellerName
                     v_frm.KeyFieldValue = m_BusLayer.CurrentTellerProfile.TellerId
 
                     Dim frmResult As DialogResult = v_frm.ShowDialog()
@@ -559,5 +1005,4 @@ Public Class frmXtraLogin
             End If
         End If
     End Sub
-
 End Class
