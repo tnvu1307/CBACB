@@ -329,112 +329,12 @@
     <Compile Include="Controls\XtraSearch.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="frmAFSERULE-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmAFSERULE-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmAFSERULE-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmAFSERULE-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmApprove-EN.Designer.vb" />
-    <Compile Include="frmApprove-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmApprove-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmApprove-VN.Designer.vb" />
-    <Compile Include="frmApprove-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmApprove-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmApprv-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmApprv-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmApprv-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmApprv-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmAuthTrade-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmAuthTrade-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmAuthTrade-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmAuthTrade-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmBankOrder-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmBankOrder-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmBankOrder-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmBankOrder-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmBrokerConfirm-EN.Designer.vb" />
-    <Compile Include="frmBrokerConfirm-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmBrokerConfirm-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmBrokerConfirm-VN.Designer.vb" />
-    <Compile Include="frmBrokerConfirm-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmBrokerConfirm-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmBrokerDesk-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmBrokerDesk-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmBrokerDesk-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmBrokerDesk-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmBrokerInquiry-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmBrokerInquiry-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmBrokerInquiry-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmBrokerInquiry-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmCalendar-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCalendar-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmCalendar-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCalendar-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmCAVOTING-EN.Designer.vb" />
-    <Compile Include="frmCAVOTING-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCAVOTING-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmCAVOTING-VN.Designer.vb" />
-    <Compile Include="frmCAVOTING-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCAVOTING-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmCAVOTING.designer.vb">
       <DependentUpon>frmCAVOTING.vb</DependentUpon>
     </Compile>
@@ -442,59 +342,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCFLNKAP-EN.Designer.vb" />
-    <Compile Include="frmCFLNKAP-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCFLNKAP-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmCFLNKAP-VN.Designer.vb" />
-    <Compile Include="frmCFLNKAP-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCFLNKAP-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmChangeOrderCustody-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmChangeOrderCustody-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmChangeOrderCustody-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmChangeOrderCustody-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmChangePassword-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmChangePassword-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmChangePassword-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmChangePassword-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmCompareTradingResult-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCompareTradingResult-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmCompareTradingResult-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCompareTradingResult-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmCrbtxreqHold-EN.Designer.vb" />
-    <Compile Include="frmCrbtxreqHold-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCrbtxreqHold-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmCrbtxreqHold-VN.Designer.vb" />
-    <Compile Include="frmCrbtxreqHold-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCrbtxreqHold-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmCrbtxreqHold.Designer.vb">
       <DependentUpon>frmCrbtxreqHold.vb</DependentUpon>
     </Compile>
@@ -502,197 +352,27 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCrbtxreqUnHold-EN.Designer.vb" />
-    <Compile Include="frmCrbtxreqUnHold-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCrbtxreqUnHold-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmCrbtxreqUnHold-VN.Designer.vb" />
-    <Compile Include="frmCrbtxreqUnHold-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCrbtxreqUnHold-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmCrbtxreqUnHold.Designer.vb">
       <DependentUpon>frmCrbtxreqUnHold.vb</DependentUpon>
     </Compile>
     <Compile Include="frmCrbtxreqUnHold.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCreateDFDeal-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCreateDFDeal-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmCreateDFDeal-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCreateDFDeal-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmCreateDFGRDeal-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCreateDFGRDeal-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmCreateDFGRDeal-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCreateDFGRDeal-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmCSVCompare-EN.Designer.vb" />
-    <Compile Include="frmCSVCompare-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCSVCompare-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmCSVCompare-VN.Designer.vb" />
-    <Compile Include="frmCSVCompare-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCSVCompare-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmCSVCompare.Designer.vb">
       <DependentUpon>frmCSVCompare.vb</DependentUpon>
     </Compile>
     <Compile Include="frmCSVCompare.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCUWBIDDING-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCUWBIDDING-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmCUWBIDDING-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCUWBIDDING-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmCWBIDDING-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCWBIDDING-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmCWBIDDING-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmCWBIDDING-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmDefineCLDR-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmDefineCLDR-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmDefineCLDR-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmDefineCLDR-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmDefineRisk-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmDefineRisk-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmDefineRisk-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmDefineRisk-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmDetailFixOD-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmDetailFixOD-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmDetailFixOD-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmDetailFixOD-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmDFGroupView-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmDFGroupView-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmDFGroupView-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmDFGroupView-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmExchangeSEGRDeal-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmExchangeSEGRDeal-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmExchangeSEGRDeal-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmExchangeSEGRDeal-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmFABROKERAGE-EN.Designer.vb" />
-    <Compile Include="frmFABROKERAGE-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmFABROKERAGE-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmFABROKERAGE-VN.Designer.vb" />
-    <Compile Include="frmFABROKERAGE-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmFABROKERAGE-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmFABROKERAGEXTRA-EN.Designer.vb" />
-    <Compile Include="frmFABROKERAGEXTRA-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmFABROKERAGEXTRA-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmFABROKERAGEXTRA-VN.Designer.vb" />
-    <Compile Include="frmFABROKERAGEXTRA-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmFABROKERAGEXTRA-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmFuncAssign-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmFuncAssign-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmFuncAssign-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmFuncAssign-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmGroupOrderPT-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmGroupOrderPT-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmGroupOrderPT-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmGroupOrderPT-VN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmHoldControl-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmHoldControl-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmHoldControl-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmHoldControl-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmHoldUnhold-EN.Designer.vb" />
-    <Compile Include="frmHoldUnhold-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmHoldUnhold-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmHoldUnhold-VN.Designer.vb" />
-    <Compile Include="frmHoldUnhold-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmHoldUnhold-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmHoldUnhold.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -870,17 +550,7 @@
     <Compile Include="frmHoldControl.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLNChangeTYPE-EN.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmLNChangeTYPE-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmLNChangeTYPE-VN.Designer.vb" />
-    <Compile Include="frmLNChangeTYPE-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmLNChangeTYPE-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmLNChangeTYPE.Designer.vb">
       <DependentUpon>frmLNChangeTYPE.vb</DependentUpon>
     </Compile>
@@ -897,47 +567,17 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogMR3009-EN.Designer.vb" />
-    <Compile Include="frmLogMR3009-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmLogMR3009-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmLogMR3009-VN.Designer.vb" />
-    <Compile Include="frmLogMR3009-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmLogMR3009-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmLogMR3009.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLookup_Tab-EN.Designer.vb" />
-    <Compile Include="frmLookup_Tab-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmLookup_Tab-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmLookup_Tab-VN.Designer.vb" />
-    <Compile Include="frmLookup_Tab-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmLookup_Tab-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmLookup_Tab.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMail-EN.Designer.vb" />
-    <Compile Include="frmMail-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmMail-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmMail-VN.Designer.vb" />
-    <Compile Include="frmMail-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmMail-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmMail.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -945,17 +585,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmManualAdvance-EN.Designer.vb" />
-    <Compile Include="frmManualAdvance-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmManualAdvance-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmManualAdvance-VN.Designer.vb" />
-    <Compile Include="frmManualAdvance-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmManualAdvance-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmManualAdvance.Designer.vb">
       <DependentUpon>frmManualAdvance.vb</DependentUpon>
     </Compile>
@@ -963,17 +593,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMarginInfo-EN.Designer.vb" />
-    <Compile Include="frmMarginInfo-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmMarginInfo-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmMarginInfo-VN.Designer.vb" />
-    <Compile Include="frmMarginInfo-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmMarginInfo-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmMarginInfo.Designer.vb">
       <DependentUpon>frmMarginInfo.vb</DependentUpon>
     </Compile>
@@ -981,32 +601,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMarginProcess-EN.Designer.vb" />
-    <Compile Include="frmMarginProcess-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmMarginProcess-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmMarginProcess-VN.Designer.vb" />
-    <Compile Include="frmMarginProcess-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmMarginProcess-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmMarginProcess.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMarketInfo-EN.Designer.vb" />
-    <Compile Include="FrmMarketInfo-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>FrmMarketInfo-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="FrmMarketInfo-VN.Designer.vb" />
-    <Compile Include="FrmMarketInfo-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>FrmMarketInfo-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="FrmMarketInfo.Designer.vb">
       <DependentUpon>FrmMarketInfo.vb</DependentUpon>
     </Compile>
@@ -1014,17 +614,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMDIMain-EN.Designer.vb" />
-    <Compile Include="frmMDIMain-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmMDIMain-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmMDIMain-VN.Designer.vb" />
-    <Compile Include="frmMDIMain-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmMDIMain-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmMDIMain.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -1035,32 +625,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmODDetail-EN.Designer.vb" />
-    <Compile Include="frmODDetail-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmODDetail-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmODDetail-VN.Designer.vb" />
-    <Compile Include="frmODDetail-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmODDetail-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmODDetail.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmODMASTCOMPARE-EN.Designer.vb" />
-    <Compile Include="frmODMASTCOMPARE-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmODMASTCOMPARE-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmODMASTCOMPARE-VN.Designer.vb" />
-    <Compile Include="frmODMASTCOMPARE-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmODMASTCOMPARE-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmODMASTCOMPARE.Designer.vb">
       <DependentUpon>frmODMASTCOMPARE.vb</DependentUpon>
     </Compile>
@@ -1068,92 +638,32 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmODReceive-EN.Designer.vb" />
-    <Compile Include="frmODReceive-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmODReceive-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmODReceive-VN.Designer.vb" />
-    <Compile Include="frmODReceive-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmODReceive-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmODReceive.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmODReceiveHA-EN.Designer.vb" />
-    <Compile Include="frmODReceiveHA-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmODReceiveHA-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmODReceiveHA-VN.Designer.vb" />
-    <Compile Include="frmODReceiveHA-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmODReceiveHA-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmODReceiveHA.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmODReceiveHO-EN.Designer.vb" />
-    <Compile Include="frmODReceiveHO-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmODReceiveHO-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmODReceiveHO-VN.Designer.vb" />
-    <Compile Include="frmODReceiveHO-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmODReceiveHO-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmODReceiveHO.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmODSend-EN.Designer.vb" />
-    <Compile Include="frmODSend-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmODSend-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmODSend-VN.Designer.vb" />
-    <Compile Include="frmODSend-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmODSend-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmODSend.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmODTransact-EN.Designer.vb" />
-    <Compile Include="frmODTransact-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmODTransact-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmODTransact-VN.Designer.vb" />
-    <Compile Include="frmODTransact-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmODTransact-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmODTransact.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmOperation-EN.Designer.vb" />
-    <Compile Include="frmOperation-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmOperation-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmOperation-VN.Designer.vb" />
-    <Compile Include="frmOperation-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmOperation-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmOperation.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -1161,151 +671,51 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmOrderSendingConfirm-EN.Designer.vb" />
-    <Compile Include="frmOrderSendingConfirm-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmOrderSendingConfirm-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmOrderSendingConfirm-VN.Designer.vb" />
-    <Compile Include="frmOrderSendingConfirm-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmOrderSendingConfirm-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmOrderSendingConfirm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPaymentOrder-EN.Designer.vb" />
-    <Compile Include="frmPaymentOrder-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmPaymentOrder-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmPaymentOrder-VN.Designer.vb" />
-    <Compile Include="frmPaymentOrder-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmPaymentOrder-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmPaymentOrder.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmProcessAfterTrading-EN.Designer.vb" />
-    <Compile Include="frmProcessAfterTrading-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmProcessAfterTrading-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmProcessAfterTrading-VN.Designer.vb" />
-    <Compile Include="frmProcessAfterTrading-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmProcessAfterTrading-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmProcessAfterTrading.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmProcessOrder-EN.Designer.vb" />
-    <Compile Include="frmProcessOrder-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmProcessOrder-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmProcessOrder-VN.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmProcessOrder-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmProcessOrder.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmProductManagement-EN.Designer.vb" />
-    <Compile Include="frmProductManagement-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmProductManagement-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmProductManagement-VN.Designer.vb" />
-    <Compile Include="frmProductManagement-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmProductManagement-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmProductManagement.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPutthroughAcknowledgment-EN.Designer.vb" />
-    <Compile Include="frmPutthroughAcknowledgment-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmPutthroughAcknowledgment-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmPutthroughAcknowledgment-VN.Designer.vb" />
-    <Compile Include="frmPutthroughAcknowledgment-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmPutthroughAcknowledgment-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmPutthroughAcknowledgment.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmQuickOrderPTOneFirm-EN.Designer.vb" />
-    <Compile Include="frmQuickOrderPTOneFirm-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmQuickOrderPTOneFirm-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmQuickOrderPTOneFirm-VN.Designer.vb" />
-    <Compile Include="frmQuickOrderPTOneFirm-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmQuickOrderPTOneFirm-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmQuickOrderPTOneFirm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmQuickOrderTransact-EN.Designer.vb" />
-    <Compile Include="frmQuickOrderTransact-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmQuickOrderTransact-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmQuickOrderTransact-VN.Designer.vb" />
-    <Compile Include="frmQuickOrderTransact-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmQuickOrderTransact-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmQuickOrderTransact.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmQuickOrderTransactPT-EN.Designer.vb" />
-    <Compile Include="frmQuickOrderTransactPT-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmQuickOrderTransactPT-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmQuickOrderTransactPT-VN.Designer.vb" />
-    <Compile Include="frmQuickOrderTransactPT-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmQuickOrderTransactPT-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmQuickOrderTransactPT.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmReAddDG-EN.Designer.vb" />
-    <Compile Include="frmReAddDG-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmReAddDG-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmReAddDG-VN.Designer.vb" />
-    <Compile Include="frmReAddDG-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmReAddDG-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmReAddDG.designer.vb">
       <DependentUpon>frmReAddDG.vb</DependentUpon>
     </Compile>
@@ -1313,17 +723,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmReAddRM-EN.Designer.vb" />
-    <Compile Include="frmReAddRM-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmReAddRM-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmReAddRM-VN.Designer.vb" />
-    <Compile Include="frmReAddRM-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmReAddRM-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmReAddRM.designer.vb">
       <DependentUpon>frmReAddRM.vb</DependentUpon>
     </Compile>
@@ -1331,17 +731,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmReadFile-EN.Designer.vb" />
-    <Compile Include="frmReadFile-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmReadFile-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmReadFile-VN.Designer.vb" />
-    <Compile Include="frmReadFile-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmReadFile-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmReadFile.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -1349,17 +739,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmReApprove-EN.Designer.vb" />
-    <Compile Include="frmReApprove-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmReApprove-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmReApprove-VN.Designer.vb" />
-    <Compile Include="frmReApprove-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmReApprove-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmReApprove.designer.vb">
       <DependentUpon>frmReApprove.vb</DependentUpon>
     </Compile>
@@ -1370,17 +750,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmReChangeRe-EN.Designer.vb" />
-    <Compile Include="frmReChangeRe-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmReChangeRe-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmReChangeRe-VN.Designer.vb" />
-    <Compile Include="frmReChangeRe-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmReChangeRe-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmReChangeRe.designer.vb">
       <DependentUpon>frmReChangeRe.vb</DependentUpon>
     </Compile>
@@ -1397,90 +767,30 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRightAssignment-EN.Designer.vb" />
-    <Compile Include="frmRightAssignment-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRightAssignment-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRightAssignment-VN.Designer.vb" />
-    <Compile Include="frmRightAssignment-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRightAssignment-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRightAssignment.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRMBankRequest-EN.Designer.vb" />
-    <Compile Include="frmRMBankRequest-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMBankRequest-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRMBankRequest-VN.Designer.vb" />
-    <Compile Include="frmRMBankRequest-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMBankRequest-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRMBankRequest.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRMBankRequestUsers-EN.Designer.vb" />
-    <Compile Include="frmRMBankRequestUsers-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMBankRequestUsers-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRMBankRequestUsers-VN.Designer.vb" />
-    <Compile Include="frmRMBankRequestUsers-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMBankRequestUsers-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRMBankRequestUsers.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRMChangeRequest-EN.Designer.vb" />
-    <Compile Include="frmRMChangeRequest-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMChangeRequest-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRMChangeRequest-VN.Designer.vb" />
-    <Compile Include="frmRMChangeRequest-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMChangeRequest-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRMChangeRequest.vb">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmRMCmpBankBalance-EN.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMCmpBankBalance-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmRMCmpBankBalance-VN.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMCmpBankBalance-VN.resx</DependentUpon>
     </Compile>
     <Compile Include="frmRMCmpBankBalance.Designer.vb">
       <DependentUpon>frmRMCmpBankBalance.vb</DependentUpon>
     </Compile>
     <Compile Include="frmRMCmpBankBalance.vb">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmRMCmpBankBalanceTXDATE-EN.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMCmpBankBalanceTXDATE-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmRMCmpBankBalanceTXDATE-VN.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMCmpBankBalanceTXDATE-VN.resx</DependentUpon>
     </Compile>
     <Compile Include="frmRMCmpBankBalanceTXDATE.Designer.vb">
       <DependentUpon>frmRMCmpBankBalanceTXDATE.vb</DependentUpon>
@@ -1489,32 +799,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRMManualMsg-EN.Designer.vb" />
-    <Compile Include="frmRMManualMsg-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMManualMsg-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRMManualMsg-VN.Designer.vb" />
-    <Compile Include="frmRMManualMsg-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMManualMsg-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRMManualMsg.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRMOfflineManager-EN.Designer.vb" />
-    <Compile Include="frmRMOfflineManager-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMOfflineManager-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRMOfflineManager-VN.Designer.vb" />
-    <Compile Include="frmRMOfflineManager-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMOfflineManager-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRMOfflineManager.Designer.vb">
       <DependentUpon>frmRMOfflineManager.vb</DependentUpon>
     </Compile>
@@ -1522,91 +812,31 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRMOperation-EN.Designer.vb" />
-    <Compile Include="frmRMOperation-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMOperation-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRMOperation-VN.Designer.vb" />
-    <Compile Include="frmRMOperation-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMOperation-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRMOperation.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRMRecChangeRequest-EN.Designer.vb" />
-    <Compile Include="frmRMRecChangeRequest-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMRecChangeRequest-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRMRecChangeRequest-VN.Designer.vb" />
-    <Compile Include="frmRMRecChangeRequest-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRMRecChangeRequest-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRMRecChangeRequest.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRptAssign-EN.Designer.vb" />
-    <Compile Include="frmRptAssign-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRptAssign-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRptAssign-VN.Designer.vb" />
-    <Compile Include="frmRptAssign-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRptAssign-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRptAssign.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRPTransact-EN.Designer.vb" />
-    <Compile Include="frmRPTransact-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRPTransact-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRPTransact-VN.Designer.vb" />
-    <Compile Include="frmRPTransact-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmRPTransact-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmRPTransact.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSBETF-EN.Designer.vb" />
-    <Compile Include="frmSBETF-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmSBETF-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmSBETF-VN.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmSBETF-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmSBETF.designer.vb">
       <DependentUpon>frmSBETF.vb</DependentUpon>
     </Compile>
     <Compile Include="frmSBETF.vb">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSearchCMP2FILETab-EN.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmSearchCMP2FILETab-EN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="frmSearchCMP2FILETab-VN.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmSearchCMP2FILETab-VN.resx</DependentUpon>
     </Compile>
     <Compile Include="frmSearchCMP2FILETab.vb">
       <SubType>Form</SubType>
@@ -1615,47 +845,17 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSellEstimate2CIWithdraw-EN.Designer.vb" />
-    <Compile Include="frmSellEstimate2CIWithdraw-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmSellEstimate2CIWithdraw-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmSellEstimate2CIWithdraw-VN.Designer.vb" />
-    <Compile Include="frmSellEstimate2CIWithdraw-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmSellEstimate2CIWithdraw-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmSellEstimate2CIWithdraw.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSendSecurities-EN.Designer.vb" />
-    <Compile Include="frmSendSecurities-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmSendSecurities-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmSendSecurities-VN.Designer.vb" />
-    <Compile Include="frmSendSecurities-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmSendSecurities-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmSendSecurities.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmShowNewsDetail-EN.Designer.vb" />
-    <Compile Include="frmShowNewsDetail-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmShowNewsDetail-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmShowNewsDetail-VN.Designer.vb" />
-    <Compile Include="frmShowNewsDetail-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmShowNewsDetail-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmShowNewsDetail.Designer.vb">
       <DependentUpon>frmShowNewsDetail.vb</DependentUpon>
     </Compile>
@@ -1663,17 +863,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSMSEMAIL-EN.Designer.vb" />
-    <Compile Include="frmSMSEMAIL-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmSMSEMAIL-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmSMSEMAIL-VN.Designer.vb" />
-    <Compile Include="frmSMSEMAIL-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmSMSEMAIL-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmSMSEMAIL.Designer.vb">
       <DependentUpon>frmSMSEMAIL.vb</DependentUpon>
     </Compile>
@@ -1684,17 +874,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmStockInfo-EN.Designer.vb" />
-    <Compile Include="frmStockInfo-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmStockInfo-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmStockInfo-VN.Designer.vb" />
-    <Compile Include="frmStockInfo-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmStockInfo-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmStockInfo.Designer.vb">
       <DependentUpon>frmStockInfo.vb</DependentUpon>
     </Compile>
@@ -1702,17 +882,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSyncFIIN-EN.Designer.vb" />
-    <Compile Include="frmSyncFIIN-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmSyncFIIN-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmSyncFIIN-VN.Designer.vb" />
-    <Compile Include="frmSyncFIIN-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmSyncFIIN-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmSyncFIIN.Designer.vb">
       <DependentUpon>frmSyncFIIN.vb</DependentUpon>
     </Compile>
@@ -1720,17 +890,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSyncToFIIN-EN.Designer.vb" />
-    <Compile Include="frmSyncToFIIN-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmSyncToFIIN-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmSyncToFIIN-VN.Designer.vb" />
-    <Compile Include="frmSyncToFIIN-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmSyncToFIIN-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmSyncToFIIN.Designer.vb">
       <DependentUpon>frmSyncToFIIN.vb</DependentUpon>
     </Compile>
@@ -1738,32 +898,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmTeleInq-EN.Designer.vb" />
-    <Compile Include="frmTeleInq-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmTeleInq-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmTeleInq-VN.Designer.vb" />
-    <Compile Include="frmTeleInq-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmTeleInq-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmTeleInq.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmTransactEx-EN.Designer.vb" />
-    <Compile Include="frmTransactEx-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmTransactEx-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmTransactEx-VN.Designer.vb" />
-    <Compile Include="frmTransactEx-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmTransactEx-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmTransactEx.Designer.vb">
       <DependentUpon>frmTransactEx.vb</DependentUpon>
     </Compile>
@@ -1774,17 +914,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmTransactUpload-EN.Designer.vb" />
-    <Compile Include="frmTransactUpload-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmTransactUpload-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmTransactUpload-VN.Designer.vb" />
-    <Compile Include="frmTransactUpload-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmTransactUpload-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmTransactUpload.Designer.vb">
       <DependentUpon>frmTransactUpload.vb</DependentUpon>
     </Compile>
@@ -1792,77 +922,27 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmTransAssign-EN.Designer.vb" />
-    <Compile Include="frmTransAssign-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmTransAssign-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmTransAssign-VN.Designer.vb" />
-    <Compile Include="frmTransAssign-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmTransAssign-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmTransAssign.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmTransferInq-EN.Designer.vb" />
-    <Compile Include="frmTransferInq-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmTransferInq-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmTransferInq-VN.Designer.vb" />
-    <Compile Include="frmTransferInq-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmTransferInq-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmTransferInq.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmUPCOMSend-EN.Designer.vb" />
-    <Compile Include="frmUPCOMSend-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmUPCOMSend-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmUPCOMSend-VN.Designer.vb" />
-    <Compile Include="frmUPCOMSend-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmUPCOMSend-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmUPCOMSend.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmUpcomSendingConfirm-EN.Designer.vb" />
-    <Compile Include="frmUpcomSendingConfirm-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmUpcomSendingConfirm-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmUpcomSendingConfirm-VN.Designer.vb" />
-    <Compile Include="frmUpcomSendingConfirm-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmUpcomSendingConfirm-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmUpcomSendingConfirm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmUpdateReRev-EN.Designer.vb" />
-    <Compile Include="frmUpdateReRev-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmUpdateReRev-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmUpdateReRev-VN.Designer.vb" />
-    <Compile Include="frmUpdateReRev-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmUpdateReRev-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmUpdateReRev.designer.vb">
       <DependentUpon>frmUpdateReRev.vb</DependentUpon>
     </Compile>
@@ -1870,32 +950,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmUpdateSecInfo-EN.Designer.vb" />
-    <Compile Include="frmUpdateSecInfo-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmUpdateSecInfo-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmUpdateSecInfo-VN.Designer.vb" />
-    <Compile Include="frmUpdateSecInfo-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmUpdateSecInfo-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmUpdateSecInfo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmViewAcc-EN.Designer.vb" />
-    <Compile Include="frmViewAcc-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmViewAcc-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmViewAcc-VN.Designer.vb" />
-    <Compile Include="frmViewAcc-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmViewAcc-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmViewAcc.Designer.vb">
       <DependentUpon>frmViewAcc.vb</DependentUpon>
     </Compile>
@@ -1912,17 +972,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmXtraLOGIN-EN.Designer.vb" />
-    <Compile Include="frmXtraLOGIN-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmXtraLOGIN-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmXtraLOGIN-VN.Designer.vb" />
-    <Compile Include="frmXtraLOGIN-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>frmXtraLOGIN-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="frmXtraLogin.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -1930,17 +980,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Localize-EN.Designer.vb" />
-    <Compile Include="Localize-EN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Localize-EN.resx</DependentUpon>
-    </Compile>
     <Compile Include="Localize-VN.Designer.vb" />
-    <Compile Include="Localize-VN1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Localize-VN.resx</DependentUpon>
-    </Compile>
     <Compile Include="MaintenanceForms\frmEMAILREPORT.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -2128,115 +1168,49 @@
     <EmbeddedResource Include="Controls\XtraSearch.resx">
       <DependentUpon>XtraSearch.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCAVOTING-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCAVOTING-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCAVOTING-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCAVOTING-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmCAVOTING-EN.resx" />
+    <EmbeddedResource Include="frmCAVOTING-VN.resx" />
     <EmbeddedResource Include="frmCAVOTING.resx">
       <DependentUpon>frmCAVOTING.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCrbtxreqHold-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCrbtxreqHold-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCrbtxreqHold-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCrbtxreqHold-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrbtxreqHold-EN.resx" />
+    <EmbeddedResource Include="frmCrbtxreqHold-VN.resx" />
     <EmbeddedResource Include="frmCrbtxreqHold.resx">
       <DependentUpon>frmCrbtxreqHold.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCrbtxreqUnHold-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCrbtxreqUnHold-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCrbtxreqUnHold-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCrbtxreqUnHold-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrbtxreqUnHold-EN.resx" />
+    <EmbeddedResource Include="frmCrbtxreqUnHold-VN.resx" />
     <EmbeddedResource Include="frmCrbtxreqUnHold.resx">
       <DependentUpon>frmCrbtxreqUnHold.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCSVCompare-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCSVCompare-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCSVCompare-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCSVCompare-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmCSVCompare-EN.resx" />
+    <EmbeddedResource Include="frmCSVCompare-VN.resx" />
     <EmbeddedResource Include="frmCSVCompare.resx">
       <DependentUpon>frmCSVCompare.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCFLNKAP-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCFLNKAP-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCFLNKAP-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCFLNKAP-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmFABROKERAGE-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmFABROKERAGE-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmFABROKERAGE-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmFABROKERAGE-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmFABROKERAGEXTRA-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmFABROKERAGEXTRA-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmFABROKERAGEXTRA-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmFABROKERAGEXTRA-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLookup_Tab-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmLookup_Tab-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLookup_Tab-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmLookup_Tab-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmCFLNKAP-EN.resx" />
+    <EmbeddedResource Include="frmCFLNKAP-VN.resx" />
+    <EmbeddedResource Include="frmFABROKERAGE-EN.resx" />
+    <EmbeddedResource Include="frmFABROKERAGE-VN.resx" />
+    <EmbeddedResource Include="frmFABROKERAGEXTRA-EN.resx" />
+    <EmbeddedResource Include="frmFABROKERAGEXTRA-VN.resx" />
+    <EmbeddedResource Include="frmLookup_Tab-EN.resx" />
+    <EmbeddedResource Include="frmLookup_Tab-VN.resx" />
     <EmbeddedResource Include="frmLookup_Tab.resx">
       <DependentUpon>frmLookup_Tab.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMDIMain.resx">
       <DependentUpon>frmMDIMain.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmODMASTCOMPARE-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmODMASTCOMPARE-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmODMASTCOMPARE-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmODMASTCOMPARE-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmODMASTCOMPARE-EN.resx" />
+    <EmbeddedResource Include="frmODMASTCOMPARE-VN.resx" />
     <EmbeddedResource Include="frmODMASTCOMPARE.resx">
       <DependentUpon>frmODMASTCOMPARE.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRMCmpBankBalance-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMCmpBankBalance-EN.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRMCmpBankBalance-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMCmpBankBalance-VN.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmHoldUnhold-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmHoldUnhold-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmHoldUnhold-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmHoldUnhold-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMCmpBankBalance-EN.resx" />
+    <EmbeddedResource Include="frmRMCmpBankBalance-VN.resx" />
+    <EmbeddedResource Include="frmHoldUnhold-EN.resx" />
+    <EmbeddedResource Include="frmHoldUnhold-VN.resx" />
     <EmbeddedResource Include="frmHoldUnhold.resx">
       <DependentUpon>frmHoldUnhold.vb</DependentUpon>
     </EmbeddedResource>
@@ -2246,58 +1220,28 @@
     <EmbeddedResource Include="frmAdminMessages.resx">
       <DependentUpon>frmAdminMessages.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAFSERULE-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmAFSERULE-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAFSERULE-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmAFSERULE-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmAFSERULE-EN.resx" />
+    <EmbeddedResource Include="frmAFSERULE-VN.resx" />
     <EmbeddedResource Include="frmAFSERULE.resx">
       <DependentUpon>frmAFSERULE.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmApprove-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmApprove-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmApprove-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmApprove-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmApprove-EN.resx" />
+    <EmbeddedResource Include="frmApprove-VN.resx" />
     <EmbeddedResource Include="frmApprove.resx">
       <DependentUpon>frmApprove.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmApprv-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmApprv-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmApprv-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmApprv-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmApprv-EN.resx" />
+    <EmbeddedResource Include="frmApprv-VN.resx" />
     <EmbeddedResource Include="frmApprv.resx">
       <DependentUpon>frmApprv.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAuthTrade-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmAuthTrade-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAuthTrade-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmAuthTrade-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuthTrade-EN.resx" />
+    <EmbeddedResource Include="frmAuthTrade-VN.resx" />
     <EmbeddedResource Include="frmAuthTrade.resx">
       <DependentUpon>frmAuthTrade.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBankOrder-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmBankOrder-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmBankOrder-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmBankOrder-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmBankOrder-EN.resx" />
+    <EmbeddedResource Include="frmBankOrder-VN.resx" />
     <EmbeddedResource Include="frmBankOrder.resx">
       <DependentUpon>frmBankOrder.vb</DependentUpon>
     </EmbeddedResource>
@@ -2306,923 +1250,451 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBrokerConfirm-EN.resx">
       <SubType>Designer</SubType>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmBrokerConfirm-EN1.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBrokerConfirm-VN.resx">
       <SubType>Designer</SubType>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmBrokerConfirm-VN1.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBrokerConfirm.resx">
       <DependentUpon>frmBrokerConfirm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBrokerDesk-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmBrokerDesk-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmBrokerDesk-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmBrokerDesk-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrokerDesk-EN.resx" />
+    <EmbeddedResource Include="frmBrokerDesk-VN.resx" />
     <EmbeddedResource Include="frmBrokerDesk.resx">
       <DependentUpon>frmBrokerDesk.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBrokerDeskConfirm.resx">
       <DependentUpon>frmBrokerDeskConfirm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBrokerInquiry-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmBrokerInquiry-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmBrokerInquiry-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmBrokerInquiry-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrokerInquiry-EN.resx" />
+    <EmbeddedResource Include="frmBrokerInquiry-VN.resx" />
     <EmbeddedResource Include="frmBrokerInquiry.resx">
       <DependentUpon>frmBrokerInquiry.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCalendar-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCalendar-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCalendar-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCalendar-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendar-EN.resx" />
+    <EmbeddedResource Include="frmCalendar-VN.resx" />
     <EmbeddedResource Include="frmCalendar.resx">
       <DependentUpon>frmCalendar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmChangeOrderCustody-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmChangeOrderCustody-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmChangeOrderCustody-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmChangeOrderCustody-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangeOrderCustody-EN.resx" />
+    <EmbeddedResource Include="frmChangeOrderCustody-VN.resx" />
     <EmbeddedResource Include="frmChangeOrderCustody.resx">
       <DependentUpon>frmChangeOrderCustody.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmChangePassword-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmChangePassword-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmChangePassword-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmChangePassword-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword-EN.resx" />
+    <EmbeddedResource Include="frmChangePassword-VN.resx" />
     <EmbeddedResource Include="frmChangePassword.resx">
       <DependentUpon>frmChangePassword.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCompareTradingResult-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCompareTradingResult-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCompareTradingResult-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCompareTradingResult-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompareTradingResult-EN.resx" />
+    <EmbeddedResource Include="frmCompareTradingResult-VN.resx" />
     <EmbeddedResource Include="frmCompareTradingResult.resx">
       <DependentUpon>frmCompareTradingResult.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCreateDFDeal-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCreateDFDeal-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCreateDFDeal-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCreateDFDeal-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateDFDeal-EN.resx" />
+    <EmbeddedResource Include="frmCreateDFDeal-VN.resx" />
     <EmbeddedResource Include="frmCreateDFDeal.resx">
       <DependentUpon>frmCreateDFDeal.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCreateDFGRDeal-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCreateDFGRDeal-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCreateDFGRDeal-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCreateDFGRDeal-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateDFGRDeal-EN.resx" />
+    <EmbeddedResource Include="frmCreateDFGRDeal-VN.resx" />
     <EmbeddedResource Include="frmCreateDFGRDeal.resx">
       <DependentUpon>frmCreateDFGRDeal.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCUWBIDDING-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCUWBIDDING-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCUWBIDDING-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCUWBIDDING-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmCUWBIDDING-EN.resx" />
+    <EmbeddedResource Include="frmCUWBIDDING-VN.resx" />
     <EmbeddedResource Include="frmCUWBIDDING.resx">
       <DependentUpon>frmCUWBIDDING.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCWBIDDING-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCWBIDDING-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCWBIDDING-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmCWBIDDING-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmCWBIDDING-EN.resx" />
+    <EmbeddedResource Include="frmCWBIDDING-VN.resx" />
     <EmbeddedResource Include="frmCWBIDDING.resx">
       <DependentUpon>frmCWBIDDING.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDefineCLDR-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmDefineCLDR-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmDefineCLDR-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmDefineCLDR-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmDefineCLDR-EN.resx" />
+    <EmbeddedResource Include="frmDefineCLDR-VN.resx" />
     <EmbeddedResource Include="frmDefineCLDR.resx">
       <DependentUpon>frmDefineCLDR.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDefineProduct.resx">
       <DependentUpon>frmDefineProduct.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDefineRisk-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmDefineRisk-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmDefineRisk-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmDefineRisk-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmDefineRisk-EN.resx" />
+    <EmbeddedResource Include="frmDefineRisk-VN.resx" />
     <EmbeddedResource Include="frmDefineRisk.resx">
       <DependentUpon>frmDefineRisk.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDetailFixOD-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmDetailFixOD-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmDetailFixOD-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmDetailFixOD-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetailFixOD-EN.resx" />
+    <EmbeddedResource Include="frmDetailFixOD-VN.resx" />
     <EmbeddedResource Include="frmDetailFixOD.resx">
       <DependentUpon>frmDetailFixOD.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDFGroupView-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmDFGroupView-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmDFGroupView-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmDFGroupView-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmDFGroupView-EN.resx" />
+    <EmbeddedResource Include="frmDFGroupView-VN.resx" />
     <EmbeddedResource Include="frmDFGroupView.resx">
       <DependentUpon>frmDFGroupView.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmExchangeSEGRDeal-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmExchangeSEGRDeal-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmExchangeSEGRDeal-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmExchangeSEGRDeal-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmExchangeSEGRDeal-EN.resx" />
+    <EmbeddedResource Include="frmExchangeSEGRDeal-VN.resx" />
     <EmbeddedResource Include="frmExchangeSEGRDeal.resx">
       <DependentUpon>frmExchangeSEGRDeal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFixORDER.resx">
       <DependentUpon>frmFixORDER.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmFuncAssign-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmFuncAssign-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmFuncAssign-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmFuncAssign-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmFuncAssign-EN.resx" />
+    <EmbeddedResource Include="frmFuncAssign-VN.resx" />
     <EmbeddedResource Include="frmFuncAssign.resx">
       <DependentUpon>frmFuncAssign.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGroupOrderPT-EN.resx">
       <SubType>Designer</SubType>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmGroupOrderPT-EN1.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGroupOrderPT-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmGroupOrderPT-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmGroupOrderPT-VN.resx" />
     <EmbeddedResource Include="frmGroupOrderPT.resx">
       <DependentUpon>frmGroupOrderPT.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmHoldControl-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmHoldControl-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmHoldControl-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmHoldControl-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmHoldControl-EN.resx" />
+    <EmbeddedResource Include="frmHoldControl-VN.resx" />
     <EmbeddedResource Include="frmHoldControl.resx">
       <DependentUpon>frmHoldControl.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLNChangeTYPE-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmLNChangeTYPE-EN.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLNChangeTYPE-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmLNChangeTYPE-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmLNChangeTYPE-EN.resx" />
+    <EmbeddedResource Include="frmLNChangeTYPE-VN.resx" />
     <EmbeddedResource Include="frmLNChangeTYPE.resx">
       <DependentUpon>frmLNChangeTYPE.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogMR3009-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmLogMR3009-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLogMR3009-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmLogMR3009-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogMR3009-EN.resx" />
+    <EmbeddedResource Include="frmLogMR3009-VN.resx" />
     <EmbeddedResource Include="frmLogMR3009.resx">
       <DependentUpon>frmLogMR3009.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMail-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmMail-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMail-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmMail-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmMail-EN.resx" />
+    <EmbeddedResource Include="frmMail-VN.resx" />
     <EmbeddedResource Include="frmMail.resx">
       <DependentUpon>frmMail.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMaintenanceMaster.resx">
       <DependentUpon>frmMaintenanceMaster.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmManualAdvance-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmManualAdvance-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmManualAdvance-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmManualAdvance-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmManualAdvance-EN.resx" />
+    <EmbeddedResource Include="frmManualAdvance-VN.resx" />
     <EmbeddedResource Include="frmManualAdvance.resx">
       <DependentUpon>frmManualAdvance.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMarginInfo-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmMarginInfo-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMarginInfo-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmMarginInfo-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmMarginInfo-EN.resx" />
+    <EmbeddedResource Include="frmMarginInfo-VN.resx" />
     <EmbeddedResource Include="frmMarginInfo.resx">
       <DependentUpon>frmMarginInfo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMarginProcess-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmMarginProcess-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMarginProcess-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmMarginProcess-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmMarginProcess-EN.resx" />
+    <EmbeddedResource Include="frmMarginProcess-VN.resx" />
     <EmbeddedResource Include="frmMarginProcess.resx">
       <DependentUpon>frmMarginProcess.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMarketInfo-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>FrmMarketInfo-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMarketInfo-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>FrmMarketInfo-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMarketInfo-EN.resx" />
+    <EmbeddedResource Include="FrmMarketInfo-VN.resx" />
     <EmbeddedResource Include="FrmMarketInfo.resx">
       <DependentUpon>FrmMarketInfo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMDIMain-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmMDIMain-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMDIMain-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmMDIMain-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmMDIMain-EN.resx" />
+    <EmbeddedResource Include="frmMDIMain-VN.resx" />
     <EmbeddedResource Include="frmMTDEAL.resx">
       <DependentUpon>frmMTDEAL.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmODDetail-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmODDetail-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmODDetail-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmODDetail-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmODDetail-EN.resx" />
+    <EmbeddedResource Include="frmODDetail-VN.resx" />
     <EmbeddedResource Include="frmODDetail.resx">
       <DependentUpon>frmODDetail.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmODReceive-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmODReceive-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmODReceive-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmODReceive-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmODReceive-EN.resx" />
+    <EmbeddedResource Include="frmODReceive-VN.resx" />
     <EmbeddedResource Include="frmODReceive.resx">
       <DependentUpon>frmODReceive.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmODReceiveHA-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmODReceiveHA-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmODReceiveHA-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmODReceiveHA-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmODReceiveHA-EN.resx" />
+    <EmbeddedResource Include="frmODReceiveHA-VN.resx" />
     <EmbeddedResource Include="frmODReceiveHA.resx">
       <DependentUpon>frmODReceiveHA.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmODReceiveHO-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmODReceiveHO-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmODReceiveHO-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmODReceiveHO-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmODReceiveHO-EN.resx" />
+    <EmbeddedResource Include="frmODReceiveHO-VN.resx" />
     <EmbeddedResource Include="frmODReceiveHO.resx">
       <DependentUpon>frmODReceiveHO.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmODSend-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmODSend-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmODSend-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmODSend-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmODSend-EN.resx" />
+    <EmbeddedResource Include="frmODSend-VN.resx" />
     <EmbeddedResource Include="frmODSend.resx">
       <DependentUpon>frmODSend.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmODTransact-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmODTransact-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmODTransact-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmODTransact-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmODTransact-EN.resx" />
+    <EmbeddedResource Include="frmODTransact-VN.resx" />
     <EmbeddedResource Include="frmODTransact.resx">
       <DependentUpon>frmODTransact.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmOperation-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmOperation-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmOperation-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmOperation-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperation-EN.resx" />
+    <EmbeddedResource Include="frmOperation-VN.resx" />
     <EmbeddedResource Include="frmOperation.resx">
       <DependentUpon>frmOperation.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmOrderSendingConfirm-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmOrderSendingConfirm-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmOrderSendingConfirm-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmOrderSendingConfirm-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderSendingConfirm-EN.resx" />
+    <EmbeddedResource Include="frmOrderSendingConfirm-VN.resx" />
     <EmbeddedResource Include="frmOrderSendingConfirm.resx">
       <DependentUpon>frmOrderSendingConfirm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPaymentOrder-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmPaymentOrder-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPaymentOrder-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmPaymentOrder-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentOrder-EN.resx" />
+    <EmbeddedResource Include="frmPaymentOrder-VN.resx" />
     <EmbeddedResource Include="frmPaymentOrder.resx">
       <DependentUpon>frmPaymentOrder.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProcessAfterTrading-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmProcessAfterTrading-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmProcessAfterTrading-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmProcessAfterTrading-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcessAfterTrading-EN.resx" />
+    <EmbeddedResource Include="frmProcessAfterTrading-VN.resx" />
     <EmbeddedResource Include="frmProcessAfterTrading.resx">
       <DependentUpon>frmProcessAfterTrading.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProcessOrder-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmProcessOrder-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmProcessOrder-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmProcessOrder-VN.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcessOrder-EN.resx" />
+    <EmbeddedResource Include="frmProcessOrder-VN.resx" />
     <EmbeddedResource Include="frmProcessOrder.resx">
       <DependentUpon>frmProcessOrder.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProductManagement-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmProductManagement-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmProductManagement-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmProductManagement-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductManagement-EN.resx" />
+    <EmbeddedResource Include="frmProductManagement-VN.resx" />
     <EmbeddedResource Include="frmProductManagement.resx">
       <DependentUpon>frmProductManagement.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPutthroughAcknowledgment-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmPutthroughAcknowledgment-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPutthroughAcknowledgment-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmPutthroughAcknowledgment-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmPutthroughAcknowledgment-EN.resx" />
+    <EmbeddedResource Include="frmPutthroughAcknowledgment-VN.resx" />
     <EmbeddedResource Include="frmPutthroughAcknowledgment.resx">
       <DependentUpon>frmPutthroughAcknowledgment.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmQuickOrderPTOneFirm-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmQuickOrderPTOneFirm-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmQuickOrderPTOneFirm-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmQuickOrderPTOneFirm-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuickOrderPTOneFirm-EN.resx" />
+    <EmbeddedResource Include="frmQuickOrderPTOneFirm-VN.resx" />
     <EmbeddedResource Include="frmQuickOrderPTOneFirm.resx">
       <DependentUpon>frmQuickOrderPTOneFirm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmQuickOrderTransact-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmQuickOrderTransact-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmQuickOrderTransact-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmQuickOrderTransact-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuickOrderTransact-EN.resx" />
+    <EmbeddedResource Include="frmQuickOrderTransact-VN.resx" />
     <EmbeddedResource Include="frmQuickOrderTransact.resx">
       <DependentUpon>frmQuickOrderTransact.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmQuickOrderTransactPT-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmQuickOrderTransactPT-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmQuickOrderTransactPT-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmQuickOrderTransactPT-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuickOrderTransactPT-EN.resx" />
+    <EmbeddedResource Include="frmQuickOrderTransactPT-VN.resx" />
     <EmbeddedResource Include="frmQuickOrderTransactPT.resx">
       <DependentUpon>frmQuickOrderTransactPT.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmReAddDG-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmReAddDG-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReAddDG-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmReAddDG-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmReAddDG-EN.resx" />
+    <EmbeddedResource Include="frmReAddDG-VN.resx" />
     <EmbeddedResource Include="frmReAddDG.resx">
       <DependentUpon>frmReAddDG.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmReAddRM-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmReAddRM-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReAddRM-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmReAddRM-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmReAddRM-EN.resx" />
+    <EmbeddedResource Include="frmReAddRM-VN.resx" />
     <EmbeddedResource Include="frmReAddRM.resx">
       <DependentUpon>frmReAddRM.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmReadFile-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmReadFile-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReadFile-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmReadFile-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmReadFile-EN.resx" />
+    <EmbeddedResource Include="frmReadFile-VN.resx" />
     <EmbeddedResource Include="frmReadFile.resx">
       <DependentUpon>frmReadFile.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReadFilecv.resx">
       <DependentUpon>frmReadFilecv.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmReApprove-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmReApprove-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReApprove-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmReApprove-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmReApprove-EN.resx" />
+    <EmbeddedResource Include="frmReApprove-VN.resx" />
     <EmbeddedResource Include="frmReApprove.resx">
       <DependentUpon>frmReApprove.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReceiverDataMaster.resx">
       <DependentUpon>frmReceiverDataMaster.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmReChangeRe-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmReChangeRe-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReChangeRe-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmReChangeRe-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmReChangeRe-EN.resx" />
+    <EmbeddedResource Include="frmReChangeRe-VN.resx" />
     <EmbeddedResource Include="frmReChangeRe.resx">
       <DependentUpon>frmReChangeRe.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRightAssignment-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRightAssignment-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRightAssignment-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRightAssignment-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmRightAssignment-EN.resx" />
+    <EmbeddedResource Include="frmRightAssignment-VN.resx" />
     <EmbeddedResource Include="frmRightAssignment.resx">
       <DependentUpon>frmRightAssignment.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRMBankRequest-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMBankRequest-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRMBankRequest-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMBankRequest-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMBankRequest-EN.resx" />
+    <EmbeddedResource Include="frmRMBankRequest-VN.resx" />
     <EmbeddedResource Include="frmRMBankRequest.resx">
       <DependentUpon>frmRMBankRequest.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRMBankRequestUsers-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMBankRequestUsers-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRMBankRequestUsers-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMBankRequestUsers-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMBankRequestUsers-EN.resx" />
+    <EmbeddedResource Include="frmRMBankRequestUsers-VN.resx" />
     <EmbeddedResource Include="frmRMBankRequestUsers.resx">
       <DependentUpon>frmRMBankRequestUsers.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRMChangeRequest-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMChangeRequest-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRMChangeRequest-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMChangeRequest-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMChangeRequest-EN.resx" />
+    <EmbeddedResource Include="frmRMChangeRequest-VN.resx" />
     <EmbeddedResource Include="frmRMChangeRequest.resx">
       <DependentUpon>frmRMChangeRequest.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRMCmpBankBalance.resx">
       <DependentUpon>frmRMCmpBankBalance.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRMCmpBankBalanceTXDATE-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMCmpBankBalanceTXDATE-EN.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRMCmpBankBalanceTXDATE-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMCmpBankBalanceTXDATE-VN.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMCmpBankBalanceTXDATE-EN.resx" />
+    <EmbeddedResource Include="frmRMCmpBankBalanceTXDATE-VN.resx" />
     <EmbeddedResource Include="frmRMCmpBankBalanceTXDATE.resx">
       <DependentUpon>frmRMCmpBankBalanceTXDATE.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRMManualMsg-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMManualMsg-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRMManualMsg-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMManualMsg-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMManualMsg-EN.resx" />
+    <EmbeddedResource Include="frmRMManualMsg-VN.resx" />
     <EmbeddedResource Include="frmRMManualMsg.resx">
       <DependentUpon>frmRMManualMsg.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRMOfflineManager-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMOfflineManager-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRMOfflineManager-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMOfflineManager-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMOfflineManager-EN.resx" />
+    <EmbeddedResource Include="frmRMOfflineManager-VN.resx" />
     <EmbeddedResource Include="frmRMOfflineManager.resx">
       <DependentUpon>frmRMOfflineManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRMOperation-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMOperation-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRMOperation-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMOperation-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMOperation-EN.resx" />
+    <EmbeddedResource Include="frmRMOperation-VN.resx" />
     <EmbeddedResource Include="frmRMOperation.resx">
       <DependentUpon>frmRMOperation.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRMRecChangeRequest-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMRecChangeRequest-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRMRecChangeRequest-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRMRecChangeRequest-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmRMRecChangeRequest-EN.resx" />
+    <EmbeddedResource Include="frmRMRecChangeRequest-VN.resx" />
     <EmbeddedResource Include="frmRMRecChangeRequest.resx">
       <DependentUpon>frmRMRecChangeRequest.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRptAssign-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRptAssign-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRptAssign-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRptAssign-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptAssign-EN.resx" />
+    <EmbeddedResource Include="frmRptAssign-VN.resx" />
     <EmbeddedResource Include="frmRptAssign.resx">
       <DependentUpon>frmRptAssign.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRPTransact-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRPTransact-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRPTransact-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmRPTransact-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmRPTransact-EN.resx" />
+    <EmbeddedResource Include="frmRPTransact-VN.resx" />
     <EmbeddedResource Include="frmRPTransact.resx">
       <DependentUpon>frmRPTransact.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSBETF-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmSBETF-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmSBETF-EN.resx" />
     <EmbeddedResource Include="frmSBETF-VN.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmSBETF-VN.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSBETF.resx">
       <DependentUpon>frmSBETF.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSearchCMP2FILETab-EN.resx">
       <SubType>Designer</SubType>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmSearchCMP2FILETab-EN.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSearchCMP2FILETab-VN.resx">
       <SubType>Designer</SubType>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmSearchCMP2FILETab-VN.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSearchCMP2FILETab.resx">
       <DependentUpon>frmSearchCMP2FILETab.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSellEstimate2CIWithdraw-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmSellEstimate2CIWithdraw-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSellEstimate2CIWithdraw-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmSellEstimate2CIWithdraw-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellEstimate2CIWithdraw-EN.resx" />
+    <EmbeddedResource Include="frmSellEstimate2CIWithdraw-VN.resx" />
     <EmbeddedResource Include="frmSellEstimate2CIWithdraw.resx">
       <DependentUpon>frmSellEstimate2CIWithdraw.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSendSecurities-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmSendSecurities-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSendSecurities-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmSendSecurities-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmSendSecurities-EN.resx" />
+    <EmbeddedResource Include="frmSendSecurities-VN.resx" />
     <EmbeddedResource Include="frmSendSecurities.resx">
       <DependentUpon>frmSendSecurities.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmShowNewsDetail-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmShowNewsDetail-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmShowNewsDetail-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmShowNewsDetail-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowNewsDetail-EN.resx" />
+    <EmbeddedResource Include="frmShowNewsDetail-VN.resx" />
     <EmbeddedResource Include="frmShowNewsDetail.resx">
       <DependentUpon>frmShowNewsDetail.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSMSEMAIL-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmSMSEMAIL-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSMSEMAIL-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmSMSEMAIL-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmSMSEMAIL-EN.resx" />
+    <EmbeddedResource Include="frmSMSEMAIL-VN.resx" />
     <EmbeddedResource Include="frmSMSEMAIL.resx">
       <DependentUpon>frmSMSEMAIL.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmStockInfo-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmStockInfo-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmStockInfo-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmStockInfo-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockInfo-EN.resx" />
+    <EmbeddedResource Include="frmStockInfo-VN.resx" />
     <EmbeddedResource Include="frmStockInfo.resx">
       <DependentUpon>frmStockInfo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSyncFIIN-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmSyncFIIN-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSyncFIIN-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmSyncFIIN-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmSyncFIIN-EN.resx" />
+    <EmbeddedResource Include="frmSyncFIIN-VN.resx" />
     <EmbeddedResource Include="frmSyncFIIN.resx">
       <DependentUpon>frmSyncFIIN.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSyncToFIIN-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmSyncToFIIN-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSyncToFIIN-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmSyncToFIIN-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmSyncToFIIN-EN.resx" />
+    <EmbeddedResource Include="frmSyncToFIIN-VN.resx" />
     <EmbeddedResource Include="frmSyncToFIIN.resx">
       <DependentUpon>frmSyncToFIIN.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTeleInq-EN.resx">
       <SubType>Designer</SubType>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmTeleInq-EN1.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTeleInq-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmTeleInq-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmTeleInq-VN.resx" />
     <EmbeddedResource Include="frmTeleInq.resx">
       <DependentUpon>frmTeleInq.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTransactEx-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmTransactEx-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTransactEx-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmTransactEx-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransactEx-EN.resx" />
+    <EmbeddedResource Include="frmTransactEx-VN.resx" />
     <EmbeddedResource Include="frmTransactEx.resx">
       <DependentUpon>frmTransactEx.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTransactMaster.resx">
       <DependentUpon>frmTransactMaster.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTransactUpload-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmTransactUpload-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTransactUpload-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmTransactUpload-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransactUpload-EN.resx" />
+    <EmbeddedResource Include="frmTransactUpload-VN.resx" />
     <EmbeddedResource Include="frmTransactUpload.resx">
       <DependentUpon>frmTransactUpload.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTransAssign-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmTransAssign-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTransAssign-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmTransAssign-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransAssign-EN.resx" />
+    <EmbeddedResource Include="frmTransAssign-VN.resx" />
     <EmbeddedResource Include="frmTransAssign.resx">
       <DependentUpon>frmTransAssign.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTransferInq-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmTransferInq-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTransferInq-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmTransferInq-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransferInq-EN.resx" />
+    <EmbeddedResource Include="frmTransferInq-VN.resx" />
     <EmbeddedResource Include="frmTransferInq.resx">
       <DependentUpon>frmTransferInq.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUPCOMSend-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmUPCOMSend-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUPCOMSend-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmUPCOMSend-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmUPCOMSend-EN.resx" />
+    <EmbeddedResource Include="frmUPCOMSend-VN.resx" />
     <EmbeddedResource Include="frmUPCOMSend.resx">
       <DependentUpon>frmUPCOMSend.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUpcomSendingConfirm-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmUpcomSendingConfirm-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUpcomSendingConfirm-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmUpcomSendingConfirm-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpcomSendingConfirm-EN.resx" />
+    <EmbeddedResource Include="frmUpcomSendingConfirm-VN.resx" />
     <EmbeddedResource Include="frmUpcomSendingConfirm.resx">
       <DependentUpon>frmUpcomSendingConfirm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUpdateReRev-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmUpdateReRev-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUpdateReRev-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmUpdateReRev-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateReRev-EN.resx" />
+    <EmbeddedResource Include="frmUpdateReRev-VN.resx" />
     <EmbeddedResource Include="frmUpdateReRev.resx">
       <DependentUpon>frmUpdateReRev.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUpdateSecInfo-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmUpdateSecInfo-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUpdateSecInfo-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmUpdateSecInfo-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateSecInfo-EN.resx" />
+    <EmbeddedResource Include="frmUpdateSecInfo-VN.resx" />
     <EmbeddedResource Include="frmUpdateSecInfo.resx">
       <DependentUpon>frmUpdateSecInfo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmViewAcc-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmViewAcc-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmViewAcc-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmViewAcc-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewAcc-EN.resx" />
+    <EmbeddedResource Include="frmViewAcc-VN.resx" />
     <EmbeddedResource Include="frmViewAcc.resx">
       <DependentUpon>frmViewAcc.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmXtraCriterial.resx">
       <DependentUpon>frmXtraCriterial.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmXtraLOGIN-EN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmXtraLOGIN-EN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmXtraLOGIN-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>frmXtraLOGIN-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmXtraLOGIN-EN.resx" />
+    <EmbeddedResource Include="frmXtraLOGIN-VN.resx" />
     <EmbeddedResource Include="frmXtraLogin.resx">
       <DependentUpon>frmXtraLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Localize-EN.resx">
       <SubType>Designer</SubType>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Localize-EN1.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Localize-VN.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Localize-VN1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Localize-VN.resx" />
     <EmbeddedResource Include="MaintenanceForms\frmEMAILREPORT-EN.resx" />
     <EmbeddedResource Include="MaintenanceForms\frmEMAILREPORT-VN.resx" />
     <EmbeddedResource Include="MaintenanceForms\frmEMAILREPORT.resx">
@@ -3420,7 +1892,6 @@
     <EmbeddedResource Include="MaintenanceForms\frmTLPROFILES.resx">
       <DependentUpon>frmTLPROFILES.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

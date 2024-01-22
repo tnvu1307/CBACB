@@ -25,11 +25,5 @@ Public Interface IHOSTService
     <OperationContract()>
     Function GetFlagSignature() As String
 
-    <OperationContract()>
-    Function InsertOrUpdateAccMicrosoft(ByRef pv_arrByteMessage As Byte()) As Long
-
-    <OperationContract()>
-    Function GetInfoAuthorMicrosoft(ByRef pv_arrByteMessage As Byte()) As Long
-
 End Interface
 'End Namespace
