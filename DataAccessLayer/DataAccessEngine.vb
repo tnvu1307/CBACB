@@ -95,10 +95,10 @@ Public Class DataAccess
                         'If ConfigurationManager.AppSettings("ISPROTECTPASSWORD") = "Y" Then
                         '    v_strPassword = DataProtection.UnprotectData(v_strPassword)
                         'End If
+                        Dim crypt = New RSA()
                         If Not ConfigurationManager.AppSettings(pv_strModule & ".PWDK") Is Nothing Then
-                            Dim v_key As String = ConfigurationManager.AppSettings(pv_strModule & ".PWDK")
-                            If Not String.IsNullOrEmpty(v_key) Then
-                                v_strPassword = CryptoUtil.CryptoUtil.Decrypt(v_strPassword, v_key)
+                            If Not String.IsNullOrEmpty(Signature_PrivateKey) Then
+                                v_strPassword = crypt.RsaDecryptWithPrivate(v_strPassword, Signature_PrivateKey)
                             End If
                         End If
                     End If
@@ -377,15 +377,12 @@ Public Class DataAccess
         'Dim v_intParamCount As Integer
         Dim v_cmdParam As OracleParameter
         Dim i As Integer
-
         Try
             ReDim v_arrCommandParameters(pv_rptParameters.Length)
-
             v_cmdParam = New OracleParameter("p_ref_cursor", OracleDbType.RefCursor)
             v_cmdParam.Direction = ParameterDirection.InputOutput
             v_cmdParam.Value = Nothing
             v_arrCommandParameters(0) = v_cmdParam
-
             For i = 0 To pv_rptParameters.Length - 1
                 If (pv_rptParameters(i).ParamName <> String.Empty) Then
                     Select Case pv_rptParameters(i).ParamType
