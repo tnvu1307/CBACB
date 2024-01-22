@@ -15,7 +15,7 @@
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-	<OutputPath>.\bin\Debug</OutputPath>
+    <OutputPath>.\bin\Debug</OutputPath>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>false</DefineTrace>
     <DebugSymbols>true</DebugSymbols>
@@ -24,7 +24,7 @@
     <RemoveIntegerChecks>false</RemoveIntegerChecks>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
   </PropertyGroup>
-   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>..\Deployment\Client\</OutputPath>
     <DefineDebug>false</DefineDebug>
     <DefineTrace>false</DefineTrace>
@@ -221,6 +221,9 @@
     </Reference>
     <Reference Include="netchartdir">
       <HintPath>..\Libref\netchartdir.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="quickfix_net">
       <HintPath>..\Libref\quickfix_net.dll</HintPath>
@@ -555,6 +558,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginMicrosoft.Designer.vb">
+      <DependentUpon>frmLoginMicrosoft.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginMicrosoft.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogMR3009-EN.Designer.vb" />
@@ -1910,6 +1919,7 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages.config" />
     <None Include="Service References\HOAuthService\HOAuthService.wsdl" />
     <None Include="Service References\HOAuthService\HOAuthService.xsd">
       <SubType>Designer</SubType>
