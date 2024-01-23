@@ -965,15 +965,15 @@ Public Class frmXtraLogin
             'If TLNAME is null => Show form fill info account
             If blResult = BusLayerResult.Success Then
                 If String.IsNullOrEmpty(m_BusLayer.CurrentTellerProfile.TellerName) = True Then
-                    Dim v_strFullObjName As String
-
                     Dim v_frm As Object
+                    Dim v_strFullObjName As String
                     Dim moduleCode = "SA"
                     Dim tableName = "TLPROFILES"
 
                     v_frm = frmSearchMaster.GetFormByName("frmTLPROFILES")
-                    v_strFullObjName = moduleCode & "." & tableName
 
+                    v_strFullObjName = moduleCode & "." & tableName
+                    v_frm.TableName = tableName
                     v_frm.ExeFlag = ExecuteFlag.Edit
                     v_frm.UserLanguage = m_BusLayer.AppLanguage
                     v_frm.ModuleCode = moduleCode
@@ -983,7 +983,7 @@ Public Class frmXtraLogin
                     v_frm.Text = "Thông tin tài khoản"
                     v_frm.TellerId = m_BusLayer.CurrentTellerProfile.TellerId
                     v_frm.TellerRight = "YYYY"
-                    v_frm.GroupCareBy = m_BusLayer.CurrentTellerProfile.TellerGroupCareBy
+                    v_frm.GroupCareBy = "0001|Careby_01#0006|NHom 1#"
                     v_frm.AuthString = "YYYYY"
                     v_frm.BranchId = m_BusLayer.CurrentTellerProfile.BranchId
                     v_frm.Busdate = m_BusLayer.CurrentTellerProfile.BusDate
