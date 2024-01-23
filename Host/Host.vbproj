@@ -26,10 +26,22 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <ProjectReference Include="..\AP\AP.vbproj" />
         <ProjectReference Include="..\BA\BA.vbproj" />
+        <ProjectReference Include="..\BO\BO.vbproj" />
+        <ProjectReference Include="..\CA\CA.vbproj" />
+        <ProjectReference Include="..\CF\CF.vbproj" />
+        <ProjectReference Include="..\CL\CL.vbproj" />
         <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.vbproj" />
+        <ProjectReference Include="..\DD\DD.vbproj" />
+        <ProjectReference Include="..\EA\EA.vbproj" />
+        <ProjectReference Include="..\FA\FA.vbproj" />
+        <ProjectReference Include="..\FN\FN.vbproj" />
+        <ProjectReference Include="..\FO\FO.vbproj" />
         <ProjectReference Include="..\HostCommonLibrary\HostCommonLibrary.vbproj" />
+        <ProjectReference Include="..\OD\OD.vbproj" />
         <ProjectReference Include="..\SA\SA.vbproj" />
+        <ProjectReference Include="..\SE\SE.vbproj" />
         <ProjectReference Include="..\ST\ST.vbproj" />
         <ProjectReference Include="..\SY\SY.vbproj" />
 		<ProjectReference Include="..\RM\RM.vbproj" />
