@@ -983,19 +983,17 @@ Public Class frmXtraLogin
                     v_frm.Text = "Thông tin tài khoản"
                     v_frm.TellerId = m_BusLayer.CurrentTellerProfile.TellerId
                     v_frm.TellerRight = "YYYY"
+                    v_frm.GroupCareBy = m_BusLayer.CurrentTellerProfile.TellerGroupCareBy
                     v_frm.AuthString = "YYYYY"
-                    'v_frm.GroupCareBy = GroupCareBy
                     v_frm.BranchId = m_BusLayer.CurrentTellerProfile.BranchId
                     v_frm.Busdate = m_BusLayer.CurrentTellerProfile.BusDate
                     v_frm.KeyFieldName = "TLID"
                     v_frm.KeyFieldType = "C"
-                    'v_frm.TellerNameField = m_BusLayer.CurrentTellerProfile.TellerName
                     v_frm.KeyFieldValue = m_BusLayer.CurrentTellerProfile.TellerId
 
                     Dim frmResult As DialogResult = v_frm.ShowDialog()
                 End If
 
-                'm_BusLayer.CurrentTellerProfile.AccessArea = Me.cboBusinessArea.Text
                 Me.DialogResult = DialogResult.OK
                 Me.Close()
 
