@@ -7337,71 +7337,71 @@ Public Class frmXtraTransact
                         Exit Sub
                     End If
 
-                        'Fill du lieu lookup tu HOST (Fill du lieu cho Refvalue va cac control khac)
-                        If Len(mv_arrObjFields(v_intIndex).SearchCode) > 0 Then
-                            Dim ctlCheck As Control
-                            ctlCheck = Me.pnTransDetail.Controls(mv_arrObjFields(v_intIndex).ControlIndex)
-                            mv_arrObjFields(v_intIndex).FieldValue = v_strFieldValue
-                            If Not (mv_arrObjFields(v_intIndex).Mandatory = False And ctlCheck.Text.Trim.Length = 0) Then
-                                'Kiem tra du lieu nhap vao co dung khong
-                                v_strSEARCHCODE = mv_arrObjFields(v_intIndex).SearchCode
-                                'v_strKeyVal = Replace(v_strFieldValue, ".", "").ToUpper
-                                'v_strKeyVal = v_strFieldValue.Replace(".", "").ToUpper
-                                If v_strDEFNAME = "SYMBOL" Then
-                                    v_strKeyVal = v_strFieldValue
-                                Else
-                                    v_strKeyVal = UCase(Replace(v_strFieldValue, ".", ""))
-                                End If
-                                'Lay KeyName
-                                v_strSQLCMD = "SELECT SEARCHFLD.FIELDCODE KEYNAME,SEARCH.SEARCHCMDSQL FROM SEARCHFLD,SEARCH " & ControlChars.CrLf _
+                    'Fill du lieu lookup tu HOST (Fill du lieu cho Refvalue va cac control khac)
+                    If Len(mv_arrObjFields(v_intIndex).SearchCode) > 0 Then
+                        Dim ctlCheck As Control
+                        ctlCheck = Me.pnTransDetail.Controls(mv_arrObjFields(v_intIndex).ControlIndex)
+                        mv_arrObjFields(v_intIndex).FieldValue = v_strFieldValue
+                        If Not (mv_arrObjFields(v_intIndex).Mandatory = False And ctlCheck.Text.Trim.Length = 0) Then
+                            'Kiem tra du lieu nhap vao co dung khong
+                            v_strSEARCHCODE = mv_arrObjFields(v_intIndex).SearchCode
+                            'v_strKeyVal = Replace(v_strFieldValue, ".", "").ToUpper
+                            'v_strKeyVal = v_strFieldValue.Replace(".", "").ToUpper
+                            If v_strDEFNAME = "SYMBOL" Then
+                                v_strKeyVal = v_strFieldValue
+                            Else
+                                v_strKeyVal = UCase(Replace(v_strFieldValue, ".", ""))
+                            End If
+                            'Lay KeyName
+                            v_strSQLCMD = "SELECT SEARCHFLD.FIELDCODE KEYNAME,SEARCH.SEARCHCMDSQL FROM SEARCHFLD,SEARCH " & ControlChars.CrLf _
                                     & " WHERE SEARCH.SEARCHCODE = SEARCHFLD.SEARCHCODE " & ControlChars.CrLf _
                                     & " AND SEARCHFLD.KEY ='Y' AND SEARCHFLD.SEARCHCODE ='" & v_strSEARCHCODE & "'"
-                                v_strObjMsg = BuildXMLObjMsg(, , , , gc_IsLocalMsg, gc_MsgTypeObj, OBJNAME_SA_LOOKUP, gc_ActionInquiry, v_strSQLCMD)
-                                v_ws.Message(v_strObjMsg)
-                                v_xmlDocument.LoadXml(v_strObjMsg)
-                                v_nodeList = v_xmlDocument.SelectNodes("/ObjectMessage/ObjData")
-                                If v_nodeList.Count > 0 Then
-                                    For i As Integer = 0 To v_nodeList.Count - 1
-                                        For j As Integer = 0 To v_nodeList.Item(i).ChildNodes.Count - 1 Step 1
-                                            With v_nodeList.Item(i).ChildNodes(j)
-                                                v_strFLDNAME = CStr(CType(.Attributes.GetNamedItem("fldname"), Xml.XmlAttribute).Value)
-                                                v_strValue = Trim(.InnerText)
-                                                Select Case v_strFLDNAME
-                                                    Case "KEYNAME"
-                                                        v_strKeyName = Trim(v_strValue)
-                                                    Case "SEARCHCMDSQL"
-                                                        v_strSEARCHSQL = Trim(v_strValue)
-                                                End Select
-                                            End With
-                                        Next
+                            v_strObjMsg = BuildXMLObjMsg(, , , , gc_IsLocalMsg, gc_MsgTypeObj, OBJNAME_SA_LOOKUP, gc_ActionInquiry, v_strSQLCMD)
+                            v_ws.Message(v_strObjMsg)
+                            v_xmlDocument.LoadXml(v_strObjMsg)
+                            v_nodeList = v_xmlDocument.SelectNodes("/ObjectMessage/ObjData")
+                            If v_nodeList.Count > 0 Then
+                                For i As Integer = 0 To v_nodeList.Count - 1
+                                    For j As Integer = 0 To v_nodeList.Item(i).ChildNodes.Count - 1 Step 1
+                                        With v_nodeList.Item(i).ChildNodes(j)
+                                            v_strFLDNAME = CStr(CType(.Attributes.GetNamedItem("fldname"), Xml.XmlAttribute).Value)
+                                            v_strValue = Trim(.InnerText)
+                                            Select Case v_strFLDNAME
+                                                Case "KEYNAME"
+                                                    v_strKeyName = Trim(v_strValue)
+                                                Case "SEARCHCMDSQL"
+                                                    v_strSEARCHSQL = Trim(v_strValue)
+                                            End Select
+                                        End With
                                     Next
-                                    'Sua doan nay them phan quyen data
-                                    Dim v_strClause, v_strFUNDFilter, v_strMEMBERFilter, v_strSQL As String
-                                    If v_strDEFNAME = "CUSTODYCD" Then
-                                        'If Me.TellerId <> ADMIN_ID Then
-                                        '    v_strSQL = "SELECT M.MBCODE FROM TLMEMBERS M, " _
-                                        '        & " (SELECT TLID FROM TLPROFILES WHERE TLID ='" & Me.TellerId & "' UNION ALL SELECT COPPYTLID TLID FROM TLCOPPYRIGHT WHERE TLID ='" & Me.TellerId & "' AND " _
-                                        '         & " STATUS='A' AND FRDATE <=GETCURRDATE AND TODATE >= GETCURRDATE )TL" _
-                                        '         & " WHERE M.TLTYPE ='U' AND M.TLID = TL.TLID" _
-                                        '    & " UNION ALL" _
-                                        '        & " SELECT mbcode FROM tlmembers WHERE tltype ='G' AND tlid  IN " _
-                                        '        & " (SELECT GRPID FROM TLGRPUSERS WHERE TLID ='" & Me.TellerId & "' " _
-                                        '        & " UNION ALL " _
-                                        '        & " SELECT G.GRPID FROM TLCOPPYRIGHT T, TLGRPUSERS G WHERE " _
-                                        '        & " G.TLID = T.COPPYTLID AND T.TLID = '" & Me.TellerId & "' AND " _
-                                        '        & " T.STATUS='A' AND T.FRDATE <=GETCURRDATE AND T.TODATE >= GETCURRDATE)"
+                                Next
+                                'Sua doan nay them phan quyen data
+                                Dim v_strClause, v_strFUNDFilter, v_strMEMBERFilter, v_strSQL As String
+                                If v_strDEFNAME = "CUSTODYCD" Then
+                                    'If Me.TellerId <> ADMIN_ID Then
+                                    '    v_strSQL = "SELECT M.MBCODE FROM TLMEMBERS M, " _
+                                    '        & " (SELECT TLID FROM TLPROFILES WHERE TLID ='" & Me.TellerId & "' UNION ALL SELECT COPPYTLID TLID FROM TLCOPPYRIGHT WHERE TLID ='" & Me.TellerId & "' AND " _
+                                    '         & " STATUS='A' AND FRDATE <=GETCURRDATE AND TODATE >= GETCURRDATE )TL" _
+                                    '         & " WHERE M.TLTYPE ='U' AND M.TLID = TL.TLID" _
+                                    '    & " UNION ALL" _
+                                    '        & " SELECT mbcode FROM tlmembers WHERE tltype ='G' AND tlid  IN " _
+                                    '        & " (SELECT GRPID FROM TLGRPUSERS WHERE TLID ='" & Me.TellerId & "' " _
+                                    '        & " UNION ALL " _
+                                    '        & " SELECT G.GRPID FROM TLCOPPYRIGHT T, TLGRPUSERS G WHERE " _
+                                    '        & " G.TLID = T.COPPYTLID AND T.TLID = '" & Me.TellerId & "' AND " _
+                                    '        & " T.STATUS='A' AND T.FRDATE <=GETCURRDATE AND T.TODATE >= GETCURRDATE)"
 
-                                        '    v_strFUNDFilter &= " AND  MBCODE IN ( " & v_strSQL & " ) "
-                                        '    v_strSQLCMD = "SELECT *  FROM  (" & v_strSEARCHSQL & ") WHERE REPLACE(" & v_strKeyName & ",'.','')='" & v_strKeyVal & "'" & v_strFUNDFilter
-                                        'Else
-                                        '    v_strSQLCMD = "SELECT *  FROM  (" & v_strSEARCHSQL & ") WHERE REPLACE(" & v_strKeyName & ",'.','')='" & v_strKeyVal & "'"
-                                        'End If
-                                        v_strSQLCMD = "SELECT *  FROM  (" & v_strSEARCHSQL & ") WHERE REPLACE(" & v_strKeyName & ",'.','')='" & v_strKeyVal & "'"
-                                    ElseIf v_strDEFNAME = "CODEID" Or v_strDEFNAME = "SYMBOL" Then
-                                        v_strSQLCMD = "SELECT *  FROM  (" & v_strSEARCHSQL & ") WHERE REPLACE(" & v_strKeyName & ",'.','')='" & v_strKeyVal & "'"
-                                    Else
-                                        v_strSQLCMD = "SELECT *  FROM  (" & v_strSEARCHSQL & ") WHERE REPLACE(" & v_strKeyName & ",'.','')='" & v_strKeyVal & "'"
-                                    End If
+                                    '    v_strFUNDFilter &= " AND  MBCODE IN ( " & v_strSQL & " ) "
+                                    '    v_strSQLCMD = "SELECT *  FROM  (" & v_strSEARCHSQL & ") WHERE REPLACE(" & v_strKeyName & ",'.','')='" & v_strKeyVal & "'" & v_strFUNDFilter
+                                    'Else
+                                    '    v_strSQLCMD = "SELECT *  FROM  (" & v_strSEARCHSQL & ") WHERE REPLACE(" & v_strKeyName & ",'.','')='" & v_strKeyVal & "'"
+                                    'End If
+                                    v_strSQLCMD = "SELECT *  FROM  (" & v_strSEARCHSQL & ") WHERE REPLACE(" & v_strKeyName & ",'.','')='" & v_strKeyVal & "'"
+                                ElseIf v_strDEFNAME = "CODEID" Or v_strDEFNAME = "SYMBOL" Then
+                                    v_strSQLCMD = "SELECT *  FROM  (" & v_strSEARCHSQL & ") WHERE REPLACE(" & v_strKeyName & ",'.','')='" & v_strKeyVal & "'"
+                                Else
+                                    v_strSQLCMD = "SELECT *  FROM  (" & v_strSEARCHSQL & ") WHERE REPLACE(" & v_strKeyName & ",'.','')='" & v_strKeyVal & "'"
+                                End If
 
                                 v_strSQLCMD = v_strSQLCMD.Replace("<$MBID>", HO_MBID)
                                 v_strSQLCMD = v_strSQLCMD.Replace("<$HO_MBID>", HO_MBID)
@@ -7414,161 +7414,39 @@ Public Class frmXtraTransact
                                 v_strSQLCMD = v_strSQLCMD.Replace("<$CUSTID>", "")
                                 v_strSQLCMD = v_strSQLCMD.Replace("<@KEYVALUE>", GetFieldValueByName(mv_arrObjFields(v_intIndex).TagField))
 
-                                    If Me.UserLanguage = gc_LANG_ENGLISH Then
-                                        v_strSQLCMD = v_strSQLCMD.Replace("<@CDCONTENT>", "EN_CDCONTENT")
-                                        v_strSQLCMD = v_strSQLCMD.Replace("<@DESCRIPTION>", "EN_DESCRIPTION")
-                                    Else
-                                        v_strSQLCMD = v_strSQLCMD.Replace("<@CDCONTENT>", "CDCONTENT")
-                                        v_strSQLCMD = v_strSQLCMD.Replace("<@DESCRIPTION>", "DESCRIPTION")
+                                If Me.UserLanguage = gc_LANG_ENGLISH Then
+                                    v_strSQLCMD = v_strSQLCMD.Replace("<@CDCONTENT>", "EN_CDCONTENT")
+                                    v_strSQLCMD = v_strSQLCMD.Replace("<@DESCRIPTION>", "EN_DESCRIPTION")
+                                Else
+                                    v_strSQLCMD = v_strSQLCMD.Replace("<@CDCONTENT>", "CDCONTENT")
+                                    v_strSQLCMD = v_strSQLCMD.Replace("<@DESCRIPTION>", "DESCRIPTION")
+                                End If
+
+                                v_strObjMsg = BuildXMLObjMsg(, , , , gc_IsNotLocalMsg, gc_MsgTypeObj, OBJNAME_CF_CFMAST, gc_ActionInquiry, v_strSQLCMD)
+                                v_ws.Message(v_strObjMsg)
+
+                                'Kiem tra xem du lieu co ton tai khong
+                                Dim v_xmlDocTmp As New Xml.XmlDocument, v_nodeListTmp As Xml.XmlNodeList
+                                v_xmlDocTmp.LoadXml(v_strObjMsg)
+
+                                v_nodeListTmp = v_xmlDocTmp.SelectNodes("/ObjectMessage/ObjData")
+                                If v_nodeListTmp.Count = 0 Then
+                                    If mv_arrObjFields(v_intIndex).LookupCheck = "Y" Then
+                                        MessageBox.Show(mv_ResourceManager.GetString("ERR_DATA_NOTFOUND"), gc_ApplicationTitle, MessageBoxButtons.OK, MessageBoxIcon.Information)
+                                        e.Cancel = True
+                                        Exit Sub
                                     End If
+                                End If
 
-                                    v_strObjMsg = BuildXMLObjMsg(, , , , gc_IsNotLocalMsg, gc_MsgTypeObj, OBJNAME_CF_CFMAST, gc_ActionInquiry, v_strSQLCMD)
-                                    v_ws.Message(v_strObjMsg)
-
-                                    'Kiem tra xem du lieu co ton tai khong
-                                    Dim v_xmlDocTmp As New Xml.XmlDocument, v_nodeListTmp As Xml.XmlNodeList
-                                    v_xmlDocTmp.LoadXml(v_strObjMsg)
-
-                                    v_nodeListTmp = v_xmlDocTmp.SelectNodes("/ObjectMessage/ObjData")
-                                    If v_nodeListTmp.Count = 0 Then
-                                        If mv_arrObjFields(v_intIndex).LookupCheck = "Y" Then
-                                            MessageBox.Show(mv_ResourceManager.GetString("ERR_DATA_NOTFOUND"), gc_ApplicationTitle, MessageBoxButtons.OK, MessageBoxIcon.Information)
-                                            e.Cancel = True
-                                            Exit Sub
-                                        End If
-                                    End If
-
-                                    FillLookupData(strFLDNAME, v_strFieldValue, v_strObjMsg, v_strKeyName)
-                                    'Fill Refval
-                                    v_strSQLCMD = "SELECT SEARCHCMDSQL,SE.SEARCHCODE,SEFLD.FIELDCODE, SEARCHFLD.FIELDCODE KEYNAME FROM SEARCH SE,SEARCHFLD SEFLD,SEARCHFLD WHERE SE.SEARCHCODE=SEFLD.SEARCHCODE" & ControlChars.CrLf _
+                                FillLookupData(strFLDNAME, v_strFieldValue, v_strObjMsg, v_strKeyName)
+                                'Fill Refval
+                                v_strSQLCMD = "SELECT SEARCHCMDSQL,SE.SEARCHCODE,SEFLD.FIELDCODE, SEARCHFLD.FIELDCODE KEYNAME FROM SEARCH SE,SEARCHFLD SEFLD,SEARCHFLD WHERE SE.SEARCHCODE=SEFLD.SEARCHCODE" & ControlChars.CrLf _
                                                 & "AND SE.SEARCHCODE=SEARCHFLD.SEARCHCODE AND SE.SEARCHCODE='" & v_strSEARCHCODE & "' AND SEFLD.REFVALUE='Y' AND SEARCHFLD.KEY='Y'"
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$MBID>", HO_MBID)
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$HO_MBID>", HO_MBID)
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$BRID>", HO_BRID)
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$HO_BRID>", HO_BRID)
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$BUSDATE>", Me.BusDate)
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$TLTXCD>", Me.mskTransCode.Text.Trim)
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$AFACCTNO>", "")
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$CUSTID>", "")
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<@KEYVALUE>", "")
-
-                                    If Me.UserLanguage = gc_LANG_ENGLISH Then
-                                        v_strSQLCMD = v_strSQLCMD.Replace("<@CDCONTENT>", "EN_CDCONTENT")
-                                        v_strSQLCMD = v_strSQLCMD.Replace("<@DESCRIPTION>", "EN_DESCRIPTION")
-                                    Else
-                                        v_strSQLCMD = v_strSQLCMD.Replace("<@CDCONTENT>", "CDCONTENT")
-                                        v_strSQLCMD = v_strSQLCMD.Replace("<@DESCRIPTION>", "DESCRIPTION")
-                                    End If
-
-
-                                    v_strObjMsg = BuildXMLObjMsg(, , , , gc_IsLocalMsg, gc_MsgTypeObj, OBJNAME_SA_LOOKUP, gc_ActionInquiry, v_strSQLCMD, "")
-                                    v_ws.Message(v_strObjMsg)
-                                    v_xmlDocument.LoadXml(v_strObjMsg)
-                                    v_nodeList = v_xmlDocument.SelectNodes("/ObjectMessage/ObjData")
-                                    If v_nodeList.Count > 0 Then
-                                        For i As Integer = 0 To v_nodeList.Count - 1
-                                            For j As Integer = 0 To v_nodeList.Item(i).ChildNodes.Count - 1 Step 1
-                                                With v_nodeList.Item(i).ChildNodes(j)
-                                                    v_strFLDNAME = CStr(CType(.Attributes.GetNamedItem("fldname"), Xml.XmlAttribute).Value)
-                                                    v_strValue = Trim(.InnerText)
-                                                    Select Case v_strFLDNAME
-                                                        Case "FIELDCODE"
-                                                            v_strFIELDCODE = Trim(v_strValue)
-                                                    End Select
-                                                End With
-                                            Next
-                                        Next
-                                    v_strSQLCMD = "SELECT " & v_strFIELDCODE & " FROM  (" & v_strSEARCHSQL & ") WHERE REPLACE(" & v_strKeyName & ",'.','')='" & v_strKeyVal & "'"
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$MBID>", HO_MBID)
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$HO_MBID>", HO_MBID)
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$BRID>", HO_BRID)
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$HO_BRID>", HO_BRID)
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$BUSDATE>", Me.BusDate)
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$TELLERID>", Me.TellerId)
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$TLTXCD>", Me.mskTransCode.Text.Trim)
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$AFACCTNO>", "")
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<$CUSTID>", "")
-                                    v_strSQLCMD = v_strSQLCMD.Replace("<@KEYVALUE>", GetFieldValueByName(mv_arrObjFields(v_intIndex).TagField))
-
-                                        If Me.UserLanguage = gc_LANG_ENGLISH Then
-                                            v_strSQLCMD = v_strSQLCMD.Replace("<@CDCONTENT>", "EN_CDCONTENT")
-                                            v_strSQLCMD = v_strSQLCMD.Replace("<@DESCRIPTION>", "EN_DESCRIPTION")
-                                        Else
-                                            v_strSQLCMD = v_strSQLCMD.Replace("<@CDCONTENT>", "CDCONTENT")
-                                            v_strSQLCMD = v_strSQLCMD.Replace("<@DESCRIPTION>", "DESCRIPTION")
-                                        End If
-
-                                        v_strObjMsg = BuildXMLObjMsg(, , , , gc_IsNotLocalMsg, gc_MsgTypeObj, OBJNAME_CA_CAMAST, gc_ActionInquiry, v_strSQLCMD, "")
-                                        v_ws.Message(v_strObjMsg)
-                                        v_xmlDocument.LoadXml(v_strObjMsg)
-                                        v_nodeList = v_xmlDocument.SelectNodes("/ObjectMessage/ObjData")
-                                        If v_nodeList.Count > 0 Then
-                                            For i As Integer = 0 To v_nodeList.Count - 1
-                                                For j As Integer = 0 To v_nodeList.Item(i).ChildNodes.Count - 1 Step 1
-                                                    With v_nodeList.Item(i).ChildNodes(j)
-                                                        v_strFLDNAME = CStr(CType(.Attributes.GetNamedItem("fldname"), Xml.XmlAttribute).Value)
-                                                        v_strValue = Trim(.InnerText)
-                                                        Select Case v_strFLDNAME
-                                                            Case v_strFIELDCODE
-                                                                v_strRefValue = v_strValue
-                                                        End Select
-                                                    End With
-                                                Next
-                                            Next
-                                            If Len(v_strRefValue) > 0 Then
-                                                'Fill Refval 
-                                                Dim ctl As Control
-                                                ctl = Me.pnTransDetail.Controls(mv_arrObjFields(v_intIndex).LabelIndex)
-                                                ctl.Top = sender.Top
-                                                ctl.Text = v_strRefValue
-                                                ctl.Visible = True
-                                                mv_strCustName = v_strRefValue
-                                            End If
-                                        Else
-                                            If mv_arrObjFields(v_intIndex).Mandatory = True Then
-                                                MessageBox.Show(mv_ResourceManager.GetString("ERR_DATA_NOTFOUND"), gc_ApplicationTitle, MessageBoxButtons.OK, MessageBoxIcon.Information)
-                                                e.Cancel = True
-                                                Exit Sub
-                                            End If
-                                        End If
-                                    End If
-                                End If
-                            End If
-
-                        ElseIf mv_arrObjFields(v_intIndex).LookUp = "Y" Then
-                            Dim ctlCheck As Control
-                            ctlCheck = Me.pnTransDetail.Controls(mv_arrObjFields(v_intIndex).ControlIndex)
-                            If Not (mv_arrObjFields(v_intIndex).Mandatory = False And ctlCheck.Text.Trim.Length = 0) Then
-                                'Fill DL lookup tu BDS 
-                                'Check quyen du lieu cho symbol
-                                v_strSQLCMD = mv_arrObjFields(v_intIndex).LookupList
-                                If (v_strDEFNAME = "CODEID" Or v_strDEFNAME = "SYMBOL" Or v_strDEFNAME = "FUNDCODEID" Or v_strDEFNAME = "FUNDCODE") And InStr(v_strSQLCMD.ToUpper, "FUND") > 0 Then
-                                    If Me.TellerId <> ADMIN_ID Then
-                                        Dim v_strSQL, v_strMEMBERFilter As String
-                                        v_strSQL = "SELECT f.codeid FROM tlfunds f,(SELECT TLID FROM TLPROFILES WHERE TLID ='" & Me.TellerId & "' UNION ALL SELECT COPPYTLID TLID FROM TLCOPPYRIGHT WHERE TLID ='" & Me.TellerId & "' AND " _
-                                                     & " STATUS='A' AND FRDATE <=GETCURRDATE AND TODATE >= GETCURRDATE )TL " _
-                                                     & " WHERE f.tltype ='U' AND f.tlid = TL.TLID " _
-                                                     & " UNION ALL " _
-                                                     & " SELECT codeid FROM tlfunds  WHERE tltype ='G' AND tlid  IN " _
-                                                     & " (SELECT GRPID FROM TLGRPUSERS WHERE TLID ='" & Me.TellerId & "' " _
-                                                     & " UNION ALL " _
-                                                     & " SELECT G.GRPID FROM TLCOPPYRIGHT T, TLGRPUSERS G WHERE " _
-                                                     & " G.TLID = T.COPPYTLID AND T.TLID = '" & Me.TellerId & "' AND " _
-                                                     & " T.STATUS='A' AND T.FRDATE <=GETCURRDATE AND T.TODATE >= GETCURRDATE)"
-                                        If (InStr(v_strSQLCMD.ToUpper, "CODEID FROM FUND") > 0 Or InStr(v_strSQLCMD.ToUpper, "A.CODEID FROM FUND") > 0) Then
-                                            v_strMEMBERFilter &= " AND  CODEID IN ( " & v_strSQL & " ) "
-                                        Else
-                                            v_strMEMBERFilter &= " AND  VALUE IN ( " & v_strSQL & " ) "
-                                        End If
-
-                                        v_strSQLCMD = "SELECT *  FROM  (" & v_strSQLCMD & ") WHERE  0=0 " & v_strMEMBERFilter
-                                    End If
-                                End If
-
                                 v_strSQLCMD = v_strSQLCMD.Replace("<$MBID>", HO_MBID)
                                 v_strSQLCMD = v_strSQLCMD.Replace("<$HO_MBID>", HO_MBID)
+                                v_strSQLCMD = v_strSQLCMD.Replace("<$BRID>", HO_BRID)
+                                v_strSQLCMD = v_strSQLCMD.Replace("<$HO_BRID>", HO_BRID)
                                 v_strSQLCMD = v_strSQLCMD.Replace("<$BUSDATE>", Me.BusDate)
-                                v_strSQLCMD = v_strSQLCMD.Replace("<$TELLERID>", Me.TellerId)
                                 v_strSQLCMD = v_strSQLCMD.Replace("<$TLTXCD>", Me.mskTransCode.Text.Trim)
                                 v_strSQLCMD = v_strSQLCMD.Replace("<$AFACCTNO>", "")
                                 v_strSQLCMD = v_strSQLCMD.Replace("<$CUSTID>", "")
@@ -7582,50 +7460,172 @@ Public Class frmXtraTransact
                                     v_strSQLCMD = v_strSQLCMD.Replace("<@DESCRIPTION>", "DESCRIPTION")
                                 End If
 
+
                                 v_strObjMsg = BuildXMLObjMsg(, , , , gc_IsLocalMsg, gc_MsgTypeObj, OBJNAME_SA_LOOKUP, gc_ActionInquiry, v_strSQLCMD, "")
                                 v_ws.Message(v_strObjMsg)
-                                v_strFULLDATA = v_strObjMsg
                                 v_xmlDocument.LoadXml(v_strObjMsg)
                                 v_nodeList = v_xmlDocument.SelectNodes("/ObjectMessage/ObjData")
-                                For i As Integer = 0 To v_nodeList.Count - 1
-                                    For j As Integer = 0 To v_nodeList.Item(i).ChildNodes.Count - 1 Step 1
-                                        With v_nodeList.Item(i).ChildNodes(j)
-                                            If CStr(CType(.Attributes.GetNamedItem("fldname"), Xml.XmlAttribute).Value) = "VALUE" Then
-                                                v_strValue = Trim(.InnerText.ToString)
-                                                If v_strFieldValue = v_strValue Then
-                                                    For k As Integer = 0 To v_nodeList.Item(i).ChildNodes.Count - 1 Step 1
-                                                        With v_nodeList.Item(i).ChildNodes(k)
-                                                            If CStr(CType(.Attributes.GetNamedItem("fldname"), Xml.XmlAttribute).Value) = "DISPLAY" Then
-                                                                v_strDisplay = Trim(.InnerText.ToString)
-                                                            End If
-                                                        End With
-                                                    Next
-                                                    Dim ctl As Control
-                                                    ctl = Me.pnTransDetail.Controls(mv_arrObjFields(v_intIndex).LabelIndex)
-                                                    ctl.Top = sender.Top
-                                                    ctl.Text = v_strDisplay
-                                                    ctl.Visible = True
-                                                    v_bolCheck = True
-                                                    Exit For
-                                                End If
-                                            End If
-                                        End With
+                                If v_nodeList.Count > 0 Then
+                                    For i As Integer = 0 To v_nodeList.Count - 1
+                                        For j As Integer = 0 To v_nodeList.Item(i).ChildNodes.Count - 1 Step 1
+                                            With v_nodeList.Item(i).ChildNodes(j)
+                                                v_strFLDNAME = CStr(CType(.Attributes.GetNamedItem("fldname"), Xml.XmlAttribute).Value)
+                                                v_strValue = Trim(.InnerText)
+                                                Select Case v_strFLDNAME
+                                                    Case "FIELDCODE"
+                                                        v_strFIELDCODE = Trim(v_strValue)
+                                                End Select
+                                            End With
+                                        Next
                                     Next
-                                Next
-                                If v_bolCheck = True Then
-                                    'Hien thi du lieu tu lookup
-                                    FillLookupData(strFLDNAME, v_strFieldValue, v_strFULLDATA)
-                                Else
-                                    'Thong bao loi
-                                    MessageBox.Show(mv_ResourceManager.GetString("ERR_LOOKUP_VALUE"), gc_ApplicationTitle, MessageBoxButtons.OK, MessageBoxIcon.Information)
-                                    e.Cancel = True
-                                    Exit Sub
+                                    v_strSQLCMD = "SELECT " & v_strFIELDCODE & " FROM  (" & v_strSEARCHSQL & ") WHERE REPLACE(" & v_strKeyName & ",'.','')='" & v_strKeyVal & "'"
+                                    v_strSQLCMD = v_strSQLCMD.Replace("<$MBID>", HO_MBID)
+                                    v_strSQLCMD = v_strSQLCMD.Replace("<$HO_MBID>", HO_MBID)
+                                    v_strSQLCMD = v_strSQLCMD.Replace("<$BRID>", HO_BRID)
+                                    v_strSQLCMD = v_strSQLCMD.Replace("<$HO_BRID>", HO_BRID)
+                                    v_strSQLCMD = v_strSQLCMD.Replace("<$BUSDATE>", Me.BusDate)
+                                    v_strSQLCMD = v_strSQLCMD.Replace("<$TELLERID>", Me.TellerId)
+                                    v_strSQLCMD = v_strSQLCMD.Replace("<$TLTXCD>", Me.mskTransCode.Text.Trim)
+                                    v_strSQLCMD = v_strSQLCMD.Replace("<$AFACCTNO>", "")
+                                    v_strSQLCMD = v_strSQLCMD.Replace("<$CUSTID>", "")
+                                    v_strSQLCMD = v_strSQLCMD.Replace("<@KEYVALUE>", GetFieldValueByName(mv_arrObjFields(v_intIndex).TagField))
+
+                                    If Me.UserLanguage = gc_LANG_ENGLISH Then
+                                        v_strSQLCMD = v_strSQLCMD.Replace("<@CDCONTENT>", "EN_CDCONTENT")
+                                        v_strSQLCMD = v_strSQLCMD.Replace("<@DESCRIPTION>", "EN_DESCRIPTION")
+                                    Else
+                                        v_strSQLCMD = v_strSQLCMD.Replace("<@CDCONTENT>", "CDCONTENT")
+                                        v_strSQLCMD = v_strSQLCMD.Replace("<@DESCRIPTION>", "DESCRIPTION")
+                                    End If
+
+                                    v_strObjMsg = BuildXMLObjMsg(, , , , gc_IsNotLocalMsg, gc_MsgTypeObj, OBJNAME_CA_CAMAST, gc_ActionInquiry, v_strSQLCMD, "")
+                                    v_ws.Message(v_strObjMsg)
+                                    v_xmlDocument.LoadXml(v_strObjMsg)
+                                    v_nodeList = v_xmlDocument.SelectNodes("/ObjectMessage/ObjData")
+                                    If v_nodeList.Count > 0 Then
+                                        For i As Integer = 0 To v_nodeList.Count - 1
+                                            For j As Integer = 0 To v_nodeList.Item(i).ChildNodes.Count - 1 Step 1
+                                                With v_nodeList.Item(i).ChildNodes(j)
+                                                    v_strFLDNAME = CStr(CType(.Attributes.GetNamedItem("fldname"), Xml.XmlAttribute).Value)
+                                                    v_strValue = Trim(.InnerText)
+                                                    Select Case v_strFLDNAME
+                                                        Case v_strFIELDCODE
+                                                            v_strRefValue = v_strValue
+                                                    End Select
+                                                End With
+                                            Next
+                                        Next
+                                        If Len(v_strRefValue) > 0 Then
+                                            'Fill Refval 
+                                            Dim ctl As Control
+                                            ctl = Me.pnTransDetail.Controls(mv_arrObjFields(v_intIndex).LabelIndex)
+                                            ctl.Top = sender.Top
+                                            ctl.Text = v_strRefValue
+                                            ctl.Visible = True
+                                            mv_strCustName = v_strRefValue
+                                        End If
+                                    Else
+                                        If mv_arrObjFields(v_intIndex).Mandatory = True Then
+                                            MessageBox.Show(mv_ResourceManager.GetString("ERR_DATA_NOTFOUND"), gc_ApplicationTitle, MessageBoxButtons.OK, MessageBoxIcon.Information)
+                                            e.Cancel = True
+                                            Exit Sub
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+
+                    ElseIf mv_arrObjFields(v_intIndex).LookUp = "Y" Then
+                        Dim ctlCheck As Control
+                        ctlCheck = Me.pnTransDetail.Controls(mv_arrObjFields(v_intIndex).ControlIndex)
+                        If Not (mv_arrObjFields(v_intIndex).Mandatory = False And ctlCheck.Text.Trim.Length = 0) Then
+                            'Fill DL lookup tu BDS 
+                            'Check quyen du lieu cho symbol
+                            v_strSQLCMD = mv_arrObjFields(v_intIndex).LookupList
+                            If (v_strDEFNAME = "CODEID" Or v_strDEFNAME = "SYMBOL" Or v_strDEFNAME = "FUNDCODEID" Or v_strDEFNAME = "FUNDCODE") And InStr(v_strSQLCMD.ToUpper, "FUND") > 0 Then
+                                If Me.TellerId <> ADMIN_ID Then
+                                    Dim v_strSQL, v_strMEMBERFilter As String
+                                    v_strSQL = "SELECT f.codeid FROM tlfunds f,(SELECT TLID FROM TLPROFILES WHERE TLID ='" & Me.TellerId & "' UNION ALL SELECT COPPYTLID TLID FROM TLCOPPYRIGHT WHERE TLID ='" & Me.TellerId & "' AND " _
+                                                     & " STATUS='A' AND FRDATE <=GETCURRDATE AND TODATE >= GETCURRDATE )TL " _
+                                                     & " WHERE f.tltype ='U' AND f.tlid = TL.TLID " _
+                                                     & " UNION ALL " _
+                                                     & " SELECT codeid FROM tlfunds  WHERE tltype ='G' AND tlid  IN " _
+                                                     & " (SELECT GRPID FROM TLGRPUSERS WHERE TLID ='" & Me.TellerId & "' " _
+                                                     & " UNION ALL " _
+                                                     & " SELECT G.GRPID FROM TLCOPPYRIGHT T, TLGRPUSERS G WHERE " _
+                                                     & " G.TLID = T.COPPYTLID AND T.TLID = '" & Me.TellerId & "' AND " _
+                                                     & " T.STATUS='A' AND T.FRDATE <=GETCURRDATE AND T.TODATE >= GETCURRDATE)"
+                                    If (InStr(v_strSQLCMD.ToUpper, "CODEID FROM FUND") > 0 Or InStr(v_strSQLCMD.ToUpper, "A.CODEID FROM FUND") > 0) Then
+                                        v_strMEMBERFilter &= " AND  CODEID IN ( " & v_strSQL & " ) "
+                                    Else
+                                        v_strMEMBERFilter &= " AND  VALUE IN ( " & v_strSQL & " ) "
+                                    End If
+
+                                    v_strSQLCMD = "SELECT *  FROM  (" & v_strSQLCMD & ") WHERE  0=0 " & v_strMEMBERFilter
                                 End If
                             End If
 
+                            v_strSQLCMD = v_strSQLCMD.Replace("<$MBID>", HO_MBID)
+                            v_strSQLCMD = v_strSQLCMD.Replace("<$HO_MBID>", HO_MBID)
+                            v_strSQLCMD = v_strSQLCMD.Replace("<$BUSDATE>", Me.BusDate)
+                            v_strSQLCMD = v_strSQLCMD.Replace("<$TELLERID>", Me.TellerId)
+                            v_strSQLCMD = v_strSQLCMD.Replace("<$TLTXCD>", Me.mskTransCode.Text.Trim)
+                            v_strSQLCMD = v_strSQLCMD.Replace("<$AFACCTNO>", "")
+                            v_strSQLCMD = v_strSQLCMD.Replace("<$CUSTID>", "")
+                            v_strSQLCMD = v_strSQLCMD.Replace("<@KEYVALUE>", "")
+
+                            If Me.UserLanguage = gc_LANG_ENGLISH Then
+                                v_strSQLCMD = v_strSQLCMD.Replace("<@CDCONTENT>", "EN_CDCONTENT")
+                                v_strSQLCMD = v_strSQLCMD.Replace("<@DESCRIPTION>", "EN_DESCRIPTION")
+                            Else
+                                v_strSQLCMD = v_strSQLCMD.Replace("<@CDCONTENT>", "CDCONTENT")
+                                v_strSQLCMD = v_strSQLCMD.Replace("<@DESCRIPTION>", "DESCRIPTION")
+                            End If
+
+                            v_strObjMsg = BuildXMLObjMsg(, , , , gc_IsLocalMsg, gc_MsgTypeObj, OBJNAME_SA_LOOKUP, gc_ActionInquiry, v_strSQLCMD, "")
+                            v_ws.Message(v_strObjMsg)
+                            v_strFULLDATA = v_strObjMsg
+                            v_xmlDocument.LoadXml(v_strObjMsg)
+                            v_nodeList = v_xmlDocument.SelectNodes("/ObjectMessage/ObjData")
+                            For i As Integer = 0 To v_nodeList.Count - 1
+                                For j As Integer = 0 To v_nodeList.Item(i).ChildNodes.Count - 1 Step 1
+                                    With v_nodeList.Item(i).ChildNodes(j)
+                                        If CStr(CType(.Attributes.GetNamedItem("fldname"), Xml.XmlAttribute).Value) = "VALUE" Then
+                                            v_strValue = Trim(.InnerText.ToString)
+                                            If v_strFieldValue = v_strValue Then
+                                                For k As Integer = 0 To v_nodeList.Item(i).ChildNodes.Count - 1 Step 1
+                                                    With v_nodeList.Item(i).ChildNodes(k)
+                                                        If CStr(CType(.Attributes.GetNamedItem("fldname"), Xml.XmlAttribute).Value) = "DISPLAY" Then
+                                                            v_strDisplay = Trim(.InnerText.ToString)
+                                                        End If
+                                                    End With
+                                                Next
+                                                Dim ctl As Control
+                                                ctl = Me.pnTransDetail.Controls(mv_arrObjFields(v_intIndex).LabelIndex)
+                                                ctl.Top = sender.Top
+                                                ctl.Text = v_strDisplay
+                                                ctl.Visible = True
+                                                v_bolCheck = True
+                                                Exit For
+                                            End If
+                                        End If
+                                    End With
+                                Next
+                            Next
+                            If v_bolCheck = True Then
+                                'Hien thi du lieu tu lookup
+                                FillLookupData(strFLDNAME, v_strFieldValue, v_strFULLDATA)
+                            Else
+                                'Thong bao loi
+                                MessageBox.Show(mv_ResourceManager.GetString("ERR_LOOKUP_VALUE"), gc_ApplicationTitle, MessageBoxButtons.OK, MessageBoxIcon.Information)
+                                e.Cancel = True
+                                Exit Sub
+                            End If
                         End If
-                        '----------------------------------
+
                     End If
+                    '----------------------------------
+                End If
 
                 'Truong Inventory
                 If Len(mv_arrObjFields(v_intIndex).InvName) > 0 Then
@@ -7792,9 +7792,16 @@ Public Class frmXtraTransact
                                                         'Me.pnTransDetail.Controls(v_intIndex).Text = GetBankBalance(BuildAMTEXP(v_xmlDocument, .VALEXP))
                                                         v_blnBankCalled = True
                                                         Dim v_arr() As String = GetBankBalance(BuildAMTEXP(v_xmlDocument, .VALEXP)).Split("|")
-                                                        v_dblTotalBalance = CDbl(v_arr(1))
-                                                        v_dblMinBalance = CDbl(v_arr(2))
-                                                        v_dblAvailBalance = Math.Max(CDbl(v_arr(0)) - CDbl(v_arr(2)), 0)
+                                                        Try
+                                                            If v_arr.Length <> 0 Then
+                                                                v_dblTotalBalance = CDbl(v_arr(1))
+                                                                v_dblMinBalance = CDbl(v_arr(2))
+                                                                v_dblAvailBalance = Math.Max(CDbl(v_arr(0)) - CDbl(v_arr(2)), 0)
+                                                            End If
+                                                        Catch x As Exception
+
+                                                        End Try
+
                                                     End If
                                                     If v_strVALEXP2 = "AVLBAL" Then
                                                         v_strAvailBalance = v_dblAvailBalance.ToString("0,0", CultureInfo.InvariantCulture)
