@@ -2390,7 +2390,7 @@ Partial Class frmCFMAST
         Me.tbcINCORPORATION.Controls.Add(Me.tpHiddenTab)
         Me.tbcINCORPORATION.Controls.Add(Me.tpAP)
         Me.tbcINCORPORATION.Controls.Add(Me.spcEmailReport)
-        Me.tbcINCORPORATION.Controls.Add(Me.tpCFDomain)
+        'Me.tbcINCORPORATION.Controls.Add(Me.tpCFDomain)
         Me.tbcINCORPORATION.Location = New System.Drawing.Point(3, 284)
         Me.tbcINCORPORATION.Name = "tbcINCORPORATION"
         Me.tbcINCORPORATION.SelectedIndex = 0
