@@ -501,6 +501,7 @@
     <EmbeddedResource Include="frmXtraTransact.resx">
       <DependentUpon>frmXtraTransact.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="XtraUcCriterial.resx">
       <DependentUpon>XtraUcCriterial.vb</DependentUpon>
     </EmbeddedResource>
