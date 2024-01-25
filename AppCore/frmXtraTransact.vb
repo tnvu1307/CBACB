@@ -110,7 +110,7 @@ Public Class frmXtraTransact
     Const CONTROL_LEFT = 10
     Const CONTROL_GAP = 2
     Const CONTROL_HEIGHT = 23
-    Const LBLCAPTION_WIDTH = 150
+    Const LBLCAPTION_WIDTH = 200
     Const ALL_WIDTH = 900
     Const WIDTH_PERCHAR = 15
     Const PANEL_TOP = 54
@@ -2852,51 +2852,51 @@ Public Class frmXtraTransact
 
                         Me.pnTransDetail.Controls.Add(v_lblCaption)
                         Me.pnTransDetail.Controls.Add(v_lblDesc)
-                        mv_arrObjFields(v_intIndex).LabelIndex = Me.pnTransDetail.Controls.IndexOf(v_lblDesc)
-                        Select Case Trim(mv_arrObjFields(v_intIndex).ControlType)
-                            Case "T"
-                                Me.pnTransDetail.Controls.Add(v_txtData)
-                                If Len(mv_arrObjFields(v_intIndex).SearchCode) > 0 Then
-                                    Me.pnTransDetail.Controls(Me.pnTransDetail.Controls.IndexOf(v_txtData)).BackColor = System.Drawing.Color.GreenYellow
-                                ElseIf Len(mv_arrObjFields(v_intIndex).LookupList) > 0 Then
-                                    Me.pnTransDetail.Controls(Me.pnTransDetail.Controls.IndexOf(v_txtData)).BackColor = System.Drawing.Color.Khaki
-                                End If
-                                mv_arrObjFields(v_intIndex).ControlIndex = Me.pnTransDetail.Controls.IndexOf(v_txtData)
-                            Case "R"
-                                Me.pnTransDetail.Controls.Add(v_rtbData)
-                                If Len(mv_arrObjFields(v_intIndex).SearchCode) > 0 Then
-                                    Me.pnTransDetail.Controls(Me.pnTransDetail.Controls.IndexOf(v_rtbData)).BackColor = System.Drawing.Color.GreenYellow
-                                ElseIf Len(mv_arrObjFields(v_intIndex).LookupList) > 0 Then
-                                    Me.pnTransDetail.Controls(Me.pnTransDetail.Controls.IndexOf(v_rtbData)).BackColor = System.Drawing.Color.Khaki
-                                End If
-                                mv_arrObjFields(v_intIndex).ControlIndex = Me.pnTransDetail.Controls.IndexOf(v_rtbData)
-                            Case "M"
-                                Me.pnTransDetail.Controls.Add(v_mskData)
-                                If Len(mv_arrObjFields(v_intIndex).SearchCode) > 0 Then
-                                    Me.pnTransDetail.Controls(Me.pnTransDetail.Controls.IndexOf(v_mskData)).BackColor = System.Drawing.Color.GreenYellow
-                                ElseIf Len(mv_arrObjFields(v_intIndex).LookupList) > 0 Then
-                                    Me.pnTransDetail.Controls(Me.pnTransDetail.Controls.IndexOf(v_mskData)).BackColor = System.Drawing.Color.Khaki
-                                End If
-                                mv_arrObjFields(v_intIndex).ControlIndex = Me.pnTransDetail.Controls.IndexOf(v_mskData)
-                            Case "C"
-                                Me.pnTransDetail.Controls.Add(v_cboData)
-                                mv_arrObjFields(v_intIndex).ControlIndex = Me.pnTransDetail.Controls.IndexOf(v_cboData)
-                                'Ä?áº·t giÃ¡ trá»‹ máº·c Ä‘á»‹nh cho Combo vá»«a Ä‘Æ°á»£c Add vÃ o
-                                If Len(Trim(mv_arrObjFields(v_intIndex).FieldValue)) > 0 Then
-                                    SetLookUpEditDefaultValue(CType(Me.pnTransDetail.Controls(mv_arrObjFields(v_intIndex).ControlIndex), LookUpEditEx), Trim(mv_arrObjFields(v_intIndex).FieldValue))
-                                    'CType(Me.pnTransDetail.Controls(mv_arrObjFields(v_intIndex).ControlIndex), LookUpEditEx).SelectedValue = Trim(mv_arrObjFields(v_intIndex).FieldValue)
-                                Else
-                                    SetLookUpEditDefaultValue(CType(Me.pnTransDetail.Controls(mv_arrObjFields(v_intIndex).ControlIndex), LookUpEditEx), Trim(mv_arrObjFields(v_intIndex).DefaultValue))
-                                End If
-                        End Select
+                            mv_arrObjFields(v_intIndex).LabelIndex = Me.pnTransDetail.Controls.IndexOf(v_lblDesc)
+                            Select Case Trim(mv_arrObjFields(v_intIndex).ControlType)
+                                Case "T"
+                                    Me.pnTransDetail.Controls.Add(v_txtData)
+                                    If Len(mv_arrObjFields(v_intIndex).SearchCode) > 0 Then
+                                        Me.pnTransDetail.Controls(Me.pnTransDetail.Controls.IndexOf(v_txtData)).BackColor = System.Drawing.Color.GreenYellow
+                                    ElseIf Len(mv_arrObjFields(v_intIndex).LookupList) > 0 Then
+                                        Me.pnTransDetail.Controls(Me.pnTransDetail.Controls.IndexOf(v_txtData)).BackColor = System.Drawing.Color.Khaki
+                                    End If
+                                    mv_arrObjFields(v_intIndex).ControlIndex = Me.pnTransDetail.Controls.IndexOf(v_txtData)
+                                Case "R"
+                                    Me.pnTransDetail.Controls.Add(v_rtbData)
+                                    If Len(mv_arrObjFields(v_intIndex).SearchCode) > 0 Then
+                                        Me.pnTransDetail.Controls(Me.pnTransDetail.Controls.IndexOf(v_rtbData)).BackColor = System.Drawing.Color.GreenYellow
+                                    ElseIf Len(mv_arrObjFields(v_intIndex).LookupList) > 0 Then
+                                        Me.pnTransDetail.Controls(Me.pnTransDetail.Controls.IndexOf(v_rtbData)).BackColor = System.Drawing.Color.Khaki
+                                    End If
+                                    mv_arrObjFields(v_intIndex).ControlIndex = Me.pnTransDetail.Controls.IndexOf(v_rtbData)
+                                Case "M"
+                                    Me.pnTransDetail.Controls.Add(v_mskData)
+                                    If Len(mv_arrObjFields(v_intIndex).SearchCode) > 0 Then
+                                        Me.pnTransDetail.Controls(Me.pnTransDetail.Controls.IndexOf(v_mskData)).BackColor = System.Drawing.Color.GreenYellow
+                                    ElseIf Len(mv_arrObjFields(v_intIndex).LookupList) > 0 Then
+                                        Me.pnTransDetail.Controls(Me.pnTransDetail.Controls.IndexOf(v_mskData)).BackColor = System.Drawing.Color.Khaki
+                                    End If
+                                    mv_arrObjFields(v_intIndex).ControlIndex = Me.pnTransDetail.Controls.IndexOf(v_mskData)
+                                Case "C"
+                                    Me.pnTransDetail.Controls.Add(v_cboData)
+                                    mv_arrObjFields(v_intIndex).ControlIndex = Me.pnTransDetail.Controls.IndexOf(v_cboData)
+                                    'Ä?áº·t giÃ¡ trá»‹ máº·c Ä‘á»‹nh cho Combo vá»«a Ä‘Æ°á»£c Add vÃ o
+                                    If Len(Trim(mv_arrObjFields(v_intIndex).FieldValue)) > 0 Then
+                                        SetLookUpEditDefaultValue(CType(Me.pnTransDetail.Controls(mv_arrObjFields(v_intIndex).ControlIndex), LookUpEditEx), Trim(mv_arrObjFields(v_intIndex).FieldValue))
+                                        'CType(Me.pnTransDetail.Controls(mv_arrObjFields(v_intIndex).ControlIndex), LookUpEditEx).SelectedValue = Trim(mv_arrObjFields(v_intIndex).FieldValue)
+                                    Else
+                                        SetLookUpEditDefaultValue(CType(Me.pnTransDetail.Controls(mv_arrObjFields(v_intIndex).ControlIndex), LookUpEditEx), Trim(mv_arrObjFields(v_intIndex).DefaultValue))
+                                    End If
+                            End Select
 
-                        'TÃ­nh toÃ¡n vá»‹ trÃ­ hiá»ƒn thá»‹ náº¿u control lÃ  visible
-                        If mv_arrObjFields(v_intIndex).Visible Then
-                            v_intPosition = v_intPosition + 1
-                            v_intLastTop = v_intTop
+                            'TÃ­nh toÃ¡n vá»‹ trÃ­ hiá»ƒn thá»‹ náº¿u control lÃ  visible
+                            If mv_arrObjFields(v_intIndex).Visible Then
+                                v_intPosition = v_intPosition + 1
+                                v_intLastTop = v_intTop
+                            End If
+
                         End If
-
-                    End If
                 Next
                 'v_lblCaption.Name = PREFIXED_LBLCAP & "BUSDATE"
                 If v_lable_busdate_int <> -1 Then
