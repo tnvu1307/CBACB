@@ -7,6 +7,7 @@ Imports System.Configuration
 'Imports System.EnterpriseServices
 Imports Microsoft.Practices.EnterpriseLibrary.Caching
 Imports System.Data
+Imports EasyCaching.Core
 Public Class spRouter
     'TruongLD comment when convert
     'Inherits ServicedComponent
@@ -19,10 +20,12 @@ Public Class spRouter
     'Private spmGroup As SharedPropertyGroup
     'Private spmProperty As SharedProperty
 
-    'TruongLD add when convert
-    Private Const cache_manager As String = "Host_Cache_Manager"
-    Private ReadOnly _HostParameterCache As ICacheManager = CacheFactory.GetCacheManager(cache_manager)
-    'End TruongLD
+    Private ReadOnly _HostParameterCache As IEasyCachingProvider
+    Dim expiration As TimeSpan = TimeSpan.FromMinutes(5256000)
+    Public Sub New()
+        Dim providerFactory As IEasyCachingProviderFactory = CachingConfigurator.GetCachingProviderFactory()
+        _HostParameterCache = providerFactory.GetCachingProvider("Host_Cache_Manager")
+    End Sub
 
     Private bExist As Boolean
 
@@ -422,14 +425,12 @@ Public Class spRouter
             'Dim spmPropertyGLREFCOM As SharedProperty = spmGroup.CreateProperty(gc_SHARED_GLREFCOM, bExist)
             'spmPropertyGLREFCOM.Value = ATTR_GLREFCOM
 
-            'TruongLD Add when convert
-            _HostParameterCache.Flush()
-            _HostParameterCache.Add(gc_SHARED_SBCURRENCY, ATTR_SBCURRENCY)
-
-            _HostParameterCache.Add(gc_SHARED_GLREF, ATTR_GLREF)
-
-            _HostParameterCache.Add(gc_SHARED_GLREFCOM, ATTR_GLREFCOM)
-            'End TruongLD
+            _HostParameterCache.Remove(gc_SHARED_SBCURRENCY)
+            _HostParameterCache.Set(gc_SHARED_SBCURRENCY, ATTR_SBCURRENCY, expiration)
+            _HostParameterCache.Remove(gc_SHARED_GLREF)
+            _HostParameterCache.Set(gc_SHARED_GLREF, ATTR_GLREF, expiration)
+            _HostParameterCache.Remove(gc_SHARED_GLREFCOM)
+            _HostParameterCache.Set(gc_SHARED_GLREFCOM, ATTR_GLREFCOM, expiration)
 
             'Build original transaction message
             Dim v_strOrgTxMsg As String = BuildXMLTxMsg(gc_MsgTypeTrans, gc_IsNotLocalMsg, , "0000", "0000", "HOST", "HOST")
@@ -636,9 +637,9 @@ Public Class spRouter
                     'Dim spmPropertyTLTX As SharedProperty = spmGroup.CreateProperty(gc_SHARED_TLTX & "_" & v_strTLTXCD, bExist)
                     'spmPropertyTLTX.Value = mv_XMLBuffer.InnerXml
 
+                    Dim cacheKey As String = gc_SHARED_TLTX & "_" & v_strTLTXCD
                     'TruongLD Add when convert
-                    _HostParameterCache.Add(gc_SHARED_TLTX & "_" & v_strTLTXCD, mv_XMLBuffer.InnerXml)
-                    'End TruongLD
+                    _HostParameterCache.Set(cacheKey, mv_XMLBuffer.InnerXml, expiration)
                 Next
             End If
 
@@ -646,9 +647,7 @@ Public Class spRouter
             'spmProperty = spmGroup.CreateProperty(gc_HOSTGRP_FLAG, bExist)
             'spmProperty.Value = "Y"
 
-            'TruongLD Add when convert
-            _HostParameterCache.Add(gc_HOSTGRP_FLAG, "Y")
-            'End TruongLD
+            _HostParameterCache.Set(gc_HOSTGRP_FLAG, "Y", expiration)
         Catch ex As Exception
             Throw ex
         Finally
@@ -686,11 +685,9 @@ Public Class spRouter
             '    InitializeSharedProperties()
             'End Try
 
-            'TruongLD add new when convert
-            If Not _HostParameterCache.Contains(gc_SHARED_TLTX & "_" & v_strTLTXCD) Then
+            If Not _HostParameterCache.Exists(gc_SHARED_TLTX & "_" & v_strTLTXCD) Then
                 InitializeSharedProperties()
             End If
-            'End TruongLD
 
             '#If DEBUG Then
             '            InitializeSharedProperties()
@@ -702,12 +699,33 @@ Public Class spRouter
             'ATTR_GLREFCOM = CType(spmGroupManager.Group(gc_HOSTGRP).Property(gc_SHARED_GLREFCOM).Value, String)
             'ATTR_TLTXCD = CType(spmGroupManager.Group(gc_HOSTGRP).Property(gc_SHARED_TLTX & "_" & v_strTLTXCD).Value, String)
 
-            'TruongLD add when convert
-            ATTR_SBCURRENCY = CType(_HostParameterCache.GetData(gc_SHARED_SBCURRENCY), String)
-            ATTR_GLREF = CType(_HostParameterCache.GetData(gc_SHARED_GLREF), String)
-            ATTR_GLREFCOM = CType(_HostParameterCache.GetData(gc_SHARED_GLREFCOM), String)
-            ATTR_TLTXCD = CType(_HostParameterCache.GetData(gc_SHARED_TLTX & "_" & v_strTLTXCD), String)
-            'End TruongLD
+            Dim sbCurrencyResult As CacheValue(Of String) = _HostParameterCache.Get(Of String)(gc_SHARED_SBCURRENCY)
+            If sbCurrencyResult.HasValue Then
+                ATTR_SBCURRENCY = sbCurrencyResult.Value
+            Else
+                ' Handle the case where the cached value is not available
+            End If
+
+            Dim glRefResult As CacheValue(Of String) = _HostParameterCache.Get(Of String)(gc_SHARED_GLREF)
+            If glRefResult.HasValue Then
+                ATTR_GLREF = glRefResult.Value
+            Else
+                ' Handle the case where the cached value is not available
+            End If
+
+            Dim glRefComResult As CacheValue(Of String) = _HostParameterCache.Get(Of String)(gc_SHARED_GLREFCOM)
+            If glRefComResult.HasValue Then
+                ATTR_GLREFCOM = glRefComResult.Value
+            Else
+                ' Handle the case where the cached value is not available
+            End If
+
+            Dim tltxCdResult As CacheValue(Of String) = _HostParameterCache.Get(Of String)(gc_SHARED_TLTX & "_" & v_strTLTXCD)
+            If tltxCdResult.HasValue Then
+                ATTR_TLTXCD = tltxCdResult.Value
+            Else
+                ' Handle the case where the cached value is not available
+            End If
 
             mv_XMLBuffer = New XmlDocumentEx
             mv_XMLBuffer.LoadXml(ATTR_TLTXCD)
