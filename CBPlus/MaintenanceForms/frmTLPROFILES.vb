@@ -158,7 +158,7 @@ Public Class frmTLPROFILES
         '
         'btnOK
         '
-        Me.btnOK.Location = New System.Drawing.Point(345, 434)
+        Me.btnOK.Location = New System.Drawing.Point(426, 434)
         Me.btnOK.TabIndex = 3
         '
         'btnCancel
@@ -168,7 +168,7 @@ Public Class frmTLPROFILES
         '
         'btnApply
         '
-        Me.btnApply.Location = New System.Drawing.Point(426, 434)
+        Me.btnApply.Location = New System.Drawing.Point(345, 434)
         Me.btnApply.TabIndex = 5
         '
         'Panel1
@@ -818,7 +818,7 @@ Public Class frmTLPROFILES
             LogError.Write("Error source: " & ex.Source & vbNewLine _
                          & "Error code: System error!" & vbNewLine _
                          & "Error message: " & ex.Message, EventLogEntryType.Error)
-            MsgBox(ResourceManager.GetString("InitDialogFailed"), MsgBoxStyle.Information + MsgBoxStyle.OKOnly, gc_ApplicationTitle)
+            MsgBox(ResourceManager.GetString("InitDialogFailed"), MsgBoxStyle.Information + MsgBoxStyle.OkOnly, gc_ApplicationTitle)
         End Try
     End Sub
 
@@ -826,7 +826,7 @@ Public Class frmTLPROFILES
         Try
             If (ExeFlag = ExecuteFlag.Edit) Or (ExeFlag = ExecuteFlag.AddNew) Then
                 If BranchId <> HO_BRID Then
-                    MsgBox(ResourceManager.GetString("NotRight"), MsgBoxStyle.Information + MsgBoxStyle.OKOnly, gc_ApplicationTitle)
+                    MsgBox(ResourceManager.GetString("NotRight"), MsgBoxStyle.Information + MsgBoxStyle.OkOnly, gc_ApplicationTitle)
                     OnClose()
                 End If
 
@@ -879,17 +879,17 @@ Public Class frmTLPROFILES
                     Dim v_lngErrorCode As Long = v_ws.Message(v_strObjMsg)
 
                     'Kiểm tra thông tin và xử lý lỗi (nếu có) từ message trả v?
-                    Dim v_strErrorSource, v_strErrorMessage As String                    
+                    Dim v_strErrorSource, v_strErrorMessage As String
 
                     GetErrorFromMessage(v_strObjMsg, v_strErrorSource, v_lngErrorCode, v_strErrorMessage, Me.UserLanguage)
                     If v_lngErrorCode <> 0 Then
                         'Update mouse pointer
                         Cursor.Current = Cursors.Default
-                        MsgBox(v_strErrorMessage, MsgBoxStyle.Information + MsgBoxStyle.OKOnly, Me.Text)
+                        MsgBox(v_strErrorMessage, MsgBoxStyle.Information + MsgBoxStyle.OkOnly, Me.Text)
                         Exit Sub
                     End If
 
-                    MsgBox(ResourceManager.GetString("AddnewSuccessful"), MsgBoxStyle.Information + MsgBoxStyle.OKOnly, gc_ApplicationTitle)
+                    MsgBox(ResourceManager.GetString("AddnewSuccessful"), MsgBoxStyle.Information + MsgBoxStyle.OkOnly, gc_ApplicationTitle)
                     'Me.DialogResult = DialogResult.OK
                     If sender Is btnOK Then
                         Me.DialogResult = DialogResult.OK
@@ -917,11 +917,11 @@ Public Class frmTLPROFILES
                     If v_lngErrorCode <> 0 Then
                         'Update mouse pointer
                         Cursor.Current = Cursors.Default
-                        MsgBox(v_strErrorMessage, MsgBoxStyle.Information + MsgBoxStyle.OKOnly, Me.Text)
+                        MsgBox(v_strErrorMessage, MsgBoxStyle.Information + MsgBoxStyle.OkOnly, Me.Text)
                         Exit Sub
                     End If
 
-                    MsgBox(ResourceManager.GetString("EditSuccessful"), MsgBoxStyle.Information + MsgBoxStyle.OKOnly, gc_ApplicationTitle)
+                    MsgBox(ResourceManager.GetString("EditSuccessful"), MsgBoxStyle.Information + MsgBoxStyle.OkOnly, gc_ApplicationTitle)
                     'Me.DialogResult = DialogResult.OK
                     If sender Is btnOK Then
                         Me.DialogResult = DialogResult.OK
@@ -948,7 +948,7 @@ Public Class frmTLPROFILES
             LogError.Write("Error source: " & ex.Source & vbNewLine _
                          & "Error code: System error!" & vbNewLine _
                          & "Error message: " & ex.Message, EventLogEntryType.Error)
-            MsgBox(ResourceManager.GetString("SavingFailed"), MsgBoxStyle.Information + MsgBoxStyle.OKOnly, gc_ApplicationTitle)
+            MsgBox(ResourceManager.GetString("SavingFailed"), MsgBoxStyle.Information + MsgBoxStyle.OkOnly, gc_ApplicationTitle)
         End Try
     End Sub
 
@@ -1224,13 +1224,13 @@ Public Class frmTLPROFILES
         Try
             'Check TLID
             If CStr(txtTLID.Text).Trim = String.Empty Then
-                MsgBox(ResourceManager.GetString("TlidEmpty"), MsgBoxStyle.Information + MsgBoxStyle.OKOnly, gc_ApplicationTitle)
+                MsgBox(ResourceManager.GetString("TlidEmpty"), MsgBoxStyle.Information + MsgBoxStyle.OkOnly, gc_ApplicationTitle)
                 txtTLID.Focus()
                 Return False
             End If
             'Check TLNAME
             If CStr(txtTLNAME.Text).Trim = String.Empty Then
-                MsgBox(ResourceManager.GetString("TlnameEmpty"), MsgBoxStyle.Information + MsgBoxStyle.OKOnly, gc_ApplicationTitle)
+                MsgBox(ResourceManager.GetString("TlnameEmpty"), MsgBoxStyle.Information + MsgBoxStyle.OkOnly, gc_ApplicationTitle)
                 txtTLNAME.Focus()
                 Return False
             End If
@@ -1394,6 +1394,10 @@ Public Class frmTLPROFILES
         v_objRightAssign.UserRight = mv_strUserRight
         v_objRightAssign.AssignType = "User"
         v_objRightAssign.ShowDialog()
+    End Sub
+
+    Private Sub frmTLPROFILES_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.btnApply.Visible = False
     End Sub
 #End Region
 

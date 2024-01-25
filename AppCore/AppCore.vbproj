@@ -505,6 +505,7 @@
     <EmbeddedResource Include="XtraUcCriterial.resx">
       <DependentUpon>XtraUcCriterial.vb</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="My Project\Settings.settings">
       <CustomToolNamespace>My</CustomToolNamespace>
       <Generator>SettingsSingleFileGenerator</Generator>
