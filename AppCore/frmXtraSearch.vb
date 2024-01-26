@@ -2773,6 +2773,7 @@ Public Class frmXtraSearch
         End If
         'Set enable status for toolbar buttons and other buttons depend on AuthCode string
         bbiNew.Enabled = (Mid(AuthCode, 1, 1) = "Y")
+        'bbiNew.Visibility = IIf(Mid(AuthCode, 1, 1) = "Y", BarItemVisibility.Always, BarItemVisibility.Never)
         bbiView.Visibility = IIf(Mid(AuthCode, 2, 1) = "Y", BarItemVisibility.Always, BarItemVisibility.Never)
         bbiEdit.Visibility = IIf(Mid(AuthCode, 3, 1) = "Y", BarItemVisibility.Always, BarItemVisibility.Never)
         bbiDelete.Visibility = IIf(Mid(AuthCode, 4, 1) = "Y", BarItemVisibility.Always, BarItemVisibility.Never)
@@ -2794,15 +2795,22 @@ Public Class frmXtraSearch
 
         'AnhVT Added - Maintenance Approval Retro
         bbiApprove.Enabled = (Mid(AuthCode, 11, 1) = "Y")
+        'bbiApprove.Visibility = IIf(Mid(AuthCode, 11, 1) = "Y", BarItemVisibility.Always, BarItemVisibility.Never)
 
         'Set enable status for toolbar buttons depend on AuthString string
         If TellerId <> "0001" Then
             bbiView.Enabled = (Mid(AuthString, 1, 1) = "Y")
-            bbiNew.Enabled = (Mid(AuthString, 2, 1) = "Y")
+            If (Mid(AuthCode, 1, 1) = "Y") Then
+                bbiNew.Enabled = (Mid(AuthString, 2, 1) = "Y")
+            End If
+
             bbiEdit.Enabled = (Mid(AuthString, 3, 1) = "Y")
             bbiDelete.Enabled = (Mid(AuthString, 4, 1) = "Y")
             'AnhVT Added - Maintenance Approval Retro
-            bbiApprove.Enabled = (Mid(AuthString, 5, 1) = "Y")
+            If (Mid(AuthCode, 11, 1) = "Y") Then
+                bbiApprove.Enabled = (Mid(AuthString, 5, 1) = "Y")
+            End If
+
         End If
 
 
