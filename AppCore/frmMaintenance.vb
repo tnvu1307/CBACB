@@ -59,13 +59,13 @@ Public Class frmMaintenance
     Protected WithEvents cboLink As AppCore.ComboBoxEx
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMaintenance))
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.lblCaption = New System.Windows.Forms.Label()
-        Me.btnOK = New System.Windows.Forms.Button()
-        Me.btnCancel = New System.Windows.Forms.Button()
-        Me.btnApply = New System.Windows.Forms.Button()
-        Me.cboLink = New AppCore.ComboBoxEx()
-        Me.btnApprv = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel
+        Me.lblCaption = New System.Windows.Forms.Label
+        Me.btnOK = New System.Windows.Forms.Button
+        Me.btnCancel = New System.Windows.Forms.Button
+        Me.btnApply = New System.Windows.Forms.Button
+        Me.cboLink = New AppCore.ComboBoxEx
+        Me.btnApprv = New System.Windows.Forms.Button
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -76,43 +76,43 @@ Public Class frmMaintenance
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(594, 71)
+        Me.Panel1.Size = New System.Drawing.Size(594, 50)
         Me.Panel1.TabIndex = 2
         '
         'lblCaption
         '
         Me.lblCaption.AutoSize = True
         Me.lblCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCaption.Location = New System.Drawing.Point(11, 23)
+        Me.lblCaption.Location = New System.Drawing.Point(7, 16)
         Me.lblCaption.Name = "lblCaption"
-        Me.lblCaption.Size = New System.Drawing.Size(97, 21)
+        Me.lblCaption.Size = New System.Drawing.Size(63, 13)
         Me.lblCaption.TabIndex = 0
         Me.lblCaption.Tag = "lblCaption"
         Me.lblCaption.Text = "lblCaption"
         '
         'btnOK
         '
-        Me.btnOK.Location = New System.Drawing.Point(563, 606)
+        Me.btnOK.Location = New System.Drawing.Point(352, 424)
         Me.btnOK.Name = "btnOK"
-        Me.btnOK.Size = New System.Drawing.Size(120, 33)
+        Me.btnOK.Size = New System.Drawing.Size(75, 23)
         Me.btnOK.TabIndex = 10
         Me.btnOK.Tag = "btnOK"
         Me.btnOK.Text = "btnOK"
         '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(819, 606)
+        Me.btnCancel.Location = New System.Drawing.Point(512, 424)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(120, 33)
+        Me.btnCancel.Size = New System.Drawing.Size(75, 23)
         Me.btnCancel.TabIndex = 11
         Me.btnCancel.Tag = "btnCancel"
         Me.btnCancel.Text = "btnCancel"
         '
         'btnApply
         '
-        Me.btnApply.Location = New System.Drawing.Point(691, 606)
+        Me.btnApply.Location = New System.Drawing.Point(432, 424)
         Me.btnApply.Name = "btnApply"
-        Me.btnApply.Size = New System.Drawing.Size(120, 33)
+        Me.btnApply.Size = New System.Drawing.Size(75, 23)
         Me.btnApply.TabIndex = 12
         Me.btnApply.Tag = "btnApply"
         Me.btnApply.Text = "btnApply"
@@ -120,25 +120,25 @@ Public Class frmMaintenance
         'cboLink
         '
         Me.cboLink.DisplayMember = "DISPLAY"
-        Me.cboLink.Location = New System.Drawing.Point(10, 606)
+        Me.cboLink.Location = New System.Drawing.Point(6, 424)
         Me.cboLink.Name = "cboLink"
-        Me.cboLink.Size = New System.Drawing.Size(193, 29)
+        Me.cboLink.Size = New System.Drawing.Size(121, 21)
         Me.cboLink.TabIndex = 13
         Me.cboLink.Tag = ""
         Me.cboLink.ValueMember = "VALUE"
         '
         'btnApprv
         '
-        Me.btnApprv.Location = New System.Drawing.Point(434, 606)
+        Me.btnApprv.Location = New System.Drawing.Point(271, 424)
         Me.btnApprv.Name = "btnApprv"
-        Me.btnApprv.Size = New System.Drawing.Size(120, 33)
+        Me.btnApprv.Size = New System.Drawing.Size(75, 23)
         Me.btnApprv.TabIndex = 14
         Me.btnApprv.Tag = "btnApprv"
         Me.btnApprv.Text = "btnApprv"
         '
         'frmMaintenance
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(8, 20)
+        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 14)
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(594, 455)
         Me.Controls.Add(Me.btnApprv)
