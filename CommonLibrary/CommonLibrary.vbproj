@@ -62,7 +62,6 @@
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
       <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
-	  <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.81.0.1407, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
       <SpecificVersion>False</SpecificVersion>
@@ -153,6 +152,7 @@
     <Compile Include="ReportParameters.vb">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ResponseAuthenMicrosoft.vb" />
     <Compile Include="RSA.vb" />
     <Compile Include="StoreParameter.vb">
       <SubType>Code</SubType>
@@ -178,6 +178,7 @@
     <None Include="objMessage.xsx">
       <DependentUpon>objMessage.xsd</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="txMessage.xsx">
       <DependentUpon>txMessage.xsd</DependentUpon>
     </None>

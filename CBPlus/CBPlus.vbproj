@@ -222,6 +222,9 @@
     <Reference Include="netchartdir">
       <HintPath>..\Libref\netchartdir.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="quickfix_net">
       <HintPath>..\Libref\quickfix_net.dll</HintPath>
     </Reference>
@@ -555,6 +558,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginMicrosoft.Designer.vb">
+      <DependentUpon>frmLoginMicrosoft.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginMicrosoft.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogMR3009-EN.Designer.vb" />
@@ -1883,6 +1892,7 @@
     <EmbeddedResource Include="MaintenanceForms\frmTLPROFILES.resx">
       <DependentUpon>frmTLPROFILES.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -1910,6 +1920,7 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages.config" />
     <None Include="Service References\HOAuthService\HOAuthService.wsdl" />
     <None Include="Service References\HOAuthService\HOAuthService.xsd">
       <SubType>Designer</SubType>
@@ -1970,7 +1981,13 @@
     <None Include="Service References\HOSTService\_DIRECT.HOSTService.GetFlagSignatureResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\HOSTService\_DIRECT.HOSTService.GetInfoAuthorMicrosoftResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\HOSTService\_DIRECT.HOSTService.GetVersionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOSTService\_DIRECT.HOSTService.InsertOrUpdateAccMicrosoftResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\HOSTService\_DIRECT.HOSTService.MessageByteResponse.datasource">

@@ -9,6 +9,7 @@ Imports System.IO
 Imports Microsoft.AspNetCore.Http
 Imports Microsoft.Extensions.Logging
 Imports System.Configuration
+Imports System.Text
 Public Class Program
     Public Shared Sub Main(args As String())
         Dim builder = WebApplication.CreateBuilder(args)
@@ -28,6 +29,7 @@ Public Class Program
         builder.Logging.AddLog4Net()
         log4net.Config.XmlConfigurator.Configure(New FileInfo("log4net.config"))
 
+        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)
 
         Dim app = builder.Build()
 
