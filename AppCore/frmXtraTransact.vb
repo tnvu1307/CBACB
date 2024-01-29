@@ -3390,6 +3390,7 @@ Public Class frmXtraTransact
             Dim v_dtVALEXP, v_dtVALEXP2, v_dtFLDVALUE As Date, v_blnIsCorrect As Boolean
             Dim v_ctl As Control, v_attrFLDNAME As Xml.XmlAttribute, v_attrDATATYPE As Xml.XmlAttribute, v_attrDEFNAME As Xml.XmlAttribute, v_objEval As New Evaluator
             Dim v_strFieldValue, strFLDNAME As String
+            Dim REcustodycd, isNeedTrans As String
 
             'Check data control before commit
             For Each v_control As Control In Me.pnTransDetail.Controls
@@ -3408,12 +3409,12 @@ Public Class frmXtraTransact
                             Exit Function
                         End If
 
-                        If String.Compare(mv_arrObjFields(v_intIndex).ColumnName, "CUSTODYCD") = 0 Then
+                        If String.Compare(mv_arrObjFields(v_intIndex).ColumnName, "RECUSTODYCD") = 0 Then
+                            REcustodycd = v_strFieldValue
+                        End If
 
-                            If v_strFieldValue.Length = gc_COMPANY_CODE.Length Then
-                                MessageBox.Show(mv_ResourceManager.GetString("ERR_NULL_VALUE"), gc_ApplicationTitle, MessageBoxButtons.OK, MessageBoxIcon.Information)
-                                Exit Function
-                            End If
+                        If String.Compare(mv_arrObjFields(v_intIndex).ColumnName, "NEEDTRFSE") = 0 Then
+                            isNeedTrans = v_strFieldValue
                         End If
                         'Khong duoc them check MANDATORY tai day !!!!!!!!!!!!!!!!!!!!!! 
                         'trung.luu: 28-03-2020 ghep code moi
@@ -3424,14 +3425,21 @@ Public Class frmXtraTransact
                         '    'End If
                         'End If
                         If TypeOf (v_control) Is LookUpEditEx AndAlso CType(v_control, LookUpEditEx).ItemIndex < 0 AndAlso mv_arrObjFields(v_intIndex).Visible = True Then
-                            MessageBox.Show(mv_ResourceManager.GetString("ERR_NULL_COMBOEX"), gc_ApplicationTitle, MessageBoxButtons.OK, MessageBoxIcon.Information)
-                            CType(v_control, Control).Focus()
-                            Exit Function
-                            'End If
+                                MessageBox.Show(mv_ResourceManager.GetString("ERR_NULL_COMBOEX"), gc_ApplicationTitle, MessageBoxButtons.OK, MessageBoxIcon.Information)
+                                CType(v_control, Control).Focus()
+                                Exit Function
+                                'End If
+                            End If
                         End If
                     End If
-                    End If
             Next
+
+            If isNeedTrans = "Y" Then
+                If REcustodycd.Length = gc_COMPANY_CODE.Length Then
+                    MessageBox.Show(mv_ResourceManager.GetString("ERR_NULL_VALUE"), gc_ApplicationTitle, MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    Exit Function
+                End If
+            End If
 
             'Táº¡o Ä‘iá»‡n giao dá»‹ch
             v_strTxMsg = BuildXMLTxMsg(gc_MsgTypeTrans, gc_IsLocalMsg, Trim(mskTransCode.Text), Me.BranchId, Me.TellerId, Me.IpAddress, Me.WsName, , , , , , , , , , , , , , , , , , IIf(mv_strCCYCD = "##", "00", BuildAMTEXP(v_xmlDocument, mv_strCCYCD)))
