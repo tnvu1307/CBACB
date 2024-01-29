@@ -8,13 +8,13 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("CBPlus")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("FSS Join Stock Company")> 
-<Assembly: AssemblyProduct("CBPlus")> 
-<Assembly: AssemblyCopyright("@FSS")> 
-<Assembly: AssemblyTrademark("FSS")> 
-<Assembly: CLSCompliant(True)> 
+<Assembly: AssemblyTitle("CBPlus")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("FSS Join Stock Company")>
+<Assembly: AssemblyProduct("CBPlus")>
+<Assembly: AssemblyCopyright("@FSS")>
+<Assembly: AssemblyTrademark("FSS")>
+<Assembly: CLSCompliant(True)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
 <Assembly: Guid("D84F9CA2-1822-4AD4-A1CD-43A06E9B055E")>
@@ -29,6 +29,6 @@ Imports System.Runtime.InteropServices
 ' You can specify all the values or you can default the Build and Revision Numbers 
 ' by using the '*' as shown below:
 
-<Assembly: AssemblyVersion("4.0.2.2")>
+<Assembly: AssemblyVersion("4.0.2.3")>
 
-<Assembly: AssemblyFileVersion("4.0.2.2")>
+<Assembly: AssemblyFileVersion("4.0.2.3")>
