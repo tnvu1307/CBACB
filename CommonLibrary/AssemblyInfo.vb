@@ -8,13 +8,13 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("FSS Join Stock Company")> 
-<Assembly: AssemblyProduct("CBPlus")> 
-<Assembly: AssemblyCopyright("@FSS")> 
-<Assembly: AssemblyTrademark("FSS")> 
-<Assembly: CLSCompliant(True)> 
+<Assembly: AssemblyTitle("")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("FSS Join Stock Company")>
+<Assembly: AssemblyProduct("CBPlus")>
+<Assembly: AssemblyCopyright("@FSS")>
+<Assembly: AssemblyTrademark("FSS")>
+<Assembly: CLSCompliant(True)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
 <Assembly: Guid("8F384E2B-ED97-4DEB-B4B4-F16BD8E096FC")>
