@@ -3442,7 +3442,7 @@ Public Class frmXtraTransact
             End If
 
             'Táº¡o Ä‘iá»‡n giao dá»‹ch
-            v_strTxMsg = BuildXMLTxMsg(gc_MsgTypeTrans, gc_IsLocalMsg, Trim(mskTransCode.Text), Me.BranchId, Me.TellerId, Me.IpAddress, Me.WsName, , , , , , , , , , , , , , , , , , IIf(mv_strCCYCD = "##", "00", BuildAMTEXP(v_xmlDocument, mv_strCCYCD)))
+            v_strTxMsg = BuildXMLTxMsg(gc_MsgTypeTranS, gc_IsLocalMsg, Trim(mskTransCode.Text), Me.BranchId, Me.TellerId, Me.IpAddress, Me.WsName, , , , , , , , , , , , , , , , , , IIf(mv_strCCYCD = "##", "00", BuildAMTEXP(v_xmlDocument, mv_strCCYCD)),,,,,,,, Me.UserLanguage)
             v_xmlDocument.LoadXml(v_strTxMsg)
             v_dataElement = v_xmlDocument.CreateElement(Xml.XmlNodeType.Element, "fields", "")
 

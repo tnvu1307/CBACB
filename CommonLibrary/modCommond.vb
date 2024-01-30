@@ -3194,7 +3194,8 @@ Public Module modCommond
                                     Optional ByVal pv_strPRETRAN As String = "Y", _
                                     Optional ByVal pv_strDELALLOW As String = "Y", _
                                     Optional ByVal pv_strTXDESC As String = "", _
-                                    Optional ByVal pv_strBATCHNAME As String = DAILY_TRANSACTION) As String
+                                    Optional ByVal pv_strBATCHNAME As String = DAILY_TRANSACTION, _
+                                    Optional ByVal pv_strUserLanguage As String = gc_LANG_VIETNAMESE) As String
         Dim XMLDocumentMessage As New Xml.XmlDocument
         Try
             XMLDocumentMessage.LoadXml(gc_SCHEMA_TXMESSAGE_HEADER)
@@ -3241,6 +3242,7 @@ Public Module modCommond
                 .Attributes(gc_AtributeSESSIONID).Value = SessionID
                 .Attributes(gc_AtributeIPADDRESS).Value = GetIPAddress().ToString()
                 .Attributes(gc_AtributeREQUESTID).Value = Guid.NewGuid().ToString()
+                .Attributes(gc_AtributeUSERLANGUAGE).Value = pv_strUserLanguage
             End With
 
             Return XMLDocumentMessage.InnerXml
@@ -5446,7 +5448,7 @@ oQIDAQAB
     'Public Const gc_SCHEMA_TXMESSAGE_HEADER = "<TransactMessage MSGTYPE='T' TLTXCD='' BRID='' TLID='' IPADDRESS='' WSNAME='' TXTYPE='' NOSUBMIT='' STATUS='0' DELTD='N' DELALLOW='Y' OVRRQD='' UPDATEMODE='' LOCAL='N' OFFID='' CHKID='' CHID='' IBT='' BRID2='' TLID2='' TXDATE='' TXTIME='' TXNUM='' BRDATE='' BUSDATE='' CCYUSAGE='00' OFFLINE='N' MSGSTS='0' OVRSTS='0' PRETRAN='Y' BATCHNAME='DAY' MSGAMT='' MSGACCT='' CHKTIME='' OFFTIME='' TXDESC='' FEEAMT='0' VATAMT='' VOUCHER='' PAGENO='1' TOTALPAGE='1' LATE='0' GLGP='' HOSTTIME='' CAREBY=''></TransactMessage>"
     'Public Const gc_SCHEMA_TXMESSAGE_HEADER = "<TransactMessage MSGTYPE='T' TLTXCD='' BRID='' TLID='' IPADDRESS='' WSNAME='' TXTYPE='' NOSUBMIT='' STATUS='0' DELTD='N' DELALLOW='Y' OVRRQD='' UPDATEMODE='' LOCAL='N' OFFID='' CHKID='' CHID='' IBT='' BRID2='' TLID2='' TXDATE='' TXTIME='' TXNUM='' BRDATE='' BUSDATE='' CCYUSAGE='00' OFFLINE='N' MSGSTS='0' OVRSTS='0' PRETRAN='Y' BATCHNAME='DAY' MSGAMT='' MSGACCT='' CHKTIME='' OFFTIME='' TXDESC='' FEEAMT='0' VATAMT='' VOUCHER='' PAGENO='1' TOTALPAGE='1' LATE='0' GLGP='' HOSTTIME='' CAREBY='' REFERENCE=''></TransactMessage>"
     'Public Const gc_SCHEMA_TXMESSAGE_HEADER = "<TransactMessage MSGTYPE='T' ACTIONFLAG='TXN' TLTXCD='' BRID='' TLID='' IPADDRESS='' WSNAME='' TXTYPE='' NOSUBMIT='' STATUS='0' DELTD='N' DELALLOW='Y' OVRRQD='' UPDATEMODE='' LOCAL='N' OFFID='' CHKID='' CHID='' IBT='' BRID2='' TLID2='' TXDATE='' TXTIME='' TXNUM='' BRDATE='' BUSDATE='' CCYUSAGE='00' OFFLINE='N' MSGSTS='0' OVRSTS='0' PRETRAN='Y' BATCHNAME='DAY' MSGAMT='' MSGACCT='' CHKTIME='' OFFTIME='' TXDESC='' FEEAMT='0' VATAMT='' VOUCHER='' PAGENO='1' TOTALPAGE='1' LATE='0' GLGP='' HOSTTIME='' CAREBY='' REFERENCE=''></TransactMessage>"
-    Public Const gc_SCHEMA_TXMESSAGE_HEADER As String = "<TransactMessage MSGTYPE='T' ACTIONFLAG='TXN' TLTXCD='' BRID='' TLID='' IPADDRESS='' WSNAME='' TXTYPE='' NOSUBMIT='' STATUS='0' DELTD='N' DELALLOW='Y' OVRRQD='' UPDATEMODE='' LOCAL='N' OFFID='' CHKID='' CHID='' IBT='' BRID2='' TLID2='' TXDATE='' TXTIME='' TXNUM='' BRDATE='' BUSDATE='' CCYUSAGE='00' OFFLINE='N' MSGSTS='0' OVRSTS='0' PRETRAN='Y' BATCHNAME='DAY' MSGAMT='' MSGACCT='' CHKTIME='' OFFTIME='' TXDESC='' FEEAMT='0' VATAMT='' VOUCHER='' PAGENO='1' TOTALPAGE='1' LATE='0' GLGP='' HOSTTIME='' CAREBY='' REFERENCE='' WARNING='' SESSIONID='' REQUESTID=''></TransactMessage>"
+    Public Const gc_SCHEMA_TXMESSAGE_HEADER As String = "<TransactMessage MSGTYPE='T' ACTIONFLAG='TXN' TLTXCD='' BRID='' TLID='' IPADDRESS='' WSNAME='' TXTYPE='' NOSUBMIT='' STATUS='0' DELTD='N' DELALLOW='Y' OVRRQD='' UPDATEMODE='' LOCAL='N' OFFID='' CHKID='' CHID='' IBT='' BRID2='' TLID2='' TXDATE='' TXTIME='' TXNUM='' BRDATE='' BUSDATE='' CCYUSAGE='00' OFFLINE='N' MSGSTS='0' OVRSTS='0' PRETRAN='Y' BATCHNAME='DAY' MSGAMT='' MSGACCT='' CHKTIME='' OFFTIME='' TXDESC='' FEEAMT='0' VATAMT='' VOUCHER='' PAGENO='1' TOTALPAGE='1' LATE='0' GLGP='' HOSTTIME='' CAREBY='' REFERENCE='' WARNING='' SESSIONID='' REQUESTID='' USERLANGUAGE=''></TransactMessage>"
     Public Const gc_SCHEMA_OBJMESSAGE_ROOT As String = "/ObjectMessage"
     'AnhVT Added - Maintenance Approval Retro
     'Public Const gc_SCHEMA_OBJMESSAGE_HEADER = "<ObjectMessage TXDATE='' TXNUM='' TXTIME='' TLID='' BRID='' LOCAL='' MSGTYPE='' OBJNAME='' ACTIONFLAG='' CMDINQUIRY='' CLAUSE='' FUNCTIONNAME='' AUTOID='' REFERENCE='' RESERVER='' IPADDRESS='' CMDTYPE='' PARENTOBJNAME='' PARENTCLAUSE=''></ObjectMessage>"
