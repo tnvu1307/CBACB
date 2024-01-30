@@ -259,7 +259,7 @@ Public Class frmRMCmpBankBalance
 #Region " Các sự kiện của form "
 
     Private Sub frmRMCmpBankBalance_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
-        Onclose()
+        MyBase.CloseTab()
     End Sub
 
     Private Sub frmRMCmpBankBalance_Load(sender As Object, e As EventArgs) Handles Me.Load
