@@ -4233,8 +4233,8 @@ Public Class frmXtraTransact
                                     End If
                                 End If
                             Else
-                                'v_strFLDVALUE = v_ctl.Text
-                                v_strFLDVALUE = Replace(v_ctl.Text, "'", "''")
+                                Dim v_ctl_text = Replace(v_ctl.Text, "'", "''")
+                                v_strFLDVALUE = If(v_ctl_text Is Nothing, String.Empty, v_ctl_text)
                             End If
                         End If
 
