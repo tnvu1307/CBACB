@@ -3795,17 +3795,20 @@ Public Class frmXtraSearch
             End If
         End If
 
-        'config trong table CELLSDEFINE
-        Dim row = CELLSDEFINETable.Select("KEYS = '" & ObjectName.ToUpper() & "." & e.Column.FieldName & "'")
-        If row.length > 0 Then
-            Dim gv = TryCast(sender, GridView)
-            For Each ln As DataRow In row
-                If gv.GetRowCellValue(e.RowHandle, ln("CFIELDNAME").ToString) = ln("CVALUE").ToString Then
-                    e.Appearance.BackColor = ColorTranslator.FromHtml(ln("FORMAT").ToString)
-                End If
-
-            Next
-        End If
+        'Dat trong Try-Cast de fix loi: tim GD: VOD0016 -> chon "Khong Phan Trang" -> Tim kiem -> keo sang phai -> Loi
+        Try
+            'config trong table CELLSDEFINE
+            Dim row = CELLSDEFINETable.Select("KEYS = '" & ObjectName.ToUpper() & "." & e.Column.FieldName & "'")
+            If row.length > 0 Then
+                Dim gv = TryCast(sender, GridView)
+                For Each ln As DataRow In row
+                    If gv.GetRowCellValue(e.RowHandle, ln("CFIELDNAME").ToString) = ln("CVALUE").ToString Then
+                        e.Appearance.BackColor = ColorTranslator.FromHtml(ln("FORMAT").ToString)
+                    End If
+                Next
+            End If
+        Catch ex As Exception
+        End Try
 
         'cai nay khong config dc vi like
         If Me.ObjectName.ToUpper() = "RM0012" Then
