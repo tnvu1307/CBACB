@@ -154,7 +154,7 @@
     <value>Màn hình nhập kết quả giao dịch mua/bán hoán đổi ETF</value>
   </data>
   <data name="Custodycd" xml:space="preserve">
-    <value>Số tài khoản giao dịch</value>
+    <value>Số tài khoản lưu ký</value>
   </data>
   <data name="Fullname" xml:space="preserve">
     <value>Tên khách hàng</value>
@@ -211,7 +211,7 @@
     <value>Giá trị giao dịch phải lớn hơn 0</value>
   </data>
   <data name="CustodycdEmptyMsg" xml:space="preserve">
-    <value>Số tài khoản giao dịch không hợp lệ !</value>
+    <value>Số tài khoản lưu ký không hợp lệ !</value>
   </data>
   <data name="ETFNewEmptyMsg" xml:space="preserve">
     <value>Mã chứng chỉ ETF không hợp lệ !</value>
@@ -290,5 +290,14 @@
   </data>
   <data name="DESCETF" xml:space="preserve">
     <value>Kết quả giao dịch hoán đổi ETF</value>
+  </data>
+  <data name="TXDATEERR_1" xml:space="preserve">
+    <value>Ngày giao dịch phải nhỏ hơn hoặc bằng ngày hiện tại</value>
+  </data>
+  <data name="TXDATEERR_2" xml:space="preserve">
+    <value>Ngày giao dịch phải nhỏ hơn Ngày TTBT</value>
+  </data>
+  <data name="SETDATEERR" xml:space="preserve">
+    <value>Ngày TTBT phải nhỏ hơn hoặc bằng ngày hiện tại</value>
   </data>
 </root>

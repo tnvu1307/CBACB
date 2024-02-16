@@ -1240,6 +1240,25 @@ Public Class frmSBETF
             txtTAX.Focus()
             Return False
         End If
+
+        If dtpmsktxdate.EditValue > gf_Cdate(mv_strBusDate) Then
+            MsgBox(mv_resourceManager.GetString("TXDATEERR_1"), MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, gc_ApplicationTitle)
+            dtpmsktxdate.Focus()
+            Return False
+        End If
+
+        If dtpmsksetdate.EditValue > gf_Cdate(mv_strBusDate) Then
+            MsgBox(mv_resourceManager.GetString("SETDATEERR"), MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, gc_ApplicationTitle)
+            dtpmsktxdate.Focus()
+            Return False
+        End If
+
+        If dtpmsktxdate.EditValue > dtpmsksetdate.EditValue Or dtpmsktxdate.EditValue = dtpmsksetdate.EditValue Then
+            MsgBox(mv_resourceManager.GetString("TXDATEERR_2"), MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, gc_ApplicationTitle)
+            dtpmsktxdate.Focus()
+            Return False
+        End If
+
         Return True
     End Function
 

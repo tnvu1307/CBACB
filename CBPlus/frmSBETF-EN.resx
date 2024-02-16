@@ -294,4 +294,13 @@
   <data name="DESCETF" xml:space="preserve">
     <value>ETF swap transaction result</value>
   </data>
+  <data name="TXDATEERR_1" xml:space="preserve">
+    <value>Trading date must be less than or equal to the current date</value>
+  </data>
+	<data name="TXDATEERR_2" xml:space="preserve">
+    <value>Trading date must be less than Payment date</value>
+  </data>
+	<data name="SETDATEERR" xml:space="preserve">
+    <value>Payment date must be less than or equal to the current date</value>
+  </data>
 </root>
