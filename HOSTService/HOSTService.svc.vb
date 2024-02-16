@@ -77,6 +77,7 @@ Public Class HOSTService
             Dim v_attrColl = v_xmlDocumentMessage.DocumentElement.Attributes
             Dim v_strLOCAL = v_attrColl.GetNamedItem(modCommond.gc_AtributeLOCAL).Value
             Dim v_strMSGTYPE = v_attrColl.GetNamedItem(modCommond.gc_AtributeMSGTYPE).Value
+            Dim pv_strUserLanguage = v_attrColl.GetNamedItem(modCommond.gc_AtributeUSERLANGUAGE).Value
 
             Dim checkSign = ConfigurationManager.AppSettings("CheckSign")
             If checkSign = "Y" Then
@@ -125,7 +126,7 @@ Public Class HOSTService
             End Select
 
             If v_lngErr <> ERR_SYSTEM_OK Then
-                v_strErrorMessage = GetErrorMessage(v_lngErr)
+                v_strErrorMessage = GetErrorMessage(v_lngErr, pv_strUserLanguage)
                 ReplaceXMLErrorException(pv_strMessage, v_strErrorSource, v_lngErr, v_strErrorMessage)
 
                 LogError.Write("::MessageByte:: ERRCODE: " & v_lngErr & " ERRMSG: " & v_strErrorMessage, "EventLogEntryType.Error")
@@ -354,7 +355,7 @@ Public Class HOSTService
         End If
     End Function
 
-    Private Function GetErrorMessage(ByVal pv_lngErrorCode As Long) As String
+    Private Function GetErrorMessage(ByVal pv_lngErrorCode As Long, Optional ByVal pv_strUserLanguage As String = gc_LANG_VIETNAMESE) As String
         Dim v_strErrorMessage As String = String.Empty
         Dim v_lngError As Long = 0
 
@@ -373,13 +374,15 @@ Public Class HOSTService
             Dim v_nodeList = v_xmlDocument.SelectNodes("/ObjectMessage/ObjData")
 
             If v_nodeList.Count = 1 Then
+                Dim fldnameByLanguage = If(pv_strUserLanguage = gc_LANG_VIETNAMESE, "ERRDESC", "EN_ERRDESC")
+
                 For i As Integer = 0 To v_nodeList.Count - 1
                     For j As Integer = 0 To v_nodeList.Item(i).ChildNodes.Count - 1
                         Dim objTemp = v_nodeList.Item(i).ChildNodes(j)
                         v_strValue = objTemp.InnerText
                         v_strFLDNAME = objTemp.Attributes.GetNamedItem("fldname").Value
 
-                        If v_strFLDNAME.Trim() = "ERRDESC" Then
+                        If v_strFLDNAME.Trim() = fldnameByLanguage Then
                             v_strErrorMessage = v_strValue
                         End If
                     Next
