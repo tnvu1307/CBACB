@@ -4,7 +4,6 @@ Imports Oracle.ManagedDataAccess.Types
 Imports System.Configuration
 Imports HostCommonLibrary
 Imports System.IO
-Imports System.Drawing
 
 'TruongLD comment when convert
 'Imports System.EnterpriseServices
@@ -58,10 +57,10 @@ Public Class DataAccess
     End Sub
     '********************************************************************
     'Mục đích       	: Khởi tạo thông số của CSDL mà CLASS sẽ kết nối tới
-    'Tham số        	: 
-    '                       pv_strModule: Tên DB của phân hệ mà sẽ truy cập tới   
-    'Trả về         	    : 
-    'Ngày tạo			: 
+    'Tham số        	:
+    '                       pv_strModule: Tên DB của phân hệ mà sẽ truy cập tới
+    'Trả về         	    :
+    'Ngày tạo			:
     'Ngày cập nhật  	: 2013-03-14
     'Người cập nhật 	: DuongLH
     'Noi dung           : Them tham so config .PWDK de support ma hoa password
@@ -134,7 +133,7 @@ Public Class DataAccess
                 Else
                     mv_strTrace = String.Empty
                 End If
-                'End TruongLD 
+                'End TruongLD
 
             Else
                 ProvideType = DBProvider.OracleClient   ' Oracle by default
@@ -571,10 +570,10 @@ Public Class DataAccess
 
     '----------------------------------------------------------------------------------------------
     ' + Mục đích:   Lấy tham số hệ thống trong bảng SYSVAR
-    ' + Đầu vào:    
+    ' + Đầu vào:
     '       - pv_strGRNAME:      Tên group
     '       - pv_strVARNAME:     Tên biến
-    ' + Đầu ra:     
+    ' + Đầu ra:
     '       - pv_strVARVALUE:    Giá trị
     ' + Trả về:     Mã lỗi nếu có
     ' + Tác giả:    Trần Kiều Minh
@@ -612,7 +611,7 @@ Public Class DataAccess
 
     '----------------------------------------------------------------------------------------------
     ' + Mục đích:   Đặt giá trị tham số hệ thống trong bảng SYSVAR
-    ' + Đầu vào:    
+    ' + Đầu vào:
     '       - pv_strGRNAME:      Tên group
     '       - pv_strVARNAME:     Tên biến
     '       - pv_strVARVALUE:    Giá trị
@@ -645,7 +644,7 @@ Public Class DataAccess
 
     '----------------------------------------------------------------------------------------------
     ' + Mục đích:   Reset  lại bộ đếm
-    ' + Đầu vào:    
+    ' + Đầu vào:
     '       - pv_strTable:      Tên bảng
     ' + Đầu ra:     N/A
     ' + Trả về:     Số tăng tuần tự tiếp theo
@@ -665,7 +664,7 @@ Public Class DataAccess
                 v_strSQL = "DROP SEQUENCE SEQ_" & pv_strTable
                 OracleHelper.ExecuteNonQuery(ConnectionString, CommandType.Text, v_strSQL)
             End If
-            'Tạo mới Sequence 
+            'Tạo mới Sequence
             v_strSQL = "CREATE SEQUENCE SEQ_" & pv_strTable
             OracleHelper.ExecuteNonQuery(ConnectionString, CommandType.Text, v_strSQL)
 
@@ -680,7 +679,7 @@ Public Class DataAccess
 
     '----------------------------------------------------------------------------------------------
     ' + Mục đích:   Lấy số tự tăng để làm khoá chính cho bảng
-    ' + Đầu vào:    
+    ' + Đầu vào:
     '       - pv_strTable:      Tên bảng
     ' + Đầu ra:     N/A
     ' + Trả về:     Số tăng tuần tự tiếp theo
@@ -738,10 +737,10 @@ Public Class DataAccess
 
     '----------------------------------------------------------------------------------------------
     ' + Mục đích:   Thực hiện câu lệnh SQL
-    ' + Đầu vào:    
+    ' + Đầu vào:
     '       - ConnectionString: Tên bảng
-    '       - CommandType:      
-    '       - CommandText:      
+    '       - CommandType:
+    '       - CommandText:
     ' + Đầu ra:     N/A
     ' + Trả về:     Số tăng tuần tự tiếp theo
     ' + Tác giả:    Trần Kiều Minh
