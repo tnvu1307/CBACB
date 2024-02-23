@@ -3814,7 +3814,7 @@ Public Class frmXtraSearch
         If Me.ObjectName.ToUpper() = "RM0012" Then
             If e.Column.FieldName = "CUSTODYCD" AndAlso e.RowHandle >= 0 Then
                 Dim gv = TryCast(sender, GridView)
-                If gv.GetRowCellValue(e.RowHandle, "CUSTODYCD").ToString Like "SHVE*" = True Then
+                If gv.GetRowCellValue(e.RowHandle, "CUSTODYCD").ToString Like "ACBE*" = True Then
                     e.Appearance.BackColor = ColorTranslator.FromHtml("#56B81D")
                 End If
             End If
