@@ -183,7 +183,7 @@ Public Class frmXtraLogin
         Me.PictureEdit1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.TableLayoutPanel1.SetColumnSpan(Me.PictureEdit1, 4)
         Me.PictureEdit1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureEdit1.EditValue = Global._DIRECT.My.Resources.Resources.new_sh
+        Me.PictureEdit1.EditValue = CType(resources.GetObject("PictureEdit1.EditValue"), Object)
         Me.PictureEdit1.Location = New System.Drawing.Point(0, 0)
         Me.PictureEdit1.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureEdit1.Name = "PictureEdit1"

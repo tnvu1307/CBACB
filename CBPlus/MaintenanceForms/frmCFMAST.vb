@@ -2369,7 +2369,7 @@ Public Class frmCFMAST
                         End If
                         MsgBox(ResourceManager.GetString("MsgREMINDFEE"), MsgBoxStyle.Information + MsgBoxStyle.OkOnly, Me.Text)
                     Else
-                        'thunt - SHVF đi với 234
+                        'thunt - ACBF đi với 234
                         Dim v_PROVINCE As String
                         v_PROVINCE = cboPROVINCE.SelectedValue.ToString
                         If cboPROVINCE.SelectedValue.ToString = "--" Then

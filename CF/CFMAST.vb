@@ -664,7 +664,7 @@ Public Class CFMAST
 
         v_objRptParam = New ReportParameters
         v_objRptParam.ParamName = "SSYSVAR"
-        v_objRptParam.ParamValue = "SHVF"
+        v_objRptParam.ParamValue = "ACBF"
         v_objRptParam.ParamSize = 4
         v_objRptParam.ParamType = "String"
         v_arrRptPara(2) = v_objRptParam

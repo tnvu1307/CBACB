@@ -25,7 +25,7 @@ Public Class frmSBETF
 
     Private mv_blnIsRiskManagement As Boolean = False
     Private v_CUSTID As String
-    Public Const gc_COMPANY_CODE = "SHVF"
+    Public Const gc_COMPANY_CODE = "ACBF"
     Private mv_blnIsReject As Boolean = False
     Private mv_intExecFlag As Integer = ExecuteFlag.AddNew
     Private mv_strLanguage As String
@@ -970,7 +970,7 @@ Public Class frmSBETF
         Dim mv_strCaption, mv_strEnCaption, mv_strObjName, mv_strCmdSql As String
         Dim mv_arrSrFieldWidth() As Integer
 
-        txtCustodycd.Text = "SHVF"
+        txtCustodycd.Text = "ACBF"
         txtETFNAME.Text = ""
         txtETXQUANTITY.Text = "0"
         txtFEE.Text = "0"

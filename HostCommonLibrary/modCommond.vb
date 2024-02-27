@@ -66,7 +66,7 @@ Public Module modCommond
     Public DEF_MR_RATE As Integer = 100000
     Public Const ADMIN_ID As String = "0001"
     Public Const HO_BRID As String = "0001"
-    Public Const gc_COMPANY_CODE As String = "SHVF"
+    Public Const gc_COMPANY_CODE As String = "ACBF"
     Public Const HO_MBID As String = "1"
 
     Public Const gc_ApplicationTitle As String = "CBPlus"
