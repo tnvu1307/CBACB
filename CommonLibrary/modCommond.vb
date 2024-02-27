@@ -2325,6 +2325,7 @@ Public Module modCommond
     Public Const gc_RPT_FORMULAR_REPORT_CRITERIAS As String = gc_RPT_FORMULAR_START & "REPORT_CRITERIAS"
     Public Const gc_RPT_FORMULAR_REPORT_CMDID As String = gc_RPT_FORMULAR_START & "CMDID"
     Public Const gc_RPT_FORMULAR_DEPOSITID As String = gc_RPT_FORMULAR_START & "DEPOSITID"
+    Public Const gc_RPT_FORMULAR_WEBSITE As String = gc_RPT_FORMULAR_START & "WEBSITE"
 
 
 #End Region
