@@ -529,10 +529,16 @@ Public Class HOSTService
         Dim v_bCmd As New BusinessCommand
         Dim v_dal As New DataAccess
         Dim v_ds As DataSet
+        Dim v_strSQL As String
 
         Try
             'ExecuteSQL
-            v_bCmd.SQLCommand = "SELECT TLID FROM TLPROFILES WHERE ROWNUM=1 ORDER BY TLID DESC"
+            v_strSQL = "SELECT MAX(ODR)+1 AUTOTLID FROM " +
+                     "(SELECT ROWNUM ODR, INVTLID " +
+                     " FROM (SELECT TLID INVTLID FROM TLPROFILES ORDER BY TLID) " +
+                     " WHERE TO_NUMBER(INVTLID)=ROWNUM) "
+
+            v_bCmd.SQLCommand = v_strSQL
 
             v_dal.NewDBInstance(gc_MODULE_HOST)
             v_dal.LogCommand = True
@@ -540,7 +546,7 @@ Public Class HOSTService
             v_ds = v_dal.ExecuteSQLReturnDataset(v_bCmd)
 
             If v_ds.Tables(0).Rows.Count = 1 Then
-                Return Convert.ToInt32(gf_CorrectNumericField(v_ds.Tables(0).Rows(0)("TLID")) + 1).ToString("D4")
+                Return Convert.ToInt32(gf_CorrectNumericField(v_ds.Tables(0).Rows(0)("AUTOTLID"))).ToString("D4")
             End If
 
         Catch ex As Exception
