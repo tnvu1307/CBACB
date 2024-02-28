@@ -77,7 +77,6 @@ Public Class HOSTService
             Dim v_attrColl = v_xmlDocumentMessage.DocumentElement.Attributes
             Dim v_strLOCAL = v_attrColl.GetNamedItem(modCommond.gc_AtributeLOCAL).Value
             Dim v_strMSGTYPE = v_attrColl.GetNamedItem(modCommond.gc_AtributeMSGTYPE).Value
-            Dim pv_strUserLanguage = v_attrColl.GetNamedItem(modCommond.gc_AtributeUSERLANGUAGE).Value
 
             Dim checkSign = ConfigurationManager.AppSettings("CheckSign")
             If checkSign = "Y" Then
@@ -126,7 +125,7 @@ Public Class HOSTService
             End Select
 
             If v_lngErr <> ERR_SYSTEM_OK Then
-                v_strErrorMessage = GetErrorMessage(v_lngErr, pv_strUserLanguage)
+                v_strErrorMessage = GetErrorMessage(v_lngErr)
                 ReplaceXMLErrorException(pv_strMessage, v_strErrorSource, v_lngErr, v_strErrorMessage)
 
                 LogError.Write("::MessageByte:: ERRCODE: " & v_lngErr & " ERRMSG: " & v_strErrorMessage, "EventLogEntryType.Error")
