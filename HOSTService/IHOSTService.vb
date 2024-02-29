@@ -31,5 +31,8 @@ Public Interface IHOSTService
     <OperationContract()>
     Function GetInfoAuthorMicrosoft(ByRef pv_arrByteMessage As Byte()) As Long
 
+    <OperationContract()>
+    Function GetSecondsLimitAFK(ByRef pv_arrByteMessage As Byte()) As Long
+
 End Interface
 'End Namespace

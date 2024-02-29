@@ -278,6 +278,9 @@
   <data name="LOGOUT_CONFIRMATION" xml:space="preserve">
     <value>Bạn muốn ra khỏi chương trình?</value>
   </data>
+  <data name="LIMIT_SECONDS_AFK" xml:space="preserve">
+    <value>Phiên làm việc hiện tại đã kết thúc, vui lòng đăng nhập lại !</value>
+  </data>
   <data name="CHANGE_LANGUAGE_CONFIRMATION" xml:space="preserve">
     <value>Bạn muốn chuyển ngôn ngữ hệ thống từ Tiếng Việt sang English? Bạn phải khởi động lại ứng dụng sau khi chuyển!</value>
   </data>
