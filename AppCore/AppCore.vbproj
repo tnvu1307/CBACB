@@ -752,6 +752,15 @@
     <None Include="Service References\HOSTService\AppCore.HOSTService.GetFlagSignatureResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\HOSTService\AppCore.HOSTService.GetInfoAuthorMicrosoftResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOSTService\AppCore.HOSTService.GetVersionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOSTService\AppCore.HOSTService.InsertOrUpdateAccMicrosoftResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\HOSTService\AppCore.HOSTService.MessageByteResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>

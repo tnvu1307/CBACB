@@ -26,6 +26,12 @@
   <wsdl:message name="IHOSTService_MessageByte_OutputMessage">
     <wsdl:part name="parameters" element="tns:MessageByteResponse" />
   </wsdl:message>
+  <wsdl:message name="IHOSTService_GetVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersion" />
+  </wsdl:message>
+  <wsdl:message name="IHOSTService_GetVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersionResponse" />
+  </wsdl:message>
   <wsdl:message name="IHOSTService_MessageString_InputMessage">
     <wsdl:part name="parameters" element="tns:MessageString" />
   </wsdl:message>
@@ -50,6 +56,18 @@
   <wsdl:message name="IHOSTService_GetFlagSignature_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetFlagSignatureResponse" />
   </wsdl:message>
+  <wsdl:message name="IHOSTService_InsertOrUpdateAccMicrosoft_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertOrUpdateAccMicrosoft" />
+  </wsdl:message>
+  <wsdl:message name="IHOSTService_InsertOrUpdateAccMicrosoft_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertOrUpdateAccMicrosoftResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHOSTService_GetInfoAuthorMicrosoft_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInfoAuthorMicrosoft" />
+  </wsdl:message>
+  <wsdl:message name="IHOSTService_GetInfoAuthorMicrosoft_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInfoAuthorMicrosoftResponse" />
+  </wsdl:message>
   <wsdl:portType name="IHOSTService">
     <wsdl:operation name="DoWork">
       <wsdl:input wsaw:Action="http://tempuri.org/IHOSTService/DoWork" message="tns:IHOSTService_DoWork_InputMessage" />
@@ -58,6 +76,10 @@
     <wsdl:operation name="MessageByte">
       <wsdl:input wsaw:Action="http://tempuri.org/IHOSTService/MessageByte" message="tns:IHOSTService_MessageByte_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IHOSTService/MessageByteResponse" message="tns:IHOSTService_MessageByte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVersion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHOSTService/GetVersion" message="tns:IHOSTService_GetVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHOSTService/GetVersionResponse" message="tns:IHOSTService_GetVersion_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="MessageString">
       <wsdl:input wsaw:Action="http://tempuri.org/IHOSTService/MessageString" message="tns:IHOSTService_MessageString_InputMessage" />
@@ -75,6 +97,14 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IHOSTService/GetFlagSignature" message="tns:IHOSTService_GetFlagSignature_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IHOSTService/GetFlagSignatureResponse" message="tns:IHOSTService_GetFlagSignature_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="InsertOrUpdateAccMicrosoft">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHOSTService/InsertOrUpdateAccMicrosoft" message="tns:IHOSTService_InsertOrUpdateAccMicrosoft_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHOSTService/InsertOrUpdateAccMicrosoftResponse" message="tns:IHOSTService_InsertOrUpdateAccMicrosoft_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoAuthorMicrosoft">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHOSTService/GetInfoAuthorMicrosoft" message="tns:IHOSTService_GetInfoAuthorMicrosoft_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHOSTService/GetInfoAuthorMicrosoftResponse" message="tns:IHOSTService_GetInfoAuthorMicrosoft_OutputMessage" />
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="WSHttpBinding_IHOSTService" type="tns:IHOSTService">
     <wsp:PolicyReference URI="#WSHttpBinding_IHOSTService_policy" />
@@ -90,6 +120,15 @@
     </wsdl:operation>
     <wsdl:operation name="MessageByte">
       <soap12:operation soapAction="http://tempuri.org/IHOSTService/MessageByte" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVersion">
+      <soap12:operation soapAction="http://tempuri.org/IHOSTService/GetVersion" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -126,6 +165,24 @@
     </wsdl:operation>
     <wsdl:operation name="GetFlagSignature">
       <soap12:operation soapAction="http://tempuri.org/IHOSTService/GetFlagSignature" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertOrUpdateAccMicrosoft">
+      <soap12:operation soapAction="http://tempuri.org/IHOSTService/InsertOrUpdateAccMicrosoft" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoAuthorMicrosoft">
+      <soap12:operation soapAction="http://tempuri.org/IHOSTService/GetInfoAuthorMicrosoft" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
