@@ -488,7 +488,7 @@ Public Class frmXtraLogin
         Dim v_ws As New BDSDeliveryManagement
         Dim v_jsonMsg As String
 
-        ''1. Call HOSTService to get info authorization Microsoft
+        ''1. Call HOSTService to get info for authorization Microsoft
         v_strObjMsg = BuildXMLObjMsg()
         v_lngErr = v_ws.GetInfoAuthorMicrosoft(v_strObjMsg)
 
@@ -501,7 +501,7 @@ Public Class frmXtraLogin
 
         Dim jsonRes = JToken.Parse(v_strObjMsg)
 
-        ''2. Call API Microsoft to get access_token and user_id
+        ''2. Call API Microsoft to get AuthenMicrosoft + InfoAccMicrosoft
         Dim frmLoginMicrosoft As New frmLoginMicrosoft(jsonRes("urlAuthorizeCode").ToString(),
                                                        jsonRes("urlAccessToken").ToString(),
                                                        jsonRes("urlGetInfoAcc").ToString(),
@@ -512,63 +512,54 @@ Public Class frmXtraLogin
         Dim frmLoginMicrosoftResult As DialogResult = frmLoginMicrosoft.ShowDialog(Me)
 
         If (frmLoginMicrosoftResult = DialogResult.OK) Then
-            'Get AuthenMicrosoft & InfoAccMicrosoft
             Dim mergedObject As New JObject
             mergedObject.Merge(JObject.FromObject(frmLoginMicrosoft.AuthenMicrosoft))
             mergedObject.Merge(JObject.FromObject(frmLoginMicrosoft.InfoAccMicrosoft))
 
-            ''3. Update ACCESSTOKEN & USERID + Get ticker account
             v_jsonMsg = mergedObject.ToString()
-            v_lngErr = v_ws.GetTicketAccount(v_jsonMsg)
 
-            If v_lngErr = ERR_SYSTEM_OK Then
-                ''4. Get info acc Microsoft + Show frmTLPROFILES (edit) if TLNAME account Microsoft is null"
-                'Get info acc Microsoft
-                Dim blResult As BusLayerResult = m_BusLayer.LoginMicrosoft(v_jsonMsg)
+            ''3. Get info acc in system + Show frmTLPROFILES (edit) if TLNAME account Microsoft is null"
+            'Get info acc in system
+            Dim blResult As BusLayerResult = m_BusLayer.LoginMicrosoft(v_jsonMsg)
 
-                'If TLNAME is null => Show form fill info account
-                If blResult = BusLayerResult.Success Then
-                    If String.IsNullOrEmpty(m_BusLayer.CurrentTellerProfile.TellerName) = True Then
-                        Dim v_frm As Object
-                        Dim v_strFullObjName As String
-                        Dim moduleCode = "SA"
-                        Dim tableName = "TLPROFILES"
+            'If TLNAME is null => Show form fill info account
+            If blResult = BusLayerResult.Success Then
+                If String.IsNullOrEmpty(m_BusLayer.CurrentTellerProfile.TellerName) = True Then
+                    Dim v_frm As Object
+                    Dim v_strFullObjName As String
+                    Dim moduleCode = "SA"
+                    Dim tableName = "TLPROFILES"
 
-                        v_frm = frmSearchMaster.GetFormByName("frmTLPROFILES")
+                    v_frm = frmSearchMaster.GetFormByName("frmTLPROFILES")
 
-                        v_strFullObjName = moduleCode & "." & tableName
-                        v_frm.TableName = tableName
-                        v_frm.ExeFlag = ExecuteFlag.Edit
-                        v_frm.UserLanguage = m_BusLayer.AppLanguage
-                        v_frm.ModuleCode = moduleCode
-                        v_frm.ObjectName = v_strFullObjName
-                        v_frm.TableName = tableName
-                        v_frm.LocalObject = "N"
-                        v_frm.Text = "Thông tin tài khoản"
-                        v_frm.TellerId = m_BusLayer.CurrentTellerProfile.TellerId
-                        v_frm.TellerRight = "YYYY"
-                        v_frm.GroupCareBy = "0001|Careby_01#0006|NHom 1#"
-                        v_frm.AuthString = "YYYYY"
-                        v_frm.BranchId = m_BusLayer.CurrentTellerProfile.BranchId
-                        v_frm.Busdate = m_BusLayer.CurrentTellerProfile.BusDate
-                        v_frm.KeyFieldName = "TLID"
-                        v_frm.KeyFieldType = "C"
-                        v_frm.KeyFieldValue = m_BusLayer.CurrentTellerProfile.TellerId
+                    v_strFullObjName = moduleCode & "." & tableName
+                    v_frm.TableName = tableName
+                    v_frm.ExeFlag = ExecuteFlag.Edit
+                    v_frm.UserLanguage = m_BusLayer.AppLanguage
+                    v_frm.ModuleCode = moduleCode
+                    v_frm.ObjectName = v_strFullObjName
+                    v_frm.TableName = tableName
+                    v_frm.LocalObject = "N"
+                    v_frm.Text = "Thông tin tài khoản"
+                    v_frm.TellerId = m_BusLayer.CurrentTellerProfile.TellerId
+                    v_frm.TellerRight = "YYYY"
+                    v_frm.GroupCareBy = "0001|Careby_01#0006|NHom 1#"
+                    v_frm.AuthString = "YYYYY"
+                    v_frm.BranchId = m_BusLayer.CurrentTellerProfile.BranchId
+                    v_frm.Busdate = m_BusLayer.CurrentTellerProfile.BusDate
+                    v_frm.KeyFieldName = "TLID"
+                    v_frm.KeyFieldType = "C"
+                    v_frm.KeyFieldValue = m_BusLayer.CurrentTellerProfile.TellerId
 
-                        Dim frmResult As DialogResult = v_frm.ShowDialog()
-                    End If
-
-                    Me.DialogResult = DialogResult.OK
-                    Me.Close()
-
-                ElseIf blResult = BusLayerResult.AuthenticationFailure Then
-                    MsgBox(m_ResourceManager.GetString(gc_SYSERR_INCORRECT_USR_OR_PWD) & " " & m_ResourceManager.GetString(gc_SYSERR_RE_TYPE),
-                       MsgBoxStyle.Information + MsgBoxStyle.OkOnly, gc_ApplicationTitle)
+                    Dim frmResult As DialogResult = v_frm.ShowDialog()
                 End If
-            Else
-                'BusLayerResult.AuthenticationFailure
-                MsgBox(m_ResourceManager.GetString(gc_SYSERR_INCORRECT_USR_OR_PWD) & " " & m_ResourceManager.GetString(gc_SYSERR_RE_TYPE),
-                        MsgBoxStyle.Information + MsgBoxStyle.OkOnly, gc_ApplicationTitle)
+
+                Me.DialogResult = DialogResult.OK
+                Me.Close()
+
+            ElseIf blResult = BusLayerResult.AuthenticationFailure Then
+                MsgBox(m_ResourceManager.GetString("MICROSOFT_ACCOUNT_DOES_NOT_EXIST_IN_THE_SYSTEM"),
+                   MsgBoxStyle.Information, gc_ApplicationTitle)
             End If
         End If
     End Sub

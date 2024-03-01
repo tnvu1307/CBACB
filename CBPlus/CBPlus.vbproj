@@ -1694,7 +1694,9 @@
     <EmbeddedResource Include="Localize-EN.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Localize-VN.resx" />
+    <EmbeddedResource Include="Localize-VN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="MaintenanceForms\frmEMAILREPORT-EN.resx" />
     <EmbeddedResource Include="MaintenanceForms\frmEMAILREPORT-VN.resx" />
     <EmbeddedResource Include="MaintenanceForms\frmEMAILREPORT.resx">
