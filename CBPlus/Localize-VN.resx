@@ -203,6 +203,9 @@
   <data name="SYS-000007" xml:space="preserve">
     <value>Vui lòng nhập lại thông tin!</value>
   </data>
+  <data name="MICROSOFT_ACCOUNT_DOES_NOT_EXIST_IN_THE_SYSTEM" xml:space="preserve">
+    <value>Tài khoản Microsoft của bạn chưa tồn tại trong hệ thống !</value>
+  </data>
   <data name="SYS-000008" xml:space="preserve">
     <value>Lỗi không xác định.</value>
   </data>
@@ -277,6 +280,9 @@
   </data>
   <data name="LOGOUT_CONFIRMATION" xml:space="preserve">
     <value>Bạn muốn ra khỏi chương trình?</value>
+  </data>
+  <data name="LIMIT_SECONDS_AFK" xml:space="preserve">
+    <value>Phiên làm việc hiện tại đã kết thúc, vui lòng đăng nhập lại !</value>
   </data>
   <data name="CHANGE_LANGUAGE_CONFIRMATION" xml:space="preserve">
     <value>Bạn muốn chuyển ngôn ngữ hệ thống từ Tiếng Việt sang English? Bạn phải khởi động lại ứng dụng sau khi chuyển!</value>

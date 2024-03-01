@@ -1983,10 +1983,13 @@
     <None Include="Service References\HOSTService\_DIRECT.HOSTService.GetInfoAuthorMicrosoftResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\HOSTService\_DIRECT.HOSTService.GetVersionResponse.datasource">
+    <None Include="Service References\HOSTService\_DIRECT.HOSTService.GetSecondsLimitAFKResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\HOSTService\_DIRECT.HOSTService.InsertOrUpdateAccMicrosoftResponse.datasource">
+    <None Include="Service References\HOSTService\_DIRECT.HOSTService.GetTicketAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HOSTService\_DIRECT.HOSTService.GetVersionResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\HOSTService\_DIRECT.HOSTService.MessageByteResponse.datasource">
@@ -2080,7 +2083,7 @@
     <Folder Include="obj\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

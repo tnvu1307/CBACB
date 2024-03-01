@@ -62,17 +62,23 @@ Namespace HOSTService
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/GetFlagSignature", ReplyAction:="http://tempuri.org/IHOSTService/GetFlagSignatureResponse")>  _
         Function GetFlagSignatureAsync(ByVal request As HOSTService.GetFlagSignatureRequest) As System.Threading.Tasks.Task(Of HOSTService.GetFlagSignatureResponse)
         
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/InsertOrUpdateAccMicrosoft", ReplyAction:="http://tempuri.org/IHOSTService/InsertOrUpdateAccMicrosoftResponse")>  _
-        Function InsertOrUpdateAccMicrosoft(ByVal request As HOSTService.InsertOrUpdateAccMicrosoftRequest) As HOSTService.InsertOrUpdateAccMicrosoftResponse
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/GetTicketAccount", ReplyAction:="http://tempuri.org/IHOSTService/GetTicketAccountResponse")>  _
+        Function GetTicketAccount(ByVal request As HOSTService.GetTicketAccountRequest) As HOSTService.GetTicketAccountResponse
         
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/InsertOrUpdateAccMicrosoft", ReplyAction:="http://tempuri.org/IHOSTService/InsertOrUpdateAccMicrosoftResponse")>  _
-        Function InsertOrUpdateAccMicrosoftAsync(ByVal request As HOSTService.InsertOrUpdateAccMicrosoftRequest) As System.Threading.Tasks.Task(Of HOSTService.InsertOrUpdateAccMicrosoftResponse)
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/GetTicketAccount", ReplyAction:="http://tempuri.org/IHOSTService/GetTicketAccountResponse")>  _
+        Function GetTicketAccountAsync(ByVal request As HOSTService.GetTicketAccountRequest) As System.Threading.Tasks.Task(Of HOSTService.GetTicketAccountResponse)
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/GetInfoAuthorMicrosoft", ReplyAction:="http://tempuri.org/IHOSTService/GetInfoAuthorMicrosoftResponse")>  _
         Function GetInfoAuthorMicrosoft(ByVal request As HOSTService.GetInfoAuthorMicrosoftRequest) As HOSTService.GetInfoAuthorMicrosoftResponse
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/GetInfoAuthorMicrosoft", ReplyAction:="http://tempuri.org/IHOSTService/GetInfoAuthorMicrosoftResponse")>  _
         Function GetInfoAuthorMicrosoftAsync(ByVal request As HOSTService.GetInfoAuthorMicrosoftRequest) As System.Threading.Tasks.Task(Of HOSTService.GetInfoAuthorMicrosoftResponse)
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/GetSecondsLimitAFK", ReplyAction:="http://tempuri.org/IHOSTService/GetSecondsLimitAFKResponse")>  _
+        Function GetSecondsLimitAFK(ByVal request As HOSTService.GetSecondsLimitAFKRequest) As HOSTService.GetSecondsLimitAFKResponse
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IHOSTService/GetSecondsLimitAFK", ReplyAction:="http://tempuri.org/IHOSTService/GetSecondsLimitAFKResponse")>  _
+        Function GetSecondsLimitAFKAsync(ByVal request As HOSTService.GetSecondsLimitAFKRequest) As System.Threading.Tasks.Task(Of HOSTService.GetSecondsLimitAFKResponse)
     End Interface
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
@@ -317,8 +323,8 @@ Namespace HOSTService
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.MessageContractAttribute(WrapperName:="InsertOrUpdateAccMicrosoft", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
-    Partial Public Class InsertOrUpdateAccMicrosoftRequest
+     System.ServiceModel.MessageContractAttribute(WrapperName:="GetTicketAccount", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
+    Partial Public Class GetTicketAccountRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>  _
         Public pv_arrByteMessage() As Byte
@@ -335,11 +341,11 @@ Namespace HOSTService
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.MessageContractAttribute(WrapperName:="InsertOrUpdateAccMicrosoftResponse", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
-    Partial Public Class InsertOrUpdateAccMicrosoftResponse
+     System.ServiceModel.MessageContractAttribute(WrapperName:="GetTicketAccountResponse", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
+    Partial Public Class GetTicketAccountResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>  _
-        Public InsertOrUpdateAccMicrosoftResult As Long
+        Public GetTicketAccountResult As Long
         
         <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=1)>  _
         Public pv_arrByteMessage() As Byte
@@ -348,9 +354,9 @@ Namespace HOSTService
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal InsertOrUpdateAccMicrosoftResult As Long, ByVal pv_arrByteMessage() As Byte)
+        Public Sub New(ByVal GetTicketAccountResult As Long, ByVal pv_arrByteMessage() As Byte)
             MyBase.New
-            Me.InsertOrUpdateAccMicrosoftResult = InsertOrUpdateAccMicrosoftResult
+            Me.GetTicketAccountResult = GetTicketAccountResult
             Me.pv_arrByteMessage = pv_arrByteMessage
         End Sub
     End Class
@@ -391,6 +397,46 @@ Namespace HOSTService
         Public Sub New(ByVal GetInfoAuthorMicrosoftResult As Long, ByVal pv_arrByteMessage() As Byte)
             MyBase.New
             Me.GetInfoAuthorMicrosoftResult = GetInfoAuthorMicrosoftResult
+            Me.pv_arrByteMessage = pv_arrByteMessage
+        End Sub
+    End Class
+    
+    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
+     System.ServiceModel.MessageContractAttribute(WrapperName:="GetSecondsLimitAFK", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
+    Partial Public Class GetSecondsLimitAFKRequest
+        
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>  _
+        Public pv_arrByteMessage() As Byte
+        
+        Public Sub New()
+            MyBase.New
+        End Sub
+        
+        Public Sub New(ByVal pv_arrByteMessage() As Byte)
+            MyBase.New
+            Me.pv_arrByteMessage = pv_arrByteMessage
+        End Sub
+    End Class
+    
+    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
+     System.ServiceModel.MessageContractAttribute(WrapperName:="GetSecondsLimitAFKResponse", WrapperNamespace:="http://tempuri.org/", IsWrapped:=true)>  _
+    Partial Public Class GetSecondsLimitAFKResponse
+        
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=0)>  _
+        Public GetSecondsLimitAFKResult As Long
+        
+        <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://tempuri.org/", Order:=1)>  _
+        Public pv_arrByteMessage() As Byte
+        
+        Public Sub New()
+            MyBase.New
+        End Sub
+        
+        Public Sub New(ByVal GetSecondsLimitAFKResult As Long, ByVal pv_arrByteMessage() As Byte)
+            MyBase.New
+            Me.GetSecondsLimitAFKResult = GetSecondsLimitAFKResult
             Me.pv_arrByteMessage = pv_arrByteMessage
         End Sub
     End Class
@@ -482,12 +528,12 @@ Namespace HOSTService
             Return MyBase.Channel.GetFlagSignatureAsync(request)
         End Function
         
-        Public Function InsertOrUpdateAccMicrosoft(ByVal request As HOSTService.InsertOrUpdateAccMicrosoftRequest) As HOSTService.InsertOrUpdateAccMicrosoftResponse Implements HOSTService.IHOSTService.InsertOrUpdateAccMicrosoft
-            Return MyBase.Channel.InsertOrUpdateAccMicrosoft(request)
+        Public Function GetTicketAccount(ByVal request As HOSTService.GetTicketAccountRequest) As HOSTService.GetTicketAccountResponse Implements HOSTService.IHOSTService.GetTicketAccount
+            Return MyBase.Channel.GetTicketAccount(request)
         End Function
         
-        Public Function InsertOrUpdateAccMicrosoftAsync(ByVal request As HOSTService.InsertOrUpdateAccMicrosoftRequest) As System.Threading.Tasks.Task(Of HOSTService.InsertOrUpdateAccMicrosoftResponse) Implements HOSTService.IHOSTService.InsertOrUpdateAccMicrosoftAsync
-            Return MyBase.Channel.InsertOrUpdateAccMicrosoftAsync(request)
+        Public Function GetTicketAccountAsync(ByVal request As HOSTService.GetTicketAccountRequest) As System.Threading.Tasks.Task(Of HOSTService.GetTicketAccountResponse) Implements HOSTService.IHOSTService.GetTicketAccountAsync
+            Return MyBase.Channel.GetTicketAccountAsync(request)
         End Function
         
         Public Function GetInfoAuthorMicrosoft(ByVal request As HOSTService.GetInfoAuthorMicrosoftRequest) As HOSTService.GetInfoAuthorMicrosoftResponse Implements HOSTService.IHOSTService.GetInfoAuthorMicrosoft
@@ -496,6 +542,14 @@ Namespace HOSTService
         
         Public Function GetInfoAuthorMicrosoftAsync(ByVal request As HOSTService.GetInfoAuthorMicrosoftRequest) As System.Threading.Tasks.Task(Of HOSTService.GetInfoAuthorMicrosoftResponse) Implements HOSTService.IHOSTService.GetInfoAuthorMicrosoftAsync
             Return MyBase.Channel.GetInfoAuthorMicrosoftAsync(request)
+        End Function
+        
+        Public Function GetSecondsLimitAFK(ByVal request As HOSTService.GetSecondsLimitAFKRequest) As HOSTService.GetSecondsLimitAFKResponse Implements HOSTService.IHOSTService.GetSecondsLimitAFK
+            Return MyBase.Channel.GetSecondsLimitAFK(request)
+        End Function
+        
+        Public Function GetSecondsLimitAFKAsync(ByVal request As HOSTService.GetSecondsLimitAFKRequest) As System.Threading.Tasks.Task(Of HOSTService.GetSecondsLimitAFKResponse) Implements HOSTService.IHOSTService.GetSecondsLimitAFKAsync
+            Return MyBase.Channel.GetSecondsLimitAFKAsync(request)
         End Function
     End Class
 End Namespace
