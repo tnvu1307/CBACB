@@ -102,7 +102,6 @@ Public Class HOSTService
 
                 pv_strMessage = TripleDesEncryptData(pv_strMessage)
                 pv_arrByteMessage = ZetaCompressionLibrary.CompressionHelper.CompressString(pv_strMessage)
-
                 LogError.Write("::MessageByte:: ERRCODE: " & v_lngErr & " ERRMSG: " & v_strErrorMessage, "EventLogEntryType.Error")
                 Return v_lngErr
             End If
@@ -127,8 +126,9 @@ Public Class HOSTService
             If v_lngErr <> ERR_SYSTEM_OK Then
                 v_strErrorMessage = GetErrorMessage(v_lngErr)
                 ReplaceXMLErrorException(pv_strMessage, v_strErrorSource, v_lngErr, v_strErrorMessage)
-
-                LogError.Write("::MessageByte:: ERRCODE: " & v_lngErr & " ERRMSG: " & v_strErrorMessage, "EventLogEntryType.Error")
+                If v_lngErr <> -100011 Then
+                    LogError.Write("::MessageByte:: ERRCODE: " & v_lngErr & " ERRMSG: " & v_strErrorMessage, "EventLogEntryType.Error")
+                End If
             End If
 
             v_xmlDoc.LoadXml(pv_strMessage)
