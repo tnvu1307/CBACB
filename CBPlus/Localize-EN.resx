@@ -279,7 +279,7 @@
   <data name="LOGOUT_CONFIRMATION" xml:space="preserve">
     <value>Are you sure to log out program?</value>
   </data>
-  <data name="LOGOUT_CONFIRMATION" xml:space="preserve">
+  <data name="LIMIT_SECONDS_AFK" xml:space="preserve">
     <value>The current session has ended, please log in again !</value>
   </data>
   <data name="CHANGE_LANGUAGE_CONFIRMATION" xml:space="preserve">
