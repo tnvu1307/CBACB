@@ -77,7 +77,7 @@ Public Class HOSTService
             Dim v_attrColl = v_xmlDocumentMessage.DocumentElement.Attributes
             Dim v_strLOCAL = v_attrColl.GetNamedItem(modCommond.gc_AtributeLOCAL).Value
             Dim v_strMSGTYPE = v_attrColl.GetNamedItem(modCommond.gc_AtributeMSGTYPE).Value
-            Dim pv_strUserLanguage As String
+
             Dim checkSign = ConfigurationManager.AppSettings("CheckSign")
             If checkSign = "Y" Then
                 Try
