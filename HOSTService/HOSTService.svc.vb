@@ -77,7 +77,7 @@ Public Class HOSTService
             Dim v_attrColl = v_xmlDocumentMessage.DocumentElement.Attributes
             Dim v_strLOCAL = v_attrColl.GetNamedItem(modCommond.gc_AtributeLOCAL).Value
             Dim v_strMSGTYPE = v_attrColl.GetNamedItem(modCommond.gc_AtributeMSGTYPE).Value
-            Dim pv_strUserLanguage As String
+
             Dim checkSign = ConfigurationManager.AppSettings("CheckSign")
             If checkSign = "Y" Then
                 Try
@@ -102,7 +102,6 @@ Public Class HOSTService
 
                 pv_strMessage = TripleDesEncryptData(pv_strMessage)
                 pv_arrByteMessage = ZetaCompressionLibrary.CompressionHelper.CompressString(pv_strMessage)
-
                 LogError.Write("::MessageByte:: ERRCODE: " & v_lngErr & " ERRMSG: " & v_strErrorMessage, "EventLogEntryType.Error")
                 Return v_lngErr
             End If
@@ -127,8 +126,9 @@ Public Class HOSTService
             If v_lngErr <> ERR_SYSTEM_OK Then
                 v_strErrorMessage = GetErrorMessage(v_lngErr)
                 ReplaceXMLErrorException(pv_strMessage, v_strErrorSource, v_lngErr, v_strErrorMessage)
-
-                LogError.Write("::MessageByte:: ERRCODE: " & v_lngErr & " ERRMSG: " & v_strErrorMessage, "EventLogEntryType.Error")
+                If v_lngErr <> -100011 Then
+                    LogError.Write("::MessageByte:: ERRCODE: " & v_lngErr & " ERRMSG: " & v_strErrorMessage, "EventLogEntryType.Error")
+                End If
             End If
 
             v_xmlDoc.LoadXml(pv_strMessage)
@@ -212,8 +212,9 @@ Public Class HOSTService
             If v_lngErr <> ERR_SYSTEM_OK Then
                 v_strErrorMessage = GetErrorMessage(v_lngErr)
                 ReplaceXMLErrorException(pv_strMessage, v_strErrorSource, v_lngErr, v_strErrorMessage)
-
-                LogError.Write("::MessageString:: ERRCODE: " & v_lngErr & " ERRMSG: " & v_strErrorMessage, "EventLogEntryType.Error")
+                If v_lngErr <> -100011 Then
+                    LogError.Write("::MessageString:: ERRCODE: " & v_lngErr & " ERRMSG: " & v_strErrorMessage, "EventLogEntryType.Error")
+                End If
             End If
 
             v_xmlDoc.LoadXml(pv_strMessage)
@@ -274,8 +275,9 @@ Public Class HOSTService
 
                 v_strErrorMessage = GetErrorMessage(v_lngErr)
                 ReplaceXMLErrorException(pv_strMessage, v_strErrorSource, v_lngErr, v_strErrorMessage)
-
-                LogError.Write("::OMessageByte:: ERRCODE: " & v_lngErr & " ERRMSG: " & v_strErrorMessage, "EventLogEntryType.Error")
+                If v_lngErr <> -100011 Then
+                    LogError.Write("::OMessageByte:: ERRCODE: " & v_lngErr & " ERRMSG: " & v_strErrorMessage, "EventLogEntryType.Error")
+                End If
             End If
 
             LogError.Write("::OMessageByte:: [END]" & pv_strMessage)
@@ -329,8 +331,9 @@ Public Class HOSTService
 
                 v_strErrorMessage = GetErrorMessage(v_lngErr)
                 ReplaceXMLErrorException(pv_strMessage, v_strErrorSource, v_lngErr, v_strErrorMessage)
-
-                LogError.Write("::OMessageString:: ERRCODE: " & v_lngErr & " ERRMSG: " & v_strErrorMessage, "EventLogEntryType.Error")
+                If v_lngErr <> -100011 Then
+                    LogError.Write("::OMessageString:: ERRCODE: " & v_lngErr & " ERRMSG: " & v_strErrorMessage, "EventLogEntryType.Error")
+                End If
             End If
 
             LogError.Write("::OMessageString:: [END]" & pv_strMessage)
