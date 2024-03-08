@@ -3163,7 +3163,7 @@ Partial Class frmCFMAST
         Me.lblCUSTATCOM.Size = New System.Drawing.Size(80, 13)
         Me.lblCUSTATCOM.TabIndex = 11
         Me.lblCUSTATCOM.Tag = "CUSTATCOM"
-        Me.lblCUSTATCOM.Text = "Lưu ký tại SHV:"
+        Me.lblCUSTATCOM.Text = "Lưu ký tại ACB:"
         '
         'lblDATEOFBIRTH
         '
