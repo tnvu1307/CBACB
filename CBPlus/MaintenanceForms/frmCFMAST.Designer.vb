@@ -1822,6 +1822,7 @@ Partial Class frmCFMAST
         Me.txtSIDC.Size = New System.Drawing.Size(117, 21)
         Me.txtSIDC.TabIndex = 204
         Me.txtSIDC.Tag = "SIDC"
+        Me.txtSIDC.Visible = False
         '
         'lblSIDC
         '
@@ -1833,6 +1834,7 @@ Partial Class frmCFMAST
         Me.lblSIDC.TabIndex = 203
         Me.lblSIDC.Tag = "SIDC"
         Me.lblSIDC.Text = "Mã SIDC:"
+        Me.lblSIDC.Visible = False
         '
         'txtPCOD
         '
@@ -1841,6 +1843,7 @@ Partial Class frmCFMAST
         Me.txtPCOD.Size = New System.Drawing.Size(117, 21)
         Me.txtPCOD.TabIndex = 202
         Me.txtPCOD.Tag = "PCOD"
+        Me.txtPCOD.Visible = False
         '
         'lblPCOD
         '
@@ -1852,6 +1855,7 @@ Partial Class frmCFMAST
         Me.lblPCOD.TabIndex = 201
         Me.lblPCOD.Tag = "PCOD"
         Me.lblPCOD.Text = "Mã PCOD:"
+        Me.lblPCOD.Visible = False
         '
         'cboAUTOSETTLEFEE
         '
