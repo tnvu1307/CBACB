@@ -573,20 +573,35 @@ Public Class HOSTService
     End Function
 
     Public Function GetSecondsLimitAFK(ByRef pv_arrByteMessage As Byte()) As Long Implements IHOSTService.GetSecondsLimitAFK
-            Try
-                Dim pv_strMessage As String
+        Dim pv_strMessage As String
+        Dim secondsLimitAFK = String.Empty
+        Dim v_bCmd As New BusinessCommand
+        Dim v_dal As New DataAccess
+        Dim v_ds As DataSet
+        Try
+            ''Decompress
+            pv_strMessage = ZetaCompressionLibrary.CompressionHelper.DecompressString(pv_arrByteMessage)
+            pv_strMessage = TripleDesDecryptData(pv_strMessage)
 
-                ''Decompress
-                pv_strMessage = ZetaCompressionLibrary.CompressionHelper.DecompressString(pv_arrByteMessage)
-                pv_strMessage = TripleDesDecryptData(pv_strMessage)
+            'Lay thong tin tu db truoc
+            v_dal.NewDBInstance(gc_MODULE_HOST)
+            v_dal.LogCommand = True
 
-                pv_strMessage = ConfigurationManager.AppSettings("SecondsLimitAFK")
+            v_bCmd.SQLCommand = "SELECT * FROM SYSVAR WHERE VARNAME = 'SecondsLimitAFK'"
+            v_ds = v_dal.ExecuteSQLReturnDataset(v_bCmd)
 
-                ''Compress message
-                pv_strMessage = TripleDesEncryptData(pv_strMessage)
-                pv_arrByteMessage = ZetaCompressionLibrary.CompressionHelper.CompressString(pv_strMessage)
-            Catch ex As Exception
-                LogError.WriteException(ex)
+            If v_ds.Tables(0).Rows.Count = 1 Then
+                secondsLimitAFK = gf_CorrectStringField(v_ds.Tables(0).Rows(0)("VARVALUE"))
+            End If
+
+            'Neu db khong co thi lay trong config
+            pv_strMessage = If(String.IsNullOrEmpty(secondsLimitAFK), ConfigurationManager.AppSettings("SecondsLimitAFK"), secondsLimitAFK)
+
+            ''Compress message
+            pv_strMessage = TripleDesEncryptData(pv_strMessage)
+            pv_arrByteMessage = ZetaCompressionLibrary.CompressionHelper.CompressString(pv_strMessage)
+        Catch ex As Exception
+            LogError.WriteException(ex)
                 Return modCommond.ERR_SYSTEM_START
             End Try
 
