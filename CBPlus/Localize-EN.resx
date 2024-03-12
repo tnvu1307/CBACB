@@ -201,6 +201,9 @@
   <data name="SYS-000007" xml:space="preserve">
     <value>Please re-type your information!</value>
   </data>
+  <data name="MICROSOFT_ACCOUNT_DOES_NOT_EXIST_IN_THE_SYSTEM" xml:space="preserve">
+    <value>Your Microsoft account does not exist in the system !</value>
+  </data>
   <data name="SYS-000008" xml:space="preserve">
     <value>An unknown error has orcurred.</value>
   </data>
@@ -275,6 +278,9 @@
   </data>
   <data name="LOGOUT_CONFIRMATION" xml:space="preserve">
     <value>Are you sure to log out program?</value>
+  </data>
+  <data name="LIMIT_SECONDS_AFK" xml:space="preserve">
+    <value>The current session has ended, please log in again !</value>
   </data>
   <data name="CHANGE_LANGUAGE_CONFIRMATION" xml:space="preserve">
     <value>Are you sure to change system language from English to Tiếng Việt? You must restart your application!</value>
