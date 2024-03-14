@@ -33,6 +33,8 @@ Public Class Program
 
         Dim app = builder.Build()
 
+        app.UseHttpsRedirection()
+
         app.UseServiceModel(Sub(ServiceBuilder)
                                 ServiceBuilder.AddService(Of HOAuthService)()
                                 ServiceBuilder.AddServiceEndpoint(Of HOAuthService, IHOAuthService)(New WSHttpBinding(BasicHttpSecurityMode.None), "/HOSTService/HOAuthService.svc")
