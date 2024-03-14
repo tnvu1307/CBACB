@@ -10,7 +10,20 @@ Imports Microsoft.AspNetCore.Http
 Imports Microsoft.Extensions.Logging
 Imports System.Configuration
 Imports System.Text
+
 Public Class Program
+    Private Shared Function GetTraceBinding(ByVal useHttps As Boolean) As WSHttpBinding
+        Dim binding As WSHttpBinding = New WSHttpBinding()
+        If useHttps Then
+            binding.Security.Mode = BasicHttpSecurityMode.Transport
+            binding.Security.Transport.ClientCredentialType = HttpClientCredentialType.None
+            binding.Security.Message.EstablishSecurityContext = False
+        Else
+            binding.Security.Mode = BasicHttpSecurityMode.None
+        End If
+        Return binding
+    End Function
+
     Public Shared Sub Main(args As String())
         Dim builder = WebApplication.CreateBuilder(args)
 
@@ -33,19 +46,17 @@ Public Class Program
 
         Dim app = builder.Build()
 
-        app.UseHttpsRedirection()
-
         app.UseServiceModel(Sub(ServiceBuilder)
                                 ServiceBuilder.AddService(Of HOAuthService)()
-                                ServiceBuilder.AddServiceEndpoint(Of HOAuthService, IHOAuthService)(New WSHttpBinding(BasicHttpSecurityMode.None), "/HOSTService/HOAuthService.svc")
+                                ServiceBuilder.AddServiceEndpoint(Of HOAuthService, IHOAuthService)(GetTraceBinding(True), "/HOSTService/HOAuthService.svc")
                                 ServiceBuilder.AddService(Of HOSTService)()
-                                ServiceBuilder.AddServiceEndpoint(Of HOSTService, IHOSTService)(New WSHttpBinding(BasicHttpSecurityMode.None), "/HOSTService/HOSTService.svc")
+                                ServiceBuilder.AddServiceEndpoint(Of HOSTService, IHOSTService)(GetTraceBinding(True), "/HOSTService/HOSTService.svc")
                                 ServiceBuilder.AddService(Of HOSTRptService)()
-                                ServiceBuilder.AddServiceEndpoint(Of HOSTRptService, IHOSTRptService)(New WSHttpBinding(BasicHttpSecurityMode.None), "/HOSTService/HOSTRptService.svc")
+                                ServiceBuilder.AddServiceEndpoint(Of HOSTRptService, IHOSTRptService)(GetTraceBinding(True), "/HOSTService/HOSTRptService.svc")
 
                                 Dim serviceMetadataBehavior = app.Services.GetRequiredService(Of ServiceMetadataBehavior)()
                                 serviceMetadataBehavior.HttpGetEnabled = True
-                                serviceMetadataBehavior.HttpsGetEnabled = False
+                                serviceMetadataBehavior.HttpsGetEnabled = True
                             End Sub)
 
         app.MapGet("/", Function() "Application running!")
