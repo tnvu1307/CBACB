@@ -295,7 +295,7 @@
     <value>Quốc gia:</value>
   </data>
   <data name="CUSTATCOM" xml:space="preserve">
-    <value>Lưu ký tại SHV:</value>
+    <value>Lưu ký tại ACB:</value>
   </data>
   <data name="CUSTID" xml:space="preserve">
     <value>Mã khách hàng:</value>
@@ -379,7 +379,7 @@
     <value>PL theo nhóm thu nhập:</value>
   </data>
   <data name="INTERNATION" xml:space="preserve">
-    <value>Tên Aither:</value>
+    <value>Tên DNA:</value>
   </data>
   <data name="INVESTRANGE" xml:space="preserve">
     <value>Nhu cầu đầu tư:</value>
