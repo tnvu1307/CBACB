@@ -49,13 +49,10 @@ Public Class Program
         app.UseServiceModel(Sub(ServiceBuilder)
                                 ServiceBuilder.AddService(Of HOAuthService)()
                                 ServiceBuilder.AddServiceEndpoint(Of HOAuthService, IHOAuthService)(GetTraceBinding(False), "/HOSTService/HOAuthService.svc")
-                                ServiceBuilder.AddServiceEndpoint(Of HOAuthService, IHOAuthService)(GetTraceBinding(True), "/HOSTService/HOAuthService.svc")
                                 ServiceBuilder.AddService(Of HOSTService)()
                                 ServiceBuilder.AddServiceEndpoint(Of HOSTService, IHOSTService)(GetTraceBinding(False), "/HOSTService/HOSTService.svc")
-                                ServiceBuilder.AddServiceEndpoint(Of HOSTService, IHOSTService)(GetTraceBinding(True), "/HOSTService/HOSTService.svc")
                                 ServiceBuilder.AddService(Of HOSTRptService)()
                                 ServiceBuilder.AddServiceEndpoint(Of HOSTRptService, IHOSTRptService)(GetTraceBinding(False), "/HOSTService/HOSTRptService.svc")
-                                ServiceBuilder.AddServiceEndpoint(Of HOSTRptService, IHOSTRptService)(GetTraceBinding(True), "/HOSTService/HOSTRptService.svc")
 
                                 Dim serviceMetadataBehavior = app.Services.GetRequiredService(Of ServiceMetadataBehavior)()
                                 serviceMetadataBehavior.HttpGetEnabled = True
