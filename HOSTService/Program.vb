@@ -10,6 +10,7 @@ Imports Microsoft.AspNetCore.Http
 Imports Microsoft.Extensions.Logging
 Imports System.Configuration
 Imports System.Text
+Imports Elastic.Apm.NetCoreAll
 Public Class Program
     Public Shared Sub Main(args As String())
         Dim builder = WebApplication.CreateBuilder(args)
@@ -32,6 +33,8 @@ Public Class Program
         Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)
 
         Dim app = builder.Build()
+
+        app.UseAllElasticApm(app.Configuration)
 
         app.UseServiceModel(Sub(ServiceBuilder)
                                 ServiceBuilder.AddService(Of HOAuthService)()

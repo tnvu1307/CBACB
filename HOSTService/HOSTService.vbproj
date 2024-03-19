@@ -65,6 +65,7 @@
     <ItemGroup>
         <PackageReference Include="CoreWCF.Http" Version="1.4.1" />
         <PackageReference Include="CoreWCF.Primitives" Version="1.4.1" />
+        <PackageReference Include="Elastic.Apm.NetCoreAll" Version="1.26.0" />
         <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
         <PackageReference Include="System.DirectoryServices" Version="7.0.1" />
         <PackageReference Include="System.ServiceModel.Primitives" Version="6.0.0" />
